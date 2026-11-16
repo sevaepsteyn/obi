@@ -1,0 +1,84 @@
+{
+  "_fresh": [
+    "created_at",
+    "window_start",
+    "window_end",
+    "at"
+  ],
+  "findings": [
+    {
+      "id": "f1",
+      "created_at": "2026-07-16T17:25:00+00:00",
+      "device": "yew-sw-tower",
+      "device_address": "10.20.5.1",
+      "severity": "critical",
+      "confidence": "high",
+      "source": "reachability",
+      "summary": "device went SNMP-dark",
+      "description": "yew-sw-tower stopped answering SNMP for 2 consecutive collector cycles (~10m). The device is unreachable from the collector host.",
+      "window_start": "2026-07-16T17:15:00+00:00",
+      "window_end": "2026-07-16T17:25:00+00:00",
+      "evidence": [
+        {
+          "kind": "metric",
+          "text": "no SNMP response (2 missed cycles)",
+          "host": "yew-sw-tower",
+          "at": "2026-07-16T17:23:00+00:00"
+        },
+        {
+          "kind": "log",
+          "text": "last syslog line 11 minutes before the gap",
+          "host": "yew-sw-tower",
+          "at": "2026-07-16T17:14:00+00:00"
+        }
+      ],
+      "likely_cause": "power or uplink loss at the tower cabinet",
+      "suggested_remediation": "check the tower PoE injector and the Tamarack uplink radio",
+      "investigation": []
+    },
+    {
+      "id": "f2",
+      "created_at": "2026-07-16T16:40:00+00:00",
+      "device": "walnut-gw",
+      "device_address": "10.20.2.1",
+      "severity": "warning",
+      "confidence": "medium",
+      "source": "metrics",
+      "summary": "ifInErrors climbing on ether7",
+      "description": "The inbound error counter on ether7 increased by 214 over the last hour \u2014 a marginal or dirty optic.",
+      "window_start": "2026-07-16T15:40:00+00:00",
+      "window_end": "2026-07-16T16:40:00+00:00",
+      "evidence": [
+        {
+          "kind": "metric",
+          "text": "ifInErrors +214 in 1h",
+          "host": "walnut-gw",
+          "at": "2026-07-16T16:38:00+00:00"
+        }
+      ],
+      "investigation": []
+    },
+    {
+      "id": "f3",
+      "created_at": "2026-07-16T14:50:00+00:00",
+      "device": "core-gw-1",
+      "device_address": "10.20.0.1",
+      "severity": "info",
+      "confidence": "high",
+      "source": "config",
+      "summary": "stored config changed",
+      "description": "The committed config for core-gw-1 changed vs the last watch baseline.",
+      "window_start": "2026-07-16T14:40:00+00:00",
+      "window_end": "2026-07-16T14:50:00+00:00",
+      "evidence": [
+        {
+          "kind": "log",
+          "text": "config changed by admin",
+          "host": "core-gw-1",
+          "at": "2026-07-16T14:49:00+00:00"
+        }
+      ],
+      "investigation": []
+    }
+  ]
+}

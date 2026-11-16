@@ -1,0 +1,47 @@
+{
+  "description": "Traffic that must STAY ignored under the widened gate (feature 109, SC-002): procedural chatter between other stations, chatter about obi, all-calls, garble outside any window — plus the in-window sign-off that must close, not draw an answer.",
+  "config": {
+    "name_variants": ["obi", "obie", "obee", "o b", "opie", "hobi"],
+    "known_callers": ["Krum"],
+    "operator_handles": ["Mira"]
+  },
+  "transmissions": [
+    {"source": "radio.db tx 95 (2026-08-22) — help request, no hail, ambiguous addressee", "at_s": 0.0,
+     "text": "Hey, I'm having an issue moving art. Is there a chance you can help me out? Over.", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 148 (2026-08-22)", "at_s": 10.0,
+     "text": "Uh, that's copied, but, uh, I'm an Tanoak, uh, but take your time.", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 320 (2026-08-23) — other stations' procedural traffic", "at_s": 20.0,
+     "text": "Copy that. I will talk to our network engineering team and see what we can do about moving you up or", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 632 (2026-08-24) — a sign-off outside any call", "at_s": 30.0,
+     "text": "This is Alder, office, I copied all that, going back to Alder, chestnut.", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 1289 (2026-08-25) — camp all-call, not obi", "at_s": 40.0,
+     "text": "All com IT, all com IT. If you have been parking on the Esplanade side of IT camp in what looks like", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 2448 (2026-08-27) — chatter ABOUT obi, mid-sentence mention", "at_s": 50.0,
+     "text": "Okay, copy. I'm gonna try to use Obi to impress some girls out here, so...", "intelligible": true,
+     "expect": {"fired": false, "reason": "mid_sentence_mention", "effects": []}},
+    {"source": "radio.db tx 2566 (2026-08-28)", "at_s": 60.0,
+     "text": "Uh, yeah, I've copied. This is a new process this year that Katie and Speck put in place, so, you kn", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+    {"source": "radio.db tx 2713 (2026-08-28 21:16) — repetition garble outside any window", "at_s": 70.0,
+     "text": "Sorry, Sorry, Sorry, Sorry Sorry Sorry Sorry Sorry Sorry Sorry", "intelligible": false,
+     "expect": {"fired": false, "reason": "unintelligible", "effects": []}},
+    {"source": "radio.db tx 2715 (2026-08-28 21:17)", "at_s": 80.0,
+     "text": "Sandback, Sandback, you're the usual, we're working well, we're on dial, I come back to IT.", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}},
+
+    {"source": "call-5-shaped: sign-off INSIDE a window closes instead of answering", "at_s": 200.0,
+     "text": "Obi, Obi, this is Mira.", "intelligible": true,
+     "expect": {"fired": true, "caller": "mira", "effects": ["open_call", "tx:ack"]}},
+    {"source": "call 5 request context", "at_s": 205.0,
+     "text": "Radio check.", "intelligible": true,
+     "expect": {"effects": ["compose", "tx:answer"]}},
+    {"source": "radio.db call 5 (2026-08-24 11:34) — 'Mira, back on IT.'", "at_s": 212.0,
+     "text": "Mira, back on IT.", "intelligible": true,
+     "expect": {"reason": "sign_off_close", "effects": ["close:cleared"]}}
+  ]
+}

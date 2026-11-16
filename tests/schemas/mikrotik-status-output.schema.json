@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi mikrotik status output",
+  "type": "object",
+  "required": ["scope", "started_at", "finished_at", "counts", "devices"],
+  "properties": {
+    "scope": {
+      "type": "object",
+      "properties": {
+        "ranges": { "type": "array", "items": { "type": "string" } },
+        "seeds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "started_at": { "type": "string", "format": "date-time" },
+    "finished_at": { "type": "string", "format": "date-time" },
+    "counts": {
+      "type": "object",
+      "required": ["total", "reachable", "unreachable", "auth_failed", "unidentified", "timed_out"],
+      "properties": {
+        "total": { "type": "integer" },
+        "reachable": { "type": "integer" },
+        "unreachable": { "type": "integer" },
+        "auth_failed": { "type": "integer" },
+        "unidentified": { "type": "integer" },
+        "timed_out": { "type": "integer" }
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["identity", "address", "reachability", "gathered_at"],
+        "properties": {
+          "identity": { "type": ["string", "null"] },
+          "address": { "type": "string" },
+          "model": { "type": ["string", "null"] },
+          "version": { "type": ["string", "null"] },
+          "reachability": {
+            "type": "string",
+            "enum": ["reachable", "unreachable", "auth_failed", "unidentified", "timed_out"]
+          },
+          "uptime_seconds": { "type": ["integer", "null"] },
+          "cpu_load_percent": { "type": ["number", "null"] },
+          "free_memory_bytes": { "type": ["integer", "null"] },
+          "total_memory_bytes": { "type": ["integer", "null"] },
+          "gathered_at": { "type": "string", "format": "date-time" },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

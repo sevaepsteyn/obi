@@ -1,0 +1,384 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "obi/ar-export",
+ "title": "obi AR geometry export (links.json) \u2014 revised by 031-ar-terrain",
+ "type": "object",
+ "required": [
+  "generated_at",
+  "controller",
+  "sites",
+  "endpoints",
+  "links",
+  "excluded",
+  "degraded",
+  "terrain_omitted"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "generated_at": {
+   "type": "string",
+   "format": "date-time"
+  },
+  "controller": {
+   "type": "string"
+  },
+  "sites": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "name",
+     "latitude",
+     "longitude",
+     "ground_elevation_m",
+     "ground_provenance",
+     "enu"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "type": "string",
+      "minLength": 1
+     },
+     "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+     },
+     "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+     },
+     "ground_elevation_m": {
+      "type": "number"
+     },
+     "ground_provenance": {
+      "enum": [
+       "epqs",
+       "cache",
+       "override",
+       "default_ground"
+      ]
+     },
+     "enu": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       },
+       "minItems": 3,
+       "maxItems": 3
+      }
+     }
+    }
+   }
+  },
+  "endpoints": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "name",
+     "site",
+     "latitude",
+     "longitude",
+     "raw_altitude",
+     "height_amsl_m",
+     "height_provenance",
+     "status",
+     "link_score",
+     "maintenance"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "type": "string",
+      "pattern": "-ptp-"
+     },
+     "site": {
+      "type": "string"
+     },
+     "latitude": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+     },
+     "longitude": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+     },
+     "raw_altitude": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "height_amsl_m": {
+      "type": "number"
+     },
+     "height_provenance": {
+      "enum": [
+       "amsl",
+       "agl",
+       "default_mast"
+      ]
+     },
+     "status": {
+      "type": "string"
+     },
+     "link_score": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+     },
+     "maintenance": {
+      "type": "boolean"
+     }
+    }
+   }
+  },
+  "links": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "a",
+     "b",
+     "band",
+     "health",
+     "signal_dbm",
+     "length_m",
+     "frequency_ghz",
+     "frequency_provenance",
+     "fresnel_radius_m",
+     "clearance_verdict",
+     "clearance_margin_m",
+     "clearance_at_fraction",
+     "clearance_basis",
+     "capacity_down_bps",
+     "capacity_up_bps",
+     "usage_down_bps",
+     "usage_up_bps",
+     "maintenance",
+     "source"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "a": {
+      "type": "string"
+     },
+     "b": {
+      "type": "string"
+     },
+     "band": {
+      "type": "string"
+     },
+     "health": {
+      "enum": [
+       "healthy",
+       "degraded",
+       "down",
+       "unknown"
+      ]
+     },
+     "signal_dbm": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "length_m": {
+      "type": "number",
+      "exclusiveMinimum": 0
+     },
+     "frequency_ghz": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "exclusiveMinimum": 0
+     },
+     "frequency_provenance": {
+      "enum": [
+       "link_channel",
+       "device_channel",
+       "band_nominal",
+       null
+      ]
+     },
+     "fresnel_radius_m": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "exclusiveMinimum": 0
+     },
+     "clearance_verdict": {
+      "enum": [
+       "clear",
+       "marginal",
+       "obstructed",
+       null
+      ]
+     },
+     "clearance_margin_m": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "clearance_at_fraction": {
+      "type": [
+       "number",
+       "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+     },
+     "clearance_basis": {
+      "enum": [
+       "fresnel",
+       "los",
+       null
+      ]
+     },
+     "capacity_down_bps": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "exclusiveMinimum": 0
+     },
+     "capacity_up_bps": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "exclusiveMinimum": 0
+     },
+     "usage_down_bps": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "minimum": 0
+     },
+     "usage_up_bps": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "minimum": 0
+     },
+     "maintenance": {
+      "type": "boolean"
+     },
+     "source": {
+      "enum": [
+       "uisp",
+       "siklu"
+      ]
+     }
+    },
+    "allOf": [
+     {
+      "if": {
+       "properties": {
+        "clearance_verdict": {
+         "type": "null"
+        }
+       }
+      },
+      "then": {
+       "properties": {
+        "clearance_margin_m": {
+         "type": "null"
+        },
+        "clearance_at_fraction": {
+         "type": "null"
+        },
+        "clearance_basis": {
+         "type": "null"
+        }
+       }
+      },
+      "else": {
+       "properties": {
+        "clearance_margin_m": {
+         "type": "number"
+        },
+        "clearance_at_fraction": {
+         "type": "number"
+        },
+        "clearance_basis": {
+         "enum": [
+          "fresnel",
+          "los"
+         ]
+        }
+       }
+      }
+     }
+    ]
+   }
+  },
+  "excluded": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "link",
+     "reason"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "link": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "degraded": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "terrain_omitted": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "item",
+     "reason"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "item": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "description": "The three dead-air swallows (feature 109 US2): tx 2765 (call 75 — say-again instead of 25 s of silence), tx 2461 (call 47 — request held mid-compose then answered), tx 1812 (call 22 — fuzzy 'Mirar' re-hail drew say-again, not a silent busy swallow).",
+ "config": {
+  "name_variants": [
+   "obi",
+   "obie",
+   "obee",
+   "o b",
+   "opie",
+   "hobi"
+  ],
+  "known_callers": [
+   "Krum"
+  ],
+  "operator_handles": [
+   "Mira"
+  ],
+  "caller_aliases": {
+   "kroom": "Krum"
+  }
+ },
+ "transmissions": [
+  {
+   "source": "radio.db tx 2762 (call 75 hail)",
+   "at_s": 0.0,
+   "text": "Obi, Obi, Kroom.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "krum",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "radio.db tx 2765 (2026-08-28 21:59) — was busy_with_call, 25 s dead air",
+   "at_s": 9.0,
+   "text": "Obi, NASA, power, blue.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "reason": "say_again_no_tail",
+    "effects": [
+     "tx:say_again"
+    ]
+   }
+  },
+  {
+   "source": "radio.db tx 2766 (the caller's repeat) (129: the doubled repeat opens a fresh call; still answered, never swallowed)",
+   "at_s": 34.0,
+   "text": "Obi, Obi, make the tower light blue.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "call 47 hail (one-breath), compose deferred to replay the mid-compose swallow",
+   "at_s": 200.0,
+   "text": "Obi, Obi, set the portal color palette to lava.",
+   "intelligible": true,
+   "compose_result": {
+    "defer": true
+   },
+   "expect": {
+    "fired": true,
+    "effects": [
+     "open_call",
+     "compose"
+    ]
+   }
+  },
+  {
+   "source": "radio.db tx 2461 (2026-08-27 21:32) — was busy_with_call mid-compose",
+   "at_s": 205.0,
+   "text": "Obi, set portal, dancing shadows, color palette, lava.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "reason": "held_for_settle",
+    "effects": []
+   }
+  },
+  {
+   "source": "the deferred first answer settles; the held request composes",
+   "at_s": 210.0,
+   "settle_compose": {
+    "text": "Palette set to Lava, over."
+   },
+   "expect": {
+    "effects": [
+     "tx:answer",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "call 22 hail",
+   "at_s": 400.0,
+   "text": "Obi, Obi, this is Mira.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "mira",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "radio.db tx 1812 (2026-08-27 00:26) — 'Mirar' fuzzy-matches Mira; was silently swallowed",
+   "at_s": 405.0,
+   "text": "Obi, Obi, Mirar.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "mira",
+    "reason": "say_again_no_tail",
+    "effects": [
+     "tx:say_again"
+    ]
+   }
+  }
+ ]
+}

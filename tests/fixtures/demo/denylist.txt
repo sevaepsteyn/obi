@@ -1,0 +1,6 @@
+# fictional test denylist (feature 134) — NOT real terms
+playa
+esplanade
+fictional camp
+imaginary sculpture
+!quillon

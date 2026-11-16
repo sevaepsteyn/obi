@@ -1,0 +1,72 @@
+{
+  "description": "The 12 post-answer follow-ups silently dropped 2026-08-26 .. 2026-08-28 (feature 109 US1). Each scenario: hail, first answer, then the REAL dropped transmission verbatim from radio.db — now expected to compose. Hail/request context for the older calls is representative; the dropped line is the pinned original.",
+  "config": {
+    "name_variants": ["obi", "obie", "obee", "o b", "opie", "hobi"],
+    "known_callers": ["Krum", "Vertigo", "Mina"],
+    "operator_handles": ["Mira"],
+    "caller_aliases": {"kroom": "Krum"}
+  },
+  "transmissions": [
+    {"source": "call 16 context", "at_s": 0.0, "text": "Obi, Obi, set the tower lights to a pattern.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 16 (2026-08-26 23:16)", "at_s": 8.0, "text": "Set it to dancing shadows pattern.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 19 context", "at_s": 100.0, "text": "Obi, Obi, set the portal to lava.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 19 (2026-08-26 23:48) — the ignored revert request", "at_s": 108.0, "text": "Okay, thank you. Go ahead and revert to the previous pattern.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 23 context", "at_s": 200.0, "text": "Obi, Obi, what do the tower lights look like right now?", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 23 (2026-08-27 20:01)", "at_s": 208.0, "text": "Set the power to ice fire.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 47 context", "at_s": 300.0, "text": "Obi, Obi, set the portal to lava palette.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 47 (2026-08-27 21:32) — third try of the triple miss", "at_s": 308.0, "text": "Set portal animated effects dancing shadows.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 51 context", "at_s": 400.0, "text": "Obi, Obi, portal to purple please.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 51 (2026-08-27 22:08)", "at_s": 408.0, "text": "Send the pallet to ice fire.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 52 context", "at_s": 500.0, "text": "Obi, Obi, set the portal effect to dancing shadows.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 52 (2026-08-27 22:09)", "at_s": 508.0, "text": "Thank you. Set the speed to 25%.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 56 context", "at_s": 600.0, "text": "Obi, Obi, what color is the portal?", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 56 (2026-08-28 20:44)", "at_s": 608.0, "text": "Please make it purple.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "call 65 context", "at_s": 700.0, "text": "Obi, Obi, what effects can the tower lights do?", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db call 65 (2026-08-28 20:57) — bare noun-phrase reply", "at_s": 708.0, "text": "Random colors.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 2696 (call 68 one-breath form)", "at_s": 800.0, "text": "Obi, can you make the lights brighter?", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db tx 2701 (call 68, 2026-08-28 21:05)", "at_s": 808.0, "text": "Set portal to 100%.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 2721 (call 70)", "at_s": 900.0, "text": "Obi, Obi, this is Mira.", "intelligible": true,
+     "expect": {"fired": true, "caller": "mira", "effects": ["open_call", "tx:ack"]}},
+    {"source": "radio.db tx 2725-ish (call 70 request)", "at_s": 905.0, "text": "What is the utilization of our primary internet link at tamarack?", "intelligible": true,
+     "expect": {"effects": ["compose", "tx:answer"]}},
+    {"source": "radio.db tx 2728 (call 70, 2026-08-28 21:23) — Mira's verbless follow-up", "at_s": 912.0, "text": "Thank you. Thank you. Just for status of the tamarack to mountain, 70 gigahertz, link.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 2745 (call 72)", "at_s": 1000.0, "text": "Obi, Obi, set the portal to dancing shadows, palette, lava, brightness, 80%.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db tx 2750 (call 72, 2026-08-28 21:46) — answered obi's own caveat", "at_s": 1008.0, "text": "Yes, set the effect to dancing shadows.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 2775 (call 76)", "at_s": 1100.0, "text": "Obi, make power lights random.", "intelligible": true,
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "radio.db tx 2780-ish (call 76, 2026-08-28 22:01) — conversational follow-up", "at_s": 1108.0, "text": "Yeah, Kroom, I think it's, um, it's setting the random, but from the, from the palette itself, and that palette is not random.", "intelligible": true,
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}}
+  ]
+}

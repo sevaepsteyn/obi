@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-07-16T17:56:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "controller": "https://uisp.example.com",
+  "sites": [
+    {
+      "name": "Chestnut",
+      "latitude": 40.9,
+      "longitude": -114.7,
+      "ground_elevation_m": 1190.0,
+      "enu": {
+        "ranch1a": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "ranch2a": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "ranch3": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "tower1b": [
+          2000.0,
+          0.0,
+          10.0
+        ],
+        "tower2b": [
+          2000.0,
+          0.0,
+          10.0
+        ],
+        "relay1a": [
+          0.0,
+          2000.0,
+          10.0
+        ],
+        "relay2a": [
+          0.0,
+          2000.0,
+          10.0
+        ],
+        "relay3": [
+          0.0,
+          2000.0,
+          10.0
+        ],
+        "west1b": [
+          2000.0,
+          2000.0,
+          10.0
+        ],
+        "west2b": [
+          2000.0,
+          2000.0,
+          10.0
+        ]
+      }
+    }
+  ],
+  "endpoints": [
+    {
+      "name": "ranch1a",
+      "site": "Chestnut",
+      "maintenance": false,
+      "height_amsl_m": 1200.0
+    },
+    {
+      "name": "ranch2a",
+      "site": "Chestnut",
+      "maintenance": false,
+      "height_amsl_m": 1200.0
+    },
+    {
+      "name": "ranch3",
+      "site": "Chestnut",
+      "maintenance": false,
+      "height_amsl_m": 1200.0
+    },
+    {
+      "name": "tower1b",
+      "site": "Tower",
+      "maintenance": false,
+      "height_amsl_m": 1240.0
+    },
+    {
+      "name": "tower2b",
+      "site": "Tower",
+      "maintenance": false,
+      "height_amsl_m": 1240.0
+    },
+    {
+      "name": "relay1a",
+      "site": "Relay",
+      "maintenance": false,
+      "height_amsl_m": 1310.0
+    },
+    {
+      "name": "relay2a",
+      "site": "Relay",
+      "maintenance": false,
+      "height_amsl_m": 1310.0
+    },
+    {
+      "name": "relay3",
+      "site": "Relay",
+      "maintenance": false,
+      "height_amsl_m": 1310.0
+    },
+    {
+      "name": "west1b",
+      "site": "West",
+      "maintenance": false,
+      "height_amsl_m": 1275.0
+    },
+    {
+      "name": "west2b",
+      "site": "West",
+      "maintenance": false,
+      "height_amsl_m": 1275.0
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "name": "ranch1a <-> tower1b",
+      "a": "ranch1a",
+      "b": "tower1b",
+      "band": "60 GHz",
+      "health": "healthy",
+      "maintenance": false,
+      "capacity_down_bps": 1000000000,
+      "capacity_up_bps": 1000000000,
+      "usage_down_bps": 500000000,
+      "usage_up_bps": 500000000
+    },
+    {
+      "id": "l2",
+      "name": "tower2b <-> ranch2a",
+      "a": "tower2b",
+      "b": "ranch2a",
+      "band": "70 GHz",
+      "health": "healthy",
+      "maintenance": false,
+      "capacity_down_bps": 1000000000,
+      "capacity_up_bps": 1000000000
+    },
+    {
+      "id": "l3",
+      "name": "relay1a <-> west1b",
+      "a": "relay1a",
+      "b": "west1b",
+      "band": "5 GHz",
+      "health": "healthy",
+      "maintenance": false,
+      "capacity_down_bps": 300000000,
+      "capacity_up_bps": 300000000,
+      "usage_down_bps": 90000000,
+      "usage_up_bps": 90000000
+    },
+    {
+      "id": "l4",
+      "name": "relay2a <-> west2b",
+      "a": "relay2a",
+      "b": "west2b",
+      "band": "5 GHz",
+      "health": "healthy",
+      "maintenance": false,
+      "capacity_down_bps": 300000000,
+      "capacity_up_bps": 300000000
+    },
+    {
+      "id": "l5",
+      "name": "ranch3 <-> relay3",
+      "a": "ranch3",
+      "b": "relay3",
+      "band": "60 GHz",
+      "health": "healthy",
+      "maintenance": false,
+      "capacity_down_bps": 2700000000,
+      "capacity_up_bps": 2700000000,
+      "usage_down_bps": 320000000,
+      "usage_up_bps": 320000000,
+      "frequency_ghz": 60.48,
+      "frequency_provenance": "controller",
+      "length_m": 2000.0,
+      "signal_dbm": -58,
+      "clearance_verdict": "clear",
+      "clearance_margin_m": 12.4,
+      "clearance_at_fraction": 0.55,
+      "fresnel_radius_m": 3.4
+    }
+  ],
+  "excluded": [],
+  "degraded": [],
+  "terrain_omitted": []
+}

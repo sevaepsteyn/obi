@@ -1,0 +1,95 @@
+{
+ "version": "W/\"6df292b9840f6b6d1f1a2c3769d5db00fd69bbfd\"",
+ "serverTime": 1788037790182,
+ "feeds": {
+  "@bmantraffic": true,
+  "BMIR Stream": true,
+  "Weather": true,
+  "Webcast": false
+ },
+ "channelsEnabled": {
+  "public_banner": true
+ },
+ "messages": [
+  {
+   "id": "YdRtMR7onTx5YZ31R2Dy6",
+   "subject": "{\"color\":\"blue\",\"title\":\"Travel safe and see you soon!\"}",
+   "content": "As you travel to BRC, take your time, drive safely, obey all traffic laws, and keep an eye on the BRC Dashboard for travel times and weather condition updates.",
+   "priority": 0,
+   "created_at": "2026-08-29T01:54:29.662Z",
+   "last_updated": null,
+   "pinned": false,
+   "expires_at": null,
+   "severity": "standard",
+   "source_dept": null,
+   "channels": [
+    {
+     "id": "public_banner",
+     "name": "public banner"
+    }
+   ]
+  }
+ ],
+ "synced": {
+  "dj_schedule": [],
+  "gate_status_visibility": false,
+  "placeholder_mode": false,
+  "route_diagram_visibility": true,
+  "toc": [
+   [
+    "2:00 PM",
+    "1 h, 30 m",
+    ""
+   ],
+   [
+    "1:30 PM",
+    "0 h, 45 m",
+    ""
+   ],
+   [
+    "1:00 PM",
+    "0 h, 45 m",
+    ""
+   ]
+  ],
+  "traffic_visibility": true,
+  "weather": [
+   ""
+  ],
+  "weather_forecasts": [],
+  "traffic": [
+   {
+    "id": "2093806696779202917",
+    "text": "The current travel time from Gravel to Gate is 1 hour 30 minutes.",
+    "note_tweet": null,
+    "created_at": "2026-08-29T21:03:12.000Z",
+    "author": {
+     "name": "Burning Man Traffic",
+     "username": "bmantraffic"
+    }
+   },
+   {
+    "id": "2093790887692374057",
+    "text": "The current travel time from Gravel to Gate is 45 minutes. 🚚",
+    "note_tweet": null,
+    "created_at": "2026-08-29T20:00:23.000Z",
+    "author": {
+     "name": "Burning Man Traffic",
+     "username": "bmantraffic"
+    }
+   },
+   {
+    "id": "2093774187999658203",
+    "text": "The current travel time from Gravel to Gate is 30 minutes. 🚌",
+    "note_tweet": null,
+    "created_at": "2026-08-29T18:54:01.000Z",
+    "author": {
+     "name": "Burning Man Traffic",
+     "username": "bmantraffic"
+    }
+   }
+  ],
+  "traffic_window_hours": 12
+ },
+ "weatherUpdatedAt": 1788008736304
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi mikrotik status output (002 — inventory-sourced)",
+  "description": "Superset of 001's status-output schema. `obi status` now reports devices read from the persisted inventory, so each device additionally carries its discovery_state, provenance, and present_in_latest. Health fields remain live and optional.",
+  "type": "object",
+  "required": ["scope", "started_at", "finished_at", "counts", "devices"],
+  "properties": {
+    "scope": {
+      "type": "object",
+      "properties": {
+        "ranges": { "type": "array", "items": { "type": "string" } },
+        "seeds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "started_at": { "type": "string", "format": "date-time" },
+    "finished_at": { "type": "string", "format": "date-time" },
+    "counts": {
+      "type": "object",
+      "required": ["total"],
+      "properties": {
+        "total": { "type": "integer" },
+        "reachable": { "type": "integer" },
+        "unreachable": { "type": "integer" },
+        "auth_failed": { "type": "integer" },
+        "unidentified": { "type": "integer" },
+        "timed_out": { "type": "integer" },
+        "unsupported": { "type": "integer" },
+        "absent": { "type": "integer" }
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["identity", "address", "discovery_state", "provenance"],
+        "properties": {
+          "identity": { "type": ["string", "null"] },
+          "address": { "type": "string" },
+          "model": { "type": ["string", "null"] },
+          "version": { "type": ["string", "null"] },
+          "discovery_state": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "unsupported",
+              "unreachable",
+              "auth_failed",
+              "timed_out",
+              "unidentified"
+            ]
+          },
+          "provenance": {
+            "type": "string",
+            "description": "\"seed\" or \"neighbor-of:<address>\"."
+          },
+          "present_in_latest": { "type": "boolean" },
+          "reachability": {
+            "type": ["string", "null"],
+            "description": "Live reachability for devices that were queried (identified Mikrotik roster); null/absent for non-queried entries.",
+            "enum": ["reachable", "unreachable", "auth_failed", "unidentified", "timed_out", null]
+          },
+          "uptime_seconds": { "type": ["integer", "null"] },
+          "cpu_load_percent": { "type": ["number", "null"] },
+          "free_memory_bytes": { "type": ["integer", "null"] },
+          "total_memory_bytes": { "type": ["integer", "null"] },
+          "gathered_at": { "type": ["string", "null"], "format": "date-time" },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

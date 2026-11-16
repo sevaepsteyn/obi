@@ -1,0 +1,558 @@
+{
+  "_comment": "READ-ONLY capture (feature 075) from a CCR2004-1G-12S+2XS: 1 copper + 12 SFP+ + 2 SFP28, rich SFP DDM incl. a copper S-RJ01 module (honest blanks), NO PoE hardware. Serials anonymized. Carries both capability lists: `supported` (the 10G CAGE) and `sfp-supported` (the MODULE) — the S-RJ01 modules top out at 1G and the XS+DA0001 DACs at 25G, so this capture covers a rate ceiling on either side of its cage's.",
+  "routerboard": {
+    "model": "CCR2004-1G-12S+2XS",
+    "serial-number": "HIDDEN-XXXXXXXX",
+    "current-firmware": "7.21.4",
+    "upgrade-firmware": "7.21.4",
+    "routerboard": true
+  },
+  "ethernet": [
+    {
+      "name": "ether1-tech",
+      "default-name": "ether1",
+      "mac-address": "02:07:1D:DA:DC:D4",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus1-chestnut-sw-tower-1",
+      "default-name": "sfp-sfpplus1",
+      "mac-address": "02:82:14:8C:E6:FA",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus2-chestnut-sw-tower-2",
+      "default-name": "sfp-sfpplus2",
+      "mac-address": "02:EE:9E:E3:3B:9F",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus3",
+      "default-name": "sfp-sfpplus3",
+      "mac-address": "02:FF:0D:F8:74:91",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus4",
+      "default-name": "sfp-sfpplus4",
+      "mac-address": "02:85:FE:89:EE:CA",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus5",
+      "default-name": "sfp-sfpplus5",
+      "mac-address": "02:B1:5D:3E:06:A4",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus6",
+      "default-name": "sfp-sfpplus6",
+      "mac-address": "02:05:73:AD:F1:E2",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus7",
+      "default-name": "sfp-sfpplus7",
+      "mac-address": "02:F5:0C:CA:97:3F",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus8",
+      "default-name": "sfp-sfpplus8",
+      "mac-address": "02:DC:3F:E5:72:9A",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus9-setup-peer-wingnut-60",
+      "default-name": "sfp-sfpplus9",
+      "mac-address": "02:9C:D1:64:30:6B",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus10-chestnut-internet-gw",
+      "default-name": "sfp-sfpplus10",
+      "mac-address": "02:2B:EE:C2:3E:77",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus11-chestnut-sw-1",
+      "default-name": "sfp-sfpplus11",
+      "mac-address": "02:75:E2:B5:31:35",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus12-chestnut-sw-2",
+      "default-name": "sfp-sfpplus12",
+      "mac-address": "02:64:E9:6A:66:C6",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp28-1",
+      "default-name": "sfp28-1",
+      "mac-address": "02:DA:0C:D5:D9:EE",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "sfp28-2",
+      "default-name": "sfp28-2",
+      "mac-address": "02:8B:D2:C3:B3:D4",
+      "disabled": false,
+      "running": false
+    }
+  ],
+  "ethernet_monitor": [
+    {
+      "name": "ether1-tech",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "sfp-sfpplus1-chestnut-sw-tower-1",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "S+85DLC03D",
+      "sfp-supported": "1G-baseX,10G-baseSR-LR",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR",
+      "sfp-wavelength": 850,
+      "sfp-temperature": 35,
+      "sfp-tx-power": "-1.907",
+      "sfp-rx-power": "-1.841"
+    },
+    {
+      "name": "sfp-sfpplus2-chestnut-sw-tower-2",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "S+85DLC03D",
+      "sfp-supported": "1G-baseX,10G-baseSR-LR",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR",
+      "sfp-wavelength": 850,
+      "sfp-temperature": 34,
+      "sfp-tx-power": "-1.915",
+      "sfp-rx-power": "-2.477"
+    },
+    {
+      "name": "sfp-sfpplus3",
+      "status": "no-link",
+      "auto-negotiation": "done",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus4",
+      "status": "no-link",
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "Mikrotik",
+      "sfp-vendor-part-number": "S-RJ01",
+      "sfp-supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR"
+    },
+    {
+      "name": "sfp-sfpplus5",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus6",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus7",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus8",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus9-setup-peer-wingnut-60",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "Mikrotik",
+      "sfp-vendor-part-number": "S-RJ01",
+      "sfp-supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR"
+    },
+    {
+      "name": "sfp-sfpplus10-chestnut-internet-gw",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "XS+DA0001",
+      "sfp-supported": "1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseCR,25G-baseCR",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR"
+    },
+    {
+      "name": "sfp-sfpplus11-chestnut-sw-1",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "XS+DA0001",
+      "sfp-supported": "1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseCR,25G-baseCR",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR"
+    },
+    {
+      "name": "sfp-sfpplus12-chestnut-sw-2",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "XS+DA0001",
+      "sfp-supported": "1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseCR,25G-baseCR",
+      "supported": "10M-baseT-half,10M-baseT-full,100M-baseT-half,100M-baseT-full,1G-baseT-half,1G-baseT-full,1G-baseX,2.5G-baseT,2.5G-baseX,5G-baseT,10G-baseT,10G-baseSR-LR,10G-baseCR"
+    },
+    {
+      "name": "sfp28-1",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp28-2",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    }
+  ],
+  "ethernet_poe": [],
+  "poe_monitor": [],
+  "bridge_port": [
+    {
+      "interface": "ether1-tech",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "bond-chestnut-sw",
+      "bridge": "bridge",
+      "pvid": 1,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "bond-chestnut-sw-tower",
+      "bridge": "bridge",
+      "pvid": 1,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    }
+  ],
+  "bridge_vlan": [
+    {
+      "bridge": "bridge",
+      "vlan-ids": 2000,
+      "tagged": "bridge,bond-chestnut-sw,bond-chestnut-sw-tower",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 105,
+      "tagged": "bridge,bond-chestnut-sw,bond-chestnut-sw-tower",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 521,
+      "tagged": "bridge,bond-chestnut-sw,bond-chestnut-sw-tower",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 522,
+      "tagged": "bridge,bond-chestnut-sw,bond-chestnut-sw-tower",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 1,
+      "tagged": "",
+      "untagged": "bridge,bond-chestnut-sw,bond-chestnut-sw-tower",
+      "dynamic": true
+    }
+  ],
+  "neighbor": [
+    {
+      "interface": "sfp-sfpplus1-chestnut-sw-tower-1,bond-chestnut-sw-tower,bridge",
+      "address": "fe80::2ec8:1bff:fee9:b076",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:0E:07:61:A3:B8",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "sfp-sfpplus2-chestnut-sw-tower-2,bond-chestnut-sw-tower,bridge",
+      "address": "fe80::2ec8:1bff:fee9:b076",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:E3:35:7B:3F:3E",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "sfp-sfpplus9-setup-peer-wingnut-60",
+      "address": "169.254.7.7",
+      "address6": "fe80::4aa9:8aff:fea2:a242",
+      "mac-address": "02:AB:FC:20:87:61",
+      "identity": "wingnut-gw",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "sfp-sfpplus10-chestnut-internet-gw",
+      "address": "169.254.5.1",
+      "address6": "fe80::7a9a:18ff:fe38:b6c",
+      "mac-address": "02:58:C4:D9:D1:71",
+      "identity": "chestnut-internet-gw",
+      "platform": "MikroTik",
+      "board": "RB5009UPr+S+"
+    },
+    {
+      "interface": "sfp-sfpplus11-chestnut-sw-1,bond-chestnut-sw,bridge",
+      "address": "fe80::de2c:6eff:fe30:2dd1",
+      "address6": "fe80::de2c:6eff:fe30:2dd1",
+      "mac-address": "02:19:CB:A9:2E:4B",
+      "identity": "chestnut-sw",
+      "platform": "MikroTik",
+      "board": "CRS328-24P-4S+"
+    },
+    {
+      "interface": "sfp-sfpplus12-chestnut-sw-2,bond-chestnut-sw,bridge",
+      "address": "fe80::de2c:6eff:fe30:2dd1",
+      "address6": "fe80::de2c:6eff:fe30:2dd1",
+      "mac-address": "02:54:B5:9F:DC:FF",
+      "identity": "chestnut-sw",
+      "platform": "MikroTik",
+      "board": "CRS328-24P-4S+"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:08:94:B8:8A:8A",
+      "identity": "chestnut-st-bath-house-502-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:8F:6B:9A:C2:D9",
+      "identity": "chestnut-st-hickory-512-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:C7:BD:E7:DA:07",
+      "identity": "chestnut-st-ne-trailers-540-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:22:8F:D9:1E:AB",
+      "identity": "chestnut-st-fish-center-509-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:BF:3D:6B:87:B1",
+      "identity": "chestnut-st-fish-east-511-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan2000-access",
+      "mac-address": "02:8D:9F:33:72:6C",
+      "identity": "chestnut-st-oc79-172-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.20",
+      "address6": "fe80::de2c:6eff:fe30:2dd1",
+      "mac-address": "02:1D:2C:4A:B5:24",
+      "identity": "chestnut-sw",
+      "platform": "MikroTik",
+      "board": "CRS328-24P-4S+"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.21",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:A9:D1:40:D0:63",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.22",
+      "mac-address": "02:FB:C2:5A:07:0A",
+      "identity": "chestnut-pwr-1",
+      "platform": "EdgePower 54V-150W"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.129",
+      "mac-address": "02:C7:BD:E7:DA:07",
+      "identity": "chestnut-st-ne-trailers-540-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.133",
+      "mac-address": "02:BF:3D:6B:87:B1",
+      "identity": "chestnut-st-fish-east-511-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.134",
+      "mac-address": "02:23:B7:F9:27:5D",
+      "identity": "chestnut-st-autoshop-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.135",
+      "mac-address": "02:0B:B0:C0:2F:09",
+      "identity": "chestnut-st-commissary-507-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.136",
+      "mac-address": "02:8D:9F:33:72:6C",
+      "identity": "chestnut-st-oc79-172-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.138",
+      "mac-address": "02:08:94:B8:8A:8A",
+      "identity": "chestnut-st-bath-house-502-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.139",
+      "mac-address": "02:7E:8B:D1:42:55",
+      "identity": "chestnut-st-commonhouse-532-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.140",
+      "mac-address": "02:8F:6B:9A:C2:D9",
+      "identity": "chestnut-st-hickory-512-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.141",
+      "mac-address": "02:22:8F:D9:1E:AB",
+      "identity": "chestnut-st-fish-center-509-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.142",
+      "mac-address": "02:B0:EC:FE:11:C9",
+      "identity": "chestnut-st-flygate-508-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.146",
+      "mac-address": "02:4D:57:E2:73:A3",
+      "identity": "chestnut-st-fish-west-530-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.248",
+      "mac-address": "02:4F:4C:B6:B7:70",
+      "identity": "chestnut-st-housing-505-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.250",
+      "mac-address": "02:33:DB:5A:22:FB",
+      "identity": "chestnut-ptmp-180-05",
+      "platform": "Rocket Prism 5AC"
+    },
+    {
+      "interface": "vlan521-peer-zelkova-60",
+      "address": "fe80::de2c:6eff:fed0:8f71",
+      "address6": "fe80::de2c:6eff:fed0:8f71",
+      "mac-address": "02:0C:4C:5A:3B:E4",
+      "identity": "zelkova-gw",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "vlan521-peer-zelkova-60",
+      "address": "169.254.1.4",
+      "address6": "fe80::de2c:6eff:fed0:8f71",
+      "mac-address": "02:61:2A:2A:07:9D",
+      "identity": "zelkova-gw",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "vlan522-peer-zelkova-05",
+      "address": "169.254.2.4",
+      "address6": "fe80::de2c:6eff:fed0:8f71",
+      "mac-address": "02:61:2A:2A:07:9D",
+      "identity": "zelkova-gw",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    }
+  ]
+}

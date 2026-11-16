@@ -1,0 +1,34 @@
+{
+  "_comment": "Recorded READ-ONLY responses from a RouterOS v7 device (hEX / RB750Gr3). Captured via /system/identity/print, /system/resource/print, /system/routerboard/print. No state was changed. Values lightly anonymized.",
+  "identity": { "name": "border-gw-01" },
+  "resource": {
+    "uptime": "6w3d4h12m9s",
+    "version": "7.11.2 (stable)",
+    "build-time": "2023-11-29 13:00:19",
+    "free-memory": 234123264,
+    "total-memory": 268435456,
+    "cpu": "ARM",
+    "cpu-count": 4,
+    "cpu-frequency": 880,
+    "cpu-load": 7,
+    "free-hdd-space": 1310720,
+    "total-hdd-space": 16252928,
+    "architecture-name": "arm",
+    "board-name": "hEX",
+    "platform": "MikroTik"
+  },
+  "routerboard": {
+    "routerboard": "true",
+    "model": "RB750Gr3",
+    "serial-number": "ANON00000001",
+    "firmware-type": "qca9531L",
+    "factory-firmware": "6.48.6",
+    "current-firmware": "7.11.2",
+    "upgrade-firmware": "7.11.2"
+  },
+  "neighbors": [
+    { "interface": "ether2", "address": "172.18.81.2", "mac-address": "AA:BB:CC:00:00:02", "identity": "dist-sw-01", "platform": "MikroTik", "version": "7.12 (stable)", "board": "CRS326-24G-2S+" },
+    { "interface": "ether3", "address": "172.18.81.50", "mac-address": "AA:BB:CC:00:00:50", "identity": "shade-ap", "platform": "Ubiquiti Networks", "board": "U6-Lite" },
+    { "interface": "ether5", "mac-address": "AA:BB:CC:00:00:99", "identity": "no-ip-neighbor", "platform": "MikroTik" }
+  ]
+}

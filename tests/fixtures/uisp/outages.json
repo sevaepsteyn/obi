@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "out-ongoing",
+      "startTimestamp": "2026-06-21T08:00:00.000Z",
+      "endTimestamp": null,
+      "type": "outage",
+      "aggregatedTime": 3600,
+      "inProgress": true,
+      "site": {"id": "s1", "name": "Alder", "status": "active", "type": "site"},
+      "device": {"id": "d1", "name": "ptp-ridge-east", "model": "PBE-5AC", "role": "ptp", "type": "airMax"},
+      "affectedDevices": 1
+    },
+    {
+      "id": "out-cleared",
+      "startTimestamp": "2026-06-20T22:00:00.000Z",
+      "endTimestamp": "2026-06-20T22:45:00.000Z",
+      "type": "unreachable",
+      "aggregatedTime": 2700,
+      "inProgress": false,
+      "site": {"id": "s2", "name": "Black Rock", "status": "active", "type": "site"},
+      "device": {"id": "d3", "name": "olt-1", "model": "UF-OLT", "role": "gpon", "type": "olt"},
+      "affectedDevices": 1
+    }
+  ],
+  "aggregation": {"allCount": 2, "outageCount": 1, "unreachableCount": 1},
+  "pagination": {"count": 1000, "total": 2, "page": 1, "pages": 1}
+}

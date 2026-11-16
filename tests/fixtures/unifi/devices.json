@@ -1,0 +1,29 @@
+[
+  {
+    "id": "d1",
+    "name": "udm-ridge",
+    "model": "UDM-Pro",
+    "macAddress": "aa:bb:cc:00:00:01",
+    "ipAddress": "10.40.0.1/24",
+    "state": "ONLINE",
+    "firmwareVersion": "3.2.7"
+  },
+  {
+    "id": "d2",
+    "name": "usw-core",
+    "model": "USW-24-PoE",
+    "macAddress": "aa:bb:cc:00:00:02",
+    "ipAddress": "10.40.0.2",
+    "state": "ONLINE",
+    "firmwareVersion": "6.5.59"
+  },
+  {
+    "id": "d3",
+    "name": "uap-shade",
+    "model": "U6-Pro",
+    "macAddress": "aa:bb:cc:00:00:03",
+    "ipAddress": "10.40.0.3",
+    "state": "OFFLINE",
+    "firmwareVersion": "6.5.59"
+  }
+]

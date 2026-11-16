@@ -1,0 +1,1086 @@
+{
+  "_comment": "READ-ONLY capture (feature 075) from a CRS328-24P-4S+: 24 PoE copper + 4 SFP+, PoE-out with a powered-on/short-circuit/waiting-for-load/disabled spread. Serials anonymized.",
+  "routerboard": {
+    "model": "CRS328-24P-4S+",
+    "serial-number": "HIDDEN-XXXXXXXX",
+    "current-firmware": "7.21.4",
+    "upgrade-firmware": "7.21.4",
+    "routerboard": true
+  },
+  "ethernet": [
+    {
+      "name": "ether1",
+      "default-name": "ether1",
+      "mac-address": "02:1D:2C:4A:B5:24",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "ether2-ups",
+      "default-name": "ether2",
+      "mac-address": "02:D7:6B:84:2F:6B",
+      "disabled": false,
+      "running": false
+    },
+    {
+      "name": "ether3",
+      "default-name": "ether3",
+      "mac-address": "02:6C:10:BC:F6:07",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether4-chestnut-pwr-1",
+      "default-name": "ether4",
+      "mac-address": "02:F5:A2:77:1B:65",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether5",
+      "default-name": "ether5",
+      "mac-address": "02:25:86:CC:D6:F7",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether6",
+      "default-name": "ether6",
+      "mac-address": "02:66:99:D6:40:EC",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether7-pump-room",
+      "default-name": "ether7",
+      "mac-address": "02:5D:0D:4C:F2:39",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether8-chestnut-vms-1",
+      "default-name": "ether8",
+      "mac-address": "02:C1:82:B2:53:D1",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether9",
+      "default-name": "ether9",
+      "mac-address": "02:D0:E3:33:68:45",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether10",
+      "default-name": "ether10",
+      "mac-address": "02:D2:5D:FF:DF:73",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether11",
+      "default-name": "ether11",
+      "mac-address": "02:C4:1D:D5:DC:14",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether12",
+      "default-name": "ether12",
+      "mac-address": "02:71:50:23:32:67",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether13-nvr",
+      "default-name": "ether13",
+      "mac-address": "02:BB:D5:56:C7:5E",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether14",
+      "default-name": "ether14",
+      "mac-address": "02:7E:40:CD:6C:48",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether15",
+      "default-name": "ether15",
+      "mac-address": "02:D5:AE:0B:8C:37",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether16",
+      "default-name": "ether16",
+      "mac-address": "02:BE:46:C0:AA:9E",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether17-synology",
+      "default-name": "ether17",
+      "mac-address": "02:C4:23:30:0A:C4",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether18",
+      "default-name": "ether18",
+      "mac-address": "02:61:37:15:27:B3",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether19",
+      "default-name": "ether19",
+      "mac-address": "02:73:BA:B8:BF:7E",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether20",
+      "default-name": "ether20",
+      "mac-address": "02:27:A9:5F:6C:F0",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether21",
+      "default-name": "ether21",
+      "mac-address": "02:AC:5B:88:19:57",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether22-fir-tamarack",
+      "default-name": "ether22",
+      "mac-address": "02:D6:29:23:03:A9",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "ether23",
+      "default-name": "ether23",
+      "mac-address": "02:F6:6F:AF:4C:34",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "ether24-manage",
+      "default-name": "ether24",
+      "mac-address": "02:85:FD:08:65:03",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus1-chestnut-gw-sfp-sfpplus1",
+      "default-name": "sfp-sfpplus1",
+      "mac-address": "02:54:B5:9F:DC:FF",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus2-chestnut-gw-sfp-sfpplus2",
+      "default-name": "sfp-sfpplus2",
+      "mac-address": "02:19:CB:A9:2E:4B",
+      "disabled": false,
+      "running": true
+    },
+    {
+      "name": "sfp-sfpplus3",
+      "default-name": "sfp-sfpplus3",
+      "mac-address": "02:95:BA:E5:F0:F8",
+      "disabled": true,
+      "running": false
+    },
+    {
+      "name": "sfp-sfpplus4",
+      "default-name": "sfp-sfpplus4",
+      "mac-address": "02:13:07:88:B0:C5",
+      "disabled": true,
+      "running": false
+    }
+  ],
+  "ethernet_monitor": [
+    {
+      "name": "ether1",
+      "status": "no-link",
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether2-ups",
+      "status": "no-link",
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether3",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether4-chestnut-pwr-1",
+      "status": "link-ok",
+      "rate": "100Mbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether5",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether6",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether7-pump-room",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether8-chestnut-vms-1",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether9",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether10",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether11",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether12",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether13-nvr",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether14",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether15",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether16",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether17-synology",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether18",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether19",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether20",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether21",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether22-fir-tamarack",
+      "status": "link-ok",
+      "rate": "1Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "ether23",
+      "status": "no-link",
+      "auto-negotiation": "failed"
+    },
+    {
+      "name": "ether24-manage",
+      "status": "link-ok",
+      "rate": "100Mbps",
+      "full-duplex": true,
+      "auto-negotiation": "done"
+    },
+    {
+      "name": "sfp-sfpplus1-chestnut-gw-sfp-sfpplus1",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "XS+DA0001"
+    },
+    {
+      "name": "sfp-sfpplus2-chestnut-gw-sfp-sfpplus2",
+      "status": "link-ok",
+      "rate": "10Gbps",
+      "full-duplex": true,
+      "auto-negotiation": "done",
+      "sfp-module-present": true,
+      "sfp-vendor-name": "MikroTik",
+      "sfp-vendor-part-number": "XS+DA0001"
+    },
+    {
+      "name": "sfp-sfpplus3",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    },
+    {
+      "name": "sfp-sfpplus4",
+      "status": "no-link",
+      "auto-negotiation": "failed",
+      "sfp-module-present": false
+    }
+  ],
+  "ethernet_poe": [
+    {
+      "name": "ether1",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether2-ups",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether3",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether4-chestnut-pwr-1",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether5",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether6",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether7-pump-room",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether8-chestnut-vms-1",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether9",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether10",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether11",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether12",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether13-nvr",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether14",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether15",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether16",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether17-synology",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether18",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether19",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether20",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether21",
+      "poe-out": "off",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether22-fir-tamarack",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether23",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    },
+    {
+      "name": "ether24-manage",
+      "poe-out": "auto-on",
+      "poe-priority": 10
+    }
+  ],
+  "poe_monitor": [
+    {
+      "name": "ether1",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether2-ups",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether3",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether4-chestnut-pwr-1",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether5",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether6",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether7-pump-room",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether8-chestnut-vms-1",
+      "poe-out": "auto-on",
+      "poe-out-status": "short-circuit"
+    },
+    {
+      "name": "ether9",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether10",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether11",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether12",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether13-nvr",
+      "poe-out": "auto-on",
+      "poe-out-status": "short-circuit"
+    },
+    {
+      "name": "ether14",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether15",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether16",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether17-synology",
+      "poe-out": "auto-on",
+      "poe-out-status": "short-circuit"
+    },
+    {
+      "name": "ether18",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether19",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether20",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether21",
+      "poe-out": "off",
+      "poe-out-status": "disabled"
+    },
+    {
+      "name": "ether22-fir-tamarack",
+      "poe-out": "auto-on",
+      "poe-out-status": "powered-on",
+      "poe-out-voltage": 26,
+      "poe-out-current": 114,
+      "poe-out-power": "2.9"
+    },
+    {
+      "name": "ether23",
+      "poe-out": "auto-on",
+      "poe-out-status": "waiting-for-load"
+    },
+    {
+      "name": "ether24-manage",
+      "poe-out": "auto-on",
+      "poe-out-status": "short-circuit"
+    }
+  ],
+  "bridge_port": [
+    {
+      "interface": "ether1",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether2-ups",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether3",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether4-chestnut-pwr-1",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether5",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether6",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether7-pump-room",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether8-chestnut-vms-1",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether9",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether10",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether11",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether12",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether13-nvr",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether14",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether15",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether16",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether17-synology",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether18",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether19",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether20",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether21",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether22-fir-tamarack",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "ether23",
+      "bridge": "bridge",
+      "pvid": 2000,
+      "frame-types": "admit-all",
+      "status": "inactive",
+      "dynamic": false
+    },
+    {
+      "interface": "ether24-manage",
+      "bridge": "bridge",
+      "pvid": 105,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "designated-port",
+      "dynamic": false
+    },
+    {
+      "interface": "bond-chestnut-gw",
+      "bridge": "bridge",
+      "pvid": 1,
+      "frame-types": "admit-all",
+      "status": "in-bridge",
+      "role": "root-port",
+      "dynamic": false
+    }
+  ],
+  "bridge_vlan": [
+    {
+      "bridge": "bridge",
+      "vlan-ids": 100,
+      "tagged": "bond-chestnut-gw",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 10,
+      "tagged": "bond-chestnut-gw",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 2000,
+      "tagged": "bond-chestnut-gw,bridge",
+      "untagged": "ether7-pump-room,ether9,ether11,ether12,ether15,ether17-synology,ether18,ether19",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 1000,
+      "tagged": "bond-chestnut-gw",
+      "untagged": "ether21",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 201,
+      "tagged": "bond-chestnut-gw,ether23",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 105,
+      "tagged": "bridge,bond-chestnut-gw,ether21",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 11,
+      "tagged": "bond-chestnut-gw",
+      "untagged": "",
+      "dynamic": false
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 1,
+      "tagged": "",
+      "untagged": "bridge,bond-chestnut-gw",
+      "dynamic": true
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 105,
+      "tagged": "",
+      "untagged": "ether4-chestnut-pwr-1,ether24-manage,ether22-fir-tamarack,ether8-chestnut-vms-1",
+      "dynamic": true
+    },
+    {
+      "bridge": "bridge",
+      "vlan-ids": 2000,
+      "tagged": "",
+      "untagged": "ether13-nvr,ether6",
+      "dynamic": true
+    }
+  ],
+  "neighbor": [
+    {
+      "interface": "ether4-chestnut-pwr-1,bridge",
+      "mac-address": "02:FB:C2:5A:07:0A",
+      "identity": "",
+      "platform": ""
+    },
+    {
+      "interface": "ether6,bridge",
+      "mac-address": "02:1D:DE:CB:57:B6",
+      "identity": "RanchSwitch-OC-71",
+      "platform": "USM25G8P"
+    },
+    {
+      "interface": "ether7-pump-room,bridge",
+      "mac-address": "02:6C:6A:A7:CF:10",
+      "identity": "RanchSwitch-PumpRoom",
+      "platform": "US-8-150W,"
+    },
+    {
+      "interface": "sfp-sfpplus1-chestnut-gw-sfp-sfpplus1,bond-chestnut-gw,bridge",
+      "address": "fe80::2ec8:1bff:fee9:b076",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:0E:07:61:A3:B8",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "sfp-sfpplus1-chestnut-gw-sfp-sfpplus1,bond-chestnut-gw,bridge",
+      "address": "fe80::2ec8:1bff:fee9:b076",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:E3:35:7B:3F:3E",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "sfp-sfpplus1-chestnut-gw-sfp-sfpplus1,bond-chestnut-gw,bridge",
+      "address": "fe80::de2c:6eff:feab:6c0b",
+      "address6": "fe80::de2c:6eff:feab:6c0b",
+      "mac-address": "02:64:E9:6A:66:C6",
+      "identity": "chestnut-gw",
+      "platform": "MikroTik",
+      "board": "CCR2004-1G-12S+2XS"
+    },
+    {
+      "interface": "sfp-sfpplus2-chestnut-gw-sfp-sfpplus2,bond-chestnut-gw,bridge",
+      "mac-address": "02:0E:07:61:A3:B8",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik"
+    },
+    {
+      "interface": "sfp-sfpplus2-chestnut-gw-sfp-sfpplus2,bond-chestnut-gw,bridge",
+      "address": "fe80::de2c:6eff:feab:6c0b",
+      "address6": "fe80::de2c:6eff:feab:6c0b",
+      "mac-address": "02:75:E2:B5:31:35",
+      "identity": "chestnut-gw",
+      "platform": "MikroTik",
+      "board": "CCR2004-1G-12S+2XS"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.1",
+      "address6": "fe80::de2c:6eff:feab:6c0b",
+      "mac-address": "02:07:1D:DA:DC:D4",
+      "identity": "chestnut-gw",
+      "platform": "MikroTik",
+      "board": "CCR2004-1G-12S+2XS"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.21",
+      "address6": "fe80::2ec8:1bff:fee9:b076",
+      "mac-address": "02:A9:D1:40:D0:63",
+      "identity": "chestnut-sw-tower",
+      "platform": "MikroTik",
+      "board": "CRS318-16P-2S+"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.22",
+      "mac-address": "02:FB:C2:5A:07:0A",
+      "identity": "chestnut-pwr-1",
+      "platform": "EdgePower 54V-150W"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.129",
+      "mac-address": "02:C7:BD:E7:DA:07",
+      "identity": "chestnut-st-ne-trailers-540-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.133",
+      "mac-address": "02:BF:3D:6B:87:B1",
+      "identity": "chestnut-st-fish-east-511-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.134",
+      "mac-address": "02:23:B7:F9:27:5D",
+      "identity": "chestnut-st-autoshop-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.135",
+      "mac-address": "02:0B:B0:C0:2F:09",
+      "identity": "chestnut-st-commissary-507-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.136",
+      "mac-address": "02:8D:9F:33:72:6C",
+      "identity": "chestnut-st-oc79-172-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.138",
+      "mac-address": "02:08:94:B8:8A:8A",
+      "identity": "chestnut-st-bath-house-502-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.139",
+      "mac-address": "02:7E:8B:D1:42:55",
+      "identity": "chestnut-st-commonhouse-532-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.140",
+      "mac-address": "02:8F:6B:9A:C2:D9",
+      "identity": "chestnut-st-hickory-512-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.141",
+      "mac-address": "02:22:8F:D9:1E:AB",
+      "identity": "chestnut-st-fish-center-509-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.142",
+      "mac-address": "02:B0:EC:FE:11:C9",
+      "identity": "chestnut-st-flygate-508-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.146",
+      "mac-address": "02:4D:57:E2:73:A3",
+      "identity": "chestnut-st-fish-west-530-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.248",
+      "mac-address": "02:4F:4C:B6:B7:70",
+      "identity": "chestnut-st-housing-505-05",
+      "platform": "NanoBeam 5AC"
+    },
+    {
+      "interface": "vlan105-manage",
+      "address": "172.18.81.250",
+      "mac-address": "02:33:DB:5A:22:FB",
+      "identity": "chestnut-ptmp-180-05",
+      "platform": "Rocket Prism 5AC"
+    }
+  ]
+}

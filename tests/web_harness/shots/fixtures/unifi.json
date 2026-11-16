@@ -1,0 +1,36 @@
+{
+  "tool": "unifi",
+  "generated_at": "2026-07-16T17:53:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "data": {
+    "counts": {
+      "reachable": 3,
+      "total": 3
+    },
+    "devices": [
+      {
+        "identity": "ponderosa-ap-1",
+        "address": "10.50.0.11",
+        "reachability": "reachable",
+        "version": "6.6.77",
+        "uptime_seconds": 812000
+      },
+      {
+        "identity": "ponderosa-ap-2",
+        "address": "10.50.0.12",
+        "reachability": "reachable",
+        "version": "6.6.77",
+        "uptime_seconds": 811500
+      },
+      {
+        "identity": "walnut-sw-24",
+        "address": "10.50.1.2",
+        "reachability": "reachable",
+        "version": "6.6.77",
+        "uptime_seconds": 2100000
+      }
+    ]
+  }
+}

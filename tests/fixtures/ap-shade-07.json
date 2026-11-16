@@ -1,0 +1,13 @@
+{
+  "_comment": "Recorded READ-ONLY responses from an older RouterOS v6 device (RB951Ui-2HnD). Demonstrates a device that omits some metrics (no total-memory, no routerboard model) so the adapter must mark those unavailable rather than fail the device (FR-011). Read-only capture; no state changed.",
+  "identity": { "name": "ap-shade-07" },
+  "resource": {
+    "uptime": "3d2h",
+    "version": "6.48.6 (long-term)",
+    "free-memory": 45088768,
+    "cpu-load": 2,
+    "board-name": "RB951Ui-2HnD",
+    "platform": "MikroTik"
+  },
+  "routerboard": {}
+}

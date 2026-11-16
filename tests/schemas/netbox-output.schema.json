@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi NetBox documented-inventory output (007 — read-only, source-of-truth)",
+  "description": "The documented NetBox report produced by `obi netbox`. Devices are read live from NetBox's dcim/devices API (the network's source of truth), NOT obi's discovered roster, and represent INTENDED state — there are no live-health fields (no cpu/memory/uptime/reachability). `status` is NetBox's documented administrative lifecycle value, distinct from the connection-level `source_outcome`. The Mikrotik (002) and UISP (003) outputs are unchanged and separate.",
+  "type": "object",
+  "required": ["source", "source_outcome", "started_at", "finished_at", "counts", "devices"],
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "NetBox host the report came from (no credentials)."
+    },
+    "source_outcome": {
+      "type": "string",
+      "enum": ["reachable", "auth_failed", "unreachable", "timed_out"],
+      "description": "Connection-level result of the live read; non-reachable ⇒ devices is empty."
+    },
+    "filter": {
+      "type": ["string", "null"],
+      "description": "Case-insensitive device-name substring applied, or null when unfiltered."
+    },
+    "started_at": { "type": "string", "format": "date-time" },
+    "finished_at": { "type": "string", "format": "date-time" },
+    "counts": {
+      "type": "object",
+      "required": ["total"],
+      "description": "total plus a count per documented status value present (e.g. active, planned, offline). Keys are NetBox status values, not reachability.",
+      "properties": {
+        "total": { "type": "integer" }
+      },
+      "additionalProperties": { "type": "integer" }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "site", "role", "model", "manufacturer", "status", "primary_ip", "serial"],
+        "properties": {
+          "name": { "type": ["string", "null"] },
+          "site": { "type": ["string", "null"] },
+          "role": { "type": ["string", "null"] },
+          "model": { "type": ["string", "null"] },
+          "manufacturer": { "type": ["string", "null"] },
+          "status": {
+            "type": ["string", "null"],
+            "description": "NetBox documented lifecycle status value (e.g. active, offline, planned, staged, decommissioning). Passed through as-is; NOT live reachability."
+          },
+          "primary_ip": {
+            "type": ["string", "null"],
+            "description": "Primary IP with mask, e.g. \"172.18.84.1/24\"."
+          },
+          "serial": { "type": ["string", "null"] },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

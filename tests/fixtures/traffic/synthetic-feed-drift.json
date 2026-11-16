@@ -1,0 +1,10 @@
+{
+  "data": [
+    {
+      "ref": "entry-9",
+      "when": "2026-08-29T14:05:00-07:00",
+      "payload": {"segment": "gravel-gate", "minutes": 90, "note": "heavy inbound"}
+    },
+    "Gravel to Gate: 90 min (free-text row the schema never promised)"
+  ]
+}

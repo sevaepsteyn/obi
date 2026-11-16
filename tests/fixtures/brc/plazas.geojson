@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "plaza-fixture"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-114.814579, 40.782242],
+            [-114.813579, 40.782242],
+            [-114.813579, 40.781242],
+            [-114.814579, 40.782242]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "null-geometry-fixture"},
+      "geometry": null
+    }
+  ]
+}

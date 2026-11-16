@@ -1,0 +1,81 @@
+{
+  "tool": "status",
+  "generated_at": "2026-07-16T17:56:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "data": {
+    "counts": {
+      "reachable": 5,
+      "total": 6
+    },
+    "devices": [
+      {
+        "identity": "core-gw-1",
+        "address": "10.20.0.1",
+        "reachability": "reachable",
+        "model": "CCR2004-1G-12S+2XS",
+        "version": "7.21.4",
+        "uptime_seconds": 1287400,
+        "cpu_load_percent": 4,
+        "free_memory_bytes": 3200000000,
+        "total_memory_bytes": 4000000000
+      },
+      {
+        "identity": "tamarack-gw",
+        "address": "10.20.1.1",
+        "reachability": "reachable",
+        "model": "RB5009UPr+S+",
+        "version": "7.21.4",
+        "uptime_seconds": 903120,
+        "cpu_load_percent": 11,
+        "free_memory_bytes": 700000000,
+        "total_memory_bytes": 1000000000
+      },
+      {
+        "identity": "walnut-gw",
+        "address": "10.20.2.1",
+        "reachability": "reachable",
+        "model": "CRS328-24P-4S+",
+        "version": "7.20.1",
+        "uptime_seconds": 45200,
+        "cpu_load_percent": 7,
+        "free_memory_bytes": 480000000,
+        "total_memory_bytes": 512000000
+      },
+      {
+        "identity": "ponderosa-gw",
+        "address": "10.20.3.1",
+        "reachability": "reachable",
+        "model": "CRS318-16P-2S+",
+        "version": "7.21.4",
+        "uptime_seconds": 210500,
+        "cpu_load_percent": 3,
+        "free_memory_bytes": 200000000,
+        "total_memory_bytes": 256000000
+      },
+      {
+        "identity": "chestnut-internet-gw",
+        "address": "10.20.4.1",
+        "reachability": "reachable",
+        "model": "CCR2004-1G-12S+2XS",
+        "version": "7.21.4",
+        "uptime_seconds": 5010000,
+        "cpu_load_percent": 9,
+        "free_memory_bytes": 3100000000,
+        "total_memory_bytes": 4000000000
+      },
+      {
+        "identity": "yew-sw-tower",
+        "address": "10.20.5.1",
+        "reachability": "unreachable",
+        "model": "CRS326-24S+2Q+",
+        "version": "7.19.0",
+        "uptime_seconds": null,
+        "cpu_load_percent": null,
+        "free_memory_bytes": null,
+        "total_memory_bytes": null
+      }
+    ]
+  }
+}

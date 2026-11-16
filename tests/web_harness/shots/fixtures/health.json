@@ -1,0 +1,100 @@
+{
+  "_fresh": [
+    "generated_at"
+  ],
+  "store": "ok",
+  "generated_at": "2026-08-25T12:00:00+00:00",
+  "note": null,
+  "devices": [
+    {
+      "device": "tamarack-gw-yellowwood",
+      "address": "172.18.73.1",
+      "kind": "routeros",
+      "worst": "down",
+      "stale": false,
+      "age_seconds": 90,
+      "summary": {
+        "temperature_c": 36.0,
+        "state_alerts": [
+          "psu2-state"
+        ]
+      },
+      "breaches": [
+        {
+          "metric": "health:psu2-state",
+          "instance": "7402",
+          "label": "psu2-state",
+          "class": "status",
+          "value": 1.0,
+          "unit": "",
+          "limit": "\u2260 0"
+        }
+      ]
+    },
+    {
+      "device": "basswood-gw",
+      "address": "172.18.83.1",
+      "kind": "routeros",
+      "worst": "warn",
+      "stale": false,
+      "age_seconds": 120,
+      "summary": {
+        "temperature_c": 78.0,
+        "rx_power_min_dbm": -1.9
+      },
+      "breaches": [
+        {
+          "metric": "health:cpu-temperature",
+          "instance": "17",
+          "label": "cpu-temperature",
+          "class": "temperature",
+          "value": 78.0,
+          "unit": "\u00b0C",
+          "limit": "> 75 \u00b0C"
+        }
+      ]
+    },
+    {
+      "device": "rowan-gw",
+      "address": "172.18.82.1",
+      "kind": "routeros",
+      "worst": "stale",
+      "stale": true,
+      "age_seconds": 5400,
+      "summary": {
+        "temperature_c": 48.0
+      },
+      "breaches": []
+    },
+    {
+      "device": "core-vms-1",
+      "address": "core-vms-1",
+      "kind": "linux",
+      "worst": "ok",
+      "stale": false,
+      "age_seconds": 45,
+      "summary": {
+        "temperature_c": 34.0,
+        "cpu_percent": 0.8,
+        "memory_percent": 7.5,
+        "disk_max_percent": 42.3
+      },
+      "breaches": []
+    },
+    {
+      "device": "chestnut-gw",
+      "address": "172.18.81.1",
+      "kind": "routeros",
+      "worst": "ok",
+      "stale": false,
+      "age_seconds": 60,
+      "summary": {
+        "temperature_c": 36.0,
+        "cpu_percent": 4.0,
+        "memory_percent": 31.0,
+        "rx_power_min_dbm": -2.3
+      },
+      "breaches": []
+    }
+  ]
+}

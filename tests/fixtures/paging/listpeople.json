@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "code": 200,
+  "messages": [],
+  "people": [
+    {"person_id": "101", "section": "1", "name": "Sandpiper", "fullname": "Sandpiper (Alex Doe)"},
+    {"person_id": "102", "section": "1", "name": "Dusty", "fullname": "Dusty (Sam Roe)"},
+    {"person_id": "103", "section": "2", "name": "Towers On Call", "fullname": "floater"},
+    {"person_id": "104", "section": "2", "name": "Dust Devil", "fullname": "Dust Devil (Kit Fog)"}
+  ]
+}

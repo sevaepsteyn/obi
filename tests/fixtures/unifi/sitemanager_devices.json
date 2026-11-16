@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "hostId": "host-aaaa-bbbb",
+      "devices": [
+        {
+          "id": "AABBCC000011",
+          "mac": "aa:bb:cc:00:00:11",
+          "name": "sm-gw-01",
+          "model": "UXG Max",
+          "ip": "10.50.0.1",
+          "status": "online",
+          "version": "4.1.13",
+          "productLine": "network",
+          "isConsole": true
+        },
+        {
+          "id": "AABBCC000012",
+          "mac": "aa:bb:cc:00:00:12",
+          "name": "sm-ap-01",
+          "model": "U7 Outdoor",
+          "ip": "10.50.0.2",
+          "status": "online",
+          "version": "8.6.10",
+          "productLine": "network"
+        },
+        {
+          "id": "AABBCC000013",
+          "mac": "aa:bb:cc:00:00:13",
+          "name": "sm-sw-01",
+          "model": "US 8 PoE",
+          "ip": "10.50.0.3",
+          "status": "offline",
+          "productLine": "network"
+        }
+      ]
+    }
+  ]
+}

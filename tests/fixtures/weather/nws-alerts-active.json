@@ -1,0 +1,101 @@
+{
+ "@context": [
+  "https://geojson.org/geojson-ld/geojson-context.jsonld",
+  {
+   "@version": "1.1",
+   "@vocab": "https://api.weather.gov/ontology#",
+   "wx": "https://api.weather.gov/ontology#"
+  }
+ ],
+ "features": [
+  {
+   "geometry": null,
+   "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ea6e50478b0bd270f9bf78044cbf8f226f39f21.004.1",
+   "properties": {
+    "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ea6e50478b0bd270f9bf78044cbf8f226f39f21.004.1",
+    "@type": "wx:Alert",
+    "affectedZones": [
+     "https://api.weather.gov/zones/forecast/CAZ058"
+    ],
+    "areaDesc": "San Diego County Mountains",
+    "category": "Met",
+    "certainty": "Likely",
+    "code": "IPAWSv1.0",
+    "description": "* WHAT...Hot conditions continue into Saturday with highs up to 97\ndegrees. Low temperatures will be in the upper 60s to low 70s.\n\n* WHERE...San Diego County Mountains.\n\n* WHEN...Until 8 PM PDT Saturday.\n\n* IMPACTS...Heat related illnesses increase significantly during\nextreme heat events.\n\n* ADDITIONAL DETAILS...Temperatures will fall to below normal by\nSunday.",
+    "effective": "2026-08-28T21:06:00-07:00",
+    "ends": "2026-08-29T20:00:00-07:00",
+    "event": "Extreme Heat Warning",
+    "eventCode": {
+     "NationalWeatherService": [
+      "XHW"
+     ],
+     "SAME": [
+      "NWS"
+     ]
+    },
+    "expires": "2026-08-29T06:15:00-07:00",
+    "geocode": {
+     "SAME": [
+      "006073"
+     ],
+     "UGC": [
+      "CAZ058"
+     ]
+    },
+    "headline": "Extreme Heat Warning issued August 28 at 9:06PM PDT until August 29 at 8:00PM PDT by NWS San Diego CA",
+    "id": "urn:oid:2.49.0.1.840.0.8ea6e50478b0bd270f9bf78044cbf8f226f39f21.004.1",
+    "instruction": "Drink plenty of fluids, stay in an air-conditioned room, stay out of\nthe sun, and check up on relatives and neighbors.\n\nDo not leave young children and pets in unattended vehicles. Car\ninteriors will reach lethal temperatures in a matter of minutes.",
+    "language": "en-US",
+    "messageType": "Update",
+    "note": null,
+    "onset": "2026-08-28T21:06:00-07:00",
+    "parameters": {
+     "AWIPSidentifier": [
+      "NPWSGX"
+     ],
+     "BLOCKCHANNEL": [
+      "EAS",
+      "NWEM",
+      "CMAS"
+     ],
+     "NWSheadline": [
+      "EXTREME HEAT WARNING REMAINS IN EFFECT UNTIL 8 PM PDT SATURDAY"
+     ],
+     "VTEC": [
+      "/O.CON.KSGX.XH.W.0008.000000T0000Z-260830T0300Z/"
+     ],
+     "WMOidentifier": [
+      "WWUS76 KSGX 290406"
+     ],
+     "eventEndingTime": [
+      "2026-08-29T20:00:00-07:00"
+     ],
+     "expiredReferences": [
+      "ops@example.net,urn:oid:2.49.0.1.840.0.cbc8b011b0af152578dbd22cb829b3a7531da16d.004.1,2026-08-28T05:03:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.f6ea879bc9040d6f5928c6f4c995234bab34ec43.004.1,2026-08-27T21:05:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.24382580b44958a1d4c074a94ce7b0e1d99014ec.004.1,2026-08-27T13:46:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.8f4cb3c6c61a40c2e7c83204e564099d3732a774.004.1,2026-08-27T00:50:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.5698b86a9601bf708d76c0e90fe528e8b7d75d3a.004.1,2026-08-26T21:31:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.88ca225351781152b34eef6006bad664b1c4e1c7.004.1,2026-08-26T12:00:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.9d3a9533310efb9f724d79509c04f2de9acb7a4a.004.1,2026-08-26T03:20:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.d68f0c602b707a3f6525978e7dadbfc1717040bd.004.1,2026-08-25T21:59:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.f0eec3688a03ec6f0d9d9caa4ee16cefcf59b836.004.1,2026-08-25T12:19:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.a96b10786301fde04f91e4eab750393c77501edf.004.2,2026-08-25T03:47:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.18c28b9a01000054843c2b487369a76b858c723b.004.1,2026-08-24T22:04:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.912191c5af8478d161ba21ca01aff862e73eced6.004.1,2026-08-24T14:08:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.730732c25aa8664cf6aa540e64d7d99a99def182.005.1,2026-08-24T01:58:00-07:00 ops@example.net,urn:oid:2.49.0.1.840.0.3030180599dd05e3160d8a71a266f18d164c0353.004.1,2026-08-24T01:54:00-07:00"
+     ]
+    },
+    "references": [
+     {
+      "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2fc85b2518095f815ed75f3f787ab2e0b2cb374a.004.1",
+      "identifier": "urn:oid:2.49.0.1.840.0.2fc85b2518095f815ed75f3f787ab2e0b2cb374a.004.1",
+      "sender": "ops@example.net",
+      "sent": "2026-08-28T11:46:00-07:00"
+     }
+    ],
+    "response": "Execute",
+    "scope": "Public",
+    "sender": "ops@example.net",
+    "senderName": "NWS San Diego CA",
+    "sent": "2026-08-28T21:06:00-07:00",
+    "severity": "Severe",
+    "status": "Actual",
+    "urgency": "Expected",
+    "web": "http://www.weather.gov"
+   },
+   "type": "Feature"
+  }
+ ],
+ "title": "Current watches, warnings, and advisories for California",
+ "type": "FeatureCollection",
+ "updated": "2026-08-29T06:27:22+00:00"
+}

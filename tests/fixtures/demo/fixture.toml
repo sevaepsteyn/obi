@@ -1,0 +1,81 @@
+# Fictional fixture config for the demo-sanitizer tests (feature 134). Every value is fake.
+# Named fixture.toml (not config.toml) because .gitignore excludes config.toml everywhere.
+[discovery]
+seeds = ["10.99.0.1"]
+ranges = ["10.99.0.0/16"]
+
+[routeros]
+username = "pat"
+password = "fakepass99"
+use_tls = false
+
+[configs]
+password = "fakeconfigpw"
+
+[uisp]
+base_url = "https://uisp.fictional-org.test"
+token = "fake-uisp-token-123"
+name_filter = "northfield"
+ignore_names = ["southgate-old"]
+
+[chat]
+api_key = "sk-ant-fake-key-0001"
+
+[unifi-network]
+base_url = "https://0a1b2c3d-1111-4222-8333-123456789abc.unifi-hosting.fictional-org.test"
+api_key = "fake-unifi-key-0001"
+
+[slack]
+bot_token = "xoxb-fake-bot-token-0001"
+app_token = "xapp-fake-app-token-0001"
+allowlist = ["U0FAKE0001"]
+authorized_channels = ["C0FAKECHAN"]
+
+[snmp]
+version = "v2c"
+community = "fakecommunity"
+
+[snmp.history]
+profiles = ["interfaces", "system"]
+
+[logs]
+collectors = ["core", "northfield"]
+
+[siklu]
+hosts = ["10.99.3.40"]
+username = "admin"
+password = "fakesiklupw"
+
+[watch]
+slack_notify = true
+
+[web]
+gnis_states = ["SD"]
+
+[web.site_towers]
+"Northfield Relay - East" = 12
+"Southgate" = 9
+
+[weather]
+latitude = 45.0123
+longitude = -100.0456
+
+[radio]
+known_callers = ["Quillon"]
+ftdi_serial = "FX00TEST"
+
+[radio.caller_aliases]
+quill = "Quillon"
+
+[paging]
+username = "pat"
+password = "fakepagerpw"
+url = "https://pager.fictional-org.test/api.php"
+
+[meshtastic.names]
+"!0fa4e001" = "Quillon Handheld"
+
+[demo]
+output_dir = "@OUTPUT_DIR@"
+since = "2026-08-25T00:00:00+00:00"
+until = "2026-08-28T00:00:00+00:00"

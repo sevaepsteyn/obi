@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "obi/ar-terrain",
+  "title": "obi AR terrain artifact (terrain.json) — feature 031-ar-terrain",
+  "type": "object",
+  "required": ["generated_at", "profiles", "sites"],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "profiles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["samples_amsl"],
+        "additionalProperties": false,
+        "properties": {
+          "samples_amsl": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 3
+          }
+        }
+      }
+    },
+    "sites": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["half_extent_m", "posts", "rel_heights_dm", "peaks"],
+        "additionalProperties": false,
+        "properties": {
+          "half_extent_m": { "type": "number", "minimum": 2000, "maximum": 28000 },
+          "posts": { "type": "integer", "minimum": 2 },
+          "rel_heights_dm": {
+            "type": "array",
+            "items": { "type": "integer" }
+          },
+          "peaks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "enu"],
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "enu": {
+                  "type": "array",
+                  "items": { "type": "number" },
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "shade": {
+      "type": "object",
+      "required": ["generated_at", "width", "height", "step_m", "sites"],
+      "additionalProperties": false,
+      "properties": {
+        "generated_at": { "type": "string", "format": "date-time" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "step_m": { "type": "number", "exclusiveMinimum": 0 },
+        "sites": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "number" },
+            "minItems": 4,
+            "maxItems": 4
+          }
+        }
+      }
+    }
+  }
+}

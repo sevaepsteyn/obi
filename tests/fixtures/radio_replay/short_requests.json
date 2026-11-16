@@ -1,0 +1,25 @@
+{
+  "description": "Short request-opener bare hails (feature 116) — radio.db call 146 (2026-08-30 02:58): 'Obi, Obi, where is Tooma?' got a plain ack because a <=3-token bare-hail remainder was assumed to be a callsign. Question-word and imperative openers now compose as one-breath calls; a mangled callsign still acks plainly.",
+  "config": {
+    "name_variants": ["obi", "obie", "obee", "o b", "opie", "hobi"],
+    "known_callers": ["Krum", "Vertigo"],
+    "operator_handles": ["Mira"],
+    "caller_aliases": {"kroom": "Krum"}
+  },
+  "transmissions": [
+    {"source": "radio.db tx 3592 (call 146, 2026-08-30 02:58) — the plain-ack miss this feature fixes", "at_s": 0.0,
+     "text": "Obi, Obi, where is Tooma?", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "effects": ["open_call", "compose", "tx:answer"]}},
+
+    {"source": "imperative opener (operator direction 2026-08-30)", "at_s": 100.0,
+     "text": "Obi, Obi, set portal red.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "effects": ["open_call", "compose", "tx:answer"]}},
+
+    {"source": "the boundary held: a mangled callsign still acks plainly, never composes", "at_s": 200.0,
+     "text": "Obi, Obi, Herrar.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "effects": ["open_call", "tx:ack"]}},
+    {"source": "the mangled caller's request then arrives the old way, post-ack", "at_s": 208.0,
+     "text": "Where is Tooma?", "intelligible": true,
+     "expect": {"effects": ["compose", "tx:answer"]}}
+  ]
+}

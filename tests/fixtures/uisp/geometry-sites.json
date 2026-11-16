@@ -1,0 +1,534 @@
+[
+ {
+  "description": {
+   "location": {
+    "latitude": 40.672131,
+    "longitude": -114.969421
+   }
+  },
+  "identification": {
+   "id": "f52e62da-97e7-4ea4-bc48-a19019e13d91",
+   "name": "360",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.882526,
+    "longitude": -114.926392
+   }
+  },
+  "identification": {
+   "id": "e9e8934f-f905-4525-8ff4-a635884437e6",
+   "name": "Dog Chestnut",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.651767,
+    "longitude": -114.963520
+   }
+  },
+  "identification": {
+   "id": "6713a7d9-05d6-4e9a-9feb-e23b2fdc498c",
+   "name": "Saloon",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.768799,
+    "longitude": -114.859230
+   }
+  },
+  "identification": {
+   "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+   "name": "Wingnut",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.777428,
+    "longitude": -114.819335
+   }
+  },
+  "identification": {
+   "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+   "name": "BRC - Business Park",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.767387,
+    "longitude": -114.859912
+   }
+  },
+  "identification": {
+   "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+   "name": "Wingnut - Stations",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.650288,
+    "longitude": -114.966363
+   }
+  },
+  "identification": {
+   "id": "fb9dd4ba-91c0-4a1a-8f99-495ab392a5ae",
+   "name": "Estates - House",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.652808,
+    "longitude": -114.962286
+   }
+  },
+  "identification": {
+   "id": "66f7d7d8-f80d-4203-b6ac-3a12c053eb50",
+   "name": "Vox",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.654144,
+    "longitude": -114.965771
+   }
+  },
+  "identification": {
+   "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+   "name": "Town Users",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.785769,
+    "longitude": -114.82929
+   }
+  },
+  "identification": {
+   "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+   "name": "BRC - Cottonwood - MRS",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.782868,
+    "longitude": -114.818643
+   }
+  },
+  "identification": {
+   "id": "ee161e2d-f8bb-44bd-b7a3-6bc99ffc7cf6",
+   "name": "BRC - Gunter",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.782813,
+    "longitude": -114.818021
+   }
+  },
+  "identification": {
+   "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+   "name": "BRC - NOC",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.653365,
+    "longitude": -114.959494
+   }
+  },
+  "identification": {
+   "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+   "name": "Hotel - Tower",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.882395,
+    "longitude": -114.935681
+   }
+  },
+  "identification": {
+   "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+   "name": "Chestnut - Tower",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.88165,
+    "longitude": -114.93529
+   }
+  },
+  "identification": {
+   "id": "310f77bf-f119-4c89-abb4-75b3b3cfff3f",
+   "name": "Chestnut - Housing",
+   "status": "disconnected",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 37.760885,
+    "longitude": -122.412081
+   }
+  },
+  "identification": {
+   "id": "4980f35c-3e0c-4b50-835b-8d7b510a9a38",
+   "name": "SF - ASPEN",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880981,
+    "longitude": -114.935279
+   }
+  },
+  "identification": {
+   "id": "8ed12613-4e84-461e-862f-7bc75f01623c",
+   "name": "Chestnut - Fishhead",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880603,
+    "longitude": -114.932924
+   }
+  },
+  "identification": {
+   "id": "a50c276f-5912-4a17-8744-88560a4b94d9",
+   "name": "Chestnut - OC-79",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.881364,
+    "longitude": -114.932457
+   }
+  },
+  "identification": {
+   "id": "d495f5c7-8019-43aa-934f-9dc869332177",
+   "name": "Chestnut - NE Trailers",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.768823,
+    "longitude": -114.885009
+   }
+  },
+  "identification": {
+   "id": "101b5d9e-cbf7-448c-90fc-168aa4417604",
+   "name": "Basswood Relay - West",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.651327,
+    "longitude": -114.962921
+   }
+  },
+  "identification": {
+   "id": "193c9230-8ff5-4c01-a4b3-b9cb22080df9",
+   "name": "Office - Tower",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880056,
+    "longitude": -114.9340
+   }
+  },
+  "identification": {
+   "id": "2365b7e5-c52a-4974-8fbc-6b8534b8df03",
+   "name": "Chestnut - HICKORY",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 37.763247,
+    "longitude": -122.406823
+   }
+  },
+  "identification": {
+   "id": "81fd0869-01b8-4586-b198-2235744a44e1",
+   "name": "SF - Mariposa",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880306,
+    "longitude": -114.935672
+   }
+  },
+  "identification": {
+   "id": "78f68c1f-f076-4b9a-8be2-78d39bb56f06",
+   "name": "Chestnut - Cashcow - Bar",
+   "status": "inactive",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.879996,
+    "longitude": -114.932800
+   }
+  },
+  "identification": {
+   "id": "4e48c5a4-b521-4717-aa1c-b2b14b1a1333",
+   "name": "Chestnut - Auto Shop",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.655029,
+    "longitude": -114.968100
+   }
+  },
+  "identification": {
+   "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+   "name": "Tamarack - Tower",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.878795,
+    "longitude": -114.916110
+   }
+  },
+  "identification": {
+   "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+   "name": "Ironbark's Chestnut",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.88069,
+    "longitude": -114.935502
+   }
+  },
+  "identification": {
+   "id": "c79498e2-2391-4b49-a01e-a28ad91d228b",
+   "name": "Chestnut - Fishtail",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.76917,
+    "longitude": -114.884794
+   }
+  },
+  "identification": {
+   "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+   "name": "Basswood Relay - East",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880527,
+    "longitude": -114.93348
+   }
+  },
+  "identification": {
+   "id": "334df330-df07-4ebd-87ab-9c8fb1a211b7",
+   "name": "Chestnut - Boxelder",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880181,
+    "longitude": -114.933737
+   }
+  },
+  "identification": {
+   "id": "69cbbdc3-1938-498c-a2c6-27458fc30692",
+   "name": "Chestnut - Boxelder-Hickory Fence",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.649812,
+    "longitude": -114.966495
+   }
+  },
+  "identification": {
+   "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+   "name": "Estates - Tower",
+   "status": "unknown",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.649556,
+    "longitude": -114.966196
+   }
+  },
+  "identification": {
+   "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+   "name": "Estates - Joshua",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.882526,
+    "longitude": -114.93569
+   }
+  },
+  "identification": {
+   "id": "4603170b-534d-4d50-87f5-fc823be2b94a",
+   "name": "Chestnut - Pump Room",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.88029,
+    "longitude": -114.932783
+   }
+  },
+  "identification": {
+   "id": "61d8e435-34ab-4bbe-a55e-5a6e5c8af519",
+   "name": "Chestnut - Commissary",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.880202,
+    "longitude": -114.9319
+   }
+  },
+  "identification": {
+   "id": "818f5edd-b041-4606-9cea-1bdcf8e04ca8",
+   "name": "Chestnut - Bath House",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.881947,
+    "longitude": -114.93442
+   }
+  },
+  "identification": {
+   "id": "e367e44b-f860-4ff6-854a-0f111650b3f0",
+   "name": "Chestnut - Common House",
+   "status": "active",
+   "type": "site"
+  }
+ },
+ {
+  "description": {
+   "location": {
+    "latitude": 40.859295,
+    "longitude": -114.949599
+   }
+  },
+  "identification": {
+   "id": "f3680e3b-2289-483d-a980-a57b844c4dc0",
+   "name": "Fly - Gate",
+   "status": "active",
+   "type": "site"
+  }
+ }
+]

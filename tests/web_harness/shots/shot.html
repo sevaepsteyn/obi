@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- 076 screenshot harness — mounts ONE real registered widget from fixtures for a headless-Chrome
+     PNG. Not part of the shipped app (served only by capture.py). ?widget=<id> selects the widget;
+     shot.js resolves it via registry.js (catalog id or minted id) and mounts it in a full-viewport
+     host with a stub ctx. Theme + static assets are served at the same root paths as the real
+     server so the widgets' relative imports resolve unchanged. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>obi widget shot</title>
+  <link rel="stylesheet" href="/theme.css">
+  <style>
+    /* The harness host fills the viewport; the corner strip mirrors what the title-bar badge/name
+       would show in the workspace so a capture reflects setTitle/setName/setBadge calls. The host
+       sizes via in-flow flex (NOT position:absolute+inset) so it keeps its 1200×800 box even when a
+       widget sets host.style.position='relative' — as the OSPF map does (that collapsed an
+       absolute+inset host to zero height, blanking its canvas). */
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg, #0d1117); color: var(--fg, #e6edf3); overflow: hidden;
+      display: flex; flex-direction: column; height: 100vh;
+    }
+    #shot-host {
+      flex: 1 1 auto; min-height: 0; min-width: 0; position: relative;
+      display: flex; flex-direction: column;
+    }
+    #shot-strip {
+      position: fixed; top: 0; right: 0; z-index: 99999; pointer-events: none;
+      font: 11px/1.4 ui-monospace, monospace; color: var(--muted, #9fb0c0);
+      background: rgba(0, 0, 0, 0.35); padding: 2px 6px; max-width: 60vw;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    #shot-error {
+      position: fixed; inset: 0; z-index: 99998; display: none; padding: 24px;
+      font: 13px/1.5 ui-monospace, monospace; color: #ff6b6b; white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="shot-host"></div>
+  <div id="shot-strip"></div>
+  <pre id="shot-error"></pre>
+  <script type="module" src="/shot.js"></script>
+</body>
+</html>

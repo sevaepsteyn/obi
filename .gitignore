@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# uv / virtualenv
+.venv/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# obi runtime artifacts (NEVER commit credentials or audit data)
+config.toml
+*.local.toml
+audit.jsonl
+
+# Spec Kit transient per-checkout pointer to the current feature dir (see
+# docs/development/worktrees.md) — kept untracked so it doesn't conflict across worktrees.
+.specify/feature.json
+
+# 076: screenshot-harness capture sets are local artifacts, never committed
+tests/web_harness/shots/out/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+nohup.out

@@ -1,0 +1,124 @@
+[project]
+name = "obi"
+version = "0.1.0"
+description = "A network operations assistant: multi-vendor inventory, health, metrics, logs and config history, with an LLM you can ask from the terminal, Slack, a web workspace, voice or two-way radio."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Glivorem Technologies, LLC", email = "seva@sevatech.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "librouteros>=3.2.1",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "httpx>=0.28.1",
+    "anthropic>=0.105.2",
+    "slack-sdk>=3.42.0",
+    "pysnmp>=7.1.27",
+    "paramiko>=3.4",
+    "mcp>=2.1.1",
+]
+
+[project.urls]
+Repository = "https://github.com/sevaepsteyn/obi"
+
+[project.optional-dependencies]
+# feature 023: local speech stack (Apple Silicon). Heavy (mlx-whisper pulls torch) and
+# platform-specific, so opt-in: `uv sync --extra voice`. `obi voice` degrades with an
+# actionable message when absent.
+# feature 060: numpy, scipy, and huggingface_hub are direct runtime imports of the voice
+# stack (numpy in audio/stt/wav, scipy.signal.resample_poly for non-16kHz mics, huggingface_hub
+# for the model cache). They were previously satisfied only by accident (transitively via
+# mlx-whisper); declared here so `--extra voice` is self-sufficient.
+voice = [
+    "mlx-whisper>=0.4.3",
+    "sounddevice>=0.5.5",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "huggingface_hub>=0.20",
+]
+# feature 088: the walkie-talkie radio station — the voice speech stack plus pyserial for
+# the FTDI PTT control lines. Opt-in: `uv sync --extra radio`. `obi radio` degrades with
+# an actionable message when absent.
+#
+# feature 092 also wants **ffmpeg on PATH** for the TX loudness stage. It is a BINARY, not a
+# Python package, so there is nothing to list here — install it with `brew install ffmpeg`.
+# Absent, the station still transmits (unprocessed, ~10 dB quieter by ear) and says so in
+# `obi radio status`; see docs/development/radio-audio-chain.md.
+radio = [
+    "mlx-whisper>=0.4.3",
+    "sounddevice>=0.5.5",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "huggingface_hub>=0.20",
+    "pyserial>=3.5",
+]
+# feature 111: the Meshtastic mesh-node driver. The official library drags bleak/protobuf/
+# pypubsub, so opt-in: `uv sync --extra mesh`. `mesh_locate` and `obi mesh` degrade with an
+# actionable message when absent. `<3` guards the one library whose wire protocol tracks
+# firmware majors.
+mesh = [
+    "meshtastic>=2.7,<3",
+]
+
+[project.scripts]
+obi = "obi.cli.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/obi"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "jsonschema>=4.20",
+    "types-paramiko>=3.4",
+    # feature 023: the voice test doubles serve synthetic PCM arrays; keeps the suite runnable
+    # without the heavy `voice` extra (which brings numpy transitively anyway).
+    "numpy>=1.26",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["librouteros.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["slack_sdk", "slack_sdk.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["pysnmp.*", "pyasn1.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["mlx_whisper", "mlx_whisper.*", "sounddevice", "scipy.*", "huggingface_hub"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["serial", "serial.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["meshtastic", "meshtastic.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

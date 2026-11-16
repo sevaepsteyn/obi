@@ -1,0 +1,8 @@
+feature_id|feature_name|feature_class|state_name|prim_lat_dec|prim_long_dec|elev_in_m
+840001|Old Razorback Mountain|Summit|Nevada|40.8971|-115.0029|1697
+840002|Elephant Mountain|Summit|Nevada|40.9634|-114.9184|1490
+840003|Alder|Populated Place|Nevada|40.6524|-114.9640|1191
+840004|Nameless Bump||Nevada|40.9|-115.0077|1200
+840005||Summit|Nevada|40.91|-115.0177|1210
+840006|Broken Coordinates Peak|Summit|Nevada|not-a-number|-115.0277|1220
+840007|Trego Hot Springs|Locale|Nevada|40.7690|-114.7254|1190

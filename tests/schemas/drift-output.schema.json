@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi NetBox drift report",
+  "description": "Read-only presence-drift report: RouterOS/MikroTik live reality vs NetBox documented inventory. Produced by `obi netbox drift --json`. Writes nothing.",
+  "type": "object",
+  "required": ["source", "source_outcome", "scope", "counts", "drift"],
+  "additionalProperties": false,
+  "properties": {
+    "source": { "type": "string", "description": "NetBox base_url / host label" },
+    "source_outcome": {
+      "type": "string",
+      "enum": ["reachable", "auth_failed", "unreachable", "timed_out"],
+      "description": "NetBox connection-level result; when not 'reachable', drift is empty and no drift is asserted"
+    },
+    "roster_generated_at": {
+      "type": ["string", "null"],
+      "description": "ISO-8601 timestamp of the reality roster used; null when no roster (reality unavailable)"
+    },
+    "scope": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "ranges": { "type": "array", "items": { "type": "string" } },
+        "seeds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "name_filter": { "type": ["string", "null"] },
+    "detail": { "type": ["string", "null"], "description": "short non-secret diagnostic, e.g. 'roster absent — reality unavailable'" },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "counts": {
+      "type": "object",
+      "required": ["total", "matched", "undocumented", "retire_candidate", "outside_scope", "un_correlatable"],
+      "additionalProperties": { "type": "integer", "minimum": 0 },
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "matched": { "type": "integer", "minimum": 0 },
+        "undocumented": { "type": "integer", "minimum": 0 },
+        "retire_candidate": { "type": "integer", "minimum": 0 },
+        "outside_scope": { "type": "integer", "minimum": 0 },
+        "un_correlatable": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "drift": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["drift_class", "name", "addresses"],
+        "additionalProperties": false,
+        "properties": {
+          "drift_class": {
+            "type": "string",
+            "enum": ["matched", "undocumented", "retire_candidate", "outside_scope", "un_correlatable"]
+          },
+          "name": { "type": ["string", "null"] },
+          "addresses": { "type": "array", "items": { "type": "string" } },
+          "model": { "type": ["string", "null"] },
+          "serial": { "type": ["string", "null"] },
+          "site": { "type": ["string", "null"] },
+          "last_seen": { "type": ["string", "null"], "description": "roster last_seen — recency annotation for retire candidates" },
+          "matched_on": { "type": ["string", "null"], "enum": ["serial", "address", "name", null] },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

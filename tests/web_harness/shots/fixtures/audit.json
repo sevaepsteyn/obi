@@ -1,0 +1,253 @@
+{
+  "store": {
+    "present": true
+  },
+  "total": 4187,
+  "_fresh": [
+    "ts"
+  ],
+  "events": [
+    {
+      "id": 5000,
+      "ts": "2026-07-16T17:58:00+00:00",
+      "kind": "human_message",
+      "source": "chat",
+      "summary": "why is yew-sw-tower down?",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4999,
+      "ts": "2026-07-16T17:55:00+00:00",
+      "kind": "llm_call",
+      "source": "chat",
+      "summary": "assistant reasoned over the syslog window",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4998,
+      "ts": "2026-07-16T17:52:00+00:00",
+      "kind": "tool_call",
+      "source": "chat",
+      "summary": "routeros_ping to 10.20.5.1 from core-gw-1",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4997,
+      "ts": "2026-07-16T17:49:00+00:00",
+      "kind": "device_command",
+      "source": "watch",
+      "summary": "api-ssl print /system/resource on 10.20.0.1",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4996,
+      "ts": "2026-07-16T17:46:00+00:00",
+      "kind": "report",
+      "source": "watch",
+      "summary": "traceroute timed out",
+      "outcome": "error",
+      "target": null,
+      "error": "timeout after 5s",
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4995,
+      "ts": "2026-07-16T17:43:00+00:00",
+      "kind": "action",
+      "source": "cli:status",
+      "summary": "watch cycle report written",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-0"
+    },
+    {
+      "id": 4994,
+      "ts": "2026-07-16T17:40:00+00:00",
+      "kind": "human_message",
+      "source": "chat",
+      "summary": "why is yew-sw-tower down?",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4993,
+      "ts": "2026-07-16T17:37:00+00:00",
+      "kind": "llm_call",
+      "source": "chat",
+      "summary": "assistant reasoned over the syslog window",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4992,
+      "ts": "2026-07-16T17:34:00+00:00",
+      "kind": "tool_call",
+      "source": "chat",
+      "summary": "routeros_ping to 10.20.5.1 from core-gw-1",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4991,
+      "ts": "2026-07-16T17:31:00+00:00",
+      "kind": "device_command",
+      "source": "watch",
+      "summary": "api-ssl print /system/resource on 10.20.0.1",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4990,
+      "ts": "2026-07-16T17:28:00+00:00",
+      "kind": "report",
+      "source": "watch",
+      "summary": "traceroute timed out",
+      "outcome": "error",
+      "target": null,
+      "error": "timeout after 5s",
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4989,
+      "ts": "2026-07-16T17:25:00+00:00",
+      "kind": "action",
+      "source": "cli:status",
+      "summary": "watch cycle report written",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-1"
+    },
+    {
+      "id": 4988,
+      "ts": "2026-07-16T17:22:00+00:00",
+      "kind": "human_message",
+      "source": "chat",
+      "summary": "why is yew-sw-tower down?",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4987,
+      "ts": "2026-07-16T17:19:00+00:00",
+      "kind": "llm_call",
+      "source": "chat",
+      "summary": "assistant reasoned over the syslog window",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4986,
+      "ts": "2026-07-16T17:16:00+00:00",
+      "kind": "tool_call",
+      "source": "chat",
+      "summary": "routeros_ping to 10.20.5.1 from core-gw-1",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4985,
+      "ts": "2026-07-16T17:13:00+00:00",
+      "kind": "device_command",
+      "source": "watch",
+      "summary": "api-ssl print /system/resource on 10.20.0.1",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4984,
+      "ts": "2026-07-16T17:10:00+00:00",
+      "kind": "report",
+      "source": "watch",
+      "summary": "traceroute timed out",
+      "outcome": "error",
+      "target": null,
+      "error": "timeout after 5s",
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4983,
+      "ts": "2026-07-16T17:07:00+00:00",
+      "kind": "action",
+      "source": "cli:status",
+      "summary": "watch cycle report written",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-2"
+    },
+    {
+      "id": 4982,
+      "ts": "2026-07-16T17:04:00+00:00",
+      "kind": "human_message",
+      "source": "chat",
+      "summary": "why is yew-sw-tower down?",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-3"
+    },
+    {
+      "id": 4981,
+      "ts": "2026-07-16T17:01:00+00:00",
+      "kind": "llm_call",
+      "source": "chat",
+      "summary": "assistant reasoned over the syslog window",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-3"
+    },
+    {
+      "id": 4980,
+      "ts": "2026-07-16T16:58:00+00:00",
+      "kind": "tool_call",
+      "source": "chat",
+      "summary": "routeros_ping to 10.20.5.1 from core-gw-1",
+      "outcome": "ok",
+      "target": null,
+      "error": null,
+      "session_id": "sess-3"
+    },
+    {
+      "id": 4979,
+      "ts": "2026-07-16T16:55:00+00:00",
+      "kind": "device_command",
+      "source": "watch",
+      "summary": "api-ssl print /system/resource on 10.20.0.1",
+      "outcome": "ok",
+      "target": "10.20.0.1",
+      "error": null,
+      "session_id": "sess-3"
+    }
+  ]
+}

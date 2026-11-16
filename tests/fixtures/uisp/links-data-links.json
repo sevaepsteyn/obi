@@ -1,0 +1,7402 @@
+[
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5550,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-180-05",
+     "id": "95cf1a17-35ce-441c-95f1-a5c953c61e6b",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-180-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 106920000,
+     "downlinkUtilization": 0.000971525,
+     "linkScore": {
+      "linkScore": 0.9225
+     },
+     "mcsIndex": 4,
+     "modulation": "4x 16QAM MIMO",
+     "signal": -68,
+     "stationsCount": 2,
+     "uplinkCapacity": 144180000,
+     "uplinkUtilization": 0.00019647853,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 106920000,
+     "downlinkUtilization": 0.040656715301159746,
+     "linkScore": 0.9225,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 178336,
+     "score": 0.733,
+     "scoreMax": 0.9755,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -70,
+     "signalRemote": -68,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 213660000,
+     "theoreticalUplinkCapacity": 264200000,
+     "txBytes": 0,
+     "txRate": 4347016,
+     "uplinkCapacity": 144180000,
+     "uplinkUtilization": 0.0012368983215425163
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "005516d4-3ea0-3c9a-a384-049e1a3dab33",
+  "origin": "unms",
+  "signal": -82,
+  "sitesDistance": 2822,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-flygate-508-05",
+     "id": "cc5e369c-8c54-48ac-84d8-f6e7598ee4db",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-flygate-508-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 111780000,
+     "downlinkUtilization": 0.00012907408,
+     "linkScore": {
+      "linkScore": 0.96000004
+     },
+     "mcsIndex": 4,
+     "modulation": "4x 16QAM MIMO",
+     "signal": -80,
+     "uplinkCapacity": 144180000,
+     "uplinkUtilization": 2.685532e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 111780000,
+     "downlinkUtilization": 2.6838432635534083e-05,
+     "linkScore": 0.96000004,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 28800,
+     "score": 0.466,
+     "scoreMax": 0.951,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -82,
+     "signalRemote": -80,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 103680000,
+     "theoreticalUplinkCapacity": 156000000,
+     "txBytes": 0,
+     "txRate": 3000,
+     "uplinkCapacity": 144180000,
+     "uplinkUtilization": 0.00019975031210986267
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "f3680e3b-2289-483d-a980-a57b844c4dc0",
+     "name": "Fly - Gate",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-120-05",
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-120-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.06926657,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 2,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0023020974,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.035344492234169654,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1182432,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -62,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 11833336,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.003690486891385768
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "08656f0a-b082-329e-bb0e-c6cbc1de11f9",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 360,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-autoshop-05",
+     "id": "5e587825-a484-40a4-9b03-5376ec8d1ea6",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-autoshop-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00010105137,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -61,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00014736579,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.0005033691756272401,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 124560,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -61,
+     "signalRemote": -61,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 168528,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00038876404494382025
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "4e48c5a4-b521-4717-aa1c-b2b14b1a1333",
+     "name": "Chestnut - Auto Shop",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-zelkova-60",
+     "id": "23fc3a6e-27d4-48ff-a4ac-8c065d5a5a02",
+     "model": "Wave-Pro",
+     "name": "basswood-ptp-zelkova-60",
+     "role": "ap",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 2156000000,
+     "downlinkUtilization": 0.035227653,
+     "linkScore": {
+      "linkScore": 0.78499997
+     },
+     "mcsIndex": 9,
+     "modulation": "4x QPSK",
+     "signal": -56,
+     "stationsCount": 1,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.0010276169,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 2156000000,
+     "downlinkUtilization": 0.09018709461966605,
+     "linkScore": 0.78499997,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 4388496,
+     "score": null,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -61,
+     "signalRemote": -56,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 194443376,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.002505206793206793
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "12162f25-a0e2-3a2f-a8af-1024efc19689",
+  "origin": "unms",
+  "signal": -58,
+  "sitesDistance": 12469,
+  "ssid": "BM-basswood-zelkova",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "zelkova-ptp-basswood-60",
+     "id": "fe76009e-4062-4559-a56c-69d919f76080",
+     "model": "Wave-Pro",
+     "name": "zelkova-ptp-basswood-60",
+     "role": "station",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": 0.028622467,
+     "linkScore": {
+      "linkScore": 0.78
+     },
+     "mcsIndex": 10,
+     "modulation": "8x 16QAM",
+     "signal": -61,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.0010276169,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": 0.003064674753817611,
+     "linkScore": 0.78,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 56675992,
+     "score": null,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -57,
+     "signalRemote": -61,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 5368544,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.0323539272156415
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 64800,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-ponderosa-60",
+     "id": "65ce0d62-d949-4ec1-88c3-42e6a1148194",
+     "model": "GBE-Plus",
+     "name": "tamarack-ptp-ponderosa-60",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1078000000,
+     "downlinkUtilization": 5.6875697e-06,
+     "linkScore": {
+      "linkScore": 0.57500005
+     },
+     "mcsIndex": 6,
+     "modulation": "4x QPSK",
+     "signal": -62,
+     "stationsCount": 1,
+     "uplinkCapacity": 1078000000,
+     "uplinkUtilization": 4.59295e-05,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1078000000,
+     "downlinkUtilization": 5.2504638218923935e-05,
+     "linkScore": 0.57500005,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": 7104,
+     "score": 0.542,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -60,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1617000000,
+     "theoreticalUplinkCapacity": 1617000000,
+     "txBytes": 0,
+     "txRate": 56600,
+     "uplinkCapacity": 1078000000,
+     "uplinkUtilization": 6.589981447124304e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "126bbb26-0c0f-36b6-95df-a3922e26450e",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 600,
+  "ssid": "hawthorn2-bh-maple-60",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "ponderosa-ptp-tamarack-60",
+     "id": "f41a138a-5eac-4c3c-81f5-2cf454ad64d4",
+     "model": "GBE-Plus",
+     "name": "ponderosa-ptp-tamarack-60",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1078000000,
+     "downlinkUtilization": 3.554731e-06,
+     "linkScore": {
+      "linkScore": 0.57
+     },
+     "mcsIndex": 6,
+     "modulation": "4x QPSK",
+     "signal": -60,
+     "uplinkCapacity": 1078000000,
+     "uplinkUtilization": 4.59295e-05,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1078000000,
+     "downlinkUtilization": 4.8148423005565865e-05,
+     "linkScore": 0.57,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": 9496,
+     "score": 0.542,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -62,
+     "signalRemote": -60,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1617000000,
+     "theoreticalUplinkCapacity": 1617000000,
+     "txBytes": 0,
+     "txRate": 51904,
+     "uplinkCapacity": 1078000000,
+     "uplinkUtilization": 8.808905380333951e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "193c9230-8ff5-4c01-a4b3-b9cb22080df9",
+     "name": "Ponderosa - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 0.02047383597883598,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0022425717852684146
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "13b947ad-664a-383b-bc21-35c781061361",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 306,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-oc79-172-05",
+     "id": "6998b28f-7bfe-462b-9f59-7659546150f5",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-oc79-172-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 295200000,
+     "downlinkUtilization": 0.0067485515,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -65,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00093108614,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 295200000,
+     "downlinkUtilization": 3.021680216802168e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 45288,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -59,
+     "signalRemote": -65,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 295200000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 8920,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00014134831460674158
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "a50c276f-5912-4a17-8744-88560a4b94d9",
+     "name": "Chestnut - OC-79",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5550,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-180-05",
+     "id": "95cf1a17-35ce-441c-95f1-a5c953c61e6b",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-180-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 320400000,
+     "downlinkUtilization": 0.000971525,
+     "linkScore": {
+      "linkScore": 0.9225
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -68,
+     "stationsCount": 2,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00019647853,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 320400000,
+     "downlinkUtilization": 0.013567465667915106,
+     "linkScore": 0.9225,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 178336,
+     "score": 0.733,
+     "scoreMax": 0.9755,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -70,
+     "signalRemote": -68,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 213660000,
+     "theoreticalUplinkCapacity": 264200000,
+     "txBytes": 0,
+     "txRate": 4347016,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0005566042446941323
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "162f258e-9dcf-3f81-a903-f9619ccefd73",
+  "origin": "unms",
+  "signal": -54,
+  "sitesDistance": 190,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-fish-center-509-05",
+     "id": "7a9622d3-4c51-4626-b292-72e3c4e0a851",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-fish-center-509-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 324000000,
+     "downlinkUtilization": 0.00063058676,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -61,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00013036205,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 324000000,
+     "downlinkUtilization": 0.0013470617283950618,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 6837896,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -54,
+     "signalRemote": -61,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 306000000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 436448,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.02134174781523096
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "c79498e2-2391-4b49-a01e-a28ad91d228b",
+     "name": "Chestnut - Fishtail",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-120-05",
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-120-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0.06926657,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 2,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0.0023020974,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1182432,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -62,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 11833336,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "2771c90b-6ae0-3de8-a5a4-f2006cfd39a5",
+  "origin": "unms",
+  "signal": -62,
+  "sitesDistance": 89,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-housing-505-05",
+     "id": "212b1e88-4637-4b17-93a4-f4d6df9d92da",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-housing-505-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00021479093,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": -59,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00020858926,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00019961768219832737,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 71912,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -55,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 66832,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00022444444444444446
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "310f77bf-f119-4c89-abb4-75b3b3cfff3f",
+     "name": "Chestnut - Housing",
+     "status": "disconnected",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5590,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "zelkova-ptp-chestnut-05",
+     "id": "fbb4bd33-5ad0-4378-baf1-95a44f3c38fd",
+     "model": "PBE-5AC-Gen2",
+     "name": "zelkova-ptp-chestnut-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 3.174603e-06,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -63,
+     "stationsCount": null,
+     "uplinkCapacity": 302400000,
+     "uplinkUtilization": 6.6402117e-06,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 4.3915343915343915e-06,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 2104,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -63,
+     "signalRemote": -63,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 302400000,
+     "theoreticalUplinkCapacity": 302400000,
+     "txBytes": 0,
+     "txRate": 1328,
+     "uplinkCapacity": 302400000,
+     "uplinkUtilization": 6.957671957671957e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "2cef91d1-d568-3732-bf79-cb6dc95976e0",
+  "origin": "unms",
+  "signal": -61,
+  "sitesDistance": null,
+  "ssid": "BM-zelkova-chestnut-05",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptp-zelkova-05",
+     "id": "9f8a72e0-98c3-4a47-94b8-676b6eee1018",
+     "model": "PBE-5AC-Gen2",
+     "name": "chestnut-ptp-zelkova-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 3.174603e-06,
+     "linkScore": {
+      "linkScore": 0.935
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -63,
+     "uplinkCapacity": 302400000,
+     "uplinkUtilization": 6.6402117e-06,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 1.007936507936508e-05,
+     "linkScore": 0.935,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 2440,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -63,
+     "signalRemote": -63,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 302400000,
+     "theoreticalUplinkCapacity": 346000000,
+     "txBytes": 0,
+     "txRate": 3048,
+     "uplinkCapacity": 302400000,
+     "uplinkUtilization": 8.068783068783068e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 58320,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "noc-ptp-birch-60",
+     "id": "bfcc4bec-7e78-4bcf-8d4a-7af6288bd135",
+     "model": "GBE-Plus",
+     "name": "noc-ptp-birch-60",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 8,
+     "modulation": "4x QPSK",
+     "signal": null,
+     "stationsCount": 1,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "38fb6c0b-6516-36ba-b423-121011d79ea0",
+  "origin": "unms",
+  "signal": -54,
+  "sitesDistance": 53,
+  "ssid": "noc-ptp-birch-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "birch-ptp-noc-60",
+     "id": "2006ce78-af0b-4c81-912e-8e6ad42bc7be",
+     "model": "GBE-Plus",
+     "name": "birch-ptp-noc-60",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": 0.0031101895,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 0,
+     "modulation": "1x QPSK",
+     "signal": null,
+     "uplinkCapacity": 1574447000,
+     "uplinkUtilization": 6.860607e-05,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 0,
+     "theoreticalUplinkCapacity": 0,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1574447000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "ee161e2d-f8bb-44bd-b7a3-6bc99ffc7cf6",
+     "name": "BRC - Birch",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-ptmp-210-05",
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "model": "RP-5AC-Gen2",
+     "name": "wingnut-ptmp-210-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "AM-5G19-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.017046751,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": null,
+     "stationsCount": 4,
+     "uplinkCapacity": 345600000,
+     "uplinkUtilization": 0.00066651683,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": null,
+     "linkScore": 1,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 0.639,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 183606800,
+     "theoreticalUplinkCapacity": 206557650,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 345600000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "3dfa7283-416d-31ba-8de6-2e94ee3f6986",
+  "origin": "unms",
+  "signal": -45,
+  "sitesDistance": 167,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-st-lbs-05",
+     "id": "bcaeccaf-96a9-4fd4-b6d8-7137928d0489",
+     "model": "NBE-5AC-Gen2",
+     "name": "wingnut-st-lbs-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": 0.00015323775,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 5,
+     "modulation": "6x 64QAM MIMO",
+     "signal": null,
+     "uplinkCapacity": 342000000,
+     "uplinkUtilization": 0.00042275462,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 305422850,
+     "theoreticalUplinkCapacity": 305422850,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 342000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+     "name": "Wingnut - Stations",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5270,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-100-05",
+     "id": "5775d0fb-03d7-4941-9350-f7c8fc1a078f",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-100-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 291600000,
+     "downlinkUtilization": 0.00020446914,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -57,
+     "stationsCount": 2,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0001466417,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 291600000,
+     "downlinkUtilization": 0.0006494650205761317,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 50200,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -60,
+     "signalRemote": -57,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 327600000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 189384,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00015667915106117353
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "4600d6e8-3438-32d1-ae5b-14ff832659df",
+  "origin": "unms",
+  "signal": -64,
+  "sitesDistance": 294,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-ne-trailers-540-05",
+     "id": "6d409e10-4002-4732-8da0-d870b34b868b",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-ne-trailers-540-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 288000000,
+     "downlinkUtilization": 7.923281e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -65,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 2.5193509e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 288000000,
+     "downlinkUtilization": 4.947222222222222e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 33560,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -65,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 288000000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 14248,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00010474406991260924
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "d495f5c7-8019-43aa-934f-9dc869332177",
+     "name": "Chestnut - NE Trailers",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.018492497013142175,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0022425717852684146
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "478c57a8-20af-3f61-8661-3f92bfe71142",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 338,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-commissary-507-05",
+     "id": "a99f696d-5d97-425d-94de-4d3c96fe5196",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-commissary-507-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 6.446834e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -64,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 7.857678e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 2.972520908004779e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 54616,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -59,
+     "signalRemote": -64,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 9952,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00017046192259675405
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "61d8e435-34ab-4bbe-a55e-5a6e5c8af519",
+     "name": "Chestnut - Commissary",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-ptmp-210-05",
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "model": "RP-5AC-Gen2",
+     "name": "wingnut-ptmp-210-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "AM-5G19-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 229500000,
+     "downlinkUtilization": 0.017046751,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "stationsCount": 4,
+     "uplinkCapacity": 236520000,
+     "uplinkUtilization": 0.00066651683,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 229500000,
+     "downlinkUtilization": null,
+     "linkScore": 1,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 0.639,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 183606800,
+     "theoreticalUplinkCapacity": 206557650,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 236520000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "4fbfeba4-3c4d-3d4f-b5b6-494b74211f8a",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 167,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-st-row-a-05",
+     "id": "5f7083f9-980c-46d9-b5c4-f9b2159222e2",
+     "model": "NBE-5AC-Gen2",
+     "name": "wingnut-st-row-a-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0.0034166449,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 7,
+     "modulation": "6x 64QAM MIMO",
+     "signal": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0.0032348386,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 305422850,
+     "theoreticalUplinkCapacity": 305422850,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+     "name": "Wingnut - Stations",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "manzanita-ptp-noc-60",
+     "id": "403c8599-8d7b-4e85-8dc5-19a6588e96e8",
+     "model": "AF60-LR",
+     "name": "manzanita-ptp-noc-60",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 10,
+     "modulation": "8x 16QAM",
+     "signal": null,
+     "stationsCount": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1201200000,
+     "theoreticalUplinkCapacity": 1201200000,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "60c5fc95-08ca-33b7-a132-d2c718501387",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "noc-manzanita-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "noc-ptp-manzanita-60",
+     "id": "2303abb7-5030-4d8c-bb19-80ba564d75d5",
+     "model": "AF60-LR",
+     "name": "noc-ptp-manzanita-60",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": 1201000000,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 1201000000,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1201000000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1201000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5810,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "rowan-ptp-joshua-ap-05",
+     "id": "16820f26-c180-4596-b176-21e9d106dc3e",
+     "model": "NBE-5AC-Gen2",
+     "name": "rowan-ptp-joshua-ap-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 1.42328045e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -43,
+     "stationsCount": 1,
+     "uplinkCapacity": 288000000,
+     "uplinkUtilization": 2.2460317e-05,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 4.841269841269841e-06,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1984,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -47,
+     "signalRemote": -43,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 302400000,
+     "theoreticalUplinkCapacity": 298800000,
+     "txBytes": 0,
+     "txRate": 1464,
+     "uplinkCapacity": 288000000,
+     "uplinkUtilization": 6.888888888888889e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+     "name": "Rowan - Joshua",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "60d8361b-54f8-3d2a-81fe-35f60af162aa",
+  "origin": "unms",
+  "signal": -43,
+  "sitesDistance": 38,
+  "ssid": "Tp-rowan2-buckeye2",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "rowan-ptp-joshua-st-05",
+     "id": "c187d7bf-b701-499f-a2c6-4bf79bfd34ed",
+     "model": "NBE-5AC-19",
+     "name": "rowan-ptp-joshua-st-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-M5AC-19"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 1.42328045e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -47,
+     "uplinkCapacity": 298800000,
+     "uplinkUtilization": 2.3583334e-05,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 0.0002178835978835979,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 81896,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -43,
+     "signalRemote": -47,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 302400000,
+     "theoreticalUplinkCapacity": 298800000,
+     "txBytes": 0,
+     "txRate": 65888,
+     "uplinkCapacity": 298800000,
+     "uplinkUtilization": 0.00027408299866131194
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+     "name": "Rowan - Tower",
+     "status": "unknown",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5490,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "LTU"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-magnolia-05",
+     "id": "9a10ebb7-2ff2-40a3-b197-86785176c9f9",
+     "model": "AF-5XHD",
+     "name": "tamarack-ptp-magnolia-05",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 34,
+      "name": "AF-5G34-S45"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 2,
+     "modulation": "6x QAM64 MIMO",
+     "signal": null,
+     "stationsCount": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "6620611c-cab4-31e8-a0df-7f1c4faaf8b7",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 18656,
+  "ssid": "tamarack-ptp-magnolia",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "LTU"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "magnolia-ptp-alder-05",
+     "id": "1d266570-ffa8-4074-8ff4-cc4b97a2689a",
+     "model": "AF-5XHD",
+     "name": "magnolia-ptp-alder-05",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 34,
+      "name": "AF-5G34-S45"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 182400000,
+     "downlinkUtilization": 0,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 86400000,
+     "uplinkUtilization": 0,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 182400000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 0.23,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 583680000,
+     "theoreticalUplinkCapacity": 583680000,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 86400000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+     "name": "BRC - Cottonwood - MRS",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": 0.01869350241545894,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0022425717852684146
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "6785b420-f108-3300-9122-9f17f97ff515",
+  "origin": "unms",
+  "signal": -53,
+  "sitesDistance": 13903,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-boxelder-05",
+     "id": "fee86fb2-5a00-495f-ad18-6d6e3e5b14ba",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-boxelder-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": 0.0002992435,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -58,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00042737837,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 331200000,
+     "downlinkUtilization": 8.589371980676328e-05,
+     "linkScore": 1,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": 72688,
+     "score": 1,
+     "scoreMax": 0.639,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -54,
+     "signalRemote": -58,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 331200000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 28448,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00022686641697877653
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "334df330-df07-4ebd-87ab-9c8fb1a211b7",
+     "name": "Chestnut - Boxelder",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 66960,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "noc-ptp-magnolia-60",
+     "id": "79e22d3c-daea-4f2b-8b6f-aa8ed036a4ca",
+     "model": "AF60-LR",
+     "name": "noc-ptp-magnolia-60",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 10,
+     "modulation": "8x 16QAM",
+     "signal": null,
+     "stationsCount": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "6dbb10ae-e550-30e5-94e2-a651bbc182f7",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1004,
+  "ssid": "noc-magnolia-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "magnolia-ptp-noc-60",
+     "id": "d0fcfda5-e9d7-4b91-ac5b-7db6398cdd28",
+     "model": "AF60-LR",
+     "name": "magnolia-ptp-noc-60",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": 1201000000,
+     "downlinkUtilization": 7.0874275e-06,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 1201000000,
+     "uplinkUtilization": 9.773856e-05,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1201000000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1201200000,
+     "theoreticalUplinkCapacity": 1201200000,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1201000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+     "name": "BRC - Cottonwood - MRS",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5600,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-zelkova-05",
+     "id": "1e7c1e75-e414-47c1-9af2-c5db9257a8bf",
+     "model": "PBE-5AC-Gen2",
+     "name": "basswood-ptp-zelkova-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 291600000,
+     "downlinkUtilization": 4.833333e-06,
+     "linkScore": {
+      "linkScore": 0.89
+     },
+     "mcsIndex": 8,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -57,
+     "stationsCount": 1,
+     "uplinkCapacity": 288000000,
+     "uplinkUtilization": 9.866667e-06,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 291600000,
+     "downlinkUtilization": 1.0041152263374485e-05,
+     "linkScore": 0.89,
+     "linkScoreHint": "This link is fine.",
+     "rxBytes": 0,
+     "rxRate": 1216,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -57,
+     "signalRemote": -57,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312000000,
+     "theoreticalUplinkCapacity": 312000000,
+     "txBytes": 0,
+     "txRate": 2928,
+     "uplinkCapacity": 288000000,
+     "uplinkUtilization": 4.222222222222222e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "71b45524-14ec-3d8d-8608-58038a5f2ccb",
+  "origin": "unms",
+  "signal": -57,
+  "sitesDistance": 12469,
+  "ssid": "BM-basswood-zelkova-05",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "zelkova-ptp-basswood-05",
+     "id": "5d5f7593-efc3-4fde-8fab-29188a46a2ec",
+     "model": "PBE-5AC-Gen2",
+     "name": "zelkova-ptp-basswood-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 277200000,
+     "downlinkUtilization": 4.7736626e-06,
+     "linkScore": {
+      "linkScore": 0.90999997
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -56,
+     "uplinkCapacity": 252720000,
+     "uplinkUtilization": 9.25e-06,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 277200000,
+     "downlinkUtilization": 4.790764790764791e-06,
+     "linkScore": 0.90999997,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1392,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -57,
+     "signalRemote": -56,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312000000,
+     "theoreticalUplinkCapacity": 312000000,
+     "txBytes": 0,
+     "txRate": 1328,
+     "uplinkCapacity": 252720000,
+     "uplinkUtilization": 5.508072174738841e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5750,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-100-05",
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-100-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 213840000,
+     "downlinkUtilization": 4.6564102e-05,
+     "linkScore": {
+      "linkScore": 0.99
+     },
+     "mcsIndex": 8,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -62,
+     "stationsCount": 1,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 2.8714107e-05,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 213840000,
+     "downlinkUtilization": 3.295922184811074e-05,
+     "linkScore": 0.99,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 3280,
+     "score": 0.855,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -66,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 266400000,
+     "theoreticalUplinkCapacity": 288360000,
+     "txBytes": 0,
+     "txRate": 7048,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 1.1374670550700513e-05
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "779bdc48-310c-33a3-8de7-66ac01ee1ddf",
+  "origin": "unms",
+  "signal": -63,
+  "sitesDistance": 220,
+  "ssid": "BM-Tamarack-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-st-rog-05",
+     "id": "449348b3-cfa8-454f-836d-23db3b241277",
+     "model": "NBE-5AC-Gen2",
+     "name": "tamarack-st-rog-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 273600000,
+     "downlinkUtilization": 5.0953986e-05,
+     "linkScore": {
+      "linkScore": 0.995
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -66,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 2.8714107e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 273600000,
+     "downlinkUtilization": 3.847953216374269e-05,
+     "linkScore": 0.995,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 13504,
+     "score": 0.855,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -62,
+     "signalRemote": -66,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 273600000,
+     "theoreticalUplinkCapacity": 288360000,
+     "txBytes": 0,
+     "txRate": 10528,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 4.6830350950201135e-05
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+     "name": "Town Users",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 11245,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "classic"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-manzanita-11",
+     "id": "491c511e-da7f-4f4c-949a-5de3502c5805",
+     "model": "AF11FX",
+     "name": "tamarack-ptp-manzanita-11",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 0,
+      "name": "Combined"
+     },
+     "channelWidth": 56,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": "7x",
+     "signal": null,
+     "stationsCount": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "Data",
+     "deviceName": null,
+     "displayName": "Data",
+     "name": "wlan",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 1256,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "780f3378-7108-35ad-b47d-57de6064f171",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "tamarack-ptp-manzanita-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "classic"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "manzanita-ptp-alder-11",
+     "id": "ae736dd9-b6b7-42ba-b39b-964e768288ce",
+     "model": "AF11FX",
+     "name": "manzanita-ptp-alder-11",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 0,
+      "name": "Combined"
+     },
+     "channelWidth": 56,
+     "downlinkCapacity": 461982080,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 541952000,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": "Data",
+     "deviceName": null,
+     "displayName": "Data",
+     "name": "wlan",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 461982080,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 541952000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "manzanita-ptp-magnolia-60",
+     "id": "d1afd5c6-c9ab-4124-bb53-b8b85b001569",
+     "model": "AF60-LR",
+     "name": "manzanita-ptp-magnolia-60",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 9,
+     "modulation": "4x QPSK",
+     "signal": null,
+     "stationsCount": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "7a4d9be1-ac21-3e3b-a385-a0e0b11b472c",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1250,
+  "ssid": "manzanita-magnolia-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "magnolia-ptp-manzanita-60",
+     "id": "d4beecba-0be3-4821-8ac8-1a974d518eea",
+     "model": "AF60-LR",
+     "name": "magnolia-ptp-manzanita-60",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 40,
+      "name": "AF60-LR-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 975000000,
+     "downlinkUtilization": 0.00024221835,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 1951000000,
+     "uplinkUtilization": 0.00010600102,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 975000000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1951950000,
+     "theoreticalUplinkCapacity": 1951950000,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1951000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+     "name": "BRC - Cottonwood - MRS",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5270,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-100-05",
+     "id": "5775d0fb-03d7-4941-9350-f7c8fc1a078f",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-100-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00020446914,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -57,
+     "stationsCount": 2,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0001466417,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.000565663082437276,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 50200,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -60,
+     "signalRemote": -57,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 327600000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 189384,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00015667915106117353
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "7cce03bf-bac1-3b12-8981-01f2c86f491d",
+  "origin": "unms",
+  "signal": -50,
+  "sitesDistance": 117,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-commonhouse-532-05",
+     "id": "e4f4688e-d858-453f-a66b-f89992c675ec",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-commonhouse-532-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00012630824,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -55,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00012144819,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 8.074074074074073e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 48768,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -50,
+     "signalRemote": -55,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 27032,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00015220973782771537
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "e367e44b-f860-4ff6-854a-0f111650b3f0",
+     "name": "Chestnut - Common House",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": null,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-100-05",
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-100-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": null,
+     "channelWidth": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 4.6564102e-05,
+     "linkScore": {
+      "linkScore": 0.99
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": -62,
+     "stationsCount": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 2.8714107e-05,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": "eth0",
+     "displayName": "Eth 0",
+     "name": "eth0",
+     "type": "eth"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1000000000,
+     "downlinkUtilization": 1.352e-06,
+     "linkScore": 0.99,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 2872,
+     "score": 0.855,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -66,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 266400000,
+     "theoreticalUplinkCapacity": 288360000,
+     "txBytes": 0,
+     "txRate": 1352,
+     "uplinkCapacity": 1000000000,
+     "uplinkUtilization": 2.872e-06
+    },
+    "status": {
+     "currentSpeed": "1000-full",
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "89a63a62-b50a-45b8-81a0-4299528bc550",
+  "origin": "manual",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": null,
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-100-05",
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-100-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": null,
+     "channelWidth": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 4.6564102e-05,
+     "linkScore": {
+      "linkScore": 0.99
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": -62,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 2.8714107e-05,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": "eth0",
+     "displayName": "Eth 0",
+     "name": "eth0",
+     "type": "eth"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1000000000,
+     "downlinkUtilization": 1.352e-06,
+     "linkScore": 0.99,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 2872,
+     "score": 0.855,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -66,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 266400000,
+     "theoreticalUplinkCapacity": 288360000,
+     "txBytes": 0,
+     "txRate": 1352,
+     "uplinkCapacity": 1000000000,
+     "uplinkUtilization": 2.872e-06
+    },
+    "status": {
+     "currentSpeed": "1000-full",
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "ethernet"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.018492497013142175,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0022425717852684146
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "8d8173e7-7b8d-3518-af29-b537aa6231ad",
+  "origin": "unms",
+  "signal": -51,
+  "sitesDistance": 161,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-fish-east-511-05",
+     "id": "56ddff19-d6f7-4f30-90fb-958f9c379993",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-fish-east-511-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.026107552,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -56,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0014252184,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.00044492234169653526,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1977568,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -51,
+     "signalRemote": -56,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 148960,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0061721847690387015
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "8ed12613-4e84-461e-862f-7bc75f01623c",
+     "name": "Chestnut - Fishhead",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 316800000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 8,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 316800000,
+     "downlinkUtilization": 0.019543207070707072,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 0.002491746428076016
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "9f8fbdbb-7599-3611-8f30-3323b3fdc22e",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 296,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-hickory-512-05",
+     "id": "fa829e52-449a-4610-a19f-7af2ebdaa2b5",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-hickory-512-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 309600000,
+     "downlinkUtilization": 2.4275363e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -64,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 1.3205715e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 309600000,
+     "downlinkUtilization": 8.772609819121447e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 30872,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -60,
+     "signalRemote": -64,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 309600000,
+     "theoreticalUplinkCapacity": 288360000,
+     "txBytes": 0,
+     "txRate": 27160,
+     "uplinkCapacity": 288360000,
+     "uplinkUtilization": 0.00010706061867110556
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "2365b7e5-c52a-4974-8fbc-6b8534b8df03",
+     "name": "Chestnut - HICKORY",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-sequoia-05",
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-sequoia-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0.025498778,
+     "linkScore": {
+      "linkScore": 0.6508333
+     },
+     "mcsIndex": 2,
+     "modulation": "2x QPSK SISO",
+     "signal": -62,
+     "stationsCount": 6,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0.0004754697,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": 0.6508333,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 22960,
+     "score": 0.44366667,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -71,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312800000,
+     "theoreticalUplinkCapacity": 288000000,
+     "txBytes": 0,
+     "txRate": 20264,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "9fbce72e-e465-3e4e-b880-c43ff017a2c0",
+  "origin": "unms",
+  "signal": -71,
+  "sitesDistance": 549,
+  "ssid": "Evn-net-31",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "st-alder-vox",
+     "id": "bc39b4e7-d943-4d5d-99a2-9e2a380af825",
+     "model": "NBE-5AC-Gen2",
+     "name": "st-alder-vox",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 58320000,
+     "downlinkUtilization": 0.00016696061,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 27945000,
+     "uplinkUtilization": 6.043504e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 58320000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 0.16,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 305422850,
+     "theoreticalUplinkCapacity": 305422850,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 27945000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "66f7d7d8-f80d-4203-b6ac-3a12c053eb50",
+     "name": "Vox",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": null,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "rowan-ptp-joshua-st-05",
+     "id": "c187d7bf-b701-499f-a2c6-4bf79bfd34ed",
+     "model": "NBE-5AC-19",
+     "name": "rowan-ptp-joshua-st-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": null,
+     "channelWidth": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 1.42328045e-05,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": -47,
+     "stationsCount": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 2.3583334e-05,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": "eth0",
+     "displayName": "Eth 0",
+     "name": "eth0",
+     "type": "eth"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1000000000,
+     "downlinkUtilization": 7.8848e-05,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 56304,
+     "score": 0.99,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -43,
+     "signalRemote": -47,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 302400000,
+     "theoreticalUplinkCapacity": 298800000,
+     "txBytes": 0,
+     "txRate": 78848,
+     "uplinkCapacity": 1000000000,
+     "uplinkUtilization": 5.6304e-05
+    },
+    "status": {
+     "currentSpeed": "1000-full",
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+     "name": "Rowan - Tower",
+     "status": "unknown",
+     "type": "site"
+    }
+   }
+  },
+  "id": "a1a92659-d79c-3427-a6bb-811eb146439f",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": null,
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wired",
+     "displayName": "rowan-tp2-sw",
+     "id": "e1cd0a10-b51e-4747-a935-be44aef45086",
+     "model": "TSW-PoE PRO",
+     "name": "rowan-tp2-sw",
+     "role": "switch",
+     "type": "toughSwitch"
+    },
+    "overview": {
+     "antenna": null,
+     "channelWidth": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": null
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": "Uplink",
+     "deviceName": "0/1",
+     "displayName": "Uplink",
+     "name": "port1",
+     "type": "port"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1000000000,
+     "downlinkUtilization": 3.28e-07,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 160,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 328,
+     "uplinkCapacity": 1000000000,
+     "uplinkUtilization": 1.6e-07
+    },
+    "status": {
+     "currentSpeed": "1000-full",
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+     "name": "Rowan - Tower",
+     "status": "unknown",
+     "type": "site"
+    }
+   }
+  },
+  "type": "ethernet"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-120-05",
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-120-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.06926657,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 2,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0023020974,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.035344492234169654,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 1182432,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -62,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 11833336,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.003690486891385768
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "a80117a7-c377-3b42-b367-71f4971d2bf7",
+  "origin": "unms",
+  "signal": -58,
+  "sitesDistance": 400,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-bath-house-502-05",
+     "id": "3752927e-0deb-40fa-9eb9-4f12f1ca982b",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-bath-house-502-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.06916552,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -62,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0021547317,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 334800000,
+     "downlinkUtilization": 0.005228984468339307,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 47087264,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -59,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 334800000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 1750664,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.1469639950062422
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "818f5edd-b041-4606-9cea-1bdcf8e04ca8",
+     "name": "Chestnut - Bath House",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-sequoia-05",
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-sequoia-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 45360000,
+     "downlinkUtilization": 0.025498778,
+     "linkScore": {
+      "linkScore": 0.6508333
+     },
+     "mcsIndex": 3,
+     "modulation": "4x 16QAM SISO",
+     "signal": -62,
+     "stationsCount": 6,
+     "uplinkCapacity": 90720000,
+     "uplinkUtilization": 0.0004754697,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 45360000,
+     "downlinkUtilization": 0.00044673721340388007,
+     "linkScore": 0.6508333,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 22960,
+     "score": 0.44366667,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -71,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312800000,
+     "theoreticalUplinkCapacity": 288000000,
+     "txBytes": 0,
+     "txRate": 20264,
+     "uplinkCapacity": 90720000,
+     "uplinkUtilization": 0.0002530864197530864
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "acc8a671-62f9-3bc9-8281-d022082b024a",
+  "origin": "unms",
+  "signal": -71,
+  "sitesDistance": 547,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "rowan-house-st-05",
+     "id": "d25ca1c3-c5e6-429b-a0c7-3e4bd7d758b8",
+     "model": "NBE-5AC-Gen2",
+     "name": "rowan-house-st-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 102060000,
+     "downlinkUtilization": 0.06841129,
+     "linkScore": {
+      "linkScore": 0.215
+     },
+     "mcsIndex": 3,
+     "modulation": "4x 16QAM MIMO",
+     "signal": -78,
+     "uplinkCapacity": 49410000,
+     "uplinkUtilization": 0.0007361552,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 102060000,
+     "downlinkUtilization": 0.0021513619439545366,
+     "linkScore": 0.215,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": 35856,
+     "score": 0.095,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -72,
+     "signalRemote": -78,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312000000,
+     "theoreticalUplinkCapacity": 260000000,
+     "txBytes": 0,
+     "txRate": 219568,
+     "uplinkCapacity": 49410000,
+     "uplinkUtilization": 0.0007256830601092896
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "fb9dd4ba-91c0-4a1a-8f99-495ab392a5ae",
+     "name": "Rowan - House",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-wingnut-60",
+     "id": "5d437239-3cf2-4190-8ad5-dc7860dabee7",
+     "model": "Wave-Pro",
+     "name": "basswood-ptp-wingnut-60",
+     "role": "ap",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 1080,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 7,
+     "modulation": "4x QPSK",
+     "signal": null,
+     "stationsCount": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "ae2a5e10-7ebc-317f-b7e1-03aa5b6179ea",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 2153,
+  "ssid": "BM-basswood-wingnut",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-ptp-basswood-60",
+     "id": "0bbe54dc-37f4-49fe-8a31-e6772520513d",
+     "model": "Wave-Pro",
+     "name": "wingnut-ptp-basswood-60",
+     "role": "station",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1347500000,
+     "downlinkUtilization": 0.0048043337,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 1347500000,
+     "uplinkUtilization": 0.0016861743,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1347500000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 1347500000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 62640,
+  "from": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "zelkova-ptp-chestnut-60",
+     "id": "958ab295-dc9f-4448-9078-b3445bab761e",
+     "model": "Wave-Pro",
+     "name": "zelkova-ptp-chestnut-60",
+     "role": "ap",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 2700000000,
+     "downlinkUtilization": 0.01922817,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 12,
+     "modulation": "8x 16QAM",
+     "signal": -47,
+     "stationsCount": 1,
+     "uplinkCapacity": 2700000000,
+     "uplinkUtilization": 0.0005583437,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 2700000000,
+     "downlinkUtilization": 0.016982610370370372,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 4908464,
+     "score": 0.844,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -45,
+     "signalRemote": -47,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 45853048,
+     "uplinkCapacity": 2700000000,
+     "uplinkUtilization": 0.0018179496296296296
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "b4120e1a-c681-3763-a51c-b3cd3330c44c",
+  "origin": "unms",
+  "signal": -46,
+  "sitesDistance": 1693,
+  "ssid": "BM-zelkova-chestnut",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptp-zelkova-60",
+     "id": "710ab096-e544-48a8-b260-72472fe5d575",
+     "model": "Wave-Pro",
+     "name": "chestnut-ptp-zelkova-60",
+     "role": "station",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 2700000000,
+     "downlinkUtilization": 0.01922817,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 12,
+     "modulation": "8x 16QAM",
+     "signal": -45,
+     "uplinkCapacity": 2700000000,
+     "uplinkUtilization": 0.0005583437,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 2700000000,
+     "downlinkUtilization": 0.0010955051851851852,
+     "linkScore": 1,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 122066272,
+     "score": 0.844,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -47,
+     "signalRemote": -45,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 2957864,
+     "uplinkCapacity": 2700000000,
+     "uplinkUtilization": 0.04520973037037037
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 62640,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-yew-60",
+     "id": "37275751-7ccd-488c-a079-1dd534be6881",
+     "model": "GBE-Plus",
+     "name": "tamarack-ptp-yew-60",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": 0.00921452,
+     "linkScore": {
+      "linkScore": 0.96
+     },
+     "mcsIndex": 8,
+     "modulation": "4x QPSK",
+     "signal": -57,
+     "stationsCount": 1,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": 0.0003157551,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1617000000,
+     "downlinkUtilization": 0.002259037724180581,
+     "linkScore": 0.96,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 191624,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -56,
+     "signalRemote": -57,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1617000000,
+     "theoreticalUplinkCapacity": 1617000000,
+     "txBytes": 0,
+     "txRate": 3652864,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": 0.00011850587507730365
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "bcb3d074-47d6-38ba-bd09-b61bb552b3f7",
+  "origin": "unms",
+  "signal": -57,
+  "sitesDistance": 749,
+  "ssid": "hawthorn2-bh-catalpa2-60",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "G60"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "yew-ptp-tamarack-60",
+     "id": "e6c05579-9c47-47fb-943a-4d77cf45eb7e",
+     "model": "GBE-Plus",
+     "name": "yew-ptp-tamarack-60",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 35,
+      "name": "GBE-PLUS-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1347500000,
+     "downlinkUtilization": 0.010267614,
+     "linkScore": {
+      "linkScore": 0.955
+     },
+     "mcsIndex": 8,
+     "modulation": "4x QPSK",
+     "signal": -55,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": 0.00037890612,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1347500000,
+     "downlinkUtilization": 0.00044049573283859,
+     "linkScore": 0.955,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 19243280,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -54,
+     "signalRemote": -55,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 1617000000,
+     "theoreticalUplinkCapacity": 1617000000,
+     "txBytes": 0,
+     "txRate": 593568,
+     "uplinkCapacity": 1617000000,
+     "uplinkUtilization": 0.011900606060606061
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+     "name": "Yew - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-sequoia-05",
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-sequoia-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0.025498778,
+     "linkScore": {
+      "linkScore": 0.6508333
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -62,
+     "stationsCount": 6,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0.0004754697,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": 0.6508333,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 22960,
+     "score": 0.44366667,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -71,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312800000,
+     "theoreticalUplinkCapacity": 288000000,
+     "txBytes": 0,
+     "txRate": 20264,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "c3bf2cbb-24cd-359d-a4ec-ae5ecb451ac4",
+  "origin": "unms",
+  "signal": -71,
+  "sitesDistance": 220,
+  "ssid": "Evn-net-31",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "town-farnsworth-st-05",
+     "id": "85266a18-06e5-47dd-bcbe-70ae6c24d746",
+     "model": "NBE-5AC-Gen2",
+     "name": "town-farnsworth-st-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 277200000,
+     "downlinkUtilization": 2.0333333e-05,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 298800000,
+     "uplinkUtilization": 1.3730804e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 277200000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 0.843,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 305422850,
+     "theoreticalUplinkCapacity": 305422850,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 298800000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+     "name": "Town Users",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 65880,
+  "from": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "noc-ptp-basswood-60",
+     "id": "13bb24ec-08a5-41d0-9792-f867306c7387",
+     "model": "Wave-Pro",
+     "name": "noc-ptp-basswood-60",
+     "role": "station",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": 3.105466e-07,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "stationsCount": null,
+     "uplinkCapacity": 2695000000,
+     "uplinkUtilization": 3.265306e-07,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 2695000000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "c46e28dc-b3f1-3465-9df5-03dd6e155c3a",
+  "origin": "unms",
+  "signal": -55,
+  "sitesDistance": null,
+  "ssid": "basswood-ptp-noc-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-noc-60",
+     "id": "1d86bb5c-1e4c-47bf-9594-1e38d906fcae",
+     "model": "Wave-Pro",
+     "name": "basswood-ptp-noc-60",
+     "role": "ap",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": 11,
+     "modulation": "8x 16QAM",
+     "signal": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 0,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-sequoia-05",
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-sequoia-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 187920000,
+     "downlinkUtilization": 0.025498778,
+     "linkScore": {
+      "linkScore": 0.6508333
+     },
+     "mcsIndex": 7,
+     "modulation": "6x 64QAM MIMO",
+     "signal": -62,
+     "stationsCount": 6,
+     "uplinkCapacity": 165240000,
+     "uplinkUtilization": 0.0004754697,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 187920000,
+     "downlinkUtilization": 0.00010783312047679863,
+     "linkScore": 0.6508333,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 22960,
+     "score": 0.44366667,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -71,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312800000,
+     "theoreticalUplinkCapacity": 288000000,
+     "txBytes": 0,
+     "txRate": 20264,
+     "uplinkCapacity": 165240000,
+     "uplinkUtilization": 0.00013894940692326313
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "c54c85d1-491b-3ac7-af19-8a045480499f",
+  "origin": "unms",
+  "signal": -65,
+  "sitesDistance": 220,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "town-courtney-st-05",
+     "id": "2ed94575-5c75-4958-bcab-1259fd0e8627",
+     "model": "NBE-5AC-Gen2",
+     "name": "town-courtney-st-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 194400000,
+     "downlinkUtilization": 1.40911025e-05,
+     "linkScore": {
+      "linkScore": 0.70500004
+     },
+     "mcsIndex": 8,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -70,
+     "uplinkCapacity": 197100000,
+     "uplinkUtilization": 9.101912e-06,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 194400000,
+     "downlinkUtilization": 9.382716049382717e-06,
+     "linkScore": 0.70500004,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 2648,
+     "score": 0.636,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -65,
+     "signalRemote": -70,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312000000,
+     "theoreticalUplinkCapacity": 312000000,
+     "txBytes": 0,
+     "txRate": 1824,
+     "uplinkCapacity": 197100000,
+     "uplinkUtilization": 1.343480466768138e-05
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+     "name": "Town Users",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptmp-sequoia-05",
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "model": "RP-5AC-Gen2",
+     "name": "tamarack-ptmp-sequoia-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "AM-5G16-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 207900000,
+     "downlinkUtilization": 0.025498778,
+     "linkScore": {
+      "linkScore": 0.6508333
+     },
+     "mcsIndex": 6,
+     "modulation": "6x 64QAM MIMO",
+     "signal": -62,
+     "stationsCount": 6,
+     "uplinkCapacity": 106920000,
+     "uplinkUtilization": 0.0004754697,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 207900000,
+     "downlinkUtilization": 9.746993746993747e-05,
+     "linkScore": 0.6508333,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 22960,
+     "score": 0.44366667,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -71,
+     "signalRemote": -62,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 312800000,
+     "theoreticalUplinkCapacity": 288000000,
+     "txBytes": 0,
+     "txRate": 20264,
+     "uplinkCapacity": 106920000,
+     "uplinkUtilization": 0.0002147399925177703
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "d5da40ad-0948-3847-8fe4-9a888eed0d95",
+  "origin": "unms",
+  "signal": -68,
+  "sitesDistance": 749,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "yew-ptp-tamarack-05",
+     "id": "9da72702-fc3c-4497-876c-f30dd55a5b0b",
+     "model": "NBE-5AC-Gen2",
+     "name": "yew-ptp-tamarack-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 156600000,
+     "downlinkUtilization": 1.8239538e-05,
+     "linkScore": {
+      "linkScore": 0.605
+     },
+     "mcsIndex": 5,
+     "modulation": "6x 64QAM MIMO",
+     "signal": -73,
+     "uplinkCapacity": 216270000,
+     "uplinkUtilization": 2.409278e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 156600000,
+     "downlinkUtilization": 1.644955300127714e-05,
+     "linkScore": 0.605,
+     "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+     "rxBytes": 0,
+     "rxRate": 2648,
+     "score": 0.6,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -66,
+     "signalRemote": -73,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 260000000,
+     "theoreticalUplinkCapacity": 260000000,
+     "txBytes": 0,
+     "txRate": 2576,
+     "uplinkCapacity": 216270000,
+     "uplinkUtilization": 1.2243954316363805e-05
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+     "name": "Yew - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "yew-ptp-basswood-05",
+     "id": "9c6cc290-78bc-4e56-997f-c6a7a8acbd66",
+     "model": "PBE-5AC-ISO-Gen2",
+     "name": "yew-ptp-basswood-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 202500000,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": 0.86
+     },
+     "mcsIndex": 7,
+     "modulation": "6x 64QAM MIMO",
+     "signal": -59,
+     "stationsCount": 1,
+     "uplinkCapacity": 194400000,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 202500000,
+     "downlinkUtilization": 2.970864197530864e-05,
+     "linkScore": 0.86,
+     "linkScoreHint": "This link is fine.",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -59,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 260000000,
+     "theoreticalUplinkCapacity": 260000000,
+     "txBytes": 0,
+     "txRate": 6016,
+     "uplinkCapacity": 194400000,
+     "uplinkUtilization": 0
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+     "name": "Yew - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "e08bf968-d090-3a14-9158-d74ec0ff4ecc",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 14288,
+  "ssid": "evn-net-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-yew-05",
+     "id": "e413e488-cb54-44b8-a152-03411b895595",
+     "model": "PBE-5AC-Gen2",
+     "name": "basswood-ptp-yew-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 25,
+      "name": "400"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 218700000,
+     "downlinkUtilization": 6.123457e-06,
+     "linkScore": {
+      "linkScore": 0.86
+     },
+     "mcsIndex": 7,
+     "modulation": "6x 64QAM MIMO",
+     "signal": -59,
+     "uplinkCapacity": 207900000,
+     "uplinkUtilization": 8.230452e-06,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 218700000,
+     "downlinkUtilization": 7.3159579332418835e-06,
+     "linkScore": 0.86,
+     "linkScoreHint": "This link is fine.",
+     "rxBytes": 0,
+     "rxRate": 1240,
+     "score": 0.829,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -59,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 260000000,
+     "theoreticalUplinkCapacity": 260000000,
+     "txBytes": 0,
+     "txRate": 1600,
+     "uplinkCapacity": 207900000,
+     "uplinkUtilization": 5.964405964405964e-06
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "101b5d9e-cbf7-448c-90fc-168aa4417604",
+     "name": "Basswood Relay - West",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-ptmp-210-05",
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "model": "RP-5AC-Gen2",
+     "name": "wingnut-ptmp-210-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "AM-5G19-120"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": null,
+     "downlinkUtilization": 0.017046751,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 7,
+     "modulation": "6x 64QAM MIMO",
+     "signal": null,
+     "stationsCount": 4,
+     "uplinkCapacity": null,
+     "uplinkUtilization": 0.00066651683,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": 1,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 0.639,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 183606800,
+     "theoreticalUplinkCapacity": 206557650,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "id": "e42c1803-0a60-373f-a9e5-a5c9b729529b",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "wingnut-st-07:b2-05",
+     "id": "80895f32-0359-4285-abdb-dcc2c1f29fc3",
+     "model": "NBE-5AC-Gen2",
+     "name": "wingnut-st-07:b2-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": 3.164251e-05,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 240300000,
+     "uplinkUtilization": 2.4835623e-05,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 302400000,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": 1,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 305422850,
+     "theoreticalUplinkCapacity": 305422850,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 240300000,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+     "name": "Wingnut - Stations",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 11565,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "classic"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-noc-11",
+     "id": "485d7ff3-2f54-4092-a0be-fecdad7dae2d",
+     "model": "AF11FX",
+     "name": "tamarack-ptp-noc-11",
+     "role": "station",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 0,
+      "name": "Combined"
+     },
+     "channelWidth": 56,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": "7x",
+     "signal": null,
+     "stationsCount": null,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "Data",
+     "deviceName": null,
+     "displayName": "Data",
+     "name": "wlan",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": null,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": 0,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": 1496,
+     "uplinkCapacity": null,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "eab45849-1a85-37d9-a8a9-c52430121299",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "tamarack-ptp-noc-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "classic"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "noc-ptp-alder-11",
+     "id": "dcbeb38b-9894-4386-94d0-eed25a489e91",
+     "model": "AF11FX",
+     "name": "noc-ptp-alder-11",
+     "role": "ap",
+     "type": "airFiber"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 0,
+      "name": "Combined"
+     },
+     "channelWidth": 56,
+     "downlinkCapacity": 459747840,
+     "downlinkUtilization": null,
+     "linkScore": {
+      "linkScore": null
+     },
+     "mcsIndex": null,
+     "modulation": null,
+     "signal": null,
+     "uplinkCapacity": 488833920,
+     "uplinkUtilization": null,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "disconnected"
+   },
+   "interface": {
+    "identification": {
+     "description": "Data",
+     "deviceName": null,
+     "displayName": "Data",
+     "name": "wlan",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 459747840,
+     "downlinkUtilization": null,
+     "linkScore": null,
+     "linkScoreHint": "",
+     "rxBytes": 0,
+     "rxRate": null,
+     "score": null,
+     "scoreMax": null,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": null,
+     "signalRemote": null,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": null,
+     "theoreticalUplinkCapacity": null,
+     "txBytes": 0,
+     "txRate": null,
+     "uplinkCapacity": 488833920,
+     "uplinkUtilization": null
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "status": "inactive",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "tamarack-ptp-basswood-60",
+     "id": "58759578-1eec-440f-b1ab-46bbb847edb8",
+     "model": "Wave-Pro",
+     "name": "tamarack-ptp-basswood-60",
+     "role": "station",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": 0.00063773507,
+     "linkScore": {
+      "linkScore": 0.82
+     },
+     "mcsIndex": 11,
+     "modulation": "8x 16QAM",
+     "signal": -58,
+     "stationsCount": null,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.025457757,
+     "wirelessMode": "sta-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 1751750000,
+     "downlinkUtilization": 0.01919223633509348,
+     "linkScore": 0.82,
+     "linkScoreHint": "This link is fine.",
+     "rxBytes": 0,
+     "rxRate": 990464,
+     "score": null,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -56,
+     "signalRemote": -58,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 33620000,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.0005654140145568717
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "f54eb96a-6053-3ff4-9a4a-fabfa0b489a8",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": null,
+  "ssid": "BM-Tamarack-Basswood",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": null,
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "basswood-ptp-tamarack-60",
+     "id": "7d84b2b6-f682-4bc4-86bc-4d65d3621bfd",
+     "model": "Wave-Pro",
+     "name": "basswood-ptp-tamarack-60",
+     "role": "ap",
+     "type": "wave"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 46,
+      "name": "WAVE_PRO-60G"
+     },
+     "channelWidth": 2160,
+     "downlinkCapacity": 2695000000,
+     "downlinkUtilization": 0.09243483,
+     "linkScore": {
+      "linkScore": 0.82
+     },
+     "mcsIndex": 9,
+     "modulation": "4x QPSK",
+     "signal": -56,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.025457757,
+     "wirelessMode": "ap-ptp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": "60 GHz",
+     "deviceName": null,
+     "displayName": "60 GHz",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 2695000000,
+     "downlinkUtilization": 0.0019187858998144713,
+     "linkScore": 0.82,
+     "linkScoreHint": "This link is fine.",
+     "rxBytes": 0,
+     "rxRate": 43619360,
+     "score": null,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -58,
+     "signalRemote": -56,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 2700000000,
+     "theoreticalUplinkCapacity": 2700000000,
+     "txBytes": 0,
+     "txRate": 5171128,
+     "uplinkCapacity": 1751750000,
+     "uplinkUtilization": 0.024900448123305267
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "101b5d9e-cbf7-448c-90fc-168aa4417604",
+     "name": "Basswood Relay - West",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-ptmp-160-05",
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "model": "RP-5AC-Gen2",
+     "name": "chestnut-ptmp-160-05",
+     "role": "ap",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 16,
+      "name": "Custom"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 327600000,
+     "downlinkUtilization": 0.050604966,
+     "linkScore": {
+      "linkScore": 0.9078572
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -59,
+     "stationsCount": 7,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0031132833,
+     "wirelessMode": "ap-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 327600000,
+     "downlinkUtilization": 0.018898925518925518,
+     "linkScore": 0.9078572,
+     "linkScoreHint": "This link is great.",
+     "rxBytes": 0,
+     "rxRate": 718520,
+     "score": 0.99833333,
+     "scoreMax": 1,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -64,
+     "signalRemote": -59,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 307942857,
+     "theoreticalUplinkCapacity": 318000000,
+     "txBytes": 0,
+     "txRate": 6191288,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.0022425717852684146
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "id": "fb2e1dcf-d716-30be-b177-5b7ffc193276",
+  "origin": "unms",
+  "signal": -57,
+  "sitesDistance": 13878,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "attributes": {
+     "series": "AC"
+    },
+    "identification": {
+     "authorized": true,
+     "category": "wireless",
+     "displayName": "chestnut-st-boxelder-hickory-fence-05",
+     "id": "6361a552-3785-470a-992e-085200554288",
+     "model": "NBE-5AC-Gen2",
+     "name": "chestnut-st-boxelder-hickory-fence-05",
+     "role": "station",
+     "type": "airMax"
+    },
+    "overview": {
+     "antenna": {
+      "gain": 19,
+      "name": "NBE-5AC-G2"
+     },
+     "channelWidth": 40,
+     "downlinkCapacity": 320400000,
+     "downlinkUtilization": 0.018498175,
+     "linkScore": {
+      "linkScore": 1
+     },
+     "mcsIndex": 9,
+     "modulation": "8x 256QAM MIMO",
+     "signal": -63,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.00046061727,
+     "wirelessMode": "sta-ptmp"
+    },
+    "status": "active"
+   },
+   "interface": {
+    "identification": {
+     "description": null,
+     "deviceName": null,
+     "displayName": "MAIN ",
+     "name": "main",
+     "type": "wlan"
+    },
+    "statistics": {
+     "airTimeScore": null,
+     "downlinkCapacity": 320400000,
+     "downlinkUtilization": 0.0003788514357053683,
+     "linkScore": 1,
+     "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+     "rxBytes": 0,
+     "rxRate": 3064560,
+     "score": 1,
+     "scoreMax": 0.639,
+     "signalChain0": null,
+     "signalChain1": null,
+     "signalLocal": -56,
+     "signalRemote": -63,
+     "signalRemoteChain0": null,
+     "signalRemoteChain1": null,
+     "theoreticalDownlinkCapacity": 327600000,
+     "theoreticalUplinkCapacity": 320400000,
+     "txBytes": 0,
+     "txRate": 121384,
+     "uplinkCapacity": 320400000,
+     "uplinkUtilization": 0.009564794007490636
+    },
+    "status": {
+     "currentSpeed": null,
+     "enabled": true,
+     "plugged": true,
+     "status": "active"
+    }
+   },
+   "site": {
+    "identification": {
+     "id": "69cbbdc3-1938-498c-a2c6-27458fc30692",
+     "name": "Chestnut - Boxelder-Hickory Fence",
+     "status": "active",
+     "type": "site"
+    }
+   }
+  },
+  "type": "wireless"
+ }
+]

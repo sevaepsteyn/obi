@@ -1,0 +1,21 @@
+{
+  "store": "absent",
+  "hint": "PHY console fixture is intentionally absent in the harness (L3 is the default tab).",
+  "device": null,
+  "read": {
+    "outcome": "unknown_device",
+    "detail": "harness",
+    "read_at": "2026-07-16T17:59:00+00:00"
+  },
+  "ports": [],
+  "sections": {},
+  "truncated": false,
+  "_fresh": [
+    "read_at"
+  ],
+  "metrics": {
+    "store": "absent",
+    "window_seconds": 0,
+    "error_increases": []
+  }
+}

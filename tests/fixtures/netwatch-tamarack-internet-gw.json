@@ -1,0 +1,76 @@
+{
+ "_comment": "Recorded READ-ONLY /tool/netwatch print from tamarack-internet-gw (RouterOS 7.x, feature 095, 2026-08-24) via tests/record_fixtures.py. No state was changed. Pins the type=simple wire shape: status/since/done-tests/failed-tests only (no rtt/loss fields), and the row-to-row key inconsistency (disabled/script keys may be absent).",
+ "netwatch": [
+  {
+   ".id": "*1",
+   "name": "tamarack-internet-google",
+   "host": "8.8.8.8",
+   "type": "simple",
+   "up-script": "",
+   "down-script": "",
+   "test-script": "",
+   "status": "up",
+   "since": "2026-08-24 20:41:05",
+   "done-tests": 323,
+   "failed-tests": 0,
+   "disabled": false,
+   "comment": "tamarack-internet-google"
+  },
+  {
+   ".id": "*2",
+   "name": "tamarack-internet-cloudflare",
+   "host": "1.1.1.1",
+   "type": "simple",
+   "status": "up",
+   "since": "2026-08-24 20:41:05",
+   "done-tests": 323,
+   "failed-tests": 0,
+   "comment": "tamarack-internet-cloudflare"
+  },
+  {
+   ".id": "*3",
+   "name": "tamarack-internet-tamarack",
+   "host": "169.254.13.0",
+   "type": "simple",
+   "up-script": "",
+   "down-script": "",
+   "test-script": "",
+   "status": "up",
+   "since": "2026-08-24 20:41:05",
+   "done-tests": 323,
+   "failed-tests": 0,
+   "disabled": false,
+   "comment": "tamarack-internet-tamarack"
+  },
+  {
+   ".id": "*4",
+   "name": "tamarack-internet-sycamore-peer",
+   "host": "198.18.4.105",
+   "type": "simple",
+   "up-script": "",
+   "down-script": "",
+   "test-script": "",
+   "status": "up",
+   "since": "2026-08-24 20:41:05",
+   "done-tests": 323,
+   "failed-tests": 0,
+   "disabled": false,
+   "comment": "tamarack-internet-sycamore-peer"
+  },
+  {
+   ".id": "*6",
+   "name": "tamarack-internet-spruce-peer",
+   "host": "198.18.2.105",
+   "type": "simple",
+   "up-script": "",
+   "down-script": "",
+   "test-script": "",
+   "status": "up",
+   "since": "2026-08-24 20:41:05",
+   "done-tests": 323,
+   "failed-tests": 0,
+   "disabled": false,
+   "comment": "tamarack-internet-spruce-peer"
+  }
+ ]
+}

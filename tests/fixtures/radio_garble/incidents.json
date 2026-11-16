@@ -1,0 +1,27 @@
+{
+  "description": "Recorded garble incidents (radio.log 2026-08-20 -> 2026-09-08); every text must be judged garbled with the expected signature (feature 133, contract G1). Texts are verbatim log excerpts (the rx line truncates at 80 chars).",
+  "incidents": [
+    {"source": "rx #159 2026-08-20 22:27 UTC (accepted as [ok] at the time)", "text": "окококококококококококококококококококококококококококококококококококококококок", "expect": "repetition"},
+    {"source": "rx #44 2026-08-22", "text": "стрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрстрст", "expect": "repetition"},
+    {"source": "rx #2031 2026-08-27 (accepted as [ok])", "text": "Stструструструструструструструструструструструструструструструструструструструст", "expect": "non_latin"},
+    {"source": "rx #2033 2026-08-27 (accepted as [ok])", "text": "Within Earth, Within Earth,струструструструструструструструструструструструструс", "expect": "non_latin"},
+    {"source": "rx #2040 2026-08-27 (accepted as [ok])", "text": "остbenig er остbenig er остbenig er остbenig er остbenig er остbenig er остbenig", "expect": "repetition"},
+    {"source": "rx #2045 2026-08-27", "text": "остben, остben, остben, остben, остben, остben, остben, остben, остben, остben, ", "expect": "repetition"},
+    {"source": "rx #5825 2026-09-05", "text": "Bitcoin Bitcoin Bitcoin Bitcoin Bitcoin Bitcoin Bitcoin Bitcoin Bitcoin Bitcoi", "expect": "repetition"},
+    {"source": "rx #5986 2026-09-07", "text": "Bitcoin Bitcoin Bitcoin", "expect": "repetition"},
+    {"source": "rx #6095 2026-09-07 21:00:51 PT (accepted as [ok]; operator restarted by hand)", "text": "Ó, píða, og fór í hana.", "expect": "foreign_orthography"},
+    {"source": "field 2026-08-19 (the Icelandic lock-on that pinned language=en)", "text": "Er það er það?", "expect": "foreign_orthography"}
+  ],
+  "intelligible": [
+    "It was an echo, say again.",
+    "Just the candle, say again.",
+    "Ovi, Ovi, Mira.",
+    "Set color palette to lava.",
+    "Obi, Obi, Annelise, status of the Za-zu link.",
+    "Meet at the café by Yanika's camp.",
+    "Obi, Obi, Krum, is the Alder link up?",
+    "Tower lights set to purple, over.",
+    "radio check",
+    "Moby-Oby, revert the portal lights."
+  ]
+}

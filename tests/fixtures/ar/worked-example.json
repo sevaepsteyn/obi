@@ -1,0 +1,31 @@
+{
+ "origin_site": "BRC - NOC",
+ "link": "BRC - NOC <-> Basswood Relay - East (60 GHz)",
+ "health": "down",
+ "label_km": 5.8,
+ "scene": {
+  "noc-ptp-basswood-60": {
+   "x": 19.95,
+   "y": 27.04,
+   "z": 9.9
+  },
+  "basswood-ptp-noc-60": {
+   "x": -5621.85,
+   "y": 189.34,
+   "z": 1524.26
+  }
+ },
+ "frequency_ghz": 65.88,
+ "fresnel_radius_m": 2.58,
+ "label": "BRC - NOC <-> Basswood Relay - East (60 GHz) \u00b7 5.8 km \u00b7 F1 2.6 m",
+ "zone_scale_full": [
+  2921.9,
+  2.58,
+  2.58
+ ],
+ "zone_scale_core": [
+  2919.0,
+  1.55,
+  1.55
+ ]
+}

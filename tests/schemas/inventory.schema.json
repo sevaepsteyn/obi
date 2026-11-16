@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi persisted inventory (discovered roster)",
+  "type": "object",
+  "required": ["version", "scope", "generated_at", "entries"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "enum": [1, 2],
+      "description": "1 = address-keyed (002). 2 = serial-based device identity (018, additive serial + alt_addresses). Writers emit 2; readers accept both."
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "ranges": { "type": "array", "items": { "type": "string" } },
+        "seeds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "address",
+          "identity",
+          "discovery_state",
+          "provenance",
+          "first_seen",
+          "last_seen",
+          "present_in_latest"
+        ],
+        "properties": {
+          "address": { "type": "string" },
+          "identity": { "type": "string" },
+          "discovery_state": {
+            "type": "string",
+            "enum": [
+              "identified",
+              "unsupported",
+              "unreachable",
+              "auth_failed",
+              "timed_out",
+              "unidentified"
+            ]
+          },
+          "model": { "type": ["string", "null"] },
+          "version": { "type": ["string", "null"] },
+          "platform": { "type": ["string", "null"] },
+          "serial": {
+            "type": ["string", "null"],
+            "description": "v2, additive. RouterOS serial — stable device identity used to collapse duplicate address-entries (018). null/absent ⇒ unknown (per-address fallback). Absent in v1 files."
+          },
+          "alt_addresses": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "v2, additive. Non-canonical addresses the same device answered at (018). Empty/absent for a single-address device or in v1 files."
+          },
+          "provenance": {
+            "type": "string",
+            "description": "How the node was found: \"seed\", \"neighbor-of:<address>\", \"ospf-peer-of:<via>@<link-local>\", or (when collapsed) the canonical-first union joined with \" | \"."
+          },
+          "first_seen": { "type": "string", "format": "date-time" },
+          "last_seen": { "type": "string", "format": "date-time" },
+          "present_in_latest": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

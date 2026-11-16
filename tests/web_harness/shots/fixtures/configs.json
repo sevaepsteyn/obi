@@ -1,0 +1,87 @@
+{
+  "store": "ok",
+  "found": true,
+  "changed": true,
+  "truncated": false,
+  "_fresh": [
+    "last_changed_at",
+    "captured_at"
+  ],
+  "diff": "--- a/core-gw-1.rsc\n+++ b/core-gw-1.rsc\n@@ -12,6 +12,7 @@\n /ip firewall filter\n add chain=input action=accept protocol=icmp\n-add chain=input action=drop in-interface=ether1\n+add chain=input action=drop in-interface=ether1 comment=\"wan\"\n+add chain=input action=accept dst-port=8291 protocol=tcp\n /ip address\n",
+  "content": "# core-gw-1 export (redacted, synthetic)\n/system identity set name=core-gw-1\n/interface ethernet set [ find default-name=ether1 ] comment=uplink\n/ip address add address=10.20.0.1/24 interface=ether1\n/routing ospf instance add name=default router-id=10.20.0.1\n/ip firewall filter add chain=input action=accept protocol=icmp",
+  "entries": [
+    {
+      "commit": "a1b2c3d",
+      "captured_at": "2026-07-16T17:30:00+00:00",
+      "insertions": 2,
+      "deletions": 1,
+      "summary": "add mgmt accept rule"
+    },
+    {
+      "commit": "e4f5a6b",
+      "captured_at": "2026-07-15T17:00:00+00:00",
+      "insertions": 5,
+      "deletions": 0,
+      "summary": "initial ospf config"
+    },
+    {
+      "commit": "0c1d2e3",
+      "captured_at": "2026-07-13T18:20:00+00:00",
+      "insertions": 40,
+      "deletions": 3,
+      "summary": "first backup"
+    }
+  ],
+  "rows": [
+    {
+      "identity": "core-gw-1",
+      "has_backup": true,
+      "stale": false,
+      "in_roster": true,
+      "versions": 12,
+      "last_changed_at": "2026-07-16T17:30:00+00:00",
+      "note": ""
+    },
+    {
+      "identity": "tamarack-gw",
+      "has_backup": true,
+      "stale": false,
+      "in_roster": true,
+      "versions": 8,
+      "last_changed_at": "2026-07-16T14:20:00+00:00",
+      "note": ""
+    },
+    {
+      "identity": "walnut-gw",
+      "has_backup": true,
+      "stale": true,
+      "in_roster": true,
+      "versions": 3,
+      "last_changed_at": "2026-07-02T20:40:00+00:00",
+      "note": "no change in 14d"
+    },
+    {
+      "identity": "ponderosa-gw",
+      "has_backup": false,
+      "stale": false,
+      "in_roster": true,
+      "versions": 0,
+      "last_changed_at": null,
+      "note": "no /export captured yet"
+    },
+    {
+      "identity": "sequoia-relay-2",
+      "has_backup": true,
+      "stale": true,
+      "in_roster": false,
+      "versions": 2,
+      "last_changed_at": "2026-06-05T02:00:00+00:00",
+      "note": "orphaned \u2014 not in roster"
+    }
+  ],
+  "totals": {
+    "backed_up": 4,
+    "devices": 5,
+    "stale": 2
+  }
+}

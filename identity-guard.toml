@@ -1,0 +1,123 @@
+# Identity guard scope (feature 137, contracts/guard-config.md). PUBLIC FILE: path globs, public
+# literals and reasons only — never a real value. Every entry needs a reason; `obi identity scan`
+# prints every exclusion and allowance on each run.
+version = 1
+
+[[exclude]]
+glob = "specs/**"
+reason = "private-only design history (137 clarification); omitted from the public export"
+
+[[exclude]]
+glob = "src/obi/web/static/vendor/**"
+reason = "vendored third-party library"
+
+[[exclude]]
+glob = "uv.lock"
+reason = "dependency lockfile (package hashes trip key shapes)"
+
+[[exclude]]
+glob = "identity-guard.toml"
+reason = "this file: patterns, not data"
+
+[[exclude]]
+glob = "**/*.{png,jpg,jpeg,gif,webp,wav,mp3,db,pdf,bin,ico}"
+reason = "binary assets (no line structure); raw-byte checks belong to the dataset gate"
+
+[[allow]]
+category = "chat_id"
+pattern = "^[UCWGD]0(FAKE|OTHER|XXXX|TEST)"
+reason = "fake chat IDs used by tests and docs"
+
+[[allow]]
+category = "ip"
+pattern = "(1\\.1\\.1\\.1|1\\.0\\.0\\.1|8\\.8\\.8\\.8|8\\.8\\.4\\.4|9\\.9\\.9\\.9)(?![\\d.])"
+reason = "well-known public DNS resolvers (identify no deployment)"
+
+[[allow]]
+category = "email"
+pattern = "git@github\\.com"
+reason = "the public GitHub SSH remote form, not a person"
+
+[[allow]]
+category = "link"
+path = "CLAUDE.md"
+reason = "agent workflow references specs/ by design"
+
+[[allow]]
+category = "link"
+path = ".specify/**"
+reason = "Spec Kit tooling references specs/ by design"
+
+[[allow]]
+category = "link"
+path = ".claude/skills/**"
+reason = "Spec Kit skills reference specs/ by design"
+
+[[allow]]
+category = "link"
+path = "tests/unit/identity/test_moved.py"
+reason = "lock-step check against the private config-keys contract; skips when specs/ is absent"
+
+# The demo sanitizer's own tests (features 134/136) plant REAL-SHAPED synthetic values to prove
+# the leak gate catches them. Only the SHAPE checks are allowed there — a value from the private
+# token sources (check "token"/"range") is still fatal in these paths.
+[[allow]]
+category = "mac"
+check = "mac"
+path = "tests/{unit/demo,fixtures/demo,integration}/**"
+reason = "synthetic globally-administered MAC plants for the demo leak gate"
+
+[[allow]]
+category = "ip"
+check = "public"
+path = "tests/{unit/demo,fixtures/demo,integration}/**"
+reason = "synthetic public-address plants for the demo leak gate"
+
+[[allow]]
+category = "secret"
+check = "secret"
+path = "tests/{unit/demo,fixtures/demo,integration/test_demo_*}*"
+reason = "synthetic key-shape plants for the demo leak gate"
+
+[[allow]]
+category = "asn"
+check = "shape"
+path = "tests/{unit/demo,fixtures/demo}/**"
+reason = "synthetic AS-number plants for the demo leak gate"
+
+[[allow]]
+category = "ip"
+check = "ip"
+path = "tests/{unit/demo,fixtures/demo,integration}/**"
+reason = "synthetic public IPv6 plants for the demo leak gate"
+
+[[allow]]
+category = "secret"
+check = "key-shape"
+path = "tests/unit/demo/**"
+reason = "synthetic WireGuard key plants for the demo leak gate"
+
+[[allow]]
+category = "secret"
+check = "uuid-host"
+path = "tests/{fixtures,unit}/demo/**"
+reason = "synthetic cloud-console UUID host in the demo fixture config"
+
+# Published authorship (operator decision 2026-11-16): the package metadata names the author's
+# contact and the public repository URL on purpose. Path-scoped, so nowhere else may carry them.
+[[allow]]
+category = "person"
+check = "token"
+path = "pyproject.toml"
+reason = "published author contact and repository owner"
+
+[[allow]]
+category = "domain"
+check = "token"
+path = "pyproject.toml"
+reason = "published author contact"
+
+[[allow]]
+category = "email"
+path = "pyproject.toml"
+reason = "published author contact"

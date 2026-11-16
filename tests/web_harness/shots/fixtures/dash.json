@@ -1,0 +1,182 @@
+{
+  "_fresh": [
+    "generated_at"
+  ],
+  "store": "ok",
+  "hint": null,
+  "board": {
+    "generated_at": "2026-08-25T00:00:00+00:00",
+    "state": "yellow",
+    "notes": [],
+    "tiles": [
+      {
+        "signal": "fleet",
+        "state": "green",
+        "cadence_s": 60,
+        "data_age_s": 6.0,
+        "items": [
+          {
+            "key": "tamarack-gw",
+            "label": "tamarack-gw",
+            "state": "green",
+            "detail": "up \u00b7 rtt 2.1 ms",
+            "metrics": {
+              "rtt_ms": 2.1
+            },
+            "since_us": null
+          },
+          {
+            "key": "basswood-gw",
+            "label": "basswood-gw",
+            "state": "green",
+            "detail": "up \u00b7 rtt 4.8 ms",
+            "metrics": {
+              "rtt_ms": 4.8
+            },
+            "since_us": null
+          },
+          {
+            "key": "chestnut-gw",
+            "label": "chestnut-gw",
+            "state": "green",
+            "detail": "up \u00b7 rtt 9.6 ms",
+            "metrics": {
+              "rtt_ms": 9.6
+            },
+            "since_us": null
+          }
+        ]
+      },
+      {
+        "signal": "netwatch",
+        "state": "yellow",
+        "cadence_s": 60,
+        "data_age_s": 8.0,
+        "items": [
+          {
+            "key": "tamarack-gw|169.254.13.1",
+            "label": "tamarack-gw\u2192tamarack-internet",
+            "state": "yellow",
+            "detail": "loss 6% (5m)",
+            "metrics": {
+              "loss_pct": 6.0
+            },
+            "since_us": null
+          },
+          {
+            "key": "tamarack-gw|8.8.8.8",
+            "label": "tamarack-gw\u2192google",
+            "state": "green",
+            "detail": "up",
+            "metrics": {},
+            "since_us": null
+          },
+          {
+            "key": "basswood-gw|172.18.89.1",
+            "label": "basswood-gw\u2192showers",
+            "state": "green",
+            "detail": "up",
+            "metrics": {},
+            "since_us": null
+          }
+        ]
+      },
+      {
+        "signal": "ping",
+        "state": "green",
+        "cadence_s": 60,
+        "data_age_s": 5.0,
+        "items": [
+          {
+            "key": "8.8.8.8",
+            "label": "google",
+            "state": "green",
+            "detail": "rtt 22 ms \u00b7 loss 0%",
+            "metrics": {
+              "rtt_ms": 22.0,
+              "loss_pct": 0.0
+            },
+            "since_us": null
+          },
+          {
+            "key": "1.1.1.1",
+            "label": "cloudflare",
+            "state": "green",
+            "detail": "rtt 24 ms \u00b7 loss 0%",
+            "metrics": {
+              "rtt_ms": 24.0,
+              "loss_pct": 0.0
+            },
+            "since_us": null
+          }
+        ]
+      },
+      {
+        "signal": "internet",
+        "state": "green",
+        "cadence_s": 300,
+        "data_age_s": 180.0,
+        "items": [
+          {
+            "key": "tamarack-internet-gw|sfp-sfpplus5-sycamore",
+            "label": "sycamore",
+            "state": "green",
+            "detail": "in 1210/2500 Mb/s (48%) \u00b7 out 180/2500 Mb/s (7%) \u00b7 3m old",
+            "metrics": {
+              "in_pct": 48.4,
+              "out_pct": 7.2,
+              "pct": 48.4,
+              "capacity_mbps": 2500
+            },
+            "since_us": null
+          },
+          {
+            "key": "tamarack-internet-gw|sfp-sfpplus6-spruce",
+            "label": "spruce",
+            "state": "green",
+            "detail": "in 18/250 Mb/s (7%) \u00b7 out 4/250 Mb/s (2%) \u00b7 3m old",
+            "metrics": {
+              "in_pct": 7.2,
+              "out_pct": 1.6,
+              "pct": 7.2,
+              "capacity_mbps": 250
+            },
+            "since_us": null
+          }
+        ]
+      },
+      {
+        "signal": "pipeline",
+        "state": "green",
+        "cadence_s": 60,
+        "data_age_s": 4.0,
+        "items": [
+          {
+            "key": "dash",
+            "label": "dash",
+            "state": "green",
+            "detail": "last cycle 1m ago",
+            "metrics": {},
+            "since_us": null
+          },
+          {
+            "key": "metrics",
+            "label": "metrics",
+            "state": "green",
+            "detail": "last ingest 3m ago",
+            "metrics": {},
+            "since_us": null
+          },
+          {
+            "key": "configs",
+            "label": "configs",
+            "state": "green",
+            "detail": "0 capture-stale",
+            "metrics": {},
+            "since_us": null
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "tool": "netbox-drift",
+  "generated_at": "2026-07-16T17:52:00+00:00",
+  "_fresh": [
+    "generated_at",
+    "last_seen"
+  ],
+  "data": {
+    "counts": {
+      "matched": 2,
+      "undocumented": 1,
+      "retire_candidate": 1
+    },
+    "drift": [
+      {
+        "drift_class": "matched",
+        "name": "core-gw-1",
+        "site": "NOC",
+        "model": "CCR2004-1G-12S+2XS",
+        "last_seen": "2026-07-16T17:52:00+00:00"
+      },
+      {
+        "drift_class": "matched",
+        "name": "tamarack-gw",
+        "site": "Tamarack",
+        "model": "RB5009UPr+S+",
+        "last_seen": "2026-07-16T17:48:00+00:00"
+      },
+      {
+        "drift_class": "undocumented",
+        "name": "walnut-gw",
+        "site": "Walnut",
+        "model": "CRS328-24P-4S+",
+        "last_seen": "2026-07-16T17:51:00+00:00"
+      },
+      {
+        "drift_class": "retire_candidate",
+        "name": "sequoia-relay-2",
+        "site": "Relay",
+        "model": "PowerBeam-5AC",
+        "last_seen": "2026-06-16T18:00:00+00:00"
+      }
+    ]
+  }
+}

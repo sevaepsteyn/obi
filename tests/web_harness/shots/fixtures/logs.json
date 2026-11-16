@@ -1,0 +1,178 @@
+{
+  "store": "ok",
+  "mode": "initial",
+  "cursor": 10281,
+  "_fresh": [
+    "timestamp"
+  ],
+  "entries": [
+    {
+      "timestamp": "2026-07-16T17:32:00+00:00",
+      "host": "core-gw-1",
+      "severity": "info",
+      "message": "ospf-neighbor: adjacency to 10.20.0.2 up"
+    },
+    {
+      "timestamp": "2026-07-16T17:33:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dhcp: assigned 10.20.2.44 to 02:3c:d8:fc:fa:bf"
+    },
+    {
+      "timestamp": "2026-07-16T17:34:00+00:00",
+      "host": "walnut-gw",
+      "severity": "warning",
+      "message": "interface ether5 link down"
+    },
+    {
+      "timestamp": "2026-07-16T17:35:00+00:00",
+      "host": "ponderosa-gw",
+      "severity": "error",
+      "message": "login failure for user admin from 10.20.9.9 via ssh"
+    },
+    {
+      "timestamp": "2026-07-16T17:36:00+00:00",
+      "host": "chestnut-internet-gw",
+      "severity": "info",
+      "message": "system time synchronized via ntp"
+    },
+    {
+      "timestamp": "2026-07-16T17:37:00+00:00",
+      "host": "core-gw-1",
+      "severity": "warning",
+      "message": "ospf-interface: cost changed on ether2"
+    },
+    {
+      "timestamp": "2026-07-16T17:38:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dns cache flushed"
+    },
+    {
+      "timestamp": "2026-07-16T17:39:00+00:00",
+      "host": "walnut-gw",
+      "severity": "critical",
+      "message": "wireguard handshake timeout for peer relay-west"
+    },
+    {
+      "timestamp": "2026-07-16T17:40:00+00:00",
+      "host": "ponderosa-gw",
+      "severity": "info",
+      "message": "firewall: dropped input on ether1"
+    },
+    {
+      "timestamp": "2026-07-16T17:41:00+00:00",
+      "host": "chestnut-internet-gw",
+      "severity": "info",
+      "message": "config changed by admin"
+    },
+    {
+      "timestamp": "2026-07-16T17:42:00+00:00",
+      "host": "core-gw-1",
+      "severity": "info",
+      "message": "ospf-neighbor: adjacency to 10.20.0.2 up"
+    },
+    {
+      "timestamp": "2026-07-16T17:43:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dhcp: assigned 10.20.2.44 to 02:3c:d8:fc:fa:bf"
+    },
+    {
+      "timestamp": "2026-07-16T17:44:00+00:00",
+      "host": "walnut-gw",
+      "severity": "warning",
+      "message": "interface ether5 link down"
+    },
+    {
+      "timestamp": "2026-07-16T17:45:00+00:00",
+      "host": "ponderosa-gw",
+      "severity": "error",
+      "message": "login failure for user admin from 10.20.9.9 via ssh"
+    },
+    {
+      "timestamp": "2026-07-16T17:46:00+00:00",
+      "host": "chestnut-internet-gw",
+      "severity": "info",
+      "message": "system time synchronized via ntp"
+    },
+    {
+      "timestamp": "2026-07-16T17:47:00+00:00",
+      "host": "core-gw-1",
+      "severity": "warning",
+      "message": "ospf-interface: cost changed on ether2"
+    },
+    {
+      "timestamp": "2026-07-16T17:48:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dns cache flushed"
+    },
+    {
+      "timestamp": "2026-07-16T17:49:00+00:00",
+      "host": "walnut-gw",
+      "severity": "critical",
+      "message": "wireguard handshake timeout for peer relay-west"
+    },
+    {
+      "timestamp": "2026-07-16T17:50:00+00:00",
+      "host": "ponderosa-gw",
+      "severity": "info",
+      "message": "firewall: dropped input on ether1"
+    },
+    {
+      "timestamp": "2026-07-16T17:51:00+00:00",
+      "host": "chestnut-internet-gw",
+      "severity": "info",
+      "message": "config changed by admin"
+    },
+    {
+      "timestamp": "2026-07-16T17:52:00+00:00",
+      "host": "core-gw-1",
+      "severity": "info",
+      "message": "ospf-neighbor: adjacency to 10.20.0.2 up"
+    },
+    {
+      "timestamp": "2026-07-16T17:53:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dhcp: assigned 10.20.2.44 to 02:3c:d8:fc:fa:bf"
+    },
+    {
+      "timestamp": "2026-07-16T17:54:00+00:00",
+      "host": "walnut-gw",
+      "severity": "warning",
+      "message": "interface ether5 link down"
+    },
+    {
+      "timestamp": "2026-07-16T17:55:00+00:00",
+      "host": "ponderosa-gw",
+      "severity": "error",
+      "message": "login failure for user admin from 10.20.9.9 via ssh"
+    },
+    {
+      "timestamp": "2026-07-16T17:56:00+00:00",
+      "host": "chestnut-internet-gw",
+      "severity": "info",
+      "message": "system time synchronized via ntp"
+    },
+    {
+      "timestamp": "2026-07-16T17:57:00+00:00",
+      "host": "core-gw-1",
+      "severity": "warning",
+      "message": "ospf-interface: cost changed on ether2"
+    },
+    {
+      "timestamp": "2026-07-16T17:58:00+00:00",
+      "host": "tamarack-gw",
+      "severity": "info",
+      "message": "dns cache flushed"
+    },
+    {
+      "timestamp": "2026-07-16T17:59:00+00:00",
+      "host": "walnut-gw",
+      "severity": "critical",
+      "message": "wireguard handshake timeout for peer relay-west"
+    }
+  ]
+}

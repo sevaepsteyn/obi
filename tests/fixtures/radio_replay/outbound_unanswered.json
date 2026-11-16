@@ -1,0 +1,42 @@
+{
+  "description": "Feature 124 (SC-003): the bounded unanswered walk — exactly 3 hails (1 + 2 re-hails), the payload never airs, the request closes 'unanswered', and a LATE go-ahead after the close draws nothing (the requester was already told; spec edge case).",
+  "config": {
+    "operator_handles": [],
+    "known_callers": ["mira"],
+    "outbound_ack_window_s": 30,
+    "outbound_max_rehails": 2
+  },
+  "outbound": {"callee": "Zeke", "message": "generator fuel is at the depot", "ttl_s": 600},
+  "transmissions": [
+    {
+      "source": "constructed: unrelated chatter inside the first window",
+      "at_s": 12,
+      "text": "Anyone got eyes on the burn perimeter?",
+      "expect": {"fired": false, "reason": "no_name", "effects": []}
+    },
+    {
+      "source": "first window elapses — re-hail 1",
+      "at_s": 31,
+      "tick": true,
+      "expect": {"effects": ["tx:hail"]}
+    },
+    {
+      "source": "second window elapses — re-hail 2",
+      "at_s": 62,
+      "tick": true,
+      "expect": {"effects": ["tx:hail"]}
+    },
+    {
+      "source": "third window elapses — attempts spent: unanswered, nothing more on the air",
+      "at_s": 93,
+      "tick": true,
+      "expect": {"effects": ["outcome:unanswered", "close:unanswered"]}
+    },
+    {
+      "source": "control: a go-ahead AFTER the attempt closed stays silent",
+      "at_s": 120,
+      "text": "Go for Zeke.",
+      "expect": {"fired": false, "reason": "no_name", "effects": []}
+    }
+  ]
+}

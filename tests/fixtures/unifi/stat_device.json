@@ -1,0 +1,37 @@
+[
+  {
+    "mac": "AA:BB:CC:00:00:01",
+    "name": "udm-ridge",
+    "model": "UDMPRO",
+    "version": "3.2.7",
+    "state": 1,
+    "uptime": 864000,
+    "system-stats": { "cpu": "7.5", "mem": "42.0" },
+    "mem_total": 2000000000,
+    "mem_used": 840000000,
+    "general_temperature": 51
+  },
+  {
+    "mac": "aa:bb:cc:00:00:02",
+    "name": "usw-core",
+    "model": "USW24POE",
+    "version": "6.5.59",
+    "state": 1,
+    "uptime": 1209600,
+    "system-stats": { "cpu": "3.2" },
+    "mem_total": 268435456,
+    "mem_used": 134217728,
+    "temperatures": [{ "name": "CPU", "value": 48.0 }]
+  },
+  {
+    "mac": "aa:bb:cc:00:00:09",
+    "name": "uap-attic",
+    "model": "U6-Lite",
+    "version": "6.5.59",
+    "state": 1,
+    "uptime": 3600,
+    "system-stats": { "cpu": "1.0" },
+    "mem_total": 134217728,
+    "mem_used": 50000000
+  }
+]

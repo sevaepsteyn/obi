@@ -1,0 +1,59 @@
+{
+  "description": "Feature 124 (SC-002/SC-004/SC-005): obi hails Dana; the go-ahead is recognized amid real traffic, the payload airs only after it, and the same go-ahead shapes with NO hail pending stay dead silent. Dana is deliberately OFF the roster — anyone is callable (operator decision 2026-09-02).",
+  "config": {
+    "operator_handles": [],
+    "known_callers": ["mira", "mike"],
+    "outbound_ack_window_s": 30,
+    "outbound_max_rehails": 2
+  },
+  "outbound": {"callee": "Dana", "message": "the Alder link is back up", "ttl_s": 600},
+  "transmissions": [
+    {
+      "source": "constructed: a hail-answer between OTHER stations inside our window",
+      "at_s": 5,
+      "text": "Go for Mike.",
+      "expect": {"fired": false, "reason": "third_party_traffic", "effects": []}
+    },
+    {
+      "source": "constructed: garble inside the window is never a go-ahead (O2)",
+      "at_s": 10,
+      "text": "kkkzzt",
+      "intelligible": false,
+      "expect": {"fired": false, "reason": "unintelligible", "effects": []}
+    },
+    {
+      "source": "constructed: mid-sentence 'go for it' does not open the transmission",
+      "at_s": 15,
+      "text": "The ice run is at six, we'll go for it after.",
+      "expect": {"fired": false, "reason": "no_name", "effects": []}
+    },
+    {
+      "source": "constructed: the awaited go-ahead — delivery airs and the request settles",
+      "at_s": 20,
+      "text": "Obi, go for Dana.",
+      "expect": {
+        "fired": true,
+        "reason": "outbound_go_ahead:obi_go_for_callee",
+        "effects": ["tx:delivery", "outcome:delivered"]
+      }
+    },
+    {
+      "source": "constructed: the callee clears — the post-delivery call is an ordinary one (O10)",
+      "at_s": 25,
+      "text": "Copy that, out.",
+      "expect": {"fired": false, "effects": ["close:cleared"]}
+    },
+    {
+      "source": "control (O8): the SAME go-ahead with no hail pending draws nothing",
+      "at_s": 40,
+      "text": "Go for Dana.",
+      "expect": {"fired": false, "reason": "no_name", "effects": []}
+    },
+    {
+      "source": "control (O8): a bare 'go' on an idle machine draws nothing",
+      "at_s": 45,
+      "text": "Go.",
+      "expect": {"fired": false, "reason": "no_name", "effects": []}
+    }
+  ]
+}

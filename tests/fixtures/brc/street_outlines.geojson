@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "open-street-fixture"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-114.815579, 40.785242],
+          [-114.813579, 40.785242],
+          [-114.813579, 40.787242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "block-ring-fixture"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-114.818579, 40.780242],
+            [-114.816579, 40.780242],
+            [-114.816579, 40.778242],
+            [-114.818579, 40.778242],
+            [-114.818579, 40.780242]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "multipart-street-fixture"},
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-114.805579, 40.793242],
+            [-114.804579, 40.792242]
+          ],
+          [
+            [-114.804579, 40.792242],
+            [-114.803579, 40.792242]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "corrupt-far-vertex"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-114.815579, 40.783242],
+          [-100.0, 45.0]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "tool": "siklu",
+  "generated_at": "2026-07-16T17:55:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "data": {
+    "counts": {
+      "reachable": 2,
+      "total": 2
+    },
+    "radios": [
+      {
+        "identity": "tamarack-eband-a",
+        "address": "10.40.0.1",
+        "reachability": "reachable",
+        "uptime_seconds": 2400000,
+        "rf": {
+          "rssi_dbm": -42,
+          "cinr_db": 18,
+          "tx_power_dbm": 4
+        }
+      },
+      {
+        "identity": "mountain-eband-b",
+        "address": "10.40.0.2",
+        "reachability": "reachable",
+        "uptime_seconds": 2398000,
+        "rf": {
+          "rssi_dbm": -45,
+          "cinr_db": 16,
+          "tx_power_dbm": 4
+        }
+      }
+    ],
+    "links": [
+      {
+        "name": "tamarack <-> mountain (70 GHz)",
+        "state": "up",
+        "end_a": {
+          "identity": "tamarack-eband-a",
+          "rf": {
+            "rssi_dbm": -42,
+            "tx_frequency_mhz": 73500
+          }
+        },
+        "end_b": {
+          "identity": "mountain-eband-b",
+          "rf": {
+            "rssi_dbm": -45,
+            "tx_frequency_mhz": 83500
+          }
+        }
+      }
+    ]
+  }
+}

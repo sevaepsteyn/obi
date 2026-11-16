@@ -1,0 +1,404 @@
+{
+ "description": "The full 2026-08-28 evening (radio.db calls 67-76, 21:04-22:01) replayed end-to-end with real transcripts — hails, one-breath requests, supersede chains, the weak-variant hail, dead-air repair, the expects-reply exchange, budget interplay, and the garble block. at_s is offset from 21:04:04. tx 2771 (stt_gate=no_speech) is omitted: the runner's deterministic no_speech gate never lets it reach the machine.",
+ "config": {
+  "name_variants": [
+   "obi",
+   "obie",
+   "obee",
+   "o b",
+   "opie",
+   "hobi"
+  ],
+  "name_variants_weak": [
+   "ovi",
+   "obini",
+   "okie"
+  ],
+  "known_callers": [
+   "Krum",
+   "Vertigo",
+   "Mina"
+  ],
+  "operator_handles": [
+   "Mira"
+  ],
+  "caller_aliases": {
+   "kroom": "Krum"
+  }
+ },
+ "transmissions": [
+  {
+   "source": "tx 2685 (call 67 hail)",
+   "at_s": 0.0,
+   "text": "Obi, Obi, Kroom.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "krum",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2688 (one-breath request)",
+   "at_s": 10.0,
+   "text": "Obi, can you change the portal to happier colors?",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2693 (call 68 hail supersedes 67 — matches the real superseded close)",
+   "at_s": 51.0,
+   "text": "Obi, Obi, Krum.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "krum",
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2696",
+   "at_s": 60.0,
+   "text": "Obi, can you make the lights brighter?",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2701 — the call-68 drop, now answered",
+   "at_s": 80.0,
+   "text": "Set portal to 100%.",
+   "intelligible": true,
+   "expect": {
+    "reason": "in_window_composed",
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2702 (call 69) — the weak-variant hail that missed",
+   "at_s": 317.0,
+   "text": "Ovi, Ovi, Vertigo.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "reason": "name_at_start",
+    "caller": "vertigo",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2706",
+   "at_s": 336.0,
+   "text": "Change the portal to pink.",
+   "intelligible": true,
+   "expect": {
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2713 (21:16 garble block, outside any window)",
+   "at_s": 762.0,
+   "text": "Sorry, Sorry, Sorry, Sorry Sorry Sorry Sorry",
+   "intelligible": false,
+   "expect": {
+    "fired": false,
+    "reason": "unintelligible",
+    "effects": []
+   }
+  },
+  {
+   "source": "tx 2714",
+   "at_s": 767.0,
+   "text": "Hvaði, hvaði, hvaði, hvaði?",
+   "intelligible": false,
+   "expect": {
+    "fired": false,
+    "reason": "unintelligible",
+    "effects": []
+   }
+  },
+  {
+   "source": "tx 2715",
+   "at_s": 772.0,
+   "text": "Sandback, Sandback, you're the usual, we're working well, we're on dial, I come back to IT.",
+   "intelligible": true,
+   "expect": {
+    "fired": false,
+    "reason": "no_name",
+    "effects": []
+   }
+  },
+  {
+   "source": "tx 2716",
+   "at_s": 779.0,
+   "text": "Hingred, hingred, hingred.",
+   "intelligible": true,
+   "expect": {
+    "fired": false,
+    "reason": "no_name",
+    "effects": []
+   }
+  },
+  {
+   "source": "tx 2717 (call 70, Mira)",
+   "at_s": 1117.0,
+   "text": "Obi, Obi, Obi, Obi, this is Mira.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "mira",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2721",
+   "at_s": 1126.0,
+   "text": "What is the utilization of our primary internet link at tamarack?",
+   "intelligible": true,
+   "expect": {
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2728 — Mira's dropped verbless follow-up, now answered",
+   "at_s": 1149.0,
+   "text": "Thank you. Thank you. Just for status of the tamarack to mountain, 70 gigahertz, link.",
+   "intelligible": true,
+   "expect": {
+    "reason": "in_window_composed",
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2729 (call 71 — the re-hail the drop used to force; previous call times out first)",
+   "at_s": 1211.0,
+   "text": "Obi, Obi, please tell me the status of the mountain to shower at 70 GHz link.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2737 (call 72, Mina)",
+   "at_s": 2495.0,
+   "text": "Obi, Obi, Mina.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "mina",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2740",
+   "at_s": 2503.0,
+   "text": "Set the portal purple.",
+   "intelligible": true,
+   "expect": {
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2745 — obi's real caveat answer, replayed with the expects-reply flag (129: the doubled re-hail now opens its own call — as it did in real history)",
+   "at_s": 2523.0,
+   "text": "Obi, Obi, set the portal to dancing shadows, palette, lava, brightness, 80%.",
+   "intelligible": true,
+   "compose_result": {
+    "text": "Palette's set to Lava at 80 percent, but you're on a solid color pattern so it won't actually show — need an animated effect for that, over",
+    "expects_reply": true
+   },
+   "expect": {
+    "fired": true,
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2750 — the invited reply that was dropped, now answered",
+   "at_s": 2548.0,
+   "text": "Yes, set the effect to dancing shadows.",
+   "intelligible": true,
+   "expect": {
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2751 (the caller's re-hail — call 73 in real history) (129: the doubled re-hail now opens its own call — as it did in real history)",
+   "at_s": 2561.0,
+   "text": "Obi, Obi, send the effect to dancing shadows.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2756 — 'Thank you, Senator.' post-answer. Pre-129 the SPENT budget closed it silently; the 129 fresh call (tx 2751 opened one) has budget, so 109's window-belongs-to-caller composes it — the documented accepted cost, bounded by the new call's own budget and window expiry",
+   "at_s": 2589.0,
+   "text": "Thank you, Senator.",
+   "intelligible": true,
+   "expect": {
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2757 (call 74)",
+   "at_s": 2806.0,
+   "text": "Obi, Obi, send the portal to ice fire.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2762 (call 75 hail)",
+   "at_s": 3322.0,
+   "text": "Obi, Obi, Kroom.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "krum",
+    "effects": [
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2765 — the 25 s dead-air swallow, now a say-again",
+   "at_s": 3331.0,
+   "text": "Obi, NASA, power, blue.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "reason": "say_again_no_tail",
+    "effects": [
+     "tx:say_again"
+    ]
+   }
+  },
+  {
+   "source": "tx 2766 (the caller's repeat) (129: the doubled repeat opens a fresh call; still answered, never swallowed)",
+   "at_s": 3356.0,
+   "text": "Obi, Obi, make the tower light blue.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "tx 2772 (call 76 hail supersedes 75 — matches the real superseded close)",
+   "at_s": 3389.0,
+   "text": "Obi, Obi, Krum.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "caller": "krum",
+    "effects": [
+     "close:superseded",
+     "open_call",
+     "tx:ack"
+    ]
+   }
+  },
+  {
+   "source": "tx 2775",
+   "at_s": 3399.0,
+   "text": "Obi, make power lights random.",
+   "intelligible": true,
+   "expect": {
+    "fired": true,
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  },
+  {
+   "source": "call 76 trailing conversational follow-up, now answered",
+   "at_s": 3420.0,
+   "text": "Yeah, Kroom, I think it's, um, it's setting the random, but from the, from the palette itself, and that palette is not random.",
+   "intelligible": true,
+   "expect": {
+    "reason": "in_window_composed",
+    "effects": [
+     "compose",
+     "tx:answer"
+    ]
+   }
+  }
+ ]
+}

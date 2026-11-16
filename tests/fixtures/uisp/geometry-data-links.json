@@ -1,0 +1,2102 @@
+[
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5550,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "95cf1a17-35ce-441c-95f1-a5c953c61e6b",
+     "name": "chestnut-ptmp-180-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.9225
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "005516d4-3ea0-3c9a-a384-049e1a3dab33",
+  "origin": "unms",
+  "signal": -82,
+  "sitesDistance": 2822,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "cc5e369c-8c54-48ac-84d8-f6e7598ee4db",
+     "name": "chestnut-st-flygate-508-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.96000004
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "name": "chestnut-ptmp-120-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "08656f0a-b082-329e-bb0e-c6cbc1de11f9",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 360,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "5e587825-a484-40a4-9b03-5376ec8d1ea6",
+     "name": "chestnut-st-autoshop-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "23fc3a6e-27d4-48ff-a4ac-8c065d5a5a02",
+     "name": "basswood-ptp-zelkova-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.78499997
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "12162f25-a0e2-3a2f-a8af-1024efc19689",
+  "origin": "unms",
+  "signal": -57,
+  "sitesDistance": 12469,
+  "ssid": "BM-basswood-zelkova",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "fe76009e-4062-4559-a56c-69d919f76080",
+     "name": "zelkova-ptp-basswood-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.78999996
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 64800,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "65ce0d62-d949-4ec1-88c3-42e6a1148194",
+     "name": "tamarack-ptp-ponderosa-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.62
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "126bbb26-0c0f-36b6-95df-a3922e26450e",
+  "origin": "unms",
+  "signal": -62,
+  "sitesDistance": 600,
+  "ssid": "hawthorn2-bh-maple-60",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "f41a138a-5eac-4c3c-81f5-2cf454ad64d4",
+     "name": "ponderosa-ptp-tamarack-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.62
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "13b947ad-664a-383b-bc21-35c781061361",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 306,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "6998b28f-7bfe-462b-9f59-7659546150f5",
+     "name": "chestnut-st-oc79-172-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5550,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "95cf1a17-35ce-441c-95f1-a5c953c61e6b",
+     "name": "chestnut-ptmp-180-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.9225
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "162f258e-9dcf-3f81-a903-f9619ccefd73",
+  "origin": "unms",
+  "signal": -54,
+  "sitesDistance": 190,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "7a9622d3-4c51-4626-b292-72e3c4e0a851",
+     "name": "chestnut-st-fish-center-509-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "name": "chestnut-ptmp-120-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "2771c90b-6ae0-3de8-a5a4-f2006cfd39a5",
+  "origin": "unms",
+  "signal": -63,
+  "sitesDistance": 89,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "212b1e88-4637-4b17-93a4-f4d6df9d92da",
+     "name": "chestnut-st-housing-505-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5590,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fbb4bd33-5ad0-4378-baf1-95a44f3c38fd",
+     "name": "zelkova-ptp-chestnut-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "2cef91d1-d568-3732-bf79-cb6dc95976e0",
+  "origin": "unms",
+  "signal": -62,
+  "sitesDistance": null,
+  "ssid": "BM-zelkova-chestnut-05",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "9f8a72e0-98c3-4a47-94b8-676b6eee1018",
+     "name": "chestnut-ptp-zelkova-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.935
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 58320,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "bfcc4bec-7e78-4bcf-8d4a-7af6288bd135",
+     "name": "noc-ptp-birch-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "38fb6c0b-6516-36ba-b423-121011d79ea0",
+  "origin": "unms",
+  "signal": -54,
+  "sitesDistance": 53,
+  "ssid": "noc-ptp-birch-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "2006ce78-af0b-4c81-912e-8e6ad42bc7be",
+     "name": "birch-ptp-noc-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "name": "wingnut-ptmp-210-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "3dfa7283-416d-31ba-8de6-2e94ee3f6986",
+  "origin": "unms",
+  "signal": -45,
+  "sitesDistance": 167,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "bcaeccaf-96a9-4fd4-b6d8-7137928d0489",
+     "name": "wingnut-st-lbs-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5270,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5775d0fb-03d7-4941-9350-f7c8fc1a078f",
+     "name": "chestnut-ptmp-100-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "4600d6e8-3438-32d1-ae5b-14ff832659df",
+  "origin": "unms",
+  "signal": -64,
+  "sitesDistance": 294,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "6d409e10-4002-4732-8da0-d870b34b868b",
+     "name": "chestnut-st-ne-trailers-540-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "478c57a8-20af-3f61-8661-3f92bfe71142",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 338,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "a99f696d-5d97-425d-94de-4d3c96fe5196",
+     "name": "chestnut-st-commissary-507-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "name": "wingnut-ptmp-210-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "4fbfeba4-3c4d-3d4f-b5b6-494b74211f8a",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 167,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "5f7083f9-980c-46d9-b5c4-f9b2159222e2",
+     "name": "wingnut-st-row-a-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "403c8599-8d7b-4e85-8dc5-19a6588e96e8",
+     "name": "manzanita-ptp-noc-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "60c5fc95-08ca-33b7-a132-d2c718501387",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "noc-manzanita-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "2303abb7-5030-4d8c-bb19-80ba564d75d5",
+     "name": "noc-ptp-manzanita-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5810,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "16820f26-c180-4596-b176-21e9d106dc3e",
+     "name": "rowan-ptp-joshua-ap-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "60d8361b-54f8-3d2a-81fe-35f60af162aa",
+  "origin": "unms",
+  "signal": -43,
+  "sitesDistance": 38,
+  "ssid": "Tp-rowan2-buckeye2",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "c187d7bf-b701-499f-a2c6-4bf79bfd34ed",
+     "name": "rowan-ptp-joshua-st-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5490,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "9a10ebb7-2ff2-40a3-b197-86785176c9f9",
+     "name": "tamarack-ptp-magnolia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "6620611c-cab4-31e8-a0df-7f1c4faaf8b7",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 18656,
+  "ssid": "tamarack-ptp-magnolia",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "1d266570-ffa8-4074-8ff4-cc4b97a2689a",
+     "name": "magnolia-ptp-alder-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "6785b420-f108-3300-9122-9f17f97ff515",
+  "origin": "unms",
+  "signal": -53,
+  "sitesDistance": 13903,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "fee86fb2-5a00-495f-ad18-6d6e3e5b14ba",
+     "name": "chestnut-st-boxelder-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 66960,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "79e22d3c-daea-4f2b-8b6f-aa8ed036a4ca",
+     "name": "noc-ptp-magnolia-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "6dbb10ae-e550-30e5-94e2-a651bbc182f7",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1004,
+  "ssid": "noc-magnolia-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "d0fcfda5-e9d7-4b91-ac5b-7db6398cdd28",
+     "name": "magnolia-ptp-noc-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5600,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "1e7c1e75-e414-47c1-9af2-c5db9257a8bf",
+     "name": "basswood-ptp-zelkova-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.84000003
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "71b45524-14ec-3d8d-8608-58038a5f2ccb",
+  "origin": "unms",
+  "signal": -56,
+  "sitesDistance": 12469,
+  "ssid": "BM-basswood-zelkova-05",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "5d5f7593-efc3-4fde-8fab-29188a46a2ec",
+     "name": "zelkova-ptp-basswood-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.835
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5750,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "name": "tamarack-ptmp-100-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.895
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "779bdc48-310c-33a3-8de7-66ac01ee1ddf",
+  "origin": "unms",
+  "signal": -62,
+  "sitesDistance": 220,
+  "ssid": "BM-Tamarack-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "449348b3-cfa8-454f-836d-23db3b241277",
+     "name": "tamarack-st-rog-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 11245,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "491c511e-da7f-4f4c-949a-5de3502c5805",
+     "name": "tamarack-ptp-manzanita-11",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "780f3378-7108-35ad-b47d-57de6064f171",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "tamarack-ptp-manzanita-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "ae736dd9-b6b7-42ba-b39b-964e768288ce",
+     "name": "manzanita-ptp-alder-11",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "d1afd5c6-c9ab-4124-bb53-b8b85b001569",
+     "name": "manzanita-ptp-magnolia-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "7a4d9be1-ac21-3e3b-a385-a0e0b11b472c",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1250,
+  "ssid": "manzanita-magnolia-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "d4beecba-0be3-4821-8ac8-1a974d518eea",
+     "name": "magnolia-ptp-manzanita-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5270,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5775d0fb-03d7-4941-9350-f7c8fc1a078f",
+     "name": "chestnut-ptmp-100-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "7cce03bf-bac1-3b12-8981-01f2c86f491d",
+  "origin": "unms",
+  "signal": -49,
+  "sitesDistance": 117,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "e4f4688e-d858-453f-a66b-f89992c675ec",
+     "name": "chestnut-st-commonhouse-532-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": null,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "name": "tamarack-ptmp-100-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.895
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "89a63a62-b50a-45b8-81a0-4299528bc550",
+  "origin": "manual",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": null,
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+     "name": "tamarack-ptmp-100-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.895
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "ethernet"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "8d8173e7-7b8d-3518-af29-b537aa6231ad",
+  "origin": "unms",
+  "signal": -50,
+  "sitesDistance": 161,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "56ddff19-d6f7-4f30-90fb-958f9c379993",
+     "name": "chestnut-st-fish-east-511-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "9f8fbdbb-7599-3611-8f30-3323b3fdc22e",
+  "origin": "unms",
+  "signal": -60,
+  "sitesDistance": 296,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "fa829e52-449a-4610-a19f-7af2ebdaa2b5",
+     "name": "chestnut-st-hickory-512-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "name": "tamarack-ptmp-sequoia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.54999995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "9fbce72e-e465-3e4e-b880-c43ff017a2c0",
+  "origin": "unms",
+  "signal": -72,
+  "sitesDistance": 549,
+  "ssid": "Evn-net-31",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "bc39b4e7-d943-4d5d-99a2-9e2a380af825",
+     "name": "st-alder-vox",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": null,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "c187d7bf-b701-499f-a2c6-4bf79bfd34ed",
+     "name": "rowan-ptp-joshua-st-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "a1a92659-d79c-3427-a6bb-811eb146439f",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": null,
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "e1cd0a10-b51e-4747-a935-be44aef45086",
+     "name": "rowan-tp2-sw",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "ethernet"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5310,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "330601cc-a573-4604-a744-799dce398138",
+     "name": "chestnut-ptmp-120-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "a80117a7-c377-3b42-b367-71f4971d2bf7",
+  "origin": "unms",
+  "signal": -58,
+  "sitesDistance": 400,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "3752927e-0deb-40fa-9eb9-4f12f1ca982b",
+     "name": "chestnut-st-bath-house-502-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "name": "tamarack-ptmp-sequoia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.54999995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "acc8a671-62f9-3bc9-8281-d022082b024a",
+  "origin": "unms",
+  "signal": -72,
+  "sitesDistance": 547,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "d25ca1c3-c5e6-429b-a0c7-3e4bd7d758b8",
+     "name": "rowan-house-st-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.21
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5d437239-3cf2-4190-8ad5-dc7860dabee7",
+     "name": "basswood-ptp-wingnut-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "ae2a5e10-7ebc-317f-b7e1-03aa5b6179ea",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 2153,
+  "ssid": "BM-basswood-wingnut",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "0bbe54dc-37f4-49fe-8a31-e6772520513d",
+     "name": "wingnut-ptp-basswood-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 62640,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "958ab295-dc9f-4448-9078-b3445bab761e",
+     "name": "zelkova-ptp-chestnut-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "b4120e1a-c681-3763-a51c-b3cd3330c44c",
+  "origin": "unms",
+  "signal": -46,
+  "sitesDistance": 1693,
+  "ssid": "BM-zelkova-chestnut",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "710ab096-e544-48a8-b260-72472fe5d575",
+     "name": "chestnut-ptp-zelkova-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 62640,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "37275751-7ccd-488c-a079-1dd534be6881",
+     "name": "tamarack-ptp-yew-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "bcb3d074-47d6-38ba-bd09-b61bb552b3f7",
+  "origin": "unms",
+  "signal": -55,
+  "sitesDistance": 749,
+  "ssid": "hawthorn2-bh-catalpa2-60",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "e6c05579-9c47-47fb-943a-4d77cf45eb7e",
+     "name": "yew-ptp-tamarack-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "name": "tamarack-ptmp-sequoia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.54999995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "c3bf2cbb-24cd-359d-a4ec-ae5ecb451ac4",
+  "origin": "unms",
+  "signal": -72,
+  "sitesDistance": 220,
+  "ssid": "Evn-net-31",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "85266a18-06e5-47dd-bcbe-70ae6c24d746",
+     "name": "town-farnsworth-st-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 65880,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "13bb24ec-08a5-41d0-9792-f867306c7387",
+     "name": "noc-ptp-basswood-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "c46e28dc-b3f1-3465-9df5-03dd6e155c3a",
+  "origin": "unms",
+  "signal": -55,
+  "sitesDistance": null,
+  "ssid": "basswood-ptp-noc-60",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "1d86bb5c-1e4c-47bf-9594-1e38d906fcae",
+     "name": "basswood-ptp-noc-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "name": "tamarack-ptmp-sequoia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.54999995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "c54c85d1-491b-3ac7-af19-8a045480499f",
+  "origin": "unms",
+  "signal": -64,
+  "sitesDistance": 220,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "2ed94575-5c75-4958-bcab-1259fd0e8627",
+     "name": "town-courtney-st-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.58
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+     "name": "tamarack-ptmp-sequoia-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.54999995
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "d5da40ad-0948-3847-8fe4-9a888eed0d95",
+  "origin": "unms",
+  "signal": -66,
+  "sitesDistance": 749,
+  "ssid": "Evn-net-31",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "9da72702-fc3c-4497-876c-f30dd55a5b0b",
+     "name": "yew-ptp-tamarack-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.605
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5500,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "9c6cc290-78bc-4e56-997f-c6a7a8acbd66",
+     "name": "yew-ptp-basswood-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.86
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "e08bf968-d090-3a14-9158-d74ec0ff4ecc",
+  "origin": "unms",
+  "signal": -59,
+  "sitesDistance": 14288,
+  "ssid": "evn-net-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "e413e488-cb54-44b8-a152-03411b895595",
+     "name": "basswood-ptp-yew-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.86
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 5700,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+     "name": "wingnut-ptmp-210-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 1
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "e42c1803-0a60-373f-a9e5-a5c9b729529b",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": 1,
+  "ssid": "BM-Wingnut-airMAX",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "80895f32-0359-4285-abdb-dcc2c1f29fc3",
+     "name": "wingnut-st-07:b2-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": true,
+  "devicesDistance": null,
+  "frequency": 11565,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "485d7ff3-2f54-4092-a0be-fecdad7dae2d",
+     "name": "tamarack-ptp-noc-11",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "eab45849-1a85-37d9-a8a9-c52430121299",
+  "origin": "unms",
+  "signal": null,
+  "sitesDistance": null,
+  "ssid": "tamarack-ptp-noc-11",
+  "state": "disconnected",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "dcbeb38b-9894-4386-94d0-eed25a489e91",
+     "name": "noc-ptp-alder-11",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": null
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 68040,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "58759578-1eec-440f-b1ab-46bbb847edb8",
+     "name": "tamarack-ptp-basswood-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.85
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "f54eb96a-6053-3ff4-9a4a-fabfa0b489a8",
+  "origin": "unms",
+  "signal": -58,
+  "sitesDistance": null,
+  "ssid": "BM-Tamarack-Basswood",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "7d84b2b6-f682-4bc4-86bc-4d65d3621bfd",
+     "name": "basswood-ptp-tamarack-60",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.855
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ },
+ {
+  "canDelete": false,
+  "devicesDistance": null,
+  "frequency": 5510,
+  "from": {
+   "device": {
+    "identification": {
+     "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+     "name": "chestnut-ptmp-160-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.98583335
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "id": "fb2e1dcf-d716-30be-b177-5b7ffc193276",
+  "origin": "unms",
+  "signal": -58,
+  "sitesDistance": 13878,
+  "ssid": "BM-Chestnut-airMAX",
+  "state": "active",
+  "to": {
+   "device": {
+    "identification": {
+     "id": "6361a552-3785-470a-992e-085200554288",
+     "name": "chestnut-st-boxelder-hickory-fence-05",
+     "site": null
+    },
+    "overview": {
+     "linkScore": {
+      "linkScore": 0.95500004
+     },
+     "status": null
+    }
+   },
+   "site": {
+    "id": null,
+    "name": null
+   }
+  },
+  "type": "wireless"
+ }
+]

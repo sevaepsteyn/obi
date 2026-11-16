@@ -1,0 +1,21 @@
+{
+  "description": "Call 72 replayed with the expects-reply flag (feature 109 US4): obi's caveat answer invites a go-ahead; the caller's affirmative composes the action instead of clearing — and the explicit '…out' still clears.",
+  "config": {
+    "name_variants": ["obi", "obie", "obee", "o b", "opie", "hobi"],
+    "known_callers": ["Mina"],
+    "operator_handles": ["Mira"]
+  },
+  "transmissions": [
+    {"source": "radio.db tx 2745 (call 72)", "at_s": 0.0,
+     "text": "Obi, Obi, set the portal to dancing shadows, palette, lava, brightness, 80%.", "intelligible": true,
+     "compose_result": {"text": "Palette set to Lava at eighty percent, but you're on a solid pattern so it won't show — want an animated effect? over", "expects_reply": true},
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+    {"source": "the invited reply — a bare-ack shape that must COMPOSE, not clear", "at_s": 10.0,
+     "text": "Affirmative.", "intelligible": true,
+     "compose_result": {"text": "Effect set to Dancing Shadows, over."},
+     "expect": {"effects": ["compose", "tx:answer"]}},
+    {"source": "flag died with the second (unflagged) answer: a bare ack clears again", "at_s": 20.0,
+     "text": "Thank you.", "intelligible": true,
+     "expect": {"effects": ["close:cleared"]}}
+  ]
+}

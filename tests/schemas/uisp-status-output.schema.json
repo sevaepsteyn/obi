@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "obi UISP status output (003 \u2014 live, controller-sourced)",
+  "description": "The live UISP report produced by `obi status` when [uisp] is configured. Devices are read fresh from the UISP controller (NOT the persisted Mikrotik roster), so there are no roster fields (no discovery_state/provenance/present_in_latest). Each device carries vendor=\"uisp\". The Mikrotik status output (feature 002 schema) is unchanged and separate.",
+  "type": "object",
+  "required": [
+    "controller",
+    "controller_outcome",
+    "started_at",
+    "finished_at",
+    "counts",
+    "devices"
+  ],
+  "properties": {
+    "controller": {
+      "type": "string",
+      "description": "Controller host the report came from (no credentials)."
+    },
+    "controller_outcome": {
+      "type": "string",
+      "enum": [
+        "reachable",
+        "auth_failed",
+        "unreachable",
+        "timed_out"
+      ],
+      "description": "Controller-level result of the live read; non-reachable \u21d2 devices is empty."
+    },
+    "filter": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Case-insensitive device-name substring applied, or null when unfiltered."
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "total"
+      ],
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "reachable": {
+          "type": "integer"
+        },
+        "unreachable": {
+          "type": "integer"
+        },
+        "auth_failed": {
+          "type": "integer"
+        },
+        "unidentified": {
+          "type": "integer"
+        },
+        "timed_out": {
+          "type": "integer"
+        }
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "vendor",
+          "identity",
+          "address",
+          "reachability"
+        ],
+        "properties": {
+          "vendor": {
+            "const": "uisp"
+          },
+          "identity": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "address": {
+            "type": "string"
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reachability": {
+            "type": "string",
+            "enum": [
+              "reachable",
+              "unreachable",
+              "auth_failed",
+              "unidentified",
+              "timed_out"
+            ]
+          },
+          "uptime_seconds": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "cpu_load_percent": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "free_memory_bytes": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "total_memory_bytes": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "gathered_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maintenance": {
+            "type": "boolean",
+            "description": "Controller-set maintenance flag (meta.maintenance; feature 095 follow-on)"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SNMP metric report (feature 012)",
+  "description": "One device's read-only SNMP read. Pure data, raw counter values.",
+  "type": "object",
+  "required": ["target", "outcome", "profile", "gathered_at", "notes", "samples"],
+  "additionalProperties": false,
+  "properties": {
+    "target": {
+      "type": "object",
+      "required": ["address", "identity", "source"],
+      "additionalProperties": false,
+      "properties": {
+        "address": {"type": "string"},
+        "identity": {"type": ["string", "null"]},
+        "source": {"type": "string"}
+      }
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["reachable", "auth_failed", "unreachable", "timed_out", "no_such_object"]
+    },
+    "profile": {"type": "string"},
+    "gathered_at": {"type": "string"},
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "samples": {"type": "array", "items": {"$ref": "#/definitions/sample"}}
+  },
+  "definitions": {
+    "sample": {
+      "type": "object",
+      "required": ["name", "oid", "kind", "value", "index", "label", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "oid": {"type": "string"},
+        "kind": {
+          "type": "string",
+          "enum": ["counter", "counter64", "gauge", "integer", "string", "timeticks", "oid", "ipaddress"]
+        },
+        "value": {"type": ["integer", "number", "string", "null"]},
+        "index": {"type": ["string", "null"]},
+        "label": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

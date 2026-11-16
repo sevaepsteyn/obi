@@ -1,0 +1,20 @@
+{
+  "updated": "2026-08-29T14:06:12-07:00",
+  "entries": [
+    {
+      "uuid": "e5b0c1c2-71aa-4a5e-9e5d-000000000105",
+      "published": "2026-08-29T14:05:00-07:00",
+      "author": "Gate/Perimeter TOC",
+      "body": "Gravel to Gate: 90 min."
+    },
+    {
+      "uuid": "e5b0c1c2-71aa-4a5e-9e5d-000000000104",
+      "published": 1788037800,
+      "body": "Gravel to Gate: 60 min."
+    },
+    {
+      "uuid": "e5b0c1c2-71aa-4a5e-9e5d-000000000103",
+      "body": "Exodus flowing normally, no wait at the gravel."
+    }
+  ]
+}

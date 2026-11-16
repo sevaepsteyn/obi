@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://obi/contracts/siklu-status-output.schema.json",
+  "title": "obi siklu status output",
+  "description": "JSON shape of `obi siklu [--links] --json` and the query_siklu tool result.",
+  "type": "object",
+  "required": ["radios", "counts", "started_at", "finished_at"],
+  "additionalProperties": false,
+  "properties": {
+    "started_at": { "type": "string", "format": "date-time" },
+    "finished_at": { "type": "string", "format": "date-time" },
+    "counts": {
+      "type": "object",
+      "description": "radio count by reachability",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "radios": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/radio" }
+    },
+    "links": {
+      "type": "array",
+      "description": "present when the logical-link view is requested",
+      "items": { "$ref": "#/definitions/link" }
+    }
+  },
+  "definitions": {
+    "radio": {
+      "type": "object",
+      "required": ["identity", "address", "reachability", "gathered_at"],
+      "additionalProperties": false,
+      "properties": {
+        "vendor": { "const": "siklu" },
+        "identity": { "type": ["string", "null"] },
+        "address": { "type": "string" },
+        "model": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] },
+        "serial": { "type": ["string", "null"] },
+        "reachability": {
+          "type": "string",
+          "enum": ["reachable", "unreachable", "auth_failed", "unidentified", "timed_out"]
+        },
+        "uptime_seconds": { "type": ["integer", "null"], "minimum": 0 },
+        "temperature_celsius": { "type": ["number", "null"] },
+        "location": { "type": ["string", "null"] },
+        "rf": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/rf" }] },
+        "eth_ports": { "type": "array", "items": { "$ref": "#/definitions/eth_port" } },
+        "gathered_at": { "type": "string", "format": "date-time" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "rf": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "operational": { "type": ["boolean", "null"] },
+        "tx_state": { "type": ["string", "null"] },
+        "rx_state": { "type": ["string", "null"] },
+        "rssi_dbm": { "type": ["integer", "null"] },
+        "cinr_db": { "type": ["integer", "null"] },
+        "mode": { "type": ["string", "null"] },
+        "lowest_modulation": { "type": ["string", "null"] },
+        "tx_power_dbm": { "type": ["integer", "null"] },
+        "air_capacity_mbps": { "type": ["integer", "null"] },
+        "channel_width_mhz": { "type": ["integer", "null"] },
+        "tx_frequency_mhz": { "type": ["integer", "null"] },
+        "rx_frequency_mhz": { "type": ["integer", "null"] },
+        "alignment_status": { "type": ["string", "null"] }
+      }
+    },
+    "eth_port": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "admin_up": { "type": ["boolean", "null"] },
+        "operational_up": { "type": ["boolean", "null"] },
+        "mac": { "type": ["string", "null"] },
+        "mtu": { "type": ["integer", "null"] },
+        "speed_type": { "type": ["string", "null"] },
+        "connector_type": { "type": ["string", "null"] },
+        "tx_throughput": { "type": ["integer", "null"] },
+        "rx_throughput": { "type": ["integer", "null"] },
+        "sfp_present": { "type": ["boolean", "null"] },
+        "sfp_ddm": {
+          "type": ["object", "null"],
+          "additionalProperties": { "type": "number" }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["name", "state", "paired_by"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "state": {
+          "type": "string",
+          "enum": ["up", "degraded", "down", "half_known", "unknown"]
+        },
+        "paired_by": { "type": "string", "enum": ["name", "override"] },
+        "asymmetries": { "type": "array", "items": { "type": "string" } },
+        "end_a": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/radio" }] },
+        "end_b": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/radio" }] }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "_comment": "Trimmed read-only capture of the attached RAK4631's mesh node DB (2026-08-28 live session, feature 111). Shape mirrors meshtastic.mesh_interface.MeshInterface.nodes. Cases: self node with position+external power; TUMA (no position, 0 hops, strong SNR, unmessagable); a default-named node; a multi-hop node with position+battery; a garbage (0,0) position entry.",
+  "myNodeId": "!f4dcd459",
+  "nodes": {
+    "!f4dcd459": {
+      "num": 4108112985,
+      "user": {
+        "id": "!f4dcd459",
+        "longName": "Mira",
+        "shortName": "MIRA",
+        "macaddr": "ca:e0:0e:e2:22:23",
+        "hwModel": "RAK4631",
+        "isUnmessagable": false
+      },
+      "position": {
+        "latitudeI": 407788950,
+        "longitudeI": -1148233351,
+        "altitude": 1196,
+        "time": 1787984606,
+        "locationSource": "LOC_INTERNAL"
+      },
+      "lastHeard": 1787984606,
+      "deviceMetrics": {
+        "batteryLevel": 101,
+        "voltage": 4.061,
+        "channelUtilization": 6.99,
+        "airUtilTx": 0.28011113,
+        "uptimeSeconds": 2185
+      },
+      "isFavorite": true
+    },
+    "!91378e3a": {
+      "num": 2749214346,
+      "user": {
+        "id": "!91378e3a",
+        "longName": "Tooma 9831",
+        "shortName": "TUMA",
+        "macaddr": "02:dc:c2:81:6e:47",
+        "hwModel": "RAK4631",
+        "isUnmessagable": true
+      },
+      "snr": 13.5,
+      "lastHeard": 1787983799,
+      "hopsAway": 0
+    },
+    "!ed210303": {
+      "num": 3978363651,
+      "user": {
+        "id": "!ed210303",
+        "longName": "Meshtastic 0303",
+        "shortName": "0303",
+        "hwModel": "UNSET"
+      },
+      "snr": -3.0,
+      "lastHeard": 1787983694,
+      "hopsAway": 4
+    },
+    "!38568530": {
+      "num": 945194288,
+      "user": {
+        "id": "!38568530",
+        "longName": "Good Sport",
+        "shortName": "AshH",
+        "hwModel": "TRACKER_T1000_E",
+        "isUnmessagable": false
+      },
+      "position": {
+        "latitudeI": 407761230,
+        "longitudeI": -1148176930,
+        "altitude": 1191,
+        "time": 1787983616
+      },
+      "lastHeard": 1787983616,
+      "hopsAway": 2,
+      "deviceMetrics": {
+        "batteryLevel": 78,
+        "voltage": 3.92
+      }
+    },
+    "!bb466561": {
+      "num": 3141952865,
+      "user": {
+        "id": "!bb466561",
+        "longName": "Metal Detected 5:30c",
+        "shortName": "🤘",
+        "hwModel": "HELTEC_V3",
+        "isUnmessagable": false
+      },
+      "position": {
+        "latitudeI": 0,
+        "longitudeI": 0,
+        "time": 1787983593
+      },
+      "snr": -3.0,
+      "lastHeard": 1787983593,
+      "hopsAway": 3
+    }
+  }
+}

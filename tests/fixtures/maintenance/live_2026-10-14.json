@@ -1,0 +1,457 @@
+{
+ "captured": "2026-10-14",
+ "fleet": [
+  "magnolia-ap",
+  "magnolia-gw",
+  "magnolia-ptp-manzanita-60",
+  "magnolia-ptp-noc-60",
+  "magnolia-ptp-tamarack-05",
+  "manzanita-ap",
+  "manzanita-gw",
+  "manzanita-ptp-magnolia-60",
+  "manzanita-ptp-basswood-70",
+  "manzanita-ptp-noc-60",
+  "manzanita-ptp-tamarack-11",
+  "core-gw-1",
+  "core-sw-1",
+  "core-sw-tower-1",
+  "core-sw-tower-2",
+  "core-vms-1",
+  "rowan-gw",
+  "rowan-ptp-joshua-ap-05",
+  "rowan-ptp-joshua-st-05",
+  "birch-ptp-noc-60",
+  "yew-gw",
+  "yew-ptp-basswood-05",
+  "yew-ptp-tamarack-05",
+  "yew-ptp-tamarack-60",
+  "yew-sw",
+  "yew-sw-tower",
+  "zelkova-gw",
+  "zelkova-ptp-basswood-05",
+  "zelkova-ptp-basswood-60",
+  "zelkova-ptp-chestnut-05",
+  "zelkova-ptp-chestnut-60",
+  "basswood-gw",
+  "basswood-ptp-manzanita-70",
+  "basswood-ptp-yew-05",
+  "basswood-ptp-zelkova-05",
+  "basswood-ptp-zelkova-60",
+  "basswood-ptp-noc-60",
+  "basswood-ptp-wingnut-60",
+  "basswood-ptp-tamarack-60",
+  "basswood-ptp-tamarack-70",
+  "noc-ap",
+  "noc-ap-birch",
+  "noc-gw",
+  "noc-ptp-magnolia-60",
+  "noc-ptp-manzanita-60",
+  "noc-ptp-birch-60",
+  "noc-ptp-basswood-60",
+  "noc-ptp-tamarack-11",
+  "ponderosa-gw",
+  "ponderosa-ptp-tamarack-60",
+  "ponderosa-sw",
+  "ponderosa-sw-tower",
+  "chestnut-gw",
+  "chestnut-internet-gw",
+  "chestnut-ptp-zelkova-05",
+  "chestnut-ptp-zelkova-60",
+  "chestnut-sw",
+  "chestnut-sw-tower",
+  "chestnut-vms-1",
+  "walnut-gw",
+  "wingnut-gw",
+  "wingnut-ptp-basswood-60",
+  "tamarack-gw",
+  "tamarack-gw-yellowwood",
+  "tamarack-internet-gw",
+  "tamarack-ptp-magnolia-05",
+  "tamarack-ptp-magnolia-05 MIDDLE",
+  "tamarack-ptp-manzanita-11",
+  "tamarack-ptp-yew-60",
+  "tamarack-ptp-basswood-60",
+  "tamarack-ptp-basswood-70",
+  "tamarack-ptp-noc-11",
+  "tamarack-ptp-ponderosa-60",
+  "tamarack-sw",
+  "tamarack-sw-access",
+  "tamarack-sw-tower-3",
+  "tamarack-sw-tower-4"
+ ],
+ "netwatch_routers": [
+  "magnolia-ap",
+  "magnolia-gw",
+  "manzanita-ap",
+  "manzanita-gw",
+  "core-gw-1",
+  "zelkova-gw",
+  "basswood-gw",
+  "noc-ap",
+  "noc-ap-birch",
+  "noc-gw",
+  "chestnut-gw",
+  "chestnut-internet-gw",
+  "wingnut-gw",
+  "tamarack-gw",
+  "tamarack-gw-yellowwood",
+  "tamarack-internet-gw"
+ ],
+ "netwatch_targets": [
+  [
+   "core-gw-1",
+   "core-cloudflare"
+  ],
+  [
+   "core-gw-1",
+   "core-google"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-cloudflare"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-google"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-basswood-05"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-basswood-60"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-chestnut-05"
+  ],
+  [
+   "zelkova-gw",
+   "zelkova-chestnut-60"
+  ],
+  [
+   "basswood-gw",
+   "basswood-manzanita-70"
+  ],
+  [
+   "basswood-gw",
+   "basswood-cloudflare"
+  ],
+  [
+   "basswood-gw",
+   "basswood-google"
+  ],
+  [
+   "basswood-gw",
+   "basswood-zelkova-05"
+  ],
+  [
+   "basswood-gw",
+   "basswood-zelkova-60"
+  ],
+  [
+   "basswood-gw",
+   "basswood-tamarack-60"
+  ],
+  [
+   "basswood-gw",
+   "basswood-tamarack-70"
+  ],
+  [
+   "chestnut-gw",
+   "chestnut-cloudflare"
+  ],
+  [
+   "chestnut-gw",
+   "chestnut-google"
+  ],
+  [
+   "chestnut-gw",
+   "chestnut-zelkova-05"
+  ],
+  [
+   "chestnut-gw",
+   "chestnut-zelkova-60"
+  ],
+  [
+   "chestnut-gw",
+   "chestnut-chestnut-internet"
+  ],
+  [
+   "chestnut-internet-gw",
+   "chestnut-internet-cloudflare"
+  ],
+  [
+   "chestnut-internet-gw",
+   "chestnut-internet-google"
+  ],
+  [
+   "chestnut-internet-gw",
+   "chestnut-internet-chestnut"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-magnolia-05"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-manzanita-11"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-cloudflare"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-core"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-rowan-man"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-google"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-basswood-60"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-basswood-70"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-noc-11"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-ponderosa-man"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-walnut-man"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-tamarack-internet"
+  ],
+  [
+   "tamarack-gw",
+   "tamarack-vtep-magnolia"
+  ],
+  [
+   "tamarack-gw-yellowwood",
+   "tamarack-gw-yellowwood-cloudflare"
+  ],
+  [
+   "tamarack-gw-yellowwood",
+   "tamarack-gw-yellowwood-google"
+  ],
+  [
+   "tamarack-gw-yellowwood",
+   "tamarack-gw-yellowwood-tamarack"
+  ],
+  [
+   "tamarack-internet-gw",
+   "tamarack-internet-cloudflare"
+  ],
+  [
+   "tamarack-internet-gw",
+   "tamarack-internet-spruce-peer"
+  ],
+  [
+   "tamarack-internet-gw",
+   "tamarack-internet-sycamore-peer"
+  ],
+  [
+   "tamarack-internet-gw",
+   "tamarack-internet-google"
+  ],
+  [
+   "tamarack-internet-gw",
+   "tamarack-internet-tamarack"
+  ]
+ ],
+ "uisp_devices": [
+  {
+   "identity": "magnolia-ptp-manzanita-60",
+   "maintenance": true
+  },
+  {
+   "identity": "magnolia-ptp-noc-60",
+   "maintenance": true
+  },
+  {
+   "identity": "magnolia-ptp-tamarack-05",
+   "maintenance": true
+  },
+  {
+   "identity": "manzanita-ptp-magnolia-60",
+   "maintenance": true
+  },
+  {
+   "identity": "manzanita-ptp-noc-60",
+   "maintenance": true
+  },
+  {
+   "identity": "manzanita-ptp-tamarack-11",
+   "maintenance": true
+  },
+  {
+   "identity": "rowan-ptp-joshua-ap-05",
+   "maintenance": false
+  },
+  {
+   "identity": "rowan-ptp-joshua-st-05",
+   "maintenance": false
+  },
+  {
+   "identity": "birch-ptp-noc-60",
+   "maintenance": true
+  },
+  {
+   "identity": "yew-ptp-basswood-05",
+   "maintenance": true
+  },
+  {
+   "identity": "yew-ptp-tamarack-05",
+   "maintenance": false
+  },
+  {
+   "identity": "yew-ptp-tamarack-60",
+   "maintenance": false
+  },
+  {
+   "identity": "zelkova-ptp-basswood-05",
+   "maintenance": false
+  },
+  {
+   "identity": "zelkova-ptp-basswood-60",
+   "maintenance": false
+  },
+  {
+   "identity": "zelkova-ptp-chestnut-05",
+   "maintenance": false
+  },
+  {
+   "identity": "zelkova-ptp-chestnut-60",
+   "maintenance": false
+  },
+  {
+   "identity": "basswood-ptp-yew-05",
+   "maintenance": true
+  },
+  {
+   "identity": "basswood-ptp-zelkova-05",
+   "maintenance": false
+  },
+  {
+   "identity": "basswood-ptp-zelkova-60",
+   "maintenance": false
+  },
+  {
+   "identity": "basswood-ptp-noc-60",
+   "maintenance": true
+  },
+  {
+   "identity": "basswood-ptp-wingnut-60",
+   "maintenance": true
+  },
+  {
+   "identity": "basswood-ptp-tamarack-60",
+   "maintenance": false
+  },
+  {
+   "identity": "noc-ptp-magnolia-60",
+   "maintenance": true
+  },
+  {
+   "identity": "noc-ptp-manzanita-60",
+   "maintenance": true
+  },
+  {
+   "identity": "noc-ptp-birch-60",
+   "maintenance": true
+  },
+  {
+   "identity": "noc-ptp-basswood-60",
+   "maintenance": true
+  },
+  {
+   "identity": "noc-ptp-tamarack-11",
+   "maintenance": true
+  },
+  {
+   "identity": "ponderosa-ptp-tamarack-60",
+   "maintenance": false
+  },
+  {
+   "identity": "chestnut-ptp-zelkova-05",
+   "maintenance": false
+  },
+  {
+   "identity": "chestnut-ptp-zelkova-60",
+   "maintenance": false
+  },
+  {
+   "identity": "wingnut-ptp-basswood-60",
+   "maintenance": true
+  },
+  {
+   "identity": "tamarack-ptp-magnolia-05",
+   "maintenance": true
+  },
+  {
+   "identity": "tamarack-ptp-magnolia-05 MIDDLE",
+   "maintenance": true
+  },
+  {
+   "identity": "tamarack-ptp-manzanita-11",
+   "maintenance": true
+  },
+  {
+   "identity": "tamarack-ptp-yew-60",
+   "maintenance": false
+  },
+  {
+   "identity": "tamarack-ptp-basswood-60",
+   "maintenance": false
+  },
+  {
+   "identity": "tamarack-ptp-noc-11",
+   "maintenance": true
+  },
+  {
+   "identity": "tamarack-ptp-ponderosa-60",
+   "maintenance": false
+  }
+ ],
+ "uisp_log_hosts": [
+  "Rowan - House",
+  "Basswood Relay - East",
+  "Chestnut - Auto Shop",
+  "Chestnut - Bath House",
+  "Chestnut - Housing",
+  "SF - ASPEN",
+  "Tamarack"
+ ],
+ "uisp_site_names": [
+  "BRC - NOC",
+  "BRC - Business Park",
+  "BRC - Cottonwood - MRS",
+  "BRC - Birch",
+  "Rowan",
+  "Rowan - Joshua",
+  "Tamarack",
+  "Basswood Relay - East",
+  "Basswood Relay - West",
+  "Chestnut",
+  "Ironbark's Chestnut",
+  "Wingnut",
+  "Yew",
+  "Ponderosa"
+ ]
+}

@@ -1,0 +1,110 @@
+{
+  "store": "ok",
+  "mode": "initial",
+  "stage": "shadow",
+  "cursor": 412,
+  "hint": null,
+  "_fresh": [
+    "timestamp"
+  ],
+  "entries": [
+    {
+      "id": 405,
+      "timestamp": "2026-08-19 14:01:12",
+      "kind": "rx",
+      "caller": null,
+      "transcript": "yoyo yoyo this is nono",
+      "duration_ms": 2100,
+      "peak_dbfs": -9.2,
+      "gate": "ok",
+      "trigger": null,
+      "call_id": null,
+      "outbound_kind": null,
+      "disposition": null
+    },
+    {
+      "id": 406,
+      "timestamp": "2026-08-19 14:01:20",
+      "kind": "rx",
+      "caller": null,
+      "transcript": "go for yoyo",
+      "duration_ms": 1400,
+      "peak_dbfs": -8.4,
+      "gate": "ok",
+      "trigger": null,
+      "call_id": null,
+      "outbound_kind": null,
+      "disposition": null
+    },
+    {
+      "id": 408,
+      "timestamp": "2026-08-19 14:02:31",
+      "kind": "rx",
+      "caller": "nono",
+      "transcript": "obi obi this is nono",
+      "duration_ms": 2400,
+      "peak_dbfs": -8.1,
+      "gate": "ok",
+      "trigger": "name_at_start",
+      "call_id": 17,
+      "outbound_kind": null,
+      "disposition": null
+    },
+    {
+      "id": 409,
+      "timestamp": "2026-08-19 14:02:35",
+      "kind": "obi",
+      "caller": null,
+      "transcript": "go for obi",
+      "duration_ms": 900,
+      "peak_dbfs": null,
+      "gate": "ok",
+      "trigger": null,
+      "call_id": 17,
+      "outbound_kind": "ack",
+      "disposition": "transmitted"
+    },
+    {
+      "id": 410,
+      "timestamp": "2026-08-19 14:02:44",
+      "kind": "rx",
+      "caller": null,
+      "transcript": "is the mountain link up",
+      "duration_ms": 1900,
+      "peak_dbfs": -8.8,
+      "gate": "ok",
+      "trigger": null,
+      "call_id": 17,
+      "outbound_kind": null,
+      "disposition": null
+    },
+    {
+      "id": 411,
+      "timestamp": "2026-08-19 14:02:52",
+      "kind": "obi",
+      "caller": null,
+      "transcript": "affirmative, mountain link is up at about eight hundred megabits, over",
+      "duration_ms": 4600,
+      "peak_dbfs": null,
+      "gate": "ok",
+      "trigger": null,
+      "call_id": 17,
+      "outbound_kind": "answer",
+      "disposition": "transmitted"
+    },
+    {
+      "id": 412,
+      "timestamp": "2026-08-19 14:03:40",
+      "kind": "rx",
+      "caller": null,
+      "transcript": "",
+      "duration_ms": 600,
+      "peak_dbfs": -31.0,
+      "gate": "unintelligible",
+      "trigger": null,
+      "call_id": null,
+      "outbound_kind": null,
+      "disposition": null
+    }
+  ]
+}

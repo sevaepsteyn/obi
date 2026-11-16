@@ -1,0 +1,68 @@
+# Every key feature 137 moved into config, with FICTIONAL values (tests/unit/identity/test_moved.py).
+[logs]
+db_path = "@TMP@/logs.db"
+
+[weather]
+latitude = 45.0
+longitude = -100.0
+nws_zone = "ABZ001"
+place_name = "Northfield"
+
+[traffic]
+base_url = "https://traffic.example.net"
+
+[paging]
+username = "u"
+password = "p"
+url = "https://pager.example.net/api.php"
+
+[playa]
+base_url = "https://api.example.net"
+
+[brc]
+origin_lat = 45.0
+origin_lon = -100.0
+year = 2030
+source_url = "https://gis.example.net/{year}"
+az12_deg = 30.0
+
+[web]
+default_ground_elevation = 1000.0
+ospf_sources = ["northfield-gw"]
+
+[dash]
+ping_router = "northfield-gw"
+
+[snmp]
+community = "x"
+
+[snmp.history]
+targets = "-gw"
+
+[health.linux]
+hosts = ["collector-1"]
+username = "probe"
+
+[radio]
+ftdi_serial = "FX00TEST"
+channel_name = "the valley ops channel"
+
+[radio.pronunciations]
+GW = "gee double-you"
+
+[radio.speech_aliases]
+"gee dub" = "GW"
+
+[site]
+timezone = "America/Denver"
+
+[victoria]
+base_url = "https://metrics.example.net"
+display_name = "the regional store"
+rf_matcher = '{role="ptp-rf"}'
+
+[wled.devices]
+gate = "http://192.0.2.5"
+
+[wled.descriptions]
+gate = "the arch"

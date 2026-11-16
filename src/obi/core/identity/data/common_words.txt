@@ -1,0 +1,32 @@
+# Ordinary English and networking words missing from /usr/share/dict (feature 137).
+# A name made of one of these words is checked like a dictionary word: fatal only in identifier
+# context (a hostname-shaped token), never in prose. Generic vocabulary only — never add a word
+# because it is a real site's name; add it because it is an ordinary word.
+offline
+online
+uplink
+downlink
+backhaul
+wifi
+failover
+hotspot
+endpoint
+dashboard
+backbone
+gateway
+dir
+desktop
+laptop
+workstation
+cookie
+commissioned
+decommissioned
+paging
+api
+www
+cdn
+gis
+portal
+lantern
+commissioning
+decommissioning

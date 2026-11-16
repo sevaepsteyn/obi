@@ -1,0 +1,32 @@
+{
+  "description": "Feature 129 (field 2026-09-02 21:25-21:28 PT, radio.db call 227, tx 4702/4707/4712/4718): three doubled 'Obi, Obi, where is ...' hails were folded into ONE call as budget-bound follow-ups; the 4th answer spent the budget, so the terminal sign-off turned the composer's clarifying question into '...over and out?' and the caller's reply would have met the silent abandoned close. Operator ruling: a formal hail opens a NEW call with a NEW budget — each doubled hail now pins close:superseded + open_call, and the final reply pins compose (old code: close:abandoned, silence).",
+  "config": {},
+  "transmissions": [
+    {"source": "radio.db tx 4702 (2026-09-02 21:25:42) — the opener", "at_s": 0.0,
+     "text": "Obi, Obi, where is Titanic's end?", "intelligible": true,
+     "compose_result": {"text": "Caller, no exact match for Titanic's End — closest are an art piece called TITANIC and a camp called Titanic, over."},
+     "expect": {"fired": true, "effects": ["open_call", "compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 4707 (21:26:04) — in-window follow-up, same call", "at_s": 22.0,
+     "text": "Uh, yeah, where is the Titanic?", "intelligible": true,
+     "compose_result": {"text": "Caller, I've got two possible matches — an art piece called TITANIC and a camp called Titanic — which one, over."},
+     "expect": {"reason": "in_window_composed", "effects": ["compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 4712 (21:26:40) — doubled re-hail: a NEW call (was folded in as answer 3)", "at_s": 58.0,
+     "text": "Obi, Obi, where is the archepiece Titanic?", "intelligible": true,
+     "compose_result": {"text": "Caller, the lookup keeps returning both entries without a location fix for the art piece — I don't have a confirmed address for it, over."},
+     "expect": {"fired": true, "reason": "name_at_start",
+                "effects": ["close:superseded", "open_call", "compose", "tx:answer"]}},
+
+    {"source": "radio.db tx 4718 (21:27:21) — doubled re-hail: a NEW call (was answer 4 of 4, '...over and out?')", "at_s": 99.0,
+     "text": "Obi, Obi, where is the art piece called Broken Dreams?", "intelligible": true,
+     "compose_result": {"text": "Caller, closest match is EIFFELA BROKEN DREAM — that the one you mean, over?"},
+     "expect": {"fired": true, "reason": "name_at_start",
+                "effects": ["close:superseded", "open_call", "compose", "tx:answer"]}},
+
+    {"source": "the reply the caller never got to give (live: the call timed out and needed a re-hail at 21:29)", "at_s": 105.0,
+     "text": "Yeah, that's the one.", "intelligible": true,
+     "compose_result": {"text": "Eiffela Broken Dream is at 8:35, nineteen hundred feet from the Man, over."},
+     "expect": {"effects": ["compose", "tx:answer"]}}
+  ]
+}

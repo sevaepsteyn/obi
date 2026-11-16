@@ -1,0 +1,100 @@
+[
+  {
+    "count": 6,
+    "next": "https://netbox.example.com/api/dcim/devices/?limit=3&offset=3",
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "name": "core-gw",
+        "site": {"id": 1, "name": "core", "slug": "core"},
+        "role": {"id": 1, "name": "gateway", "slug": "gateway"},
+        "device_type": {
+          "id": 10,
+          "model": "CCR2004-1G-12S+2XS",
+          "manufacturer": {"id": 1, "name": "MikroTik", "slug": "mikrotik"}
+        },
+        "status": {"value": "active", "label": "Active"},
+        "primary_ip": {"id": 100, "address": "172.18.84.1/24", "family": 4},
+        "serial": "HGW001"
+      },
+      {
+        "id": 2,
+        "name": "chestnut-gw",
+        "site": {"id": 5, "name": "chestnut", "slug": "chestnut"},
+        "role": {"id": 1, "name": "gateway", "slug": "gateway"},
+        "device_type": {
+          "id": 10,
+          "model": "CCR2004-1G-12S+2XS",
+          "manufacturer": {"id": 1, "name": "MikroTik", "slug": "mikrotik"}
+        },
+        "status": {"value": "active", "label": "Active"},
+        "primary_ip": {"id": 101, "address": "172.18.81.1/24", "family": 4},
+        "serial": ""
+      },
+      {
+        "id": 3,
+        "name": "chestnut-ptp-zelkova-60",
+        "site": {"id": 5, "name": "chestnut", "slug": "chestnut"},
+        "role": {"id": 2, "name": "ptp", "slug": "ptp"},
+        "device_type": {
+          "id": 20,
+          "model": "Wave Pro 60",
+          "manufacturer": {"id": 1, "name": "MikroTik", "slug": "mikrotik"}
+        },
+        "status": {"value": "active", "label": "Active"},
+        "primary_ip": {"id": 102, "address": "172.18.81.22/24", "family": 4},
+        "serial": "WP60-22"
+      }
+    ]
+  },
+  {
+    "count": 6,
+    "next": null,
+    "previous": "https://netbox.example.com/api/dcim/devices/?limit=3",
+    "results": [
+      {
+        "id": 4,
+        "name": "noc-sw-01",
+        "site": {"id": 35, "name": "noc", "slug": "noc"},
+        "role": {"id": 3, "name": "switch", "slug": "switch"},
+        "device_type": {
+          "id": 30,
+          "model": "CRS354-48G-4S+2Q+",
+          "manufacturer": {"id": 1, "name": "MikroTik", "slug": "mikrotik"}
+        },
+        "status": {"value": "planned", "label": "Planned"},
+        "primary_ip": null,
+        "serial": "SW001"
+      },
+      {
+        "id": 5,
+        "name": null,
+        "site": null,
+        "role": null,
+        "device_type": {
+          "id": 99,
+          "model": "Unknown",
+          "manufacturer": {"id": 9, "name": "Generic", "slug": "generic"}
+        },
+        "status": {"value": "inventory", "label": "Inventory"},
+        "primary_ip": null,
+        "serial": null
+      },
+      {
+        "id": 6,
+        "name": "esd-ap-01",
+        "site": {"id": 36, "name": "esd", "slug": "esd"},
+        "role": {"id": 4, "name": "ap", "slug": "ap"},
+        "device_type": {
+          "id": 40,
+          "model": "U6-Pro",
+          "manufacturer": {"id": 2, "name": "Ubiquiti", "slug": "ubiquiti"}
+        },
+        "status": {"value": "offline", "label": "Offline"},
+        "primary_ip": {"id": 106, "address": "172.18.112.21/24", "family": 4},
+        "serial": "AP001"
+      }
+    ]
+  }
+]

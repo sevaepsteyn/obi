@@ -1,0 +1,39 @@
+{
+  "description": "The four mangled hails that never fired (feature 109 US3) — all doubled, opening calls under the weak-variant tier and the guarded leading-junk tolerance — plus the okie-dokie negative the doubled gate exists for.",
+  "config": {
+    "name_variants": ["obi", "obie", "obee", "o b", "opie", "hobi"],
+    "name_variants_weak": ["ovi", "obini", "okie"],
+    "known_callers": ["Krum", "Vertigo"],
+    "operator_handles": ["Mira"],
+    "caller_aliases": {"kroom": "Krum"}
+  },
+  "transmissions": [
+    {"source": "radio.db tx 2702 (2026-08-28 21:09) — re-hail 8 s later got through; the first try should have", "at_s": 0.0,
+     "text": "Ovi, Ovi, Vertigo.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "caller": "vertigo", "effects": ["open_call", "tx:ack"]}},
+    {"source": "vertigo clears", "at_s": 10.0, "text": "Thank you, Vertigo out.", "intelligible": true,
+     "expect": {"effects": ["close:cleared"]}},
+
+    {"source": "radio.db tx 1690 (2026-08-26 23:03)", "at_s": 100.0,
+     "text": "Obini, Obini, Sabra, Obini, Sabra.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "effects": ["open_call", "tx:ack"]}},
+    {"source": "sabra clears", "at_s": 110.0, "text": "Sabra out.", "intelligible": true,
+     "expect": {"effects": ["close:cleared"]}},
+
+    {"source": "radio.db tx 2585 (2026-08-28 20:45) — leading noise token; caller identifies via alias", "at_s": 200.0,
+     "text": "Beep, Obi, Kroom.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "caller": "krum", "effects": ["open_call", "tx:ack"]}},
+    {"source": "krum clears", "at_s": 210.0, "text": "Copy, Krum out.", "intelligible": true,
+     "expect": {"effects": ["close:cleared"]}},
+
+    {"source": "radio.db tx 2833 (2026-08-28 23:13)", "at_s": 300.0,
+     "text": "Okie, Okie, Krum.", "intelligible": true,
+     "expect": {"fired": true, "reason": "name_at_start", "caller": "krum", "effects": ["open_call", "tx:ack"]}},
+    {"source": "krum clears", "at_s": 310.0, "text": "Krum out.", "intelligible": true,
+     "expect": {"effects": ["close:cleared"]}},
+
+    {"source": "the collision the doubled gate prevents — a single weak mention must never hail", "at_s": 400.0,
+     "text": "Okie dokie, heading over to the gate now folks.", "intelligible": true,
+     "expect": {"fired": false, "reason": "no_name", "effects": []}}
+  ]
+}

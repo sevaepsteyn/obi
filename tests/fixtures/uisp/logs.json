@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "log-1",
+      "timestamp": "2026-06-20T10:00:00.000Z",
+      "message": "Device reconnected to the controller",
+      "level": "info",
+      "tags": ["device"],
+      "site": {"id": "s1", "name": "Alder", "status": "active", "type": "site"},
+      "device": {"id": "d1", "name": "ptp-ridge-east", "model": "PBE-5AC", "role": "ptp", "type": "airMax"}
+    },
+    {
+      "id": "log-2",
+      "timestamp": "2026-06-20T11:30:00.000Z",
+      "message": "High retransmit rate detected",
+      "level": "warning",
+      "tags": ["device"],
+      "site": {"id": "s1", "name": "Alder", "status": "active", "type": "site"},
+      "device": {"id": "d2", "name": "ptp-ridge-west", "model": "PBE-5AC", "role": "ptp", "type": "airMax"}
+    },
+    {
+      "id": "log-3",
+      "timestamp": "2026-06-20T12:00:00.000Z",
+      "message": "Configuration push failed",
+      "level": "error",
+      "tags": ["device", "config"],
+      "site": {"id": "s2", "name": "Black Rock", "status": "active", "type": "site"},
+      "device": {"id": "d3", "name": "olt-1", "model": "UF-OLT", "role": "gpon", "type": "olt"}
+    },
+    {
+      "id": "log-4",
+      "timestamp": "2026-06-20T12:05:00.000Z",
+      "message": "Controller maintenance window started",
+      "level": "info",
+      "tags": ["system"]
+    }
+  ],
+  "aggregation": {"allCount": 4, "infoCount": 2, "warningCount": 1, "errorCount": 1},
+  "pagination": {"total": 4, "count": 1000, "page": 1, "pages": 1}
+}

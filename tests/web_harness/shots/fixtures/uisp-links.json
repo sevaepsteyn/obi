@@ -1,0 +1,61 @@
+{
+  "tool": "uisp-links",
+  "generated_at": "2026-07-16T17:54:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "data": {
+    "counts": {
+      "total": 3,
+      "active": 2,
+      "down": 1
+    },
+    "links": [
+      {
+        "label": "NOC <-> Basswood (60 GHz)",
+        "state": "active",
+        "signal_dbm": -58,
+        "frequency_mhz": 60480,
+        "distance_m": 5810,
+        "ends": [
+          {
+            "name": "noc-ptp-basswood-60"
+          },
+          {
+            "name": "basswood-ptp-noc-60"
+          }
+        ]
+      },
+      {
+        "label": "Relay <-> West (5 GHz)",
+        "state": "active",
+        "signal_dbm": -63,
+        "frequency_mhz": 5825,
+        "distance_m": 2140,
+        "ends": [
+          {
+            "name": "relay-ap-west"
+          },
+          {
+            "name": "west-cpe-1"
+          }
+        ]
+      },
+      {
+        "label": "Yew <-> Relay (5 GHz)",
+        "state": "down",
+        "signal_dbm": null,
+        "frequency_mhz": 5745,
+        "distance_m": 3300,
+        "ends": [
+          {
+            "name": "yew-cpe-5"
+          },
+          {
+            "name": "relay-ap-west"
+          }
+        ]
+      }
+    ]
+  }
+}

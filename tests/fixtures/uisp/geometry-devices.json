@@ -1,0 +1,4052 @@
+[
+ {
+  "identification": {
+   "hostname": "chestnut-ptmp-sequoia-05",
+   "id": "06491f03-1daa-4a05-a25e-c947613feba9",
+   "model": "R5N",
+   "name": "chestnut-ptmp-sequoia-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.26.18.3/25",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882395,
+   "longitude": -114.935681,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5730,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-06-06T08:18:23.096Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-ptp-basswood-60",
+   "id": "0bbe54dc-37f4-49fe-8a31-e6772520513d",
+   "model": "Wave-Pro",
+   "name": "wingnut-ptp-basswood-60",
+   "role": "station",
+   "site": {
+    "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+    "name": "Wingnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.250/24",
+  "location": {
+   "altitude": 1197.8,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768805,
+   "longitude": -114.859046,
+   "magneticHeading": null,
+   "roll": 0,
+   "tilt": 0.5
+  },
+  "overview": {
+   "frequency": 66960,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.0048043337,
+   "uplinkUtilization": 0.0016861743
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T21:13:32.568Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptmp-100-05",
+   "id": "0ce258ee-8956-410f-ad1e-a854236a9453",
+   "model": "RP-5AC-Gen2",
+   "name": "tamarack-ptmp-100-05",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.238/24",
+  "location": {
+   "altitude": 1190,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655003,
+   "longitude": -114.968095,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5750,
+   "linkScore": {
+    "airTime": 0.008,
+    "airTimeScore": null,
+    "downlinkScore": 0.83,
+    "linkScore": 0.895,
+    "linkScoreHint": "This link is fine.",
+    "score": 0.819,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 208000000,
+    "theoreticalTotalCapacity": 208000000,
+    "theoreticalUplinkCapacity": 219600000,
+    "uplinkScore": 0.96
+   },
+   "signal": -65,
+   "status": "active",
+   "uptime": 24672202,
+   "downlinkCapacity": 237600000,
+   "uplinkCapacity": 288360000,
+   "theoreticalDownlinkCapacity": 237600000,
+   "theoreticalUplinkCapacity": 288360000,
+   "downlinkUtilization": 1.35016835e-05,
+   "uplinkUtilization": 1.3538633e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "noc-ptp-basswood-60",
+   "id": "13bb24ec-08a5-41d0-9792-f867306c7387",
+   "model": "Wave-Pro",
+   "name": "noc-ptp-basswood-60",
+   "role": "station",
+   "site": {
+    "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+    "name": "BRC - NOC",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.31/24",
+  "location": {
+   "altitude": 1217.7,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782724,
+   "longitude": -114.817784,
+   "magneticHeading": null,
+   "roll": -1,
+   "tilt": 3.2
+  },
+  "overview": {
+   "frequency": 65880,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 3.105466e-07,
+   "uplinkUtilization": 3.265306e-07
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:20.698Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "rowan-ptp-joshua-ap-05",
+   "id": "16820f26-c180-4596-b176-21e9d106dc3e",
+   "model": "NBE-5AC-Gen2",
+   "name": "rowan-ptp-joshua-ap-05",
+   "role": "ap",
+   "site": {
+    "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+    "name": "Rowan - Joshua",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.31.106.117/22",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6496,
+   "longitude": -114.9662,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5810,
+   "linkScore": {
+    "airTime": 0.055,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.978,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 302400000,
+    "theoreticalTotalCapacity": 298800000,
+    "theoreticalUplinkCapacity": 295200000,
+    "uplinkScore": 1
+   },
+   "signal": -47,
+   "status": "active",
+   "uptime": 768548,
+   "downlinkCapacity": 298800000,
+   "uplinkCapacity": 284400000,
+   "theoreticalDownlinkCapacity": 298800000,
+   "theoreticalUplinkCapacity": 284400000,
+   "downlinkUtilization": 2.5767196e-05,
+   "uplinkUtilization": 9.1457434e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "magnolia-ptp-alder-05",
+   "id": "1d266570-ffa8-4074-8ff4-cc4b97a2689a",
+   "model": "AF-5XHD",
+   "name": "magnolia-ptp-alder-05",
+   "role": "station",
+   "site": {
+    "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+    "name": "BRC - Cottonwood - MRS",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.112.250/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.785769,
+   "longitude": -114.82929,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5490,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:45.142Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-noc-60",
+   "id": "1d86bb5c-1e4c-47bf-9594-1e38d906fcae",
+   "model": "Wave-Pro",
+   "name": "basswood-ptp-noc-60",
+   "role": "ap",
+   "site": {
+    "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+    "name": "Basswood Relay - East",
+    "parent": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.233/24",
+  "location": {
+   "altitude": 1367.9,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.769105,
+   "longitude": -114.884792,
+   "magneticHeading": null,
+   "roll": 2.8,
+   "tilt": -2.7
+  },
+  "overview": {
+   "frequency": 65880,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 1805521
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:17.038Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-zelkova-05",
+   "id": "1e7c1e75-e414-47c1-9af2-c5db9257a8bf",
+   "model": "PBE-5AC-Gen2",
+   "name": "basswood-ptp-zelkova-05",
+   "role": "ap",
+   "site": {
+    "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+    "name": "Basswood Relay - East",
+    "parent": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.241/24",
+  "location": {
+   "altitude": 1,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.76917,
+   "longitude": -114.884794,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5600,
+   "linkScore": {
+    "airTime": 0.001,
+    "airTimeScore": null,
+    "downlinkScore": 0.85,
+    "linkScore": 0.84000003,
+    "linkScoreHint": "This link is fine.",
+    "score": 0.86,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 312000000,
+    "theoreticalTotalCapacity": 312000000,
+    "theoreticalUplinkCapacity": 312000000,
+    "uplinkScore": 0.83
+   },
+   "signal": -57,
+   "status": "active",
+   "uptime": 768843,
+   "downlinkCapacity": 295200000,
+   "uplinkCapacity": 259200000,
+   "theoreticalDownlinkCapacity": 312000000,
+   "theoreticalUplinkCapacity": 312000000,
+   "downlinkUtilization": 3.0789827e-06,
+   "uplinkUtilization": 1.0150891e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "birch-ptp-noc-60",
+   "id": "2006ce78-af0b-4c81-912e-8e6ad42bc7be",
+   "model": "GBE-Plus",
+   "name": "birch-ptp-noc-60",
+   "role": "station",
+   "site": {
+    "id": "ee161e2d-f8bb-44bd-b7a3-6bc99ffc7cf6",
+    "name": "BRC - Birch",
+    "parent": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.39/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782868,
+   "longitude": -114.818643,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 58320,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.0031101895,
+   "uplinkUtilization": 6.860607e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:04.109Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-housing-505-05",
+   "id": "212b1e88-4637-4b17-93a4-f4d6df9d92da",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-housing-505-05",
+   "role": "station",
+   "site": {
+    "id": "310f77bf-f119-4c89-abb4-75b3b3cfff3f",
+    "name": "Chestnut - Housing",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "disconnected",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.145/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8817,
+   "longitude": -114.9353,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5310,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.00036028674,
+   "uplinkUtilization": 0.00010169788
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "noc-ptp-manzanita-60",
+   "id": "2303abb7-5030-4d8c-bb19-80ba564d75d5",
+   "model": "AF60-LR",
+   "name": "noc-ptp-manzanita-60",
+   "role": "ap",
+   "site": {
+    "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+    "name": "BRC - NOC",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.33/24",
+  "location": {
+   "altitude": 1227,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782872,
+   "longitude": -114.817891,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 64800,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:26:55.662Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-zelkova-60",
+   "id": "23fc3a6e-27d4-48ff-a4ac-8c065d5a5a02",
+   "model": "Wave-Pro",
+   "name": "basswood-ptp-zelkova-60",
+   "role": "ap",
+   "site": {
+    "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+    "name": "Basswood Relay - East",
+    "parent": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.249/24",
+  "location": {
+   "altitude": 1359.7,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.769095,
+   "longitude": -114.884771,
+   "magneticHeading": null,
+   "roll": -0.6,
+   "tilt": -1.1
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.82,
+    "linkScore": 0.78499997,
+    "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+    "score": null,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 0.75
+   },
+   "signal": -61,
+   "status": "active",
+   "uptime": 1805519,
+   "downlinkCapacity": 2156000000,
+   "uplinkCapacity": 1751750000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.11677597,
+   "uplinkUtilization": 0.0022322682
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "st-alder-courtney",
+   "id": "2ed94575-5c75-4958-bcab-1259fd0e8627",
+   "model": "NBE-5AC-Gen2",
+   "name": "town-courtney-st-05",
+   "role": "station",
+   "site": {
+    "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+    "name": "Town Users",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.64.8.51/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6508,
+   "longitude": -114.9605,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 0.52,
+    "linkScore": 0.58,
+    "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+    "score": 0.648,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 312000000,
+    "theoreticalTotalCapacity": 312000000,
+    "theoreticalUplinkCapacity": 312000000,
+    "uplinkScore": 0.64
+   },
+   "signal": -65,
+   "status": "active",
+   "uptime": 7124247,
+   "downlinkCapacity": 194400000,
+   "uplinkCapacity": 153090000,
+   "theoreticalDownlinkCapacity": 312000000,
+   "theoreticalUplinkCapacity": 260000000,
+   "downlinkUtilization": 4.2528736e-05,
+   "uplinkUtilization": 6.6327766e-06
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptmp-120-05",
+   "id": "330601cc-a573-4604-a744-799dce398138",
+   "model": "RP-5AC-Gen2",
+   "name": "chestnut-ptmp-120-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.131/24",
+  "location": {
+   "altitude": 1237,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882374,
+   "longitude": -114.935657,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5310,
+   "linkScore": {
+    "airTime": 0.081,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -63,
+   "status": "active",
+   "uptime": 1717761,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.42715883,
+   "uplinkUtilization": 0.008048789
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-yew-60",
+   "id": "37275751-7ccd-488c-a079-1dd534be6881",
+   "model": "GBE-Plus",
+   "name": "tamarack-ptp-yew-60",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.133/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.654992,
+   "longitude": -114.968075,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 62640,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 0.995,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 1617000000,
+    "theoreticalTotalCapacity": 1617000000,
+    "theoreticalUplinkCapacity": 1617000000,
+    "uplinkScore": 0.99
+   },
+   "signal": -54,
+   "status": "active",
+   "uptime": 24672322,
+   "downlinkCapacity": 1617000000,
+   "uplinkCapacity": 1617000000,
+   "theoreticalDownlinkCapacity": 1617000000,
+   "theoreticalUplinkCapacity": 1617000000,
+   "downlinkUtilization": 0.00011480025,
+   "uplinkUtilization": 3.1960422e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-bath-house-502-05",
+   "id": "3752927e-0deb-40fa-9eb9-4f12f1ca982b",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-bath-house-502-05",
+   "role": "station",
+   "site": {
+    "id": "818f5edd-b041-4606-9cea-1bdcf8e04ca8",
+    "name": "Chestnut - Bath House",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.138/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5310,
+   "linkScore": {
+    "airTime": 0.111,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -58,
+   "status": "active",
+   "uptime": 535317,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.42706195,
+   "uplinkUtilization": 0.008022022
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "manzanita-ptp-noc-60",
+   "id": "403c8599-8d7b-4e85-8dc5-19a6588e96e8",
+   "model": "AF60-LR",
+   "name": "manzanita-ptp-noc-60",
+   "role": "station",
+   "site": {
+    "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+    "name": "BRC - Business Park",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.118.33/24",
+  "location": {
+   "altitude": 1207,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.777458,
+   "longitude": -114.819339,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:26:55.662Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-st-rog-05",
+   "id": "449348b3-cfa8-454f-836d-23db3b241277",
+   "model": "NBE-5AC-Gen2",
+   "name": "tamarack-st-rog-05",
+   "role": "station",
+   "site": {
+    "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+    "name": "Town Users",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.78.11.79/22",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.654144,
+   "longitude": -114.965771,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5750,
+   "linkScore": {
+    "airTime": 0.007,
+    "airTimeScore": null,
+    "downlinkScore": 0.96,
+    "linkScore": 0.98,
+    "linkScoreHint": "This link is great.",
+    "score": 0.819,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 208000000,
+    "theoreticalTotalCapacity": 237150000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -62,
+   "status": "active",
+   "uptime": 4967101,
+   "downlinkCapacity": 237600000,
+   "uplinkCapacity": 288360000,
+   "theoreticalDownlinkCapacity": 237600000,
+   "theoreticalUplinkCapacity": 288360000,
+   "downlinkUtilization": 1.500187e-05,
+   "uplinkUtilization": 1.3538633e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-noc-11",
+   "id": "485d7ff3-2f54-4092-a0be-fecdad7dae2d",
+   "model": "AF11FX",
+   "name": "tamarack-ptp-noc-11",
+   "role": "station",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.33/24",
+  "location": {
+   "altitude": 25,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655029,
+   "longitude": -114.968100,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 11565,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 24671001
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:08.234Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-manzanita-11",
+   "id": "491c511e-da7f-4f4c-949a-5de3502c5805",
+   "model": "AF11FX",
+   "name": "tamarack-ptp-manzanita-11",
+   "role": "station",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.32/24",
+  "location": {
+   "altitude": 25,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655029,
+   "longitude": -114.968100,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 11245,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 24671187
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:55.633Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "ponderosa-pwr-1",
+   "id": "53a75a5c-a15b-40d7-952f-b6aae9e577db",
+   "model": "EP-54V-150W",
+   "name": "ponderosa-pwr-1",
+   "role": "ups",
+   "site": {
+    "id": "193c9230-8ff5-4c01-a4b3-b9cb22080df9",
+    "name": "Ponderosa - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.87.65/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.651327,
+   "longitude": -114.962921,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": null,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 9411228
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-fish-east-511-05",
+   "id": "56ddff19-d6f7-4f30-90fb-958f9c379993",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-fish-east-511-05",
+   "role": "station",
+   "site": {
+    "id": "8ed12613-4e84-461e-862f-7bc75f01623c",
+    "name": "Chestnut - Fishhead",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.133/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.057,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -51,
+   "status": "active",
+   "uptime": 793830,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.011823178,
+   "uplinkUtilization": 0.00054826465
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptmp-100-05",
+   "id": "5775d0fb-03d7-4941-9350-f7c8fc1a078f",
+   "model": "RP-5AC-Gen2",
+   "name": "chestnut-ptmp-100-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.132/24",
+  "location": {
+   "altitude": 1214,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882352,
+   "longitude": -114.935665,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5270,
+   "linkScore": {
+    "airTime": 0.008,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 331200000,
+    "theoreticalTotalCapacity": 325800000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -60,
+   "status": "active",
+   "uptime": 1717797,
+   "downlinkCapacity": 320400000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 320400000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.00025746206,
+   "uplinkUtilization": 5.6579276e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-basswood-60",
+   "id": "58759578-1eec-440f-b1ab-46bbb847edb8",
+   "model": "Wave-Pro",
+   "name": "tamarack-ptp-basswood-60",
+   "role": "station",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.131/24",
+  "location": {
+   "altitude": 1225.5,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655046,
+   "longitude": -114.968111,
+   "magneticHeading": null,
+   "roll": -1.9,
+   "tilt": 0.8
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.82,
+    "linkScore": 0.85,
+    "linkScoreHint": "This link is fine.",
+    "score": null,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 0.88
+   },
+   "signal": -56,
+   "status": "active",
+   "uptime": 24671163,
+   "downlinkCapacity": 2156000000,
+   "uplinkCapacity": 1751750000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.0012025737,
+   "uplinkUtilization": 0.080543265
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-ptmp-210-05",
+   "id": "5ccd4169-8697-41e6-b59f-ae7ea1ebd9c8",
+   "model": "RP-5AC-Gen2",
+   "name": "wingnut-ptmp-210-05",
+   "role": "ap",
+   "site": {
+    "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+    "name": "Wingnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.208/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768799,
+   "longitude": -114.859230,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5700,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.00013968936,
+   "uplinkUtilization": 5.213483e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-07T20:33:47.900Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-wingnut-60",
+   "id": "5d437239-3cf2-4190-8ad5-dc7860dabee7",
+   "model": "Wave-Pro",
+   "name": "basswood-ptp-wingnut-60",
+   "role": "ap",
+   "site": {
+    "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+    "name": "Basswood Relay - East",
+    "parent": {
+     "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+     "name": "BRC - NOC",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.239/24",
+  "location": {
+   "altitude": 1372.2,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768759,
+   "longitude": -114.884974,
+   "magneticHeading": null,
+   "roll": -3.2,
+   "tilt": -4.3
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 1805519
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T21:13:32.568Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "zelkova-ptp-basswood-05",
+   "id": "5d5f7593-efc3-4fde-8fab-29188a46a2ec",
+   "model": "PBE-5AC-Gen2",
+   "name": "zelkova-ptp-basswood-05",
+   "role": "station",
+   "site": {
+    "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+    "name": "Ironbark's Chestnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.92.250/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.878795,
+   "longitude": -114.916110,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5600,
+   "linkScore": {
+    "airTime": 0.001,
+    "airTimeScore": null,
+    "downlinkScore": 0.83,
+    "linkScore": 0.835,
+    "linkScoreHint": "This link is fine.",
+    "score": 0.86,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 312000000,
+    "theoreticalTotalCapacity": 312000000,
+    "theoreticalUplinkCapacity": 312000000,
+    "uplinkScore": 0.84
+   },
+   "signal": -56,
+   "status": "active",
+   "uptime": 768873,
+   "downlinkCapacity": 298800000,
+   "uplinkCapacity": 262440000,
+   "theoreticalDownlinkCapacity": 312000000,
+   "theoreticalUplinkCapacity": 312000000,
+   "downlinkUtilization": 3.1550069e-06,
+   "uplinkUtilization": 9.25e-06
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-autoshop-05",
+   "id": "5e587825-a484-40a4-9b03-5376ec8d1ea6",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-autoshop-05",
+   "role": "station",
+   "site": {
+    "id": "4e48c5a4-b521-4717-aa1c-b2b14b1a1333",
+    "name": "Chestnut - Auto Shop",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.134/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5310,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -61,
+   "status": "active",
+   "uptime": 648119,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 9.6893666e-05,
+   "uplinkUtilization": 2.6766542e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-st-94:b8-05",
+   "id": "5f7083f9-980c-46d9-b5c4-f9b2159222e2",
+   "model": "NBE-5AC-Gen2",
+   "name": "wingnut-st-row-a-05",
+   "role": "station",
+   "site": {
+    "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+    "name": "Wingnut - Stations",
+    "parent": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.247/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768799,
+   "longitude": -114.859230,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5700,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.0034166449,
+   "uplinkUtilization": 0.0032348386
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:17.745Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-boxelder-hickory-fence-05",
+   "id": "6361a552-3785-470a-992e-085200554288",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-boxelder-hickory-fence-05",
+   "role": "station",
+   "site": {
+    "id": "69cbbdc3-1938-498c-a2c6-27458fc30692",
+    "name": "Chestnut - Boxelder-Hickory Fence",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.144/24",
+  "location": {
+   "altitude": 5,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768799,
+   "longitude": -114.859230,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.039,
+    "airTimeScore": null,
+    "downlinkScore": 0.91,
+    "linkScore": 0.95500004,
+    "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+    "score": 1,
+    "scoreMax": 0.639,
+    "theoreticalDownlinkCapacity": 230400000,
+    "theoreticalTotalCapacity": 271800000,
+    "theoreticalUplinkCapacity": 313200000,
+    "uplinkScore": 1
+   },
+   "signal": -57,
+   "status": "active",
+   "uptime": 211358,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 6.5002685e-05,
+   "uplinkUtilization": 9.969136e-06
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-ponderosa-60",
+   "id": "65ce0d62-d949-4ec1-88c3-42e6a1148194",
+   "model": "GBE-Plus",
+   "name": "tamarack-ptp-ponderosa-60",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.132/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.654992,
+   "longitude": -114.968075,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 64800,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.41,
+    "linkScore": 0.62,
+    "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+    "score": 0.625,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 1617000000,
+    "theoreticalTotalCapacity": 1617000000,
+    "theoreticalUplinkCapacity": 1617000000,
+    "uplinkScore": 0.83
+   },
+   "signal": -59,
+   "status": "active",
+   "uptime": 24672545,
+   "downlinkCapacity": 808500000,
+   "uplinkCapacity": 1049631000,
+   "theoreticalDownlinkCapacity": 1617000000,
+   "theoreticalUplinkCapacity": 1617000000,
+   "downlinkUtilization": 9.024118e-06,
+   "uplinkUtilization": 3.3862707e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "alder-magnolia-05b",
+   "id": "65db199b-ff0b-478c-aeaa-bb2d07b2f53d",
+   "model": "RP-5AC-Gen2",
+   "name": "2024 alder-magnolia-05b",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.246/24",
+  "location": {
+   "altitude": 1211,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655072,
+   "longitude": -114.968121,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5190,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-09T17:07:50.946Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-oc79-172-05",
+   "id": "6998b28f-7bfe-462b-9f59-7659546150f5",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-oc79-172-05",
+   "role": "station",
+   "site": {
+    "id": "a50c276f-5912-4a17-8744-88560a4b94d9",
+    "name": "Chestnut - OC-79",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.136/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.038,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.908,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 259200000,
+    "theoreticalTotalCapacity": 262800000,
+    "theoreticalUplinkCapacity": 266400000,
+    "uplinkScore": 1
+   },
+   "signal": -60,
+   "status": "active",
+   "uptime": 2264624,
+   "downlinkCapacity": 278640000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 278640000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.00013043353,
+   "uplinkUtilization": 2.3270912e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-ne-trailers-540-05",
+   "id": "6d409e10-4002-4732-8da0-d870b34b868b",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-ne-trailers-540-05",
+   "role": "station",
+   "site": {
+    "id": "d495f5c7-8019-43aa-934f-9dc869332177",
+    "name": "Chestnut - NE Trailers",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.129/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.881,
+   "longitude": -114.9353,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5270,
+   "linkScore": {
+    "airTime": 0.004,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 327600000,
+    "theoreticalTotalCapacity": 324000000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -64,
+   "status": "active",
+   "uptime": 528561,
+   "downlinkCapacity": 324000000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 324000000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 4.161616e-05,
+   "uplinkUtilization": 1.02621725e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptp-zelkova-60",
+   "id": "710ab096-e544-48a8-b260-72472fe5d575",
+   "model": "Wave-Pro",
+   "name": "chestnut-ptp-zelkova-60",
+   "role": "station",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.110/24",
+  "location": {
+   "altitude": 1243.4,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882335,
+   "longitude": -114.93566,
+   "magneticHeading": null,
+   "roll": -0.2,
+   "tilt": -1.2
+  },
+  "overview": {
+   "frequency": 62640,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.844,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 1
+   },
+   "signal": -46,
+   "status": "active",
+   "uptime": 1717847,
+   "downlinkCapacity": 2700000000,
+   "uplinkCapacity": 2700000000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.052735515,
+   "uplinkUtilization": 0.0013156504
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "noc-ptp-magnolia-60",
+   "id": "79e22d3c-daea-4f2b-8b6f-aa8ed036a4ca",
+   "model": "AF60-LR",
+   "name": "noc-ptp-magnolia-60",
+   "role": "ap",
+   "site": {
+    "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+    "name": "BRC - NOC",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.34/24",
+  "location": {
+   "altitude": 1209,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782737,
+   "longitude": -114.817831,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 66960,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:00.067Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-fish-center-509-05",
+   "id": "7a9622d3-4c51-4626-b292-72e3c4e0a851",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-fish-center-509-05",
+   "role": "station",
+   "site": {
+    "id": "c79498e2-2391-4b49-a01e-a28ad91d228b",
+    "name": "Chestnut - Fishtail",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.141/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5550,
+   "linkScore": {
+    "airTime": 0.064,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 295200000,
+    "theoreticalTotalCapacity": 307800000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -54,
+   "status": "active",
+   "uptime": 793794,
+   "downlinkCapacity": 331200000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 331200000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.00627686,
+   "uplinkUtilization": 0.00054906367
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-tamarack-60",
+   "id": "7d84b2b6-f682-4bc4-86bc-4d65d3621bfd",
+   "model": "Wave-Pro",
+   "name": "basswood-ptp-tamarack-60",
+   "role": "ap",
+   "site": {
+    "id": "101b5d9e-cbf7-448c-90fc-168aa4417604",
+    "name": "Basswood Relay - West",
+    "parent": {
+     "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+     "name": "Yew - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.250/24",
+  "location": {
+   "altitude": 1368.9,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768809,
+   "longitude": -114.885000,
+   "magneticHeading": null,
+   "roll": -2,
+   "tilt": -0.1
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.82,
+    "linkScore": 0.855,
+    "linkScoreHint": "This link is fine.",
+    "score": null,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 0.89
+   },
+   "signal": -58,
+   "status": "active",
+   "uptime": 1805532,
+   "downlinkCapacity": 2156000000,
+   "uplinkCapacity": 1751750000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.25107753,
+   "uplinkUtilization": 0.080543265
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-st-07:b2-05",
+   "id": "80895f32-0359-4285-abdb-dcc2c1f29fc3",
+   "model": "NBE-5AC-Gen2",
+   "name": "wingnut-st-07:b2-05",
+   "role": "station",
+   "site": {
+    "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+    "name": "Wingnut - Stations",
+    "parent": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.237/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.768799,
+   "longitude": -114.859230,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5815,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 3.164251e-05,
+   "uplinkUtilization": 2.4835623e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-07T20:33:47.900Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptmp-sequoia-05",
+   "id": "8181283e-f2d4-40a5-a604-8f67e5ebaa38",
+   "model": "RP-5AC-Gen2",
+   "name": "tamarack-ptmp-sequoia-05",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.241/24",
+  "location": {
+   "altitude": 1190,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655008,
+   "longitude": -114.968133,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": {
+    "airTime": 0.056,
+    "airTimeScore": null,
+    "downlinkScore": 0.5733333,
+    "linkScore": 0.54999995,
+    "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+    "score": 0.441,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 309000000,
+    "theoreticalTotalCapacity": 297500000,
+    "theoreticalUplinkCapacity": 286000000,
+    "uplinkScore": 0.52666664
+   },
+   "signal": -72,
+   "status": "active",
+   "uptime": 14867614,
+   "downlinkCapacity": 216330000,
+   "uplinkCapacity": 171405000,
+   "theoreticalDownlinkCapacity": 300333333,
+   "theoreticalUplinkCapacity": 286000000,
+   "downlinkUtilization": 0.0846204,
+   "uplinkUtilization": 0.004570533
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "st-alder-farnsworth",
+   "id": "85266a18-06e5-47dd-bcbe-70ae6c24d746",
+   "model": "NBE-5AC-Gen2",
+   "name": "town-farnsworth-st-05",
+   "role": "station",
+   "site": {
+    "id": "03e42c62-ffd2-4d5a-82f6-5417d1cbfbea",
+    "name": "Town Users",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.64.8.47/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6508,
+   "longitude": -114.9605,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5755,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 2.0333333e-05,
+   "uplinkUtilization": 1.3730804e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-05-31T20:22:56.362Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "zelkova-ptp-chestnut-60",
+   "id": "958ab295-dc9f-4448-9078-b3445bab761e",
+   "model": "Wave-Pro",
+   "name": "zelkova-ptp-chestnut-60",
+   "role": "ap",
+   "site": {
+    "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+    "name": "Ironbark's Chestnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.92.248/24",
+  "location": {
+   "altitude": 1231.1,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.878836,
+   "longitude": -114.915781,
+   "magneticHeading": null,
+   "roll": -3.1,
+   "tilt": 0.2
+  },
+  "overview": {
+   "frequency": 62640,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.844,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 1
+   },
+   "signal": -46,
+   "status": "active",
+   "uptime": 1804859,
+   "downlinkCapacity": 2700000000,
+   "uplinkCapacity": 2700000000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.052735515,
+   "uplinkUtilization": 0.0013156504
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptmp-180-05",
+   "id": "95cf1a17-35ce-441c-95f1-a5c953c61e6b",
+   "model": "RP-5AC-Gen2",
+   "name": "chestnut-ptmp-180-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.250/24",
+  "location": {
+   "altitude": 1242,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882356,
+   "longitude": -114.935682,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5550,
+   "linkScore": {
+    "airTime": 0.059,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 0.9225,
+    "linkScoreHint": "This link is great.",
+    "score": 0.7345,
+    "scoreMax": 0.9755,
+    "theoreticalDownlinkCapacity": 213750000,
+    "theoreticalTotalCapacity": 223020000,
+    "theoreticalUplinkCapacity": 264200000,
+    "uplinkScore": 0.845
+   },
+   "signal": -71,
+   "status": "active",
+   "uptime": 1717736,
+   "downlinkCapacity": 216630000,
+   "uplinkCapacity": 232290000,
+   "theoreticalDownlinkCapacity": 216630000,
+   "theoreticalUplinkCapacity": 264200000,
+   "downlinkUtilization": 0.009826704,
+   "uplinkUtilization": 0.00077141507
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptp-magnolia-05",
+   "id": "9a10ebb7-2ff2-40a3-b197-86785176c9f9",
+   "model": "AF-5XHD",
+   "name": "tamarack-ptp-magnolia-05",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.245/24",
+  "location": {
+   "altitude": 1236,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.655007,
+   "longitude": -114.968025,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5490,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 110751
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:45.142Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "yew-ptp-basswood-05",
+   "id": "9c6cc290-78bc-4e56-997f-c6a7a8acbd66",
+   "model": "PBE-5AC-ISO-Gen2",
+   "name": "yew-ptp-basswood-05",
+   "role": "ap",
+   "site": {
+    "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+    "name": "Yew - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.80.64/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6534,
+   "longitude": -114.9595,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkCapacity": 216000000,
+   "uplinkCapacity": 246240000,
+   "theoreticalDownlinkCapacity": 260000000,
+   "theoreticalUplinkCapacity": 260000000
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2026-06-07T22:19:27.337Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "yew-st-tamarack-05",
+   "id": "9da72702-fc3c-4497-876c-f30dd55a5b0b",
+   "model": "NBE-5AC-Gen2",
+   "name": "yew-ptp-tamarack-05",
+   "role": "station",
+   "site": {
+    "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+    "name": "Yew - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.80.68/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.653365,
+   "longitude": -114.959494,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 0.69,
+    "linkScore": 0.605,
+    "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+    "score": 0.548,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 260000000,
+    "theoreticalTotalCapacity": 260000000,
+    "theoreticalUplinkCapacity": 260000000,
+    "uplinkScore": 0.52
+   },
+   "signal": -65,
+   "status": "active",
+   "uptime": 4678211,
+   "downlinkCapacity": 178200000,
+   "uplinkCapacity": 213840000,
+   "theoreticalDownlinkCapacity": 260000000,
+   "theoreticalUplinkCapacity": 260000000,
+   "downlinkUtilization": 2.3434344e-05,
+   "uplinkUtilization": 3.808455e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptp-zelkova-05",
+   "id": "9f8a72e0-98c3-4a47-94b8-676b6eee1018",
+   "model": "PBE-5AC-Gen2",
+   "name": "chestnut-ptp-zelkova-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.111/24",
+  "location": {
+   "altitude": 32,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5590,
+   "linkScore": {
+    "airTime": 0.001,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 0.935,
+    "linkScoreHint": "This link is great.",
+    "score": 0.99,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 302400000,
+    "theoreticalTotalCapacity": 303000000,
+    "theoreticalUplinkCapacity": 346000000,
+    "uplinkScore": 0.87
+   },
+   "signal": -62,
+   "status": "active",
+   "uptime": 843793,
+   "downlinkCapacity": 302400000,
+   "uplinkCapacity": 302400000,
+   "theoreticalDownlinkCapacity": 302400000,
+   "theoreticalUplinkCapacity": 346000000,
+   "downlinkUtilization": 4.84127e-06,
+   "uplinkUtilization": 1.106e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-commissary-507-05",
+   "id": "a99f696d-5d97-425d-94de-4d3c96fe5196",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-commissary-507-05",
+   "role": "station",
+   "site": {
+    "id": "61d8e435-34ab-4bbe-a55e-5a6e5c8af519",
+    "name": "Chestnut - Commissary",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.135/24",
+  "location": {
+   "altitude": 3,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.003,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -60,
+   "status": "active",
+   "uptime": 647792,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 288360000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 288360000,
+   "downlinkUtilization": 0.0138606215,
+   "uplinkUtilization": 0.0004304869
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "tamarack-ptmp-190-05",
+   "id": "ace1979e-aeb7-49e2-bf31-93dcadc11c88",
+   "model": "RP-5AC-Gen2",
+   "name": "tamarack-ptmp-190-05",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.239/24",
+  "location": {
+   "altitude": 1189,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.65497,
+   "longitude": -114.968103,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5800,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.077,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 208800000,
+    "theoreticalTotalCapacity": 264600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -63,
+   "status": "active",
+   "uptime": 24671796,
+   "downlinkCapacity": 233280000,
+   "uplinkCapacity": 288360000,
+   "theoreticalDownlinkCapacity": 233280000,
+   "theoreticalUplinkCapacity": 288360000,
+   "downlinkUtilization": 0.0011851852,
+   "uplinkUtilization": 0.00054222223
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "manzanita-ptp-alder-11",
+   "id": "ae736dd9-b6b7-42ba-b39b-964e768288ce",
+   "model": "AF11FX",
+   "name": "manzanita-ptp-alder-11",
+   "role": "ap",
+   "site": {
+    "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+    "name": "BRC - Business Park",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.118.32/24",
+  "location": {
+   "altitude": 50,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.777428,
+   "longitude": -114.819335,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 10755,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:55.633Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "yew-pwr-1",
+   "id": "b4c4b33e-fb54-49f6-aed4-09a1f7fa1fe1",
+   "model": "EP-54V-150W",
+   "name": "yew-pwr-1",
+   "role": "ups",
+   "site": {
+    "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+    "name": "Yew - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.80.67/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.653365,
+   "longitude": -114.959494,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": null,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 4678191
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "st-alder-vox",
+   "id": "bc39b4e7-d943-4d5d-99a2-9e2a380af825",
+   "model": "NBE-5AC-Gen2",
+   "name": "st-alder-vox",
+   "role": "station",
+   "site": {
+    "id": "66f7d7d8-f80d-4203-b6ac-3a12c053eb50",
+    "name": "Vox",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.64.8.41/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6508,
+   "longitude": -114.9605,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.00016696061,
+   "uplinkUtilization": 6.043504e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2026-05-31T00:23:24.421Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-st-c8:a4-05",
+   "id": "bcaeccaf-96a9-4fd4-b6d8-7137928d0489",
+   "model": "NBE-5AC-Gen2",
+   "name": "wingnut-st-lbs-05",
+   "role": "station",
+   "site": {
+    "id": "b237e47c-db5f-4db9-95ce-ac76e654af75",
+    "name": "Wingnut - Stations",
+    "parent": {
+     "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+     "name": "Wingnut",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.164/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.7688,
+   "longitude": -114.8592,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5700,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.00015323775,
+   "uplinkUtilization": 0.00042275462
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-07T20:33:47.900Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "noc-ptp-birch-60",
+   "id": "bfcc4bec-7e78-4bcf-8d4a-7af6288bd135",
+   "model": "GBE-Plus",
+   "name": "noc-ptp-birch-60",
+   "role": "ap",
+   "site": {
+    "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+    "name": "BRC - NOC",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.38/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782813,
+   "longitude": -114.818021,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 58320,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:04.109Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "rowan-ptp-joshua-st-05",
+   "id": "c187d7bf-b701-499f-a2c6-4bf79bfd34ed",
+   "model": "NBE-5AC-19",
+   "name": "rowan-ptp-joshua-st-05",
+   "role": "station",
+   "site": {
+    "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+    "name": "Rowan - Tower",
+    "parent": {
+     "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+     "name": "Rowan - Joshua",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "unknown",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.31.99.165/22",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6498,
+   "longitude": -114.9665,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5810,
+   "linkScore": {
+    "airTime": 0.168,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.978,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 302400000,
+    "theoreticalTotalCapacity": 298800000,
+    "theoreticalUplinkCapacity": 295200000,
+    "uplinkScore": 1
+   },
+   "signal": -43,
+   "status": "active",
+   "uptime": 768547,
+   "downlinkCapacity": 302400000,
+   "uplinkCapacity": 277200000,
+   "theoreticalDownlinkCapacity": 302400000,
+   "theoreticalUplinkCapacity": 277200000,
+   "downlinkUtilization": 2.5767196e-05,
+   "uplinkUtilization": 8.802778e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "alder-magnolia-05a",
+   "id": "c739d3be-2894-4e34-85be-6a3704a7774d",
+   "model": "AF-5XHD",
+   "name": "2024 alder-magnolia-05a",
+   "role": "ap",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.247/24",
+  "location": {
+   "altitude": 1239,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.654969,
+   "longitude": -114.968054,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5685,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-09T17:07:58.107Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "st-alder-bm-tp-tower",
+   "id": "cbf7974a-741f-4c58-ba56-5de527df1fc0",
+   "model": "NBE-5AC-Gen2",
+   "name": "rowan-tower-st-05",
+   "role": "station",
+   "site": {
+    "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+    "name": "Rowan - Tower",
+    "parent": {
+     "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+     "name": "Rowan - Joshua",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "unknown",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.64.8.62/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.649812,
+   "longitude": -114.966495,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5490,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.000143859,
+   "uplinkUtilization": 0.00274175
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2024-05-05T19:02:35.766Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-flygate-508-05",
+   "id": "cc5e369c-8c54-48ac-84d8-f6e7598ee4db",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-flygate-508-05",
+   "role": "station",
+   "site": {
+    "id": "f3680e3b-2289-483d-a980-a57b844c4dc0",
+    "name": "Fly - Gate",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.142/24",
+  "location": {
+   "altitude": 3,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8593,
+   "longitude": -114.9496,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5550,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 0.96000004,
+    "linkScoreHint": "This link is great.",
+    "score": 0.469,
+    "scoreMax": 0.951,
+    "theoreticalDownlinkCapacity": 118260000,
+    "theoreticalTotalCapacity": 131220000,
+    "theoreticalUplinkCapacity": 156000000,
+    "uplinkScore": 0.92
+   },
+   "signal": -82,
+   "status": "active",
+   "uptime": 396102,
+   "downlinkCapacity": 97200000,
+   "uplinkCapacity": 144180000,
+   "theoreticalDownlinkCapacity": 97200000,
+   "theoreticalUplinkCapacity": 156000000,
+   "downlinkUtilization": 0.00025459533,
+   "uplinkUtilization": 2.2693855e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "magnolia-ptp-noc-60",
+   "id": "d0fcfda5-e9d7-4b91-ac5b-7db6398cdd28",
+   "model": "AF60-LR",
+   "name": "magnolia-ptp-noc-60",
+   "role": "station",
+   "site": {
+    "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+    "name": "BRC - Cottonwood - MRS",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.112.246/24",
+  "location": {
+   "altitude": 1206,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.78566,
+   "longitude": -114.829340,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 66960,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 7.0874275e-06,
+   "uplinkUtilization": 9.773856e-05
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:00.067Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "manzanita-ptp-magnolia-60",
+   "id": "d1afd5c6-c9ab-4124-bb53-b8b85b001569",
+   "model": "AF60-LR",
+   "name": "manzanita-ptp-magnolia-60",
+   "role": "ap",
+   "site": {
+    "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+    "name": "BRC - Business Park",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.118.34/24",
+  "location": {
+   "altitude": 1210,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.777486,
+   "longitude": -114.819375,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:33.022Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "rowan-house-st-05",
+   "id": "d25ca1c3-c5e6-429b-a0c7-3e4bd7d758b8",
+   "model": "NBE-5AC-Gen2",
+   "name": "rowan-house-st-05",
+   "role": "station",
+   "site": {
+    "id": "fb9dd4ba-91c0-4a1a-8f99-495ab392a5ae",
+    "name": "Rowan - House",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "100.64.8.66/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.6498,
+   "longitude": -114.9665,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": {
+    "airTime": 0.012,
+    "airTimeScore": null,
+    "downlinkScore": 0.21,
+    "linkScore": 0.21,
+    "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+    "score": 0.127,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 312000000,
+    "theoreticalTotalCapacity": 286000000,
+    "theoreticalUplinkCapacity": 260000000,
+    "uplinkScore": 0.21
+   },
+   "signal": -74,
+   "status": "active",
+   "uptime": 9411333,
+   "downlinkCapacity": 128790000,
+   "uplinkCapacity": 38880000,
+   "theoreticalDownlinkCapacity": 260000000,
+   "theoreticalUplinkCapacity": 260000000,
+   "downlinkUtilization": 0.3115023,
+   "uplinkUtilization": 0.006758025
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "magnolia-ptp-manzanita-60",
+   "id": "d4beecba-0be3-4821-8ac8-1a974d518eea",
+   "model": "AF60-LR",
+   "name": "magnolia-ptp-manzanita-60",
+   "role": "station",
+   "site": {
+    "id": "289bf8f0-1939-45e6-834e-fdab58467be2",
+    "name": "BRC - Cottonwood - MRS",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.112.247/24",
+  "location": {
+   "altitude": 1232,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.785651,
+   "longitude": -114.829302,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 64800,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkUtilization": 0.00024221835,
+   "uplinkUtilization": 0.00010600102
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:33.022Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "gw-aspen",
+   "id": "d5fcc682-3562-4524-a5b5-2b1d5924dfe4",
+   "model": "ER-6P",
+   "name": "aspen-gw",
+   "role": "router",
+   "site": {
+    "id": "4980f35c-3e0c-4b50-835b-8d7b510a9a38",
+    "name": "SF - ASPEN",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "198.18.17.110/28",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 37.760885,
+   "longitude": -122.412081,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": null,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 61533
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-pwr-1",
+   "id": "d6de0d4b-f604-4087-81be-a3a09f409a2f",
+   "model": "EP-54V-150W",
+   "name": "chestnut-pwr-1",
+   "role": "ups",
+   "site": {
+    "id": "4603170b-534d-4d50-87f5-fc823be2b94a",
+    "name": "Chestnut - Pump Room",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.22/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882526,
+   "longitude": -114.93569,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": null,
+   "linkScore": null,
+   "signal": null,
+   "status": "active",
+   "uptime": 2410789
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "wingnut-ptmp-210-05",
+   "id": "d965d669-1705-4b5c-a8a9-cfe32e1feade",
+   "model": "LAP-GPS",
+   "name": "wingnut-ptmp-210-05",
+   "role": "ap",
+   "site": {
+    "id": "0d977013-2546-4f4e-8fb2-a4d3400101b6",
+    "name": "Wingnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.90.249/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.7688,
+   "longitude": -114.8592,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5700,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-10-16T20:37:17.745Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "noc-ptp-alder-11",
+   "id": "dcbeb38b-9894-4386-94d0-eed25a489e91",
+   "model": "AF11FX",
+   "name": "noc-ptp-alder-11",
+   "role": "ap",
+   "site": {
+    "id": "32c934ba-692f-4230-a6bc-57eb8caa684f",
+    "name": "BRC - NOC",
+    "parent": {
+     "id": "00125a55-e497-457a-bedf-1ed3beb747e1",
+     "name": "BRC - Business Park",
+     "parent": null,
+     "status": "inactive",
+     "type": "site"
+    },
+    "status": "inactive",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.119.32/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.782813,
+   "longitude": -114.818021,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 11075,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-09-06T16:27:08.234Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "alder-manzanita-05",
+   "id": "dcea059a-6a44-4560-92a5-a3506847b1ad",
+   "model": "AF-5XHD",
+   "name": "2024 alder-manzanita-05",
+   "role": "station",
+   "site": {
+    "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+    "name": "Tamarack - Tower",
+    "parent": null,
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.117.244/24",
+  "location": {
+   "altitude": 1240,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.65504,
+   "longitude": -114.96809,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5270,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2025-08-09T17:08:53.914Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "rowan-sw-joshua",
+   "id": "e1cd0a10-b51e-4747-a935-be44aef45086",
+   "model": "TSW-PoE PRO",
+   "name": "rowan-tp2-sw",
+   "role": "switch",
+   "site": {
+    "id": "a20479ca-cf25-4cfd-b0b6-5f2d5e7c421f",
+    "name": "Rowan - Tower",
+    "parent": {
+     "id": "cae2ac90-c693-443b-bfa9-7c0e7b5f79af",
+     "name": "Rowan - Joshua",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "unknown",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.31.83.230/22",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.649812,
+   "longitude": -114.966495,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": null,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkCapacity": 1000000000,
+   "uplinkCapacity": 1000000000,
+   "downlinkUtilization": 1.6e-07,
+   "uplinkUtilization": 3.28e-07
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "basswood-ptp-yew-05",
+   "id": "e413e488-cb54-44b8-a152-03411b895595",
+   "model": "PBE-5AC-Gen2",
+   "name": "basswood-ptp-yew-05",
+   "role": "station",
+   "site": {
+    "id": "101b5d9e-cbf7-448c-90fc-168aa4417604",
+    "name": "Basswood Relay - West",
+    "parent": {
+     "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+     "name": "Yew - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.83.240/24",
+  "location": {
+   "altitude": 1,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.7703,
+   "longitude": -114.8855,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5500,
+   "linkScore": null,
+   "signal": null,
+   "status": "disconnected",
+   "uptime": null,
+   "downlinkCapacity": 210600000,
+   "uplinkCapacity": 246240000,
+   "theoreticalDownlinkCapacity": 260000000,
+   "theoreticalUplinkCapacity": 260000000,
+   "downlinkUtilization": 6.123457e-06,
+   "uplinkUtilization": 8.230452e-06
+  },
+  "meta": {
+   "maintenance": true,
+   "maintenanceEnabledAt": "2026-06-07T22:19:27.337Z"
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-commonhouse-532-05",
+   "id": "e4f4688e-d858-453f-a66b-f89992c675ec",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-commonhouse-532-05",
+   "role": "station",
+   "site": {
+    "id": "e367e44b-f860-4ff6-854a-0f111650b3f0",
+    "name": "Chestnut - Common House",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.139/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.881947,
+   "longitude": -114.93442,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5270,
+   "linkScore": {
+    "airTime": 0.008,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 327600000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -50,
+   "status": "active",
+   "uptime": 366240,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 0.0002139307,
+   "uplinkUtilization": 4.63171e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "yew-ptp-tamarack-60",
+   "id": "e6c05579-9c47-47fb-943a-4d77cf45eb7e",
+   "model": "GBE-Plus",
+   "name": "yew-ptp-tamarack-60",
+   "role": "station",
+   "site": {
+    "id": "1974fe52-d07e-425c-a5ee-51f5a167d0fa",
+    "name": "Yew - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.129/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.653359,
+   "longitude": -114.959492,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 62640,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 0.995,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 1617000000,
+    "theoreticalTotalCapacity": 1617000000,
+    "theoreticalUplinkCapacity": 1617000000,
+    "uplinkScore": 0.99
+   },
+   "signal": -55,
+   "status": "active",
+   "uptime": 4678213,
+   "downlinkCapacity": 1617000000,
+   "uplinkCapacity": 1617000000,
+   "theoreticalDownlinkCapacity": 1617000000,
+   "theoreticalUplinkCapacity": 1617000000,
+   "downlinkUtilization": 0.00011480025,
+   "uplinkUtilization": 3.1960422e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "ponderosa-ptp-tamarack-60",
+   "id": "f41a138a-5eac-4c3c-81f5-2cf454ad64d4",
+   "model": "GBE-Plus",
+   "name": "ponderosa-ptp-tamarack-60",
+   "role": "station",
+   "site": {
+    "id": "193c9230-8ff5-4c01-a4b3-b9cb22080df9",
+    "name": "Ponderosa - Tower",
+    "parent": {
+     "id": "9fe6d4ac-141e-4ba1-8b94-142343900f64",
+     "name": "Tamarack - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.84.130/24",
+  "location": {
+   "altitude": 0,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.651321,
+   "longitude": -114.962921,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 64800,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.41,
+    "linkScore": 0.62,
+    "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+    "score": 0.625,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 1617000000,
+    "theoreticalTotalCapacity": 1617000000,
+    "theoreticalUplinkCapacity": 1617000000,
+    "uplinkScore": 0.83
+   },
+   "signal": -62,
+   "status": "active",
+   "uptime": 2779363,
+   "downlinkCapacity": 808500000,
+   "uplinkCapacity": 1078000000,
+   "theoreticalDownlinkCapacity": 1617000000,
+   "theoreticalUplinkCapacity": 1617000000,
+   "downlinkUtilization": 6.768089e-06,
+   "uplinkUtilization": 3.3862707e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-hickory-512-05",
+   "id": "fa829e52-449a-4610-a19f-7af2ebdaa2b5",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-hickory-512-05",
+   "role": "station",
+   "site": {
+    "id": "2365b7e5-c52a-4974-8fbc-6b8534b8df03",
+    "name": "Chestnut - HICKORY",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.140/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.8824,
+   "longitude": -114.936,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.002,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 1,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 334800000,
+    "theoreticalTotalCapacity": 311580000,
+    "theoreticalUplinkCapacity": 288360000,
+    "uplinkScore": 1
+   },
+   "signal": -60,
+   "status": "active",
+   "uptime": 1929355,
+   "downlinkCapacity": 334800000,
+   "uplinkCapacity": 288360000,
+   "theoreticalDownlinkCapacity": 334800000,
+   "theoreticalUplinkCapacity": 288360000,
+   "downlinkUtilization": 4.4396656e-05,
+   "uplinkUtilization": 1.3927036e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "zelkova-ptp-chestnut-05",
+   "id": "fbb4bd33-5ad0-4378-baf1-95a44f3c38fd",
+   "model": "PBE-5AC-Gen2",
+   "name": "zelkova-ptp-chestnut-05",
+   "role": "station",
+   "site": {
+    "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+    "name": "Ironbark's Chestnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.92.249/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.878795,
+   "longitude": -114.916110,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5590,
+   "linkScore": {
+    "airTime": 0.001,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "This link is great.",
+    "score": 0.99,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 302400000,
+    "theoreticalTotalCapacity": 302400000,
+    "theoreticalUplinkCapacity": 302400000,
+    "uplinkScore": 1
+   },
+   "signal": -62,
+   "status": "active",
+   "uptime": 843766,
+   "downlinkCapacity": 302400000,
+   "uplinkCapacity": 302400000,
+   "theoreticalDownlinkCapacity": 302400000,
+   "theoreticalUplinkCapacity": 302400000,
+   "downlinkUtilization": 4.84127e-06,
+   "uplinkUtilization": 4.3915343e-06
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "zelkova-ptp-basswood-60",
+   "id": "fe76009e-4062-4559-a56c-69d919f76080",
+   "model": "Wave-Pro",
+   "name": "zelkova-ptp-basswood-60",
+   "role": "station",
+   "site": {
+    "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+    "name": "Ironbark's Chestnut",
+    "parent": {
+     "id": "e493a661-6c74-49a9-b59d-317b887b2030",
+     "name": "Basswood Relay - East",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.92.247/24",
+  "location": {
+   "altitude": 1228.8,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.878887,
+   "longitude": -114.915824,
+   "magneticHeading": null,
+   "roll": -0.4,
+   "tilt": 0.5
+  },
+  "overview": {
+   "frequency": 68040,
+   "linkScore": {
+    "airTime": null,
+    "airTimeScore": null,
+    "downlinkScore": 0.82,
+    "linkScore": 0.78999996,
+    "linkScoreHint": "Please, make sure the signal is not interrupted (bad visibility, fresnel zones etc...) and that there is no interference.",
+    "score": null,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 2700000000,
+    "theoreticalTotalCapacity": 3200000000,
+    "theoreticalUplinkCapacity": 2700000000,
+    "uplinkScore": 0.76
+   },
+   "signal": -57,
+   "status": "active",
+   "uptime": 1804859,
+   "downlinkCapacity": 1751750000,
+   "uplinkCapacity": 1751750000,
+   "theoreticalDownlinkCapacity": 2700000000,
+   "theoreticalUplinkCapacity": 2700000000,
+   "downlinkUtilization": 0.09488048,
+   "uplinkUtilization": 0.0022322682
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-st-boxelder-05",
+   "id": "fee86fb2-5a00-495f-ad18-6d6e3e5b14ba",
+   "model": "NBE-5AC-Gen2",
+   "name": "chestnut-st-boxelder-05",
+   "role": "station",
+   "site": {
+    "id": "334df330-df07-4ebd-87ab-9c8fb1a211b7",
+    "name": "Chestnut - Boxelder",
+    "parent": {
+     "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+     "name": "Chestnut - Tower",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.143/24",
+  "location": {
+   "altitude": 10,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.7688,
+   "longitude": -114.8592,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.003,
+    "airTimeScore": null,
+    "downlinkScore": 1,
+    "linkScore": 1,
+    "linkScoreHint": "The performance of this link can be increased with a better antenna or by increasing the output power.",
+    "score": 1,
+    "scoreMax": 0.639,
+    "theoreticalDownlinkCapacity": 294840000,
+    "theoreticalTotalCapacity": 307620000,
+    "theoreticalUplinkCapacity": 320400000,
+    "uplinkScore": 1
+   },
+   "signal": -53,
+   "status": "active",
+   "uptime": 372524,
+   "downlinkCapacity": 324000000,
+   "uplinkCapacity": 320400000,
+   "theoreticalDownlinkCapacity": 324000000,
+   "theoreticalUplinkCapacity": 320400000,
+   "downlinkUtilization": 8.0945625e-05,
+   "uplinkUtilization": 6.40886e-05
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ },
+ {
+  "identification": {
+   "hostname": "chestnut-ptmp-160-05",
+   "id": "fff963dc-0dd5-46ac-a6a0-1cdeaa5c2449",
+   "model": "RP-5AC-Gen2",
+   "name": "chestnut-ptmp-160-05",
+   "role": "ap",
+   "site": {
+    "id": "28096e10-fa03-41ac-9c65-a7dc66ba72c4",
+    "name": "Chestnut - Tower",
+    "parent": {
+     "id": "af2028a1-c14c-4eb6-a31e-d42ed2f950c5",
+     "name": "Ironbark's Chestnut",
+     "parent": null,
+     "status": "active",
+     "type": "site"
+    },
+    "status": "active",
+    "type": "site"
+   }
+  },
+  "ipAddress": "172.18.81.130/24",
+  "location": {
+   "altitude": 1235,
+   "elevation": null,
+   "heading": null,
+   "latitude": 40.882386,
+   "longitude": -114.935676,
+   "magneticHeading": null,
+   "roll": null,
+   "tilt": null
+  },
+  "overview": {
+   "frequency": 5510,
+   "linkScore": {
+    "airTime": 0.15,
+    "airTimeScore": null,
+    "downlinkScore": 0.9816667,
+    "linkScore": 0.98583335,
+    "linkScoreHint": "This link is great.",
+    "score": 0.9755,
+    "scoreMax": 1,
+    "theoreticalDownlinkCapacity": 299266667,
+    "theoreticalTotalCapacity": 306510000,
+    "theoreticalUplinkCapacity": 317800000,
+    "uplinkScore": 0.99
+   },
+   "signal": -61,
+   "status": "active",
+   "uptime": 1717720,
+   "downlinkCapacity": 288257143,
+   "uplinkCapacity": 290648571,
+   "theoreticalDownlinkCapacity": 306091429,
+   "theoreticalUplinkCapacity": 318000000,
+   "downlinkUtilization": 0.026723549,
+   "uplinkUtilization": 0.0010910042
+  },
+  "meta": {
+   "maintenance": false,
+   "maintenanceEnabledAt": null
+  }
+ }
+]

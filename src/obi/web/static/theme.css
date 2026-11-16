@@ -1,0 +1,1299 @@
+/* obi terminal theme (feature 037) — the one served stylesheet.
+   Tokens first: every shell and widget color/typeface routes through these custom
+   properties (spec FR-007 — widgets cannot drift). Color is reserved for data
+   semantics: --ok/--warn/--down mirror the HEALTH_COLORS the canvases draw. */
+
+:root {
+  color-scheme: dark;
+  --bg: #111318;
+  --panel: #1b1e26;
+  --border: #2c313c;
+  --text: #d8dee9;
+  --muted: #8b93a3;
+  --ok: #4ade80;
+  --warn: #f59e0b;
+  --down: #ef4444;
+  --accent: #60a5fa;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --cmdline-h: 2.2rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+a { color: var(--accent); }
+button { font-family: var(--font-mono); }
+input, select { font-family: var(--font-mono); }
+
+/* --- the Obi menu: the window switcher (077) --------------------------------------------- */
+
+/* Anchored like #suggestions — fixed to the bottom-left, opening UPWARD out of the one bar, so
+   the two popups share a vocabulary. The height cap is load-bearing, not defensive: an operator
+   with a dozen router windows open overflows a short viewport, and an uncapped menu would grow
+   off the top of the screen with its first entries unreachable. */
+#menu {
+  position: fixed;
+  bottom: var(--cmdline-h);
+  left: 0.75rem;
+  min-width: 16rem;
+  max-height: calc(100vh - var(--cmdline-h) - 1rem);
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px 4px 0 0;
+  z-index: 1500;
+  padding: 0.25rem 0;
+}
+#menu button {
+  all: unset;
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+}
+#menu button:hover { background: var(--bg); }
+#menu .mn { color: var(--accent); min-width: 3.2rem; font-weight: 700; }
+#menu .ti { color: var(--muted); }
+#menu .none { padding: 0.3rem 0.8rem; color: var(--muted); }
+/* A minimized window is listed in place, only toned back — the row's own text says "minimized",
+   so this is emphasis, never the signal itself. */
+#menu button.min .mn { color: var(--muted); font-weight: 400; }
+/* The launcher section (078): a quiet divider + label above the widget catalog rows. */
+#menu .sect {
+  padding: 0.4rem 0.8rem 0.2rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* The gate commands' transient confirmation (the unlisted enable/disable) — the only visible
+   trace they leave. Sits just above the bar where the command was typed; removed after ~2.5s. */
+#gate-toast {
+  position: fixed;
+  left: 0.75rem;
+  bottom: calc(var(--cmdline-h) + 0.5rem);
+  z-index: 1500;
+  padding: 0.35rem 0.8rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* --- workspace + windows ---------------------------------------------------------------- */
+
+#workspace {
+  position: fixed;
+  top: 0;                      /* 077: no top bar — the workspace owns the whole strip */
+  bottom: var(--cmdline-h);
+  left: 0; right: 0;
+  overflow: hidden;
+}
+
+.win {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  min-width: 0;
+  min-height: 0;
+}
+.win.focused { border-color: var(--muted); }
+.win-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--panel);
+  /* follow the window's rounded frame — a square panel corner pokes past it otherwise
+     (operator field feedback, 2026-07-09) */
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid var(--border);
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.win-title .mn { color: var(--accent); font-weight: 700; letter-spacing: 0.05em; }
+.win-title .name { flex: 1; overflow: hidden; text-overflow: ellipsis; }
+.win-title .suffix { color: var(--muted); }
+.win-title .badge { color: var(--muted); font-size: 0.75rem; }
+.win-actions { display: flex; gap: 0.15rem; }
+.win-actions button {
+  all: unset;
+  cursor: pointer;
+  color: var(--muted);
+  width: 1.4rem;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 1.3;
+}
+.win-actions button:hover { background: var(--bg); color: var(--text); }
+.win-body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* resize handles: 8 invisible grab zones on the frame (touch-sized) */
+.rs { position: absolute; z-index: 5; touch-action: none; }
+.rs-n  { top: -4px; left: 8px; right: 8px; height: 8px; cursor: ns-resize; }
+.rs-s  { bottom: -4px; left: 8px; right: 8px; height: 8px; cursor: ns-resize; }
+.rs-e  { right: -4px; top: 8px; bottom: 8px; width: 8px; cursor: ew-resize; }
+.rs-w  { left: -4px; top: 8px; bottom: 8px; width: 8px; cursor: ew-resize; }
+.rs-ne { top: -4px; right: -4px; width: 14px; height: 14px; cursor: nesw-resize; }
+.rs-nw { top: -4px; left: -4px; width: 14px; height: 14px; cursor: nwse-resize; }
+.rs-se { bottom: -4px; right: -4px; width: 14px; height: 14px; cursor: nwse-resize; }
+.rs-sw { bottom: -4px; left: -4px; width: 14px; height: 14px; cursor: nesw-resize; }
+
+#snap-preview {
+  position: absolute;
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px dashed var(--accent);
+  border-radius: 4px;
+  z-index: 900;
+  pointer-events: none;
+}
+
+/* --- minimized dock ----------------------------------------------------------------------- */
+
+#dock {
+  position: fixed;
+  bottom: var(--cmdline-h);
+  left: 0;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.25rem 0.5rem;
+  z-index: 950;
+}
+#dock button {
+  all: unset;
+  cursor: pointer;
+  padding: 0.15rem 0.6rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--muted);
+}
+#dock button:hover { color: var(--text); }
+#dock .mn { color: var(--accent); font-weight: 700; }
+
+/* --- command line -------------------------------------------------------------------------- */
+
+#cmdline {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: var(--cmdline-h);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.75rem;
+  background: var(--panel);
+  border-top: 1px solid var(--border);
+  z-index: 1000;
+}
+#cmdline .prompt { color: var(--accent); font-weight: 700; }
+#cmd {
+  flex: 1;                     /* the input absorbs the slack, so a narrow bar shrinks IT, not the
+                                  fixed-size chrome either side of it (FR-007) */
+  min-width: 4rem;
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: var(--text);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+/* The wordmark, and the button that opens the window switcher — one element doing both jobs
+   (077 retired the "OBI TERMINAL" brand text along with the bar that held it). */
+#obi {
+  all: unset;
+  cursor: pointer;
+  flex: none;
+  padding: 0.1rem 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  line-height: 1.4;
+}
+#obi:hover { background: var(--bg); }
+
+#cmdline .seg { flex: none; color: var(--muted); font-size: 0.8rem; }
+#cmdline #conn { flex: none; font-size: 0.8rem; white-space: nowrap; }
+#cmdline #conn.connected { color: var(--ok); }
+#cmdline #conn.failing { color: var(--warn); }
+#suggestions {
+  position: fixed;
+  bottom: var(--cmdline-h);
+  left: 0.75rem;
+  min-width: 18rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px 4px 0 0;
+  z-index: 1400;
+  padding: 0.2rem 0;
+}
+#suggestions .row { display: flex; gap: 0.8rem; padding: 0.3rem 0.8rem; cursor: pointer; }
+#suggestions .row.active, #suggestions .row:hover { background: var(--bg); }
+#suggestions .mn { color: var(--accent); min-width: 3.2rem; font-weight: 700; }
+#suggestions .ti { color: var(--muted); }
+#suggestions .none { padding: 0.3rem 0.8rem; color: var(--muted); }
+
+/* --- full-screen single-widget host (?w=<id>) ----------------------------------------------- */
+
+#fullscreen-host { position: fixed; inset: 0; }
+#fullscreen-badge {
+  position: fixed;
+  top: 0.4rem;
+  right: 0.5rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.5rem;
+  z-index: 1000;
+}
+#fullscreen-badge:empty { display: none; }
+
+.shell-message {
+  max-width: 34rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+.shell-message.error { border-color: var(--down); }
+
+/* --- MAP widget (2D viewer styles, migrated from the 033 index.html inline block) ----------- */
+
+#canvas2d { position: absolute; inset: 0; display: block; background: var(--bg); }
+#status2d {
+  position: absolute;
+  top: 0.75rem; left: 0.75rem; right: 0.75rem;
+  z-index: 5;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+}
+#status2d.error { border-color: var(--down); }
+/* link detail panel: side card on wide hosts, bottom sheet at phone width (033 FR-011).
+   057: sits below the top-right control chips so an open panel never hides fit/terrain. */
+/* 076: the map's in-canvas link detail (#detail2d) is now kit.createPanel — the container + head/
+   close chrome + the bottom-sheet media rule were retired (the panel + its .kit-panel media rule own
+   them). The body content (.map-detail) keeps the map-specific health/row/verdict/profile styling;
+   T033 folds the fact rows into .kit-facts. */
+.map-detail .health {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  margin: 0.15rem 0 0.5rem;
+}
+/* 076: .map-detail .row/.k/.v retired — the map link-detail fact rows are .kit-facts now. The
+   verdict color rules below stay (they win over .kit-facts via the .map-detail descendant depth). */
+.map-detail .verdict-marginal .v { color: var(--warn); }
+.map-detail .verdict-obstructed .v { color: var(--down); }
+/* Band visibility chips (044 US1): bottom-left, out of the detail panel's way. */
+#bands2d {
+  position: absolute;
+  left: 0.75rem; bottom: 0.75rem;
+  z-index: 6;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+/* Map controls (057): fit + terrain, top-right, same chip idiom as the band row. */
+#controls2d {
+  position: absolute;
+  top: 0.75rem; right: 0.75rem;
+  z-index: 6;
+  display: flex;
+  gap: 0.4rem;
+}
+#bands2d .chip,
+#controls2d .chip {
+  all: unset;
+  cursor: pointer;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--panel) 93%, transparent);
+  color: var(--text);
+  font-size: 0.78rem;
+}
+#bands2d .chip.off,
+#controls2d .chip.off {
+  color: var(--muted);
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+#bands2d .chip:hover,
+#controls2d .chip:hover { border-color: var(--muted); }
+.map-detail .profile {
+  width: 100%;
+  margin-top: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.map-detail .caption { color: var(--muted); font-size: 0.75rem; margin-top: 0.3rem; }
+
+/* --- LINK detail window (058): the MAP's in-canvas panel promoted to a real window ------------ */
+.linkw-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.85rem;
+}
+.linkw-body .health {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem;
+}
+/* 076: .linkw-body .row/.k/.v retired — the LINK window fact rows are .kit-facts now; the verdict
+   color rules below stay (they win over .kit-facts via the .linkw-body descendant depth). */
+.linkw-body .verdict-marginal .v { color: var(--warn); }
+.linkw-body .verdict-obstructed .v { color: var(--down); }
+.linkw-body .profile {
+  width: 100%;
+  margin-top: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.linkw-body .caption { color: var(--muted); font-size: 0.75rem; margin-top: 0.3rem; }
+/* 076: .linkw-message retired — the LINK window's empty/error box is the shared .kit-message now. */
+
+/* --- TALK widget ----------------------------------------------------------------------------- */
+
+.talk { display: flex; flex-direction: column; height: 100%; }
+.talk-log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.talk-entry { white-space: pre-wrap; overflow-wrap: anywhere; }
+.talk-entry.operator { color: var(--accent); }
+.talk-entry.operator::before { content: "> "; }
+.talk-entry.obi { color: var(--text); }
+.talk-entry.status { color: var(--muted); font-size: 0.78rem; }
+.talk-entry.status.error { color: var(--warn); }
+
+/* 089: the per-turn tool/token/cost report under an answer (contracts/turn-report.md). */
+.talk-entry.report { white-space: normal; font-size: 0.78rem; color: var(--muted); }
+.talk-entry.report summary { cursor: pointer; user-select: none; -webkit-user-select: none; }
+.talk-entry.report summary:hover { color: var(--text); }
+.talk-report-line { color: var(--muted); }
+.talk-report-call { margin: 0.25rem 0 0.25rem 0.9rem; }
+.talk-report-call.error > summary { color: var(--warn); }
+.talk-report-args,
+.talk-report-result {
+  margin: 0.2rem 0;
+  padding: 0.3rem 0.45rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  max-height: 14rem;
+  overflow: auto;              /* long results scroll inside their own box, never the page */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.talk-report-note { color: var(--warn); font-size: 0.72rem; }
+.talk-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  border-top: 1px solid var(--border);
+}
+.talk-mic {
+  all: unset;
+  cursor: pointer;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  text-align: center;
+  width: 2rem; height: 2rem; line-height: 2rem;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+.talk-mic.listening { background: #14331f; border-color: var(--ok); }
+.talk-mic.off { filter: grayscale(1); opacity: 0.55; cursor: help; }
+.talk-send {
+  all: unset;
+  cursor: pointer;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-align: center;
+  width: 2rem; height: 2rem; line-height: 2rem;
+  border-radius: 50%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; /* phones: no double-tap zoom on rapid sends */
+}
+.talk-send:disabled { filter: grayscale(1); opacity: 0.55; cursor: default; }
+.talk-ask {
+  flex: 1;
+  min-width: 4rem;
+  padding: 0.35rem 0.6rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+.talk-unavailable {
+  margin: 0.6rem 0.75rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+}
+
+/* --- multi-window chat + right-click context + tap-or-hold mic (feature 056) ----------------- */
+
+/* Listening pulses so the recording state is unmistakable (US3: no silent gesture). */
+.talk-mic.listening { background: #14331f; border-color: var(--ok); animation: talk-pulse 1.1s ease-in-out infinite; }
+@keyframes talk-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(35, 197, 122, 0.5); }
+  50% { box-shadow: 0 0 0 5px rgba(35, 197, 122, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .talk-mic.listening { animation: none; } }
+.talk-cancel {
+  all: unset;
+  cursor: pointer;
+  width: 2rem; height: 2rem; line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--warn);
+  border: 1px solid var(--border);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.talk-cancel:hover { background: var(--bg); }
+
+/* The context chip: header (subject) always visible; body reveals EXACTLY what will be sent. */
+.talk-chip {
+  margin: 0.5rem 0.75rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--bg);
+}
+.talk-chip-head { display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.5rem; }
+.talk-chip-subject { flex: 1; color: var(--accent); overflow-wrap: anywhere; }
+.talk-chip-toggle, .talk-chip-remove {
+  all: unset;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0 0.25rem;
+}
+.talk-chip-toggle:hover, .talk-chip-remove:hover { color: var(--text); }
+.talk-chip-remove { color: var(--warn); }
+.talk-chip-body {
+  margin: 0;
+  padding: 0.4rem 0.5rem;
+  border-top: 1px solid var(--border);
+  max-height: 12rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* The "ask obi" context menu — the launcher-menu idiom, positioned at the pointer. */
+#ask-menu {
+  position: fixed;
+  min-width: 12rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  z-index: 1600;
+  padding: 0.25rem 0;
+}
+#ask-menu button {
+  all: unset;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  color: var(--text);
+}
+#ask-menu button:hover { background: var(--bg); color: var(--accent); }
+
+/* --- PING / TRACE net-tool widgets (feature 048) --------------------------------------------- */
+
+.nettool { display: flex; flex-direction: column; height: 100%; }
+.nettool-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+.nettool-field { display: flex; align-items: center; gap: 0.35rem; }
+.nettool-dest-field { flex: 1; min-width: 8rem; }
+.nettool-label { color: var(--muted); font-size: 0.78rem; }
+.nettool-device, .nettool-dest, .nettool-count {
+  padding: 0.35rem 0.5rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+.nettool-dest { flex: 1; min-width: 6rem; }
+.nettool-count { width: 4rem; }
+/* 076: .nettool-run styling retired — the run button is the shared .kit-btn now (the .nettool-run
+   class stays on the element only as the JS submit hook). */
+.nettool-out {
+  flex: 1;
+  margin: 0;
+  padding: 0.6rem 0.75rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+.nettool-out.error { color: var(--warn); }
+
+/* --- XR widget ------------------------------------------------------------------------------- */
+
+.xr { padding: 0.75rem 0.9rem; overflow-y: auto; height: 100%; }
+.xr label { display: block; margin: 0.7rem 0 0.25rem; color: var(--muted); }
+.xr select, .xr input {
+  width: 100%;
+  font-size: 0.95rem;
+  padding: 0.45rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.xr .enter {
+  all: unset;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.65rem 0;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.xr .enter:disabled, .xr .enter.disabled { background: var(--border); color: var(--muted); cursor: default; }
+.xr .mic {
+  all: unset;
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  text-align: center;
+  padding: 0.45rem 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.xr .mic.granted { background: #14331f; border-color: var(--ok); cursor: default; }
+.xr .note { color: var(--muted); font-size: 0.78rem; margin-top: 0.5rem; white-space: pre-wrap; }
+.xr .message {
+  margin-top: 0.8rem;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+.xr .message.error { border-color: var(--down); }
+
+/* --- widget kit (feature 038): column feeds, filters, states --------------------------------- */
+
+.kit-feed { display: flex; flex-direction: column; height: 100%; position: relative; }
+.kit-head {
+  display: grid;
+  grid-template-columns: var(--kit-cols);
+  gap: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  /* Container font-size MUST equal .kit-row's: ch tracks in --kit-cols resolve against
+     the grid container's font, and unequal fonts skew every fixed column (046 US1).
+     The smaller label look lives on the spans below. */
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* Reserve the same scrollbar gutter as the body so a scrollbar never skews rows
+     relative to their headers (046 US1). */
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+/* Header cells are the sort targets (046 US2): click cycles asc/desc/natural. */
+.kit-head > span {
+  font-size: 0.72rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  user-select: none;
+  position: relative; /* anchors the column-resize handle (046 US3) */
+}
+.kit-head > span[aria-sort] { color: var(--text); }
+/* The drag handle on each column boundary (046 US3) — a slim strip on the cell's right
+   edge; fine-pointer interaction only, taps fall through to nothing (never a sort). */
+.kit-resize {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.55rem;
+  height: 100%;
+  cursor: col-resize;
+  touch-action: none;
+}
+.kit-resize:hover { border-right: 2px solid var(--accent); }
+.kit-body { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 0.2rem 0; scrollbar-gutter: stable; }
+.kit-row {
+  display: grid;
+  grid-template-columns: var(--kit-cols);
+  gap: 0.6rem;
+  padding: 0.12rem 0.6rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.kit-row > span { overflow: hidden; text-overflow: ellipsis; }
+.kit-row:hover { background: var(--panel); }
+/* Rows a board made clickable advertise the affordance — the watcher opens an in-board
+   detail overlay, ROS drills into a per-router window. */
+.kit-row-clickable { cursor: pointer; }
+.kit-row-clickable:hover { background: color-mix(in srgb, var(--accent) 14%, var(--panel)); }
+.kit-right { text-align: right; }
+.kit-c-down { color: var(--down); }
+.kit-c-warn { color: var(--warn); }
+.kit-c-ok { color: var(--muted); }
+.kit-c-muted { color: var(--muted); opacity: 0.7; }
+
+.kit-state {
+  position: absolute;
+  top: 2rem; left: 0.6rem; right: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  white-space: pre-wrap;
+  z-index: 3;
+}
+.kit-state-error, .kit-state-degraded { border-color: var(--warn); color: var(--warn); }
+
+.kit-live {
+  all: unset;
+  position: absolute;
+  right: 1rem; bottom: 0.75rem;
+  cursor: pointer;
+  padding: 0.2rem 0.7rem;
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  z-index: 4;
+}
+/* `all: unset` above resets `display`, which outranks the UA `[hidden] { display: none }`
+   (author beats UA) — without this guard the "resume live tail" chip renders on EVERY feed
+   and board, not just a scrolled-up LOGS tail. Same gotcha as .kit-panel-backdrop/.kit-filter. */
+.kit-live[hidden] { display: none; }
+
+/* --- copy & CSV controls (feature 049) -------------------------------------------------------- */
+/* The feed's tools cluster overlays the top-right corner (like .kit-live), where the rightmost
+   fr column's far edge is usually empty; it sits OUTSIDE the head cells so it never intercepts a
+   column sort or a resize-handle drag. */
+.kit-tools {
+  position: absolute;
+  top: 0.18rem; right: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  z-index: 4;
+}
+/* createCopyButton always yields a .kit-copy button; .kit-csv is its download sibling. Shared,
+   compact pill styling so the control looks the same in a feed cluster or inline in a text pane. */
+.kit-copy, .kit-csv {
+  all: unset;
+  cursor: pointer;
+  padding: 0.04rem 0.45rem;
+  background: color-mix(in srgb, var(--panel) 88%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.kit-copy:hover, .kit-csv:hover { color: var(--text); border-color: var(--accent); }
+.kit-copy:focus-visible, .kit-csv:focus-visible { outline: 1px solid var(--accent); }
+.kit-copied { color: var(--ok); border-color: var(--ok); }
+.kit-copy-fail { color: var(--warn); border-color: var(--warn); }
+/* A text pane pairs its content with a small right-aligned tools row holding the copy button. */
+.pane-tools { display: flex; justify-content: flex-end; gap: 0.3rem; padding: 0.2rem 0.4rem 0; }
+
+/* 076: the ephemeral snapshot window (widgets/snap.js) — a scrolling host for an inert clone. */
+.snap { overflow: auto; min-height: 0; padding: 0.6rem 0.8rem; scrollbar-gutter: stable; }
+
+/* --- the panel language: kit.createPanel (076) ------------------------------------------------- */
+/* One panel chrome for every widget: a floating (default) or modal quick-reference surface whose
+   head rhymes with .win-title (same padding scale, muted title, all:unset buttons) so a panel reads
+   as a small window. Body content is always textContent-built DOM. Replaces board-detail*,
+   ospf-detail*, #detail2d head/rows, and phy-inspector* (each retired by its migration task). */
+.kit-panel {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 1.2rem);
+  max-height: calc(100% - 1.2rem);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  font-size: 0.85rem;
+}
+/* Modal: a dimmed backdrop over the host; the panel centers and reads long-form (the watch report).
+   A bare `.kit-panel-backdrop { display: flex }` would outrank the UA `[hidden]` rule, so the panel
+   simply isn't in the DOM while closed (createPanel appends/removes it) — no [hidden] gymnastics. */
+.kit-panel-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  padding: 0.6rem;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+}
+.kit-panel-backdrop .kit-panel {
+  position: static;
+  margin: auto;
+  width: 100%;
+  max-width: 44rem;
+  max-height: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+.kit-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.kit-panel-title {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kit-panel-popout,
+.kit-panel-close {
+  all: unset;
+  cursor: pointer;
+  color: var(--muted);
+  min-width: 1.4rem;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 1.3;
+}
+.kit-panel-popout[hidden] { display: none; }
+.kit-panel-popout:hover,
+.kit-panel-close:hover { background: var(--bg); color: var(--text); }
+.kit-panel-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0.6rem 0.8rem;
+  scrollbar-gutter: stable;
+}
+/* Bottom-sheet on a narrow page (the #detail2d media rule, generalized onto the floating panel);
+   the modal stays centered. */
+@media (max-width: 640px) {
+  .kit-panel {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: none;
+    max-height: 55%;
+    border-radius: 12px 12px 0 0;
+  }
+  .kit-panel-backdrop .kit-panel {
+    margin: auto;
+    max-width: 44rem;
+    max-height: 100%;
+    border-radius: 8px;
+  }
+}
+
+/* --- shared widget chrome primitives (076 US3) ------------------------------------------------- */
+/* One home for the toolbar row, plain button, status line, message box, tooltip, and fact pair the
+   audit found hand-rolled across the fleet (research §1.4). Every pick is the audited dominant. */
+
+/* A floating rich-hover tooltip (kit.createTooltip) — above panels, never intercepting the pointer. */
+.kit-tooltip {
+  position: fixed;
+  z-index: 30;
+  pointer-events: none;
+  max-width: 22rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--panel) 96%, transparent);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+.kit-tooltip[hidden] { display: none; }
+
+/* A plain flex control row hosting buttons / status / filters (phy/router/ospf/audit/nettool). */
+.kit-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 0.3rem 0.6rem;
+}
+
+/* The one plain text-button (the all:unset border/radius/hover idiom the copy/win-action buttons
+   share) — every widget-chrome <button> not covered by a richer kit class uses it. */
+.kit-btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.kit-btn:hover { background: var(--panel); }
+.kit-btn[disabled] { opacity: 0.5; cursor: default; }
+.kit-btn[disabled]:hover { background: none; }
+
+/* The one-line status readout (kit.createStatusLine) — the phy/router .ok/.warn/.down/.muted line. */
+.kit-status {
+  font-size: 0.72rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.kit-status[hidden] { display: none; }
+.kit-status.ok { color: var(--ok); }
+.kit-status.warn { color: var(--warn); }
+.kit-status.down { color: var(--down); }
+.kit-status.muted { color: var(--muted); }
+
+/* The muted text box for non-feed empty/error states (the dominant cfg/audit-message shape). Copy
+   follows the CLI-hint convention ("… — run: obi web snapshot"). */
+.kit-message {
+  margin: 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* One label/value fact PAIR (the "muted key + value" idea the seven local families restyled). The
+   container decides the flow: a flex-wrap header row (phy/router summary) or a stacked column (a
+   detail panel). Supports both `.k`/`.v` spans and `dt`/`dd`. */
+.kit-facts {
+  display: flex;
+  gap: 0.35rem;
+  align-items: baseline;
+}
+.kit-facts > .k,
+.kit-facts > dt {
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.kit-facts > .v,
+.kit-facts > dd {
+  margin: 0;
+  color: var(--text);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* --- watcher finding report (widgets/watch.js renderReport) ------------------------------------ */
+/* 076: the board-detail* overlay family was retired here — the watcher report now uses the shared
+   .kit-panel-backdrop/.kit-panel modal (above). The wf-* report body classes below are unchanged. */
+.wf-report { display: flex; flex-direction: column; gap: 0.9rem; font-size: 0.85rem; }
+.wf-meta {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.15rem 0.8rem;
+  margin: 0;
+}
+.wf-meta dt { color: var(--muted); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.05em; }
+.wf-meta dd { margin: 0; }
+.wf-section { display: flex; flex-direction: column; gap: 0.3rem; }
+.wf-section-title {
+  color: var(--accent);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.wf-text { white-space: pre-wrap; line-height: 1.45; }
+.wf-evidence { margin: 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.wf-evidence li { line-height: 1.4; }
+.wf-invest {
+  margin: 0;
+  padding: 0.5rem 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  white-space: pre;
+}
+.wf-note { color: var(--muted); font-size: 0.72rem; font-style: italic; border-top: 1px solid var(--border); padding-top: 0.6rem; }
+
+.kit-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.8rem;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+.kit-filter { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.75rem; }
+.kit-filter[hidden] { display: none; } /* inline-flex would otherwise defeat hidden */
+.kit-filter > span { color: var(--muted); }
+.kit-filter input, .kit-filter select {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.78rem;
+  padding: 0.15rem 0.4rem;
+}
+.kit-filter input { width: 8.5rem; }
+
+/* the LOGS widget: filter row above, feed below */
+.widget-logs { display: flex; flex-direction: column; height: 100%; }
+.widget-logs .kit-feed { flex: 1; min-height: 0; }
+
+/* 088: the RADIO transcript board — obi's own transmissions read in the accent color;
+   rows with a retained clip carry a ▶ and play on click (1.13.0 replay). */
+.widget-radio { display: flex; flex-direction: column; height: 100%; }
+.widget-radio .kit-feed { flex: 1; min-height: 0; }
+.widget-radio .radio-obi { color: var(--accent); font-weight: 600; }
+.widget-radio .radio-play { color: var(--accent); cursor: pointer; }
+/* alternation-inferred speaker (confidence=low): dimmed italic; named-on-air = default */
+.widget-radio .radio-who-low { color: var(--muted); font-style: italic; }
+
+/* --- MET chart + CFG diff (feature 041) ------------------------------------------------------ */
+
+.met-chart { flex: 1; min-height: 0; display: flex; flex-direction: column; padding: 0.4rem 0.6rem; }
+.chart-canvas { flex: 1; min-height: 0; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; padding: 0.25rem 0; font-size: 0.75rem; }
+.chart-legend-item { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--text); }
+.chart-legend-item.chart-more { color: var(--muted); }
+.chart-swatch { width: 0.7rem; height: 0.7rem; border-radius: 2px; display: inline-block; }
+.chart-readout { min-height: 1.1rem; color: var(--muted); font-size: 0.72rem;
+                 white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* 076: .met-state retired — the metrics state/empty box is the shared .kit-message now. */
+
+.cfg-content { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+/* 076: .cfg-message retired — the CFG/CONF message box is the shared .kit-message now. */
+.cfg-history { max-height: 35%; overflow-y: auto; border-bottom: 1px solid var(--border); }
+.cfg-entry { all: unset; display: block; width: 100%; cursor: pointer; padding: 0.2rem 0.6rem;
+             font-size: 0.78rem; color: var(--muted); white-space: nowrap; overflow: hidden;
+             text-overflow: ellipsis; }
+.cfg-entry:hover { background: var(--panel); }
+.cfg-entry.active { color: var(--text); background: var(--panel); }
+.cfg-diff-host { flex: 1; min-height: 0; overflow: auto; }
+.cfg-diff { margin: 0; padding: 0.4rem 0.6rem; font-size: 0.75rem; line-height: 1.35; }
+.cfg-diff .diff-add { color: var(--ok); }
+.cfg-diff .diff-del { color: var(--down); }
+.cfg-diff .diff-hunk { color: var(--accent); }
+/* full-config viewer (049): the diff⇄config toggle + inline filter + copy toolbar, and the pane */
+.cfg-detail { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.cfg-toolbar { display: flex; align-items: center; gap: 0.4rem; padding: 0.25rem 0.5rem;
+               border-bottom: 1px solid var(--border); }
+/* 076: .cfg-tab retired — the diff⇄full-config toggle is the shared kit tab strip (.kit-tab). */
+.cfg-filter { min-width: 5rem; max-width: 14rem; background: var(--bg); color: var(--text);
+              border: 1px solid var(--border); border-radius: 4px; padding: 0.05rem 0.4rem;
+              font: inherit; font-size: 0.72rem; }
+.cfg-filter[hidden] { display: none; }
+.cfg-detail-host { flex: 1; min-height: 0; overflow: auto; }
+.cfg-config { margin: 0; padding: 0.4rem 0.6rem; font-size: 0.75rem; line-height: 1.35; }
+
+/* AUD widget (feature 042) — audit-trail inspection */
+.audit-content { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: auto; }
+/* 076: .audit-message retired — the audit message box is the shared .kit-message now. */
+.audit-list { flex: 1; min-height: 0; overflow-y: auto; }
+.audit-entry { all: unset; display: block; width: 100%; cursor: pointer; padding: 0.18rem 0.6rem;
+  font-size: 0.75rem; line-height: 1.4; color: var(--muted); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; }
+.audit-entry:hover { background: var(--panel); }
+.audit-entry .k { color: var(--accent); }
+.audit-entry .err { color: var(--down); }
+.audit-entry .t { color: var(--text); }
+/* 076: .audit-bar → .kit-toolbar and .audit-back → .kit-btn (both retired here). */
+.audit-detail { flex: 1; min-height: 0; overflow: auto; padding: 0.4rem 0.6rem;
+  font-size: 0.75rem; }
+.audit-detail dt { color: var(--muted); }
+.audit-detail dd { margin: 0 0 0.3rem 0; color: var(--text); overflow-wrap: anywhere; }
+.audit-payload { margin: 0.3rem 0; padding: 0.4rem 0.6rem; border: 1px solid var(--border);
+  border-radius: 4px; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 0.72rem;
+  line-height: 1.35; }
+.audit-payload .role { color: var(--accent); }
+.audit-copy { float: right; margin: 0 0 0.3rem 0.5rem; }
+.audit-stats { flex: 1; min-height: 0; display: flex; flex-direction: column; overflow: auto; }
+.audit-chart { flex: 1; min-height: 140px; display: flex; flex-direction: column;
+  padding: 0.4rem 0.6rem; }
+.audit-facts { padding: 0.4rem 0.6rem; font-size: 0.75rem; color: var(--muted);
+  line-height: 1.5; }
+.audit-facts b { color: var(--text); font-weight: 600; }
+
+/* --- router detail widget (feature 047) --------------------------------------------------- */
+/* 076: router-toolbar/router-refresh/router-status/router-fact retired — the shared kit chrome
+   (.kit-toolbar / createRefreshButton / createStatusLine / .kit-facts) owns them now. */
+.router-summary { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border); font-size: 0.75rem; }
+.router-section { padding: 0.3rem 0.6rem 0.15rem; font-size: 0.68rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.05em; }
+.router-feed { flex: 1; min-height: 60px; display: flex; }
+
+/* --- kit tab strip (feature 075) — the L3|PHY toggle, generalized from conf.js's tabs --------- */
+.kit-tabs { display: flex; gap: 0.35rem; padding: 0.3rem 0.6rem; border-bottom: 1px solid var(--border); }
+.kit-tab { all: unset; cursor: pointer; padding: 0.1rem 0.7rem; font-size: 0.72rem;
+  color: var(--muted); border: 1px solid var(--border); border-radius: 4px; }
+.kit-tab:hover { color: var(--text); }
+.kit-tab.active { color: var(--text); border-color: var(--accent); background: var(--panel); }
+.router-pane { flex: 1; min-height: 0; }
+
+/* --- PHY console (feature 075) — device faceplate + inspector + tables ------------------------
+   The LED palette is a DELIBERATE device-mimic language, distinct from the kit severity classes:
+   phy-lit = a lit link LED (green), phy-amber = linked but below the port's max rate, phy-off =
+   dark/no-link, phy-disabled = administratively down (dashed). The ⚠ badge overlay (US5) is the
+   separate "obi knows more" layer. */
+/* 076: phy-toolbar/phy-refresh/phy-status/phy-fact retired — the shared kit chrome (.kit-toolbar /
+   createRefreshButton / createStatusLine / .kit-facts) owns them now. phy-summary (the fact-wrap
+   container) and phy-fw-behind (the firmware-behind warn line) stay. */
+.phy-summary { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border); font-size: 0.75rem; }
+.phy-fw-behind { color: var(--warn); }
+
+.phy-body { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; }
+.phy-face-host { padding: 0.6rem; overflow-x: auto; flex: none; } /* never flex-squeezed by the tables below */
+.phy-faceplate { max-width: 100%; height: auto; display: block; }
+.phy-cell { stroke: var(--border); stroke-width: 1; }
+.phy-kind-rj45 { }
+.phy-kind-sfpp, .phy-kind-sfp, .phy-kind-sfp28, .phy-kind-qsfpp { stroke: var(--muted); }
+.phy-lit { fill: #22c55e; }
+.phy-amber { fill: #f59e0b; }
+.phy-off { fill: #262b34; }
+.phy-disabled { fill: #1b1e26; stroke: var(--muted); stroke-dasharray: 2 2; }
+.phy-cage-occupied { fill: var(--bg); stroke: var(--text); stroke-width: 1; }
+.phy-cage-empty { fill: none; stroke: var(--muted); stroke-width: 1; }
+.phy-poe-bar { fill: var(--accent); }  /* marks a PoE-out-capable port (US3) */
+.phy-badge { fill: var(--warn); font-size: 11px; font-weight: 700; text-anchor: middle; pointer-events: none; }
+.phy-port.phy-warn .phy-cell { stroke: var(--warn); }
+.phy-warn-reason { color: var(--warn); }
+.phy-port-label { fill: var(--muted); font-size: 8px; font-family: var(--font-mono); text-anchor: middle; }
+.phy-port { cursor: pointer; }
+.phy-port .phy-cell { transition: stroke 0.1s; }
+.phy-port:hover .phy-cell { stroke: var(--accent); stroke-width: 1.5; }
+.phy-selected .phy-cell { stroke: var(--accent); stroke-width: 2; }
+
+/* 076: .phy-tooltip retired — the faceplate hover is the shared kit.createTooltip (.kit-tooltip). */
+
+/* inspector fields (US2) — the k/v grid rendered inside the shared kit panel (076: the .phy-inspector
+   card + head were retired; the port inspector is now kit.createPanel). This VERTICAL, column-aligned
+   grid is kept as a documented exception to .kit-facts (which is an inline header pair) — a detail
+   panel wants aligned label/value columns, which a dl grid gives and inline flex does not. */
+.phy-inspector-fields { display: grid; grid-template-columns: max-content 1fr; gap: 0.1rem 0.7rem;
+  margin: 0; font-size: 0.72rem; }
+.phy-inspector-fields dt { color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em;
+  font-size: 0.66rem; align-self: center; }
+.phy-inspector-fields dd { margin: 0; color: var(--text); overflow-wrap: anywhere; }
+
+/* per-port tables (US2/US3/US4) */
+.phy-tables { display: flex; flex-direction: column; }
+.phy-section { padding: 0.4rem 0.6rem 0.15rem; font-size: 0.68rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.05em; }
+.phy-feed { min-height: 60px; display: flex; }
+
+/* 076: .phy-state* retired — the PHY device-state box is the shared .kit-message now. */
+
+/* --- OSPF map + drill-down (feature 052) ------------------------------------------------------
+   The map is a canvas (positions/costs/tiers/SPF precomputed by obi web snapshot); these style
+   its overlay panels (legend, toolbar, default-route statement, selection detail), the OSPF
+   lint WINDOW (053 — same module mounted with view=lint), and the ospf:<device> drill-down
+   window. Colors reuse the token palette. */
+.ospf-canvas { position: absolute; inset: 0; display: block; }
+.ospf-legend, .ospf-toolbar, .ospf-default {
+  position: absolute; background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--border); border-radius: 6px; font-size: 0.72rem; z-index: 2; }
+.ospf-legend { left: 8px; bottom: 8px; padding: 6px 8px; max-width: 16rem;
+  max-height: 70%; overflow-y: auto; }
+/* 076: .ospf-panel-title retired — the default-route panel's title now rides the shared
+   .kit-panel-head/.kit-panel-title chrome (with a ✕ toggle). .ospf-legend-title stays for the
+   legend's inner section headings ("cost" / "map"). */
+.ospf-legend-title { color: var(--muted); text-transform: uppercase;
+  letter-spacing: 0.05em; font-size: 0.62rem; margin-bottom: 3px; }
+.ospf-legend-title:not(:first-child) { margin-top: 5px; }
+.ospf-legend-row { display: flex; align-items: center; gap: 6px; line-height: 1.5; }
+.ospf-swatch { width: 16px; height: 3px; border-radius: 2px; display: inline-block;
+  flex: 0 0 16px; }
+.ospf-swatch-dash { height: 0; border-top: 2px dashed currentColor; background: none !important; }
+/* 073: round/square/ring swatches for the "what the map shows" legend block. */
+.ospf-swatch-dot { width: 11px; height: 11px; border-radius: 50%; flex-basis: 11px; }
+.ospf-swatch-square { width: 11px; height: 11px; border-radius: 2px; flex-basis: 11px; }
+.ospf-swatch-ring { width: 11px; height: 11px; border-radius: 50%; flex-basis: 11px;
+  background: none !important; border: 2px solid currentColor; }
+.ospf-legend-label { color: var(--text); }
+.ospf-default { right: 8px; bottom: 8px; padding: 6px 8px; max-width: 22rem; }
+.ospf-default.conflict { border-color: var(--down); }
+.ospf-default-body { color: var(--text); line-height: 1.4; }
+/* 073: one route per line — active bold, standbys muted, the conflict line in the down color. */
+.ospf-default-line { color: var(--text); line-height: 1.5; }
+.ospf-default-line.active { font-weight: 600; }
+.ospf-default-line.standby { color: var(--muted); }
+.ospf-default-line.warn { color: var(--down); }
+/* 053: the map's toolbar — SPF-root selector, lint-window button, fit view. */
+.ospf-toolbar { right: 8px; top: 8px; padding: 4px 6px; display: flex; align-items: center;
+  gap: 6px; }
+.ospf-toolbar-label { color: var(--muted); font-size: 0.62rem; text-transform: uppercase;
+  letter-spacing: 0.05em; }
+.ospf-root { background: var(--bg); color: var(--text); border: 1px solid var(--border);
+  border-radius: 4px; font: inherit; padding: 2px 3px; max-width: 11rem; }
+/* 076: the ospf map toolbar buttons (lint/fit/legend/default) are .kit-btn now — their button
+   classes were retired (the .ospf-toolbar container keeps its canvas-overlay position). */
+/* 053: the OSPF lint window (its own openable/closable window; rows focus the map). */
+.ospf-lint-window { display: flex; flex-direction: column; overflow: hidden;
+  font-size: 0.72rem; padding: 6px; position: relative; }
+.ospf-lint-list { overflow-y: auto; display: flex; flex-direction: column; gap: 2px; }
+.ospf-lint-row { display: flex; flex-direction: column; gap: 1px; text-align: left;
+  background: none; border: 1px solid transparent; border-radius: 4px; color: var(--text);
+  padding: 3px 5px; cursor: pointer; font: inherit; }
+.ospf-lint-row:hover { border-color: var(--border); background: var(--bg); }
+/* 076: .ospf-lint-row.sev-warn/.sev-info retired — the lint category is coloured by the canonical
+   kit-c-warn/kit-c-muted tokens now. .ospf-lint-cat/.ospf-lint-msg (structure) stay. */
+.ospf-lint-cat { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.ospf-lint-msg { color: var(--text); }
+/* 076: the ospf-detail*/ospf-row/ospf-drill families retired — the node/edge/ghost detail is
+   kit.createPanel with .kit-facts rows and a pop-out (no in-body drill button). The MAP status
+   overlay below STAYS (its pointer-events:none is a load-bearing 054 dead-click guard that the
+   shared .kit-message box does not carry); only the lint-window's in-flow status became .kit-message. */
+/* pointer-events none is LOAD-BEARING (054): this overlay spans the whole canvas, and its author
+   `display:flex` overrides the UA's `[hidden]{display:none}` — without it the invisible div eats
+   every canvas pointer event (dead clicks/pan/drag). It is a message, never a control. */
+.ospf-status { position: absolute; inset: 0; display: flex; align-items: center;
+  justify-content: center; color: var(--muted); text-align: center; padding: 1rem;
+  pointer-events: none; }
+
+.ospfr-summary { display: flex; flex-wrap: wrap; gap: 0.15rem 1rem; padding: 0.5rem 0.6rem; }
+/* 076: .ospfr-fact retired — the summary facts are .kit-facts now. */
+.ospfr-section { padding: 0.3rem 0.6rem 0.15rem; font-size: 0.68rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.05em; }
+.ospfr-feed { flex: 1; min-height: 48px; display: flex; }
+.ospfr-lint { padding: 0.2rem 0.6rem 0.6rem; display: flex; flex-direction: column; gap: 3px;
+  overflow-y: auto; }
+.ospfr-lint-row { display: flex; flex-direction: column; gap: 1px; }
+/* 076: .ospfr-lint-row.sev-* retired — the category uses kit-c-warn/kit-c-muted tokens now. */
+.ospfr-lint-cat { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.ospfr-lint-msg { color: var(--text); }
+/* 076: .ospfr-clean retired — the "no lint findings" box is the shared .kit-message now. */
+
+/* --- DASH status board (feature 095) ----------------------------------------------------------
+   The green/yellow/red tile wall. State color rides the shared tokens (--ok/--warn/--down;
+   stale = --muted) on the tile's left edge + state word + item dots; the tile body stays panel-
+   toned so a red wall is readable, not a light show. `dash-stale-banner` is the client-side
+   honesty rule: a board older than 3 minutes shouts that it is history, not status. */
+.dash-content { flex: 1; min-height: 0; overflow-y: auto; padding: 0.5rem 0.6rem; display: flex;
+  flex-direction: column; gap: 0.5rem; }
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 0.5rem; align-items: start; }
+.dash-tile { background: var(--panel); border: 1px solid var(--border); border-radius: 4px;
+  border-left-width: 4px; padding: 0.45rem 0.55rem; cursor: pointer; }
+.dash-green { border-left-color: var(--ok); }
+.dash-stale { border-left-color: var(--muted); }
+.dash-yellow { border-left-color: var(--warn); }
+.dash-red { border-left-color: var(--down); }
+.dash-tile-head { display: flex; align-items: baseline; gap: 0.5rem; }
+.dash-tile-name { text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.72rem; }
+.dash-tile-state { font-size: 0.72rem; }
+.dash-word-green { color: var(--ok); }
+.dash-word-stale { color: var(--muted); }
+.dash-word-yellow { color: var(--warn); }
+.dash-word-red { color: var(--down); }
+.dash-tile-count { margin-left: auto; color: var(--muted); font-size: 0.72rem; }
+.dash-items { margin-top: 0.35rem; display: flex; flex-direction: column; gap: 2px; }
+.dash-item { display: flex; align-items: baseline; gap: 0.4rem; min-width: 0; }
+.dash-dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; flex: none;
+  align-self: center; background: var(--muted); }
+.dash-dot-green { background: var(--ok); }
+.dash-dot-stale { background: var(--muted); }
+.dash-dot-yellow { background: var(--warn); }
+.dash-dot-red { background: var(--down); }
+.dash-item-label { flex: none; }
+.dash-item-detail { color: var(--muted); overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; }
+.dash-more { color: var(--muted); font-size: 0.72rem; padding-left: 0.9rem; }
+.dash-stale-banner { border: 1px solid var(--warn); color: var(--warn); border-radius: 4px;
+  padding: 0.35rem 0.55rem; font-size: 0.78rem; }
+.dash-note { color: var(--muted); font-size: 0.72rem; }
+/* 135: maintenance — deliberate, not a fault: muted and dashed, never a state color. */
+.dash-maint { border-left-color: var(--muted); border-left-style: dashed; }
+.dash-word-maint { color: var(--muted); }
+.dash-dot-maint { background: transparent; border: 1px dashed var(--muted); }
+.dash-item-maint { opacity: 0.6; }
+.dash-maint-group { color: var(--muted); font-size: 0.72rem; padding-left: 0.9rem; }
+.dash-maint-banner { border: 1px dashed var(--muted); color: var(--muted); border-radius: 4px;
+  padding: 0.35rem 0.55rem; font-size: 0.78rem; }

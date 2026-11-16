@@ -1,0 +1,55 @@
+{
+  "tool": "uisp",
+  "generated_at": "2026-07-16T17:54:00+00:00",
+  "_fresh": [
+    "generated_at"
+  ],
+  "data": {
+    "counts": {
+      "reachable": 3,
+      "total": 4
+    },
+    "devices": [
+      {
+        "identity": "noc-ptp-basswood-60",
+        "address": "10.30.0.11",
+        "reachability": "reachable",
+        "model": "Wave-Pro",
+        "uptime_seconds": 620000,
+        "cpu_load_percent": 12,
+        "free_memory_bytes": 300000000,
+        "total_memory_bytes": 512000000
+      },
+      {
+        "identity": "basswood-ptp-noc-60",
+        "address": "10.30.0.12",
+        "reachability": "reachable",
+        "model": "Wave-Pro",
+        "uptime_seconds": 618000,
+        "cpu_load_percent": 14,
+        "free_memory_bytes": 290000000,
+        "total_memory_bytes": 512000000
+      },
+      {
+        "identity": "relay-ap-west",
+        "address": "10.30.1.20",
+        "reachability": "reachable",
+        "model": "PrismStation-5AC",
+        "uptime_seconds": 1200000,
+        "cpu_load_percent": 22,
+        "free_memory_bytes": 60000000,
+        "total_memory_bytes": 128000000
+      },
+      {
+        "identity": "yew-cpe-5",
+        "address": "10.30.2.5",
+        "reachability": "disconnected",
+        "model": "LiteBeam-5AC",
+        "uptime_seconds": null,
+        "cpu_load_percent": null,
+        "free_memory_bytes": null,
+        "total_memory_bytes": null
+      }
+    ]
+  }
+}
