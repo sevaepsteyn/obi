@@ -187,7 +187,7 @@ def handle_dash_request(
             200,
             {
                 "store": "absent",
-                "hint": "no [dash] configuration — see README.md § Status dashboard",
+                "hint": "no [dash] configuration — see docs/guide/dashboard.md § Status dashboard",
             },
             head_only=head_only,
         )
@@ -221,7 +221,7 @@ def handle_logs_request(
 
     if settings is None:
         _send_json(handler, 200, _absent(
-            "no [logs] configuration — see README §Device syslog"), head_only=head_only)
+            "no [logs] configuration — see docs/guide/logs.md"), head_only=head_only)
         return
 
     try:
@@ -232,7 +232,7 @@ def handle_logs_request(
 
     if not settings.db_path.exists():
         _send_json(handler, 200, _absent(
-            "no log store yet — run: obi logs ingest (see README §Device syslog)"),
+            "no log store yet — run: obi logs ingest (see docs/guide/logs.md § Device syslog)"),
             head_only=head_only)
         return
 

@@ -548,7 +548,8 @@ class CollectorSpec:
 COLLECTORS: tuple[CollectorSpec, ...] = (
     CollectorSpec("logs-sync", "logs-sync.log", 300),
     CollectorSpec("metrics", "metrics.log", 300),
-    CollectorSpec("configs", "configs.log", 300),
+    # 026: hourly at :25 (2026-09-03; was */5 through the summer — hourly is plenty for configs).
+    CollectorSpec("configs", "configs.log", 3600),
     CollectorSpec("unifi-logs", "unifi-logs.log", 300),
     CollectorSpec("uisp-logs", "uisp-logs.log", 300),
     # 095: the dash minute cycle ABSORBS the icmp cron (same sweep in-process, same store);

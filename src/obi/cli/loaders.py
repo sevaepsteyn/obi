@@ -41,7 +41,7 @@ def _load_logs_config(config_path: Path, err: Console) -> Config:
     if config.logs is None:
         err.print(
             "[red]logs not configured:[/red] add a \\[logs] section to "
-            f"{config_path} — see README.md § Device syslog."
+            f"{config_path} — see docs/guide/logs.md § Device syslog."
         )
         raise typer.Exit(code=2)
     return config
@@ -88,7 +88,7 @@ def _load_unifi_internal_config(config_path: Path, err: Console) -> Config:
         err.print(
             "[red]UniFi event ingestion not configured:[/red] add a \\[unifi-internal] section "
             f"(local-admin username/password) to {config_path} — see "
-            "README.md § UniFi controller events."
+            "docs/guide/logs.md § UniFi controller events."
         )
         raise typer.Exit(code=2)
     return config
@@ -111,7 +111,7 @@ def _load_uisp_ingest_config(config_path: Path, err: Console) -> Config:
     if config.uisp is None or not config.uisp.ingest_enabled:
         err.print(
             "[red]UISP log ingestion not configured:[/red] add `ingest_events`/`ingest_outages` to "
-            f"the \\[uisp] section in {config_path} — see README.md § UISP controller logs."
+            f"the \\[uisp] section in {config_path} — see docs/guide/logs.md."
         )
         raise typer.Exit(code=2)
     return config
@@ -134,7 +134,7 @@ def _load_web_config(config_path: Path, err: Console) -> Config:
     if config.uisp is None:
         err.print(
             "[red]web export needs the UISP controller:[/red] add a \\[uisp] section to "
-            f"{config_path} — see README.md § Web terminal."
+            f"{config_path} — see docs/guide/web.md § Web terminal."
         )
         raise typer.Exit(code=2)
     return config
@@ -157,13 +157,13 @@ def _load_metrics_config(config_path: Path, err: Console) -> tuple[Config, SnmpH
     if config.snmp is None:
         err.print(
             "[red]snmp not configured:[/red] add an \\[snmp] section (community for v2c, or v3 "
-            f"credentials) to {config_path} — see README.md § SNMP."
+            f"credentials) to {config_path} — see docs/guide/metrics.md § SNMP."
         )
         raise typer.Exit(code=2)
     if config.snmp.history is None:
         err.print(
             "[red]metrics collection not configured:[/red] add an \\[snmp.history] subsection to "
-            f"{config_path} — see README.md § SNMP."
+            f"{config_path} — see docs/guide/metrics.md § SNMP."
         )
         raise typer.Exit(code=2)
     return config, config.snmp.history
@@ -211,7 +211,7 @@ def _load_configs_config(config_path: Path, err: Console) -> tuple[Config, Confi
     if config.configs is None:
         err.print(
             "[red]config backup not configured:[/red] add a \\[configs] section to "
-            f"{config_path} — see README.md § RouterOS config backup. Your other commands "
+            f"{config_path} — see docs/guide/config-backup.md. Your other commands "
             "still work."
         )
         raise typer.Exit(code=2)

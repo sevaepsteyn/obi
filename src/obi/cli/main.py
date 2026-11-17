@@ -531,7 +531,7 @@ def netbox_inventory_command(
     if config.netbox is None:
         err.print(
             "[red]netbox not configured:[/red] add a \\[netbox] section (base_url + token) to "
-            f"{config_path} — see README.md § NetBox."
+            f"{config_path} — see docs/guide/vendors.md § NetBox."
         )
         raise typer.Exit(code=2)
 
@@ -612,7 +612,7 @@ def netbox_drift(
     if config.netbox is None:
         err.print(
             "[red]netbox not configured:[/red] add a \\[netbox] section (base_url + token) to "
-            f"{config_path} — see README.md § NetBox."
+            f"{config_path} — see docs/guide/vendors.md § NetBox."
         )
         raise typer.Exit(code=2)
 
@@ -852,7 +852,7 @@ def unifi_vendor_status(
     if config.unifi_network is None:
         err.print(
             "[red]unifi not configured:[/red] add a \\[unifi-network] section (base_url + "
-            f"api_key and/or token) to {config_path} — see README.md § UniFi controller events."
+            f"api_key and/or token) to {config_path} — see docs/guide/logs.md."
         )
         raise typer.Exit(code=2)
 
@@ -1053,7 +1053,7 @@ def unifi_sm(
     if config.unifi_sm is None:
         err.print(
             "[red]unifi-sm not configured:[/red] add a \\[unifi-sm] section (api_key) to "
-            f"{config_path} — see README.md § UniFi controller events."
+            f"{config_path} — see docs/guide/logs.md § UniFi controller events."
         )
         raise typer.Exit(code=2)
 
@@ -2547,7 +2547,7 @@ def dash_run(
     if config.dash is None:
         err.print(
             "[yellow]dashboard not configured:[/yellow] add a [dash] section "
-            "(see README.md § Status dashboard)."
+            "(see docs/guide/dashboard.md § Status dashboard)."
         )
         raise typer.Exit(code=2)
     if not config.dash.enabled:
@@ -3152,7 +3152,7 @@ def voice_web_superseded(ctx: typer.Context) -> None:
         "[bold]obi web serve[/bold] — one origin (default 8443) now serves the talk "
         "experience on every browser (the 2D page has a hold-to-talk button; the headset "
         "keeps in-viewer voice). Port 8444 is retired; remove \\[voice] web_port/web_bind "
-        "from your config. Migration notes: README.md § Web terminal."
+        "from your config. Migration notes: docs/guide/web.md § Web terminal."
     )
     raise typer.Exit(code=2)
 
@@ -3458,7 +3458,7 @@ def slack_run(
     if config.slack is None:
         err.print(
             "[red]config error:[/red] no \\[slack] section — add bot_token, app_token, and a "
-            "non-empty allowlist (see README.md § Ask obi from Slack)."
+            "non-empty allowlist (see docs/guide/chat.md § Ask obi from Slack)."
         )
         raise typer.Exit(code=2)
 
@@ -4795,7 +4795,7 @@ logs_app = typer.Typer(
         "Query device syslog ingested from the syslog-ng collectors (feature 013). "
         "`obi logs ingest` parses the rsync-mirrored files into a local store; `obi logs query` "
         "reads it. The sync itself (rsync + timer) is an operator/ops task — see "
-        "README.md § Device syslog."
+        "docs/guide/logs.md § Device syslog."
     ),
 )
 app.add_typer(logs_app, name="logs")
@@ -4976,7 +4976,7 @@ unifi_logs_app = typer.Typer(
         "controller API (feature 016). `obi unifi logs ingest` polls each configured site's "
         "system log into the \\[logs] store (then queryable via `obi logs query` and judged by "
         "`obi watch`); `obi unifi logs status` shows the per-site ingest watermark. Requires a "
-        "\\[unifi-internal] local-admin credential — see README.md § UniFi controller events."
+        "\\[unifi-internal] local-admin credential — see docs/guide/logs.md."
     ),
 )
 unifi_app.add_typer(unifi_logs_app, name="logs")
@@ -5090,7 +5090,7 @@ uisp_logs_app = typer.Typer(
         "\\[logs] store (queryable via `obi logs query --source uisp` and judged by `obi watch`); "
         "`obi uisp logs status` shows the per-source ingest watermark. Requires the feature-003 "
         "\\[uisp] section with `ingest_events`/`ingest_outages` enabled — see "
-        "README.md § UISP controller logs."
+        "docs/guide/logs.md § UISP controller logs."
     ),
 )
 uisp_app.add_typer(uisp_logs_app, name="logs")
@@ -5217,7 +5217,7 @@ web_app = typer.Typer(
         "mnemonic command line + menu, layouts persist "
         "per browser, each widget also full-screen at ?w=<id>; data re-read every 5 min. "
         "Requires the \\[uisp] section; peak labels need \\[web] gnis_states. See "
-        "README.md § Web terminal."
+        "docs/guide/web.md § Web terminal."
     ),
 )
 app.add_typer(web_app, name="web")
@@ -5243,7 +5243,7 @@ def ar_superseded(ctx: typer.Context) -> None:
         f"[red]obi ar was replaced in feature 033:[/red] use [bold]{replacement}[/bold] — "
         "one origin now serves a 2D version (any browser) and the 3D/AR/VR version "
         "(WebXR headsets). Config section \\[ar] is now \\[web]. "
-        "Migration notes: README.md § Web terminal."
+        "Migration notes: docs/guide/web.md § Web terminal."
     )
     raise typer.Exit(code=2)
 
@@ -5761,7 +5761,7 @@ metrics_app = typer.Typer(
         "gateways over SNMP and persists their readings to a local store separate from the logs; "
         "`obi metrics history` shows a metric over a past window (counters as rates); "
         "`obi metrics status` reports coverage. Requires an \\[snmp] section plus an "
-        "\\[snmp.history] subsection (opt-in) — see README.md § SNMP. "
+        "\\[snmp.history] subsection (opt-in) — see docs/guide/metrics.md § SNMP. "
         "`obi metrics live` is the on-demand spot-read."
     ),
 )
@@ -5818,7 +5818,7 @@ def metrics_live(
     if config.snmp is None:
         err.print(
             "[red]snmp not configured:[/red] add an \\[snmp] section (community for v2c, or v3 "
-            f"credentials) to {config_path} — see README.md § SNMP."
+            f"credentials) to {config_path} — see docs/guide/metrics.md § SNMP."
         )
         raise typer.Exit(code=2)
 
@@ -6161,7 +6161,7 @@ health_app = typer.Typer(
         "optics for the SNMP-polled RouterOS gateways, plus the Linux collector VMs. "
         "`obi health status` shows the newest readings worst-first (stale devices float up); "
         "readings live in the feature-021 metrics store (`obi metrics ingest` collects the "
-        "RouterOS side). Read-only. See README.md § Watching device health."
+        "RouterOS side). Read-only. See docs/guide/watcher.md § Watching device health."
     ),
 )
 app.add_typer(health_app, name="health")
@@ -6329,7 +6329,7 @@ def health_probe_cmd(
     if config.health_linux is None:
         err.print(
             "[red]linux health probe not configured:[/red] add a \\[health.linux] section with "
-            "a hosts list — see README.md § Watching device health."
+            "a hosts list — see docs/guide/watcher.md § Watching device health."
         )
         raise typer.Exit(code=2)
 
@@ -6370,7 +6370,7 @@ configs_app = typer.Typer(
         "`obi configs status` reports coverage; `obi configs show/history/diff` read the stored "
         "live + historical config. Read-only — obi never writes to a device. Requires a "
         "\\[configs] section (opt-in) and the account's RouterOS 'ssh' policy — see "
-        "README.md § RouterOS config backup."
+        "docs/guide/config-backup.md § RouterOS config backup."
     ),
 )
 app.add_typer(configs_app, name="configs")
@@ -6691,7 +6691,7 @@ watch_app = typer.Typer(
         "writing per-finding reports. `obi watch reports` / `obi watch status` review them. "
         "With Slack delivery enabled (`slack_notify`), qualifying findings are also DM'd to the "
         "operator (feature 015). Schedule `run` after the syslog rsync; see "
-        "README.md § Autonomous watcher."
+        "docs/guide/watcher.md § Autonomous watcher."
     ),
 )
 app.add_typer(watch_app, name="watch")
