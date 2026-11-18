@@ -339,6 +339,9 @@ class IdentityGuard:
         self.gate = LeakGate(
             tokens.harvest,
             dictionary=identity_dictionary() if dictionary is None else dictionary,
+            # Source and docs are English: a capitalised "House" there is a word, not a site
+            # (the dataset gate's names-in-prose rule is for replayed DATA).
+            names_in_prose=False,
         )
         self._real_ips = frozenset(tokens.harvest.ips)
         self._excluded_dirs = config.excluded_dirs()

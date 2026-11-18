@@ -2,6 +2,8 @@
 
 `obi web` serves a dark, terminal-style workspace to any browser on the LAN, each tool in its own floating window. The same server hosts a 2D link map and an immersive 3D/AR/VR viewer for Quest 3.
 
+![The workspace: 2D link map and a chat window](../images/workspace.png)
+
 ## Overview
 
 - Read-only end to end. Needs `[uisp]`: the controller provides coordinates and link topology.

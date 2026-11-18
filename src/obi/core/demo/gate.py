@@ -9,8 +9,10 @@ reports each finding as ``(severity, category, check, file, locator, offset)``. 
 carries the token itself, so a report is safe to paste anywhere (US2-3).
 
 Severity: FATAL by default. Event-identifying denylist/playa terms are WARNINGS unless marked
-``!`` or ``strict_event_terms`` is set; a dictionary-word name (``office``) is FATAL only in
-identifier context (a hostname-shaped token or a name field) and a WARNING in prose.
+``!`` or ``strict_event_terms`` is set; a dictionary-word name (``office``) is FATAL in
+identifier context (a hostname-shaped token or a name field) and, in prose, when capitalised or
+one of two or more places in a comma list (``names_in_prose``, off for the 137 source guard);
+plain lower-case prose use is a WARNING.
 """
 
 from __future__ import annotations
@@ -66,6 +68,22 @@ _TZ_REGION = re.compile(
     r"(?:Africa|America|Antarctica|Asia|Atlantic|Australia|Europe|Indian|Pacific|US|Etc)"
     r"/(?:[A-Za-z_]+/)?\Z"
 )
+#: The rewriter's own event wording (own copy, pinned equal to the rewriter's by a test): a
+#: capitalised word inside one of these phrases is generated text, never a real name.
+EQUIVALENT_PHRASES: tuple[str, ...] = (
+    "overflow camping", "valley floor", "back country", "survey marker", "town center",
+    "main road", "the valley", "the event", "the town", "landmark",
+)  # fmt: skip
+_EQUIV = re.compile(
+    r"(?i)(?<![\w])(?:" + "|".join(re.escape(p) for p in EQUIVALENT_PHRASES) + r")(?![\w])"
+)
+_CAPITALISED = re.compile(r"(?<![A-Za-z])[A-Z][A-Za-z]*(?![A-Za-z])")
+#: A comma list of short items (up to four words each), "and"/"or" allowed before an item.
+_COMMA_LIST = re.compile(
+    r"[A-Za-z][\w-]*(?:[ \t]+[A-Za-z][\w-]*){0,3}"
+    r"(?:[ \t]*,[ \t]*(?:(?:and|or)[ \t]+)?[A-Za-z][\w-]*(?:[ \t]+[A-Za-z][\w-]*){0,3})+"
+)
+_COMMA_ITEM = re.compile(r"[^,]+")
 #: An AS number; only the documentation/private ranges may appear in a dataset.
 _ASN_SHAPE = re.compile(r"(?<![\w-])ASN?\s?(\d{1,10})(?![\d\w])")
 
@@ -90,8 +108,14 @@ _ID_FIELDS = frozenset(
     {
         "host", "hostname", "device", "identity", "target", "site", "node_id", "address",
         "label", "name", "router_id", "source_router", "controller", "console", "a", "b",
+        "location",
     }
 )  # fmt: skip
+#: A name field serialized INSIDE a text value (a tool result replayed in a chat recording).
+_QUOTED_ID_KV = re.compile(
+    r'"(host|hostname|device|identity|target|site|label|name|location)"\s*:\s*"((?:[^"\\]|\\.)*)"',
+    re.IGNORECASE,
+)
 _FTS_SHADOW = ("_data", "_idx", "_docsize", "_config", "_content")
 _SQLITE_MAGIC = b"SQLite format 3\x00"
 _BINARY_SUFFIXES = frozenset({".png", ".jpg", ".jpeg", ".gif", ".webp", ".wav", ".pdf", ".bin"})
@@ -160,8 +184,10 @@ class LeakGate:
         strict_event_terms: bool = False,
         dictionary: frozenset[str] | None = None,
         exempt_values: frozenset[str] = frozenset(),
+        names_in_prose: bool = True,
     ) -> None:
         self.strict = strict_event_terms
+        self._names_in_prose = names_in_prose
         self._dictionary = load_dictionary() if dictionary is None else dictionary
         self._token_category: dict[str, str] = {}
         for word, is_dict in harvest.place_words.items():
@@ -276,6 +302,7 @@ class LeakGate:
                     for m in _HOSTLIKE.finditer(text)
                     if not _TZ_REGION.search(text, 0, m.start())  # "America/New_York"
                 ]
+                + [(m.start(2), m.group(2).casefold()) for m in _QUOTED_ID_KV.finditer(text)]
             )
             flagged: set[int] = set()
             for base, chunk in spans:
@@ -283,7 +310,31 @@ class LeakGate:
                     if w.group(0) in self._dict_words:
                         add(FATAL, "dictionary_word", "identifier", base + w.start())
                         flagged.add(base + w.start())
-            if not identifier:
+            if not identifier and self._names_in_prose:
+                # A dictionary-word place is a NAME in prose when it is capitalised or one of
+                # two or more places in a comma list (2026-11-17: the first published demo
+                # leaked both shapes as mere warnings).
+                generated = [(m.start(), m.end()) for m in _EQUIV.finditer(text)]
+                for w in _CAPITALISED.finditer(text):
+                    pos = w.start()
+                    if (
+                        w.group(0).casefold() in self._dict_words
+                        and pos not in flagged
+                        and not any(lo <= pos < hi for lo, hi in generated)
+                    ):
+                        add(FATAL, "dictionary_word", "capitalised", pos)
+                        flagged.add(pos)
+                if "," in text:
+                    for lst in _COMMA_LIST.finditer(folded):
+                        hits = [
+                            [lst.start() + it.start() + w.start() for w in _ALPHA.finditer(
+                                it.group(0)) if w.group(0) in self._dict_words]
+                            for it in _COMMA_ITEM.finditer(lst.group(0))
+                        ]  # fmt: skip
+                        if sum(1 for h in hits if h) >= 2:
+                            for pos in (p for h in hits for p in h if p not in flagged):
+                                add(FATAL, "dictionary_word", "listed", pos)
+                                flagged.add(pos)
                 for w in _ALPHA.finditer(folded):
                     if w.group(0) in self._dict_words and w.start() not in flagged:
                         add(WARN, "dictionary_word", "prose", w.start())

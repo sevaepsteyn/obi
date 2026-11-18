@@ -14,6 +14,11 @@ or over a two-way radio.
   ([details](docs/setup/identity.md)).
 - **Optional features stay off** until you configure them.
 
+**[Try the live demo](https://sevaepsteyn.github.io/obi/)**: the browser workspace on a fictional
+network, with recorded chats replayed. It runs entirely in your browser.
+
+![The obi web workspace: a 2D link map beside a replayed chat](docs/images/demo-chat.gif)
+
 ## What it does
 
 | Area | What you get | Guide |
@@ -31,7 +36,7 @@ or over a two-way radio.
 | Audit trail | Every query, tool call and write, full-text searchable | [audit](docs/guide/audit.md) |
 | Services | Run the web, Slack, radio and mesh daemons under launchd | [services](docs/guide/services.md) |
 | Event extras | Weather, gate traffic, status lighting, Meshtastic location, city grid | [weather-traffic](docs/guide/weather-traffic.md), [lighting](docs/guide/lighting.md), [mesh](docs/guide/mesh.md) |
-| Demo | A sanitized dataset and a static, serverless demo | [demo](docs/guide/demo.md) |
+| Demo | A sanitized dataset and a static, serverless demo ([live](https://sevaepsteyn.github.io/obi/)) | [demo](docs/guide/demo.md) |
 
 ## Quick start
 

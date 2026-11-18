@@ -39,6 +39,11 @@ TREES: tuple[str, ...] = (
 #: and infrastructure vocabulary. Kept verbatim in renamed identifiers, never harvested.
 # fmt: off
 GENERIC_TOKENS: frozenset[str] = frozenset({
+    # function words and plain adjectives a site name may contain ("old-office", "not-connected"
+    # in prose): mapping them garbles replayed text and identifies nothing (2026-11-17 review).
+    "not", "where", "was", "new", "old", "back", "available", "missing", "update", "inside",
+    "outside", "short", "way", "common", "front", "middle", "rear", "offline", "online",
+    "outdoor", "indoor", "inventory",
     "ac", "accept", "access", "active", "address", "addresses", "admin", "af", "air", "airfiber",
     "airmax", "all", "and", "any", "ap", "api", "aps", "area", "auto", "aux", "ax", "backbone",
     "backup", "bgp", "bh", "board", "bond", "bottom", "bridge", "cambium", "cap", "capacity", "obi",

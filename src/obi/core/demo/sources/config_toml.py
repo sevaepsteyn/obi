@@ -23,6 +23,9 @@ DROPPED_SECTIONS = frozenset(
     {
         "demo", "radio", "paging", "slack", "wled", "service", "netbox", "victoria", "traffic",
         "unifi-internal", "voice",
+        # 137 moved these into config: event places and the city-plan origin are real locations
+        # (bare numbers the text rewriter never sees). [weather] is relocated in build_config.
+        "playa", "brc",
     }
 )  # fmt: skip
 _SECRET_KEY = re.compile(

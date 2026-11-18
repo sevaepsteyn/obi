@@ -283,6 +283,10 @@ def _harvest_config(raw: dict[str, Any], h: Harvest, words: frozenset[str]) -> N
         h.add_name(value, words)
     for value in _strings(dash.get("ping_refs")):
         h.add_host(value, words)
+    maint = raw.get("maintenance", {})
+    for key in ("sites", "uisp_sites", "devices"):
+        for value in _strings(maint.get(key)):
+            h.add_name(value, words)
     web = raw.get("web", {})
     for table in ("site_towers", "ground_overrides"):
         for name in web.get(table) or {}:

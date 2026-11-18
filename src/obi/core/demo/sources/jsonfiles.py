@@ -18,11 +18,35 @@ SNAPSHOTS = ("status", "uisp", "uisp-links", "siklu", "unifi", "ospf")
 DASH_FILES = ("board.json", "netwatch-state.json", "pager-state.json", "mesh-status.json")
 
 
+#: Lists of site/device NAMES inside a ``maintenance`` block: identifiers, not prose, so a
+#: dictionary-word site ("the bear site") is renamed like any device name would be.
+_MAINT_NAME_LISTS = ("sites", "uisp_sites", "devices")
+
+
+def _ident_maintenance(ctx: SourceContext, obj: Any) -> Any:
+    if isinstance(obj, dict):
+        out = {}
+        for key, value in obj.items():
+            if key == "maintenance" and isinstance(value, dict):
+                value = {
+                    k: [ctx.rewriter.ident(x) if isinstance(x, str) else x for x in v]
+                    if k in _MAINT_NAME_LISTS and isinstance(v, list)
+                    else v
+                    for k, v in value.items()
+                }
+            out[key] = _ident_maintenance(ctx, value)
+        return out
+    if isinstance(obj, list):
+        return [_ident_maintenance(ctx, x) for x in obj]
+    return obj
+
+
 def _rewrite_file(ctx: SourceContext, src: Path, dest: Path) -> None:
     data: Any = json.loads(src.read_text(encoding="utf-8"))
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(
-        json.dumps(ctx.rewriter.json(data), indent=1, ensure_ascii=False) + "\n",
+        json.dumps(ctx.rewriter.json(_ident_maintenance(ctx, data)), indent=1, ensure_ascii=False)
+        + "\n",
         encoding="utf-8",
     )
 

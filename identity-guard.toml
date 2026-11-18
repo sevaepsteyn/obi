@@ -121,3 +121,10 @@ reason = "published author contact"
 category = "email"
 path = "pyproject.toml"
 reason = "published author contact"
+
+[[allow]]
+category = "person"
+check = "token"
+path = "README.md"
+pattern = '(?i)[a-z0-9-]+\.github\.io/obi/'
+reason = "the public demo's GitHub Pages host (the repository owner, already published)"

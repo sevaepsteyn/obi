@@ -12,8 +12,9 @@ fixed order so no pass can re-expose what an earlier one removed:
    their mapped values / personas;
 5. **names** — hostname-shaped tokens and ``host=``-style values are rewritten word-by-word with
    EVERY place word (identifier context); event terms become generic equivalents; finally bare
-   *distinctive* place words are rewritten in prose. Dictionary-word places (``office``) are
-   left alone in prose (analyze C1).
+   *distinctive* place words are rewritten in prose. A dictionary-word place (``office``) is
+   rewritten in prose only as a name — capitalised, or in a comma list naming two or more
+   places; lower-case English stays (analyze C1; the 2026-11-17 published-demo leak).
 """
 
 from __future__ import annotations
@@ -55,13 +56,29 @@ EVENT_EQUIVALENTS: dict[str, str] = {
     "walk-in camping": "overflow camping",
 }
 _DEFAULT_EVENT_EQUIVALENT = "landmark"
+#: The event pass's own output: its words are never real names, so the capitalised-place pass
+#: (and the gate) skip them — "Town center" is ours even when a real site word is "town".
+EQUIVALENT_PHRASES: tuple[str, ...] = tuple(
+    sorted({*EVENT_EQUIVALENTS.values(), _DEFAULT_EVENT_EQUIVALENT}, key=len, reverse=True)
+)
+_EQUIV_RE = re.compile(
+    r"(?i)(?<![\w])(?:" + "|".join(re.escape(p) for p in EQUIVALENT_PHRASES) + r")(?![\w])"
+)
+_CAP_WORD = re.compile(r"(?<![A-Za-z])[A-Z][A-Za-z]*(?![A-Za-z])")
+#: A comma list of short items ("tamarack, manzanita, office and ranch"): when two or more items
+#: carry a real place word the list is a list of NAMES, rewritten in identifier context.
+NAME_LIST = re.compile(
+    r"[A-Za-z][\w-]*(?:[ \t]+[A-Za-z][\w-]*){0,3}"
+    r"(?:[ \t]*,[ \t]*(?:(?:and|or)[ \t]+)?[A-Za-z][\w-]*(?:[ \t]+[A-Za-z][\w-]*){0,3})+"
+)
+_LIST_SPLIT = re.compile(r"[ \t]*,[ \t]*(?:(?:and|or)[ \t]+)?")
 
 #: JSON keys whose string values are identifiers (rewritten with every place word).
 ID_KEYS = frozenset(
     {
         "identity", "name", "site", "label", "device", "host", "hostname", "target", "key",
         "router_id", "source_router", "a", "b", "end_a", "end_b", "console", "controller",
-        "address", "node_id", "collectors",
+        "address", "node_id", "collectors", "location",
     }
 )  # fmt: skip
 _SENSITIVE_KEY = re.compile(
@@ -116,6 +133,15 @@ _HANDLE = re.compile(r"(?<![\w.@/])@([A-Za-z][\w.-]{2,})(?![\w@])")
 _ID_KV = re.compile(
     r"(?i)(?<![\w-])(host|site|name|identity|device|target|label|from|to|neighbor)(=)(\"?)"
     r"([^\s\",;]+)"
+)
+
+
+#: A name field serialized INSIDE a text value (a tool result replayed in a chat recording):
+#: ``"location": "showers"`` names a site even though the whole value is prose.
+_QUOTED_ID_KV = re.compile(
+    r'("(?:host|hostname|device|identity|target|site|label|name|location)"\s*:\s*")'
+    r'((?:[^"\\]|\\.)*)(")',
+    re.IGNORECASE,
 )
 
 
@@ -369,9 +395,57 @@ class Rewriter:
             ),
             text,
         )
+        if '":' in text:
+            text = _QUOTED_ID_KV.sub(
+                lambda m: m.group(1) + rewrite_words(m.group(2), self._ident_lookup) + m.group(3),
+                text,
+            )
+        text = self._name_lists(text)
         text = self._sub(self._event_re, text, self._event_sub)
+        text = self._capitalised_places(text)
         text = rewrite_words(text, self._prose_lookup)
         return self._embedded(text)
+
+    def _name_lists(self, text: str) -> str:
+        """A comma list naming two or more real places is a list of names (an audit payload's
+        site list, "the hubs: tamarack, manzanita, office"): every item is an identifier."""
+
+        if "," not in text:
+            return text
+        places = self.h.place_words
+
+        def sub(m: re.Match[str]) -> str:
+            items = _LIST_SPLIT.split(m.group(0))
+            named = sum(
+                1
+                for item in items
+                if any(w in places for w in re.findall(r"[a-z]+", item.casefold()))
+            )
+            if named < 2:
+                return m.group(0)
+            return rewrite_words(m.group(0), self._ident_lookup)
+
+        return NAME_LIST.sub(sub, text)
+
+    def _capitalised_places(self, text: str) -> str:
+        """A CAPITALISED dictionary-word place ("Office", "Ranch", "TP: Trailer 11") is a name
+        in prose too; lower-case "the office" stays English. The event pass's own phrases are
+        skipped (2026-11-17: the first published demo leaked capitalised site names)."""
+
+        places = self.h.place_words
+        if not any(places.values()):
+            return text
+        skip = [(m.start(), m.end()) for m in _EQUIV_RE.finditer(text)]
+
+        def sub(m: re.Match[str]) -> str:
+            word = m.group(0)
+            if not places.get(word.casefold()):  # only dictionary places (others: prose pass)
+                return word
+            if any(lo <= m.start() < hi for lo, hi in skip):
+                return word
+            return _match_case_run(word, self.m.place(word.casefold()))
+
+        return _CAP_WORD.sub(sub, text)
 
     def _embedded(self, text: str) -> str:
         """Distinctive names glued inside a longer run (``NorthfieldSouthgateofficefrontTV``,
