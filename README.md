@@ -23,39 +23,61 @@ network, with recorded chats replayed. It runs entirely in your browser.
 
 ## What it does
 
-| Area | What you get | Guide |
-|---|---|---|
-| Discovery and status | Crawl MikroTik RouterOS neighbors within a scope; live health per device | [routeros](docs/guide/routeros.md) |
-| Other vendors | Ubiquiti UISP (incl. wireless link health), Siklu EtherHaul, NetBox drift | [vendors](docs/guide/vendors.md) |
-| Metrics | Live SNMP from any vendor, plus history in a local store | [metrics](docs/guide/metrics.md) |
-| Logs | Device syslog, UniFi and UISP controller events in one searchable store | [logs](docs/guide/logs.md) |
-| Config backup | RouterOS `/export` into git, secrets redacted, diffs on change | [config-backup](docs/guide/config-backup.md) |
-| Ask obi | Chat in the terminal, Slack, Claude Desktop / Claude Code (MCP) | [chat](docs/guide/chat.md) |
-| Voice and radio | Push-to-talk in the terminal and browser; a walkie-talkie station | [voice](docs/guide/voice.md), [radio](docs/setup/radio.md) |
-| Web workspace | Multi-window browser terminal, 2D map, 3D/AR/VR link viewer | [web](docs/guide/web.md) |
-| OSPF routing | Topology map with per-direction costs, the SPF tree from any router, single points of failure, each router's internet egress, and a config lint | [web § OSPF](docs/guide/web.md#ospf-routing-map) |
-| Watcher | Hourly LLM review of logs and metrics, findings to Slack | [watcher](docs/guide/watcher.md) |
-| Dashboard and paging | One status board, maintenance mode, pager alerts | [dashboard](docs/guide/dashboard.md), [paging](docs/setup/paging.md) |
-| Audit trail | Every query, tool call and write, full-text searchable | [audit](docs/guide/audit.md) |
-| Services | Run the web, Slack, radio and mesh daemons under launchd | [services](docs/guide/services.md) |
-| Event extras | Weather, gate traffic, status lighting, Meshtastic location, city grid | [weather-traffic](docs/guide/weather-traffic.md), [lighting](docs/guide/lighting.md), [mesh](docs/guide/mesh.md) |
-| Demo | A sanitized dataset and a static, serverless demo ([live](https://sevaepsteyn.github.io/obi/)) | [demo](docs/guide/demo.md) |
-
 <table>
 <tr>
-<td width="33%" valign="top"><a href="docs/guide/routeros.md"><img src="docs/images/routeros-fleet.png" alt="RouterOS fleet"></a><br><sub><b>RouterOS fleet</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/vendors.md"><img src="docs/images/vendors-link-profile.png" alt="Link and path profile"></a><br><sub><b>Link and path profile</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/metrics.md"><img src="docs/images/metrics-charts.png" alt="Metrics history"></a><br><sub><b>Metrics history</b></sub></td>
+<td width="50%" valign="top"><b>Discovery and status</b><br>Crawl MikroTik RouterOS neighbors within a scope; live health per device<br><sub>Guide: <a href="docs/guide/routeros.md">routeros</a></sub></td>
+<td width="50%"><a href="docs/guide/routeros.md"><img src="docs/images/routeros-fleet.png" alt="Discovery and status"></a></td>
 </tr>
 <tr>
-<td width="33%" valign="top"><a href="docs/guide/metrics.md"><img src="docs/images/metrics-health.png" alt="Fleet health"></a><br><sub><b>Fleet health</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/logs.md"><img src="docs/images/logs-tail.png" alt="Logs"></a><br><sub><b>Logs</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/config-backup.md"><img src="docs/images/config-diff.png" alt="Config diffs"></a><br><sub><b>Config diffs</b></sub></td>
+<td width="50%" valign="top"><b>Other vendors</b><br>Ubiquiti UISP (incl. wireless link health), Siklu EtherHaul, NetBox drift<br><sub>Guide: <a href="docs/guide/vendors.md">vendors</a></sub></td>
+<td width="50%"><a href="docs/guide/vendors.md"><img src="docs/images/vendors-link-profile.png" alt="Other vendors"></a></td>
 </tr>
 <tr>
-<td width="33%" valign="top"><a href="docs/guide/web.md"><img src="docs/images/web-ospf.png" alt="OSPF map"></a><br><sub><b>OSPF map</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/dashboard.md"><img src="docs/images/dashboard.png" alt="Status dashboard"></a><br><sub><b>Status dashboard</b></sub></td>
-<td width="33%" valign="top"><a href="docs/guide/audit.md"><img src="docs/images/audit-trail.png" alt="Audit trail"></a><br><sub><b>Audit trail</b></sub></td>
+<td width="50%" valign="top"><b>Metrics</b><br>Live SNMP from any vendor, plus history in a local store<br><sub>Guide: <a href="docs/guide/metrics.md">metrics</a></sub></td>
+<td width="50%"><a href="docs/guide/metrics.md"><img src="docs/images/metrics-charts.png" alt="Metrics"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Logs</b><br>Device syslog, UniFi and UISP controller events in one searchable store<br><sub>Guide: <a href="docs/guide/logs.md">logs</a></sub></td>
+<td width="50%"><a href="docs/guide/logs.md"><img src="docs/images/logs-tail.png" alt="Logs"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Config backup</b><br>RouterOS <code>/export</code> into git, secrets redacted, diffs on change<br><sub>Guide: <a href="docs/guide/config-backup.md">config-backup</a></sub></td>
+<td width="50%"><a href="docs/guide/config-backup.md"><img src="docs/images/config-diff.png" alt="Config backup"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Ask obi</b><br>Chat in the terminal, Slack, Claude Desktop / Claude Code (MCP)<br><sub>Guide: <a href="docs/guide/chat.md">chat</a></sub></td>
+<td width="50%"><a href="docs/guide/chat.md"><img src="docs/images/demo-chat.gif" alt="Ask obi"></a></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>Voice and radio</b><br>Push-to-talk in the terminal and browser; a walkie-talkie station<br><sub>Guide: <a href="docs/guide/voice.md">voice</a>, <a href="docs/setup/radio.md">radio</a></sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Web workspace</b><br>Multi-window browser terminal, 2D map, 3D/AR/VR link viewer<br><sub>Guide: <a href="docs/guide/web.md">web</a></sub></td>
+<td width="50%"><a href="docs/guide/web.md"><img src="docs/images/web-map.png" alt="Web workspace"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>OSPF routing</b><br>Topology map with per-direction costs, the SPF tree from any router, single points of failure, each router's internet egress, and a config lint<br><sub>Guide: <a href="docs/guide/web.md#ospf-routing-map">web § OSPF</a></sub></td>
+<td width="50%"><a href="docs/guide/web.md#ospf-routing-map"><img src="docs/images/web-ospf.png" alt="OSPF routing"></a></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>Watcher</b><br>Hourly LLM review of logs and metrics, findings to Slack<br><sub>Guide: <a href="docs/guide/watcher.md">watcher</a></sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Dashboard and paging</b><br>One status board, maintenance mode, pager alerts<br><sub>Guide: <a href="docs/guide/dashboard.md">dashboard</a>, <a href="docs/setup/paging.md">paging</a></sub></td>
+<td width="50%"><a href="docs/guide/dashboard.md"><img src="docs/images/dashboard.png" alt="Dashboard and paging"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Audit trail</b><br>Every query, tool call and write, full-text searchable<br><sub>Guide: <a href="docs/guide/audit.md">audit</a></sub></td>
+<td width="50%"><a href="docs/guide/audit.md"><img src="docs/images/audit-trail.png" alt="Audit trail"></a></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>Services</b><br>Run the web, Slack, radio and mesh daemons under launchd<br><sub>Guide: <a href="docs/guide/services.md">services</a></sub></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>Event extras</b><br>Weather, gate traffic, status lighting, Meshtastic location, city grid<br><sub>Guide: <a href="docs/guide/weather-traffic.md">weather-traffic</a>, <a href="docs/guide/lighting.md">lighting</a>, <a href="docs/guide/mesh.md">mesh</a></sub></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>Demo</b><br>A sanitized dataset and a static, serverless demo (<a href="https://sevaepsteyn.github.io/obi/">live</a>)<br><sub>Guide: <a href="docs/guide/demo.md">demo</a></sub></td>
 </tr>
 </table>
 
