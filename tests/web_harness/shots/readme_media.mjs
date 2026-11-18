@@ -10,6 +10,13 @@
 // `video` writes numbered JPEG frames (Page.startScreencast) plus frames.txt with timings, for
 // ffmpeg to assemble. An optional jsFile is evaluated in the page after load (to open windows,
 // start a chat replay, etc.).
+//
+// Environment (both modes):
+//   OBI_LAYOUT=<file.json>  a workspace layout ({"windows": [...]}, the shell's saved-layout
+//                           shape) written to localStorage before the page loads; gated widgets
+//                           (AUDIT, RADIO) are enabled too
+//   OBI_JS=<file.js>        evaluated in the page after load, before the wait (shot) or the
+//                           recording (video)
 import { spawn } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -65,9 +72,24 @@ const send = (method, params = {}) => new Promise((resolve, reject) => {
 try {
   await send('Page.enable');
   await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 2, mobile: false });
-  const loaded = new Promise((r) => listeners.push((m) => m.method === 'Page.loadEventFired' && r()));
-  await send('Page.navigate', { url: new URL(target, BASE).href });
-  await loaded;
+  const navigate = async (url) => {
+    const loaded = new Promise((r) => listeners.push((m) => m.method === 'Page.loadEventFired' && r()));
+    await send('Page.navigate', { url });
+    await loaded;
+  };
+  if (process.env.OBI_LAYOUT) {
+    await navigate(new URL('about-blank-for-storage', BASE).href); // same origin as the page
+    const layout = JSON.parse(readFileSync(process.env.OBI_LAYOUT, 'utf8'));
+    await send('Runtime.evaluate', {
+      expression: `localStorage.setItem('obi-web-layout', ${JSON.stringify(JSON.stringify({ version: 1, ...layout }))});`
+        + `localStorage.setItem('obi-web-gated', 'enabled');`,
+    });
+  }
+  await navigate(new URL(target, BASE).href);
+  if (process.env.OBI_JS) {
+    await sleep(1500);
+    await send('Runtime.evaluate', { expression: readFileSync(process.env.OBI_JS, 'utf8'), awaitPromise: true });
+  }
   if (mode === 'shot') {
     await sleep(Number(a4 ?? 4000));
     const { data } = await send('Page.captureScreenshot', { format: 'png' });

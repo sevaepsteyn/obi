@@ -2,6 +2,12 @@
 
 obi reads SNMP metrics read-only from the devices it already knows, either as a live spot-read (`obi metrics live`) or via a scheduled collector that stores readings for trend queries (`obi metrics history`).
 
+![Stored SNMP history: traffic per interface over 24 hours](../images/metrics-charts.png)
+
+![Fleet health: temperature, CPU, memory, optics and threshold breaches](../images/metrics-health.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Live SNMP (`obi metrics live`)
 
 SNMP is the cross-vendor path for interface traffic, per-port up/down state, and device CPU, memory and uptime. Targets are the Mikrotik discovered roster and NetBox-documented hosts.

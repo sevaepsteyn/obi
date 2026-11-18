@@ -2,6 +2,10 @@
 
 obi answers plain-language questions about the whole network — Mikrotik, UISP, Siklu, and what is documented in NetBox — using read-only tools. The same toolset is available from the terminal (`obi chat`), from Slack DMs (`obi slack`), and inside Claude Desktop / Claude Code (`obi mcp`); for spoken questions see [voice.md](./voice.md).
 
+![A recorded chat replayed: the question, the tool calls, then the answer](../images/demo-chat.gif)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Terminal (`obi chat`)
 
 ```bash

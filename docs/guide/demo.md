@@ -2,6 +2,10 @@
 
 `obi demo snapshot` turns this host's stores into a self-contained dataset of a fictional network, **Example Valley Net**. The public demo workspace, docs and videos are all built from that dataset, never from live data.
 
+![The demo workspace: windows opened by typing mnemonics](../images/workspace-tour.gif)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## The dataset
 
 The snapshot:

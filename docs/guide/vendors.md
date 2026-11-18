@@ -4,6 +4,14 @@ Beyond the Mikrotik roster, obi reads health from a UISP controller, from Siklu 
 
 All three share the same failure behaviour: an unreachable, slow, or credential-rejecting source is reported as a clean, guided result (no crash, no hang) and obi still exits `0`. Tokens and passwords never appear in output, the audit trail, or logs.
 
+![Backhaul RF links from UISP and Siklu in one board: state, signal, capacity](../images/vendors-links.png)
+
+![One link: both ends, band, signal, usage and the terrain path profile](../images/vendors-link-profile.png)
+
+![UISP devices: reachability, model and uptime](../images/vendors-uisp.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## UISP
 
 obi reports health for devices managed by a **UISP controller** (Ubiquiti's ISP platform). `obi status` queries it **live**, pulling the whole managed fleet in one read-only call.

@@ -17,7 +17,9 @@ or over a two-way radio.
 **[Try the live demo](https://sevaepsteyn.github.io/obi/)**: the browser workspace on a fictional
 network, with recorded chats replayed. It runs entirely in your browser.
 
-![The obi web workspace: a 2D link map beside a replayed chat](docs/images/demo-chat.gif)
+![Asking obi: a recorded chat replayed beside the 2D link map](docs/images/demo-chat.gif)
+
+![The workspace: typing mnemonics opens windows — links, metrics, OSPF, the dashboard, a router](docs/images/workspace-tour.gif)
 
 ## What it does
 
@@ -37,6 +39,24 @@ network, with recorded chats replayed. It runs entirely in your browser.
 | Services | Run the web, Slack, radio and mesh daemons under launchd | [services](docs/guide/services.md) |
 | Event extras | Weather, gate traffic, status lighting, Meshtastic location, city grid | [weather-traffic](docs/guide/weather-traffic.md), [lighting](docs/guide/lighting.md), [mesh](docs/guide/mesh.md) |
 | Demo | A sanitized dataset and a static, serverless demo ([live](https://sevaepsteyn.github.io/obi/)) | [demo](docs/guide/demo.md) |
+
+<table>
+<tr>
+<td width="33%" valign="top"><a href="docs/guide/routeros.md"><img src="docs/images/routeros-fleet.png" alt="RouterOS fleet"></a><br><sub><b>RouterOS fleet</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/vendors.md"><img src="docs/images/vendors-link-profile.png" alt="Link and path profile"></a><br><sub><b>Link and path profile</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/metrics.md"><img src="docs/images/metrics-charts.png" alt="Metrics history"></a><br><sub><b>Metrics history</b></sub></td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="docs/guide/metrics.md"><img src="docs/images/metrics-health.png" alt="Fleet health"></a><br><sub><b>Fleet health</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/logs.md"><img src="docs/images/logs-tail.png" alt="Logs"></a><br><sub><b>Logs</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/config-backup.md"><img src="docs/images/config-diff.png" alt="Config diffs"></a><br><sub><b>Config diffs</b></sub></td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="docs/guide/web.md"><img src="docs/images/web-ospf.png" alt="OSPF map"></a><br><sub><b>OSPF map</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/dashboard.md"><img src="docs/images/dashboard.png" alt="Status dashboard"></a><br><sub><b>Status dashboard</b></sub></td>
+<td width="33%" valign="top"><a href="docs/guide/audit.md"><img src="docs/images/audit-trail.png" alt="Audit trail"></a><br><sub><b>Audit trail</b></sub></td>
+</tr>
+</table>
 
 ## Quick start
 

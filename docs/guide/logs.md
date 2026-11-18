@@ -2,6 +2,10 @@
 
 obi keeps device syslog, UniFi controller events and UISP controller logs in one local SQLite store and answers questions over it with `obi logs query` or the `logs_query` chat tool. Everything is read-only toward the devices and controllers.
 
+![The log tail: syslog, UniFi and UISP events with source, device, severity and text filters](../images/logs-tail.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Device syslog
 
 obi reads the RouterOS log lines your existing `syslog-ng` collectors keep; it doesn't change the collectors.

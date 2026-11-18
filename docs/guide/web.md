@@ -2,7 +2,13 @@
 
 `obi web` serves a dark, terminal-style workspace to any browser on the LAN, each tool in its own floating window. The same server hosts a 2D link map and an immersive 3D/AR/VR viewer for Quest 3.
 
-![The workspace: 2D link map and a chat window](../images/workspace.png)
+![Opening windows by typing mnemonics: LINKS, METRICS, OSPF, DASH, then a router](../images/workspace-tour.gif)
+
+![The 2D link map on terrain, colored by band, with live utilization](../images/web-map.png)
+
+![The OSPF topology map: routers, costs and lint markers](../images/web-ospf.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
 
 ## Overview
 

@@ -2,6 +2,10 @@
 
 obi records everything it does into a local, queryable event store, so "what did obi do, and why?" is always answerable afterwards. `obi audit` and the web `AUD` board read it.
 
+![The audit window: every device command, tool call and LLM exchange, filterable](../images/audit-trail.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## What is recorded
 
 - **LLM communication** — full prompt and response, model, token usage — across chat, voice, Slack and the watcher's judge.

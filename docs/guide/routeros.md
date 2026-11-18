@@ -8,6 +8,12 @@ obi crawls a MikroTik (RouterOS) network from a few seed devices, writes a durab
 
 A slow or unreachable device never blocks the rest. The crawl is hard-bounded by scope, a visited set and a time budget, and every action is recorded in the [audit trail](./audit.md).
 
+![The ROS window: every RouterOS device with live state, model, version and load](../images/routeros-fleet.png)
+
+![A router's drill-down: interfaces and addresses read from the device](../images/routeros-router.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Install
 
 [`uv`](https://docs.astral.sh/uv/) manages Python, the venv and dependencies.

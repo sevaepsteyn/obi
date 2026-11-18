@@ -2,6 +2,10 @@
 
 `obi dash` is one green/yellow/red board answering "is everything OK right now?". It is the fast, deterministic counterpart to the [watcher](./watcher.md)'s deeper hourly analysis: every read is read-only and no LLM is involved.
 
+![The board: one tile per signal, maintenance shown but not alerting](../images/dashboard.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Signals
 
 A 1-minute cycle collects and judges five alerting signals, plus the display-only mesh and lighting tiles:

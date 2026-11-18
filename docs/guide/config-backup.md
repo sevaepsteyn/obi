@@ -2,6 +2,12 @@
 
 `obi configs` keeps a versioned, redacted backup of every RouterOS device's configuration in a local git repository, giving you the current config plus full change history. It is strictly read-only: obi runs `/export` over SSH and never writes to a device.
 
+![Every device's backup state and last change](../images/config-backups.png)
+
+![One device's history and a redacted diff of a config change](../images/config-diff.png)
+
+<sub>Screenshots from the demo: a fictional network, sanitized from real data.</sub>
+
 ## Device requirement: SSH policy
 
 The RouterOS binary API can't return an `/export` to a read-only account without writing a `.rsc` file onto the device, which obi won't do. SSH exec works, so the backup account's group **must include the `ssh` policy**. A read-only user is otherwise fine: `/export` without `show-sensitive` reveals no secrets.
