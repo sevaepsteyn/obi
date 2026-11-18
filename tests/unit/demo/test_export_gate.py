@@ -15,6 +15,9 @@ from obi.core.demo import export as export_mod
 from obi.core.demo.export import bundle_digest, digest_path, load_export_profile, run_export
 from tests.fixtures.demo.harness import build_dataset, offline_terrain
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 @dataclass
 class Env:

@@ -6,8 +6,17 @@ How to run obi's test and lint gates, capture fixtures, and where things live in
 
 ```bash
 uv run pytest                            # unit + contract + integration (offline fixtures)
+uv run pytest -m 'not slow'              # inner loop: skip the demo snapshot/export pipeline
+uv run pytest -n0 tests/unit/test_x.py   # serial (debugging, pdb, print output)
 uv run ruff check . && uv run mypy src   # lint + types ("done" gate)
 ```
+
+The suite runs in parallel by default (pytest-xdist, `-n auto --dist worksteal` in
+`pyproject.toml`), so tests must not share fixed paths, ports, or the system temp dir: use
+`tmp_path` and port 0. Tests that take seconds — anything that runs the demo snapshot/export
+pipeline or drives a headless browser — carry `pytest.mark.slow`. The demo harness's
+`build_dataset()` snapshots once per worker and hands each caller a private copy; use it
+instead of calling `run_snapshot` directly unless the snapshot itself is under test.
 
 Tests run fully offline against a fake driver and recorded read-only fixtures. No test performs a state-changing operation against a real device.
 

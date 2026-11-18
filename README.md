@@ -88,6 +88,7 @@ Each other feature adds its own config section; its guide lists the keys. `obi -
 
 ```bash
 uv run pytest -q          # the full suite is hermetic: no devices, network or private config
+uv run pytest -q -m 'not slow'   # inner loop: skip the demo snapshot/export pipeline
 uv run ruff check . && uv run mypy src
 ```
 

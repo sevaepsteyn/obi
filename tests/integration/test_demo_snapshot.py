@@ -26,6 +26,9 @@ from tests.fixtures.demo.harness import (
     tree_state,
 )
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 ALLOWED_LIVE_CHANGES = re.compile(r"^(audit\.db.*|audit\.jsonl|demo/mapping\.json)$")
 
 
@@ -127,7 +130,10 @@ def test_exit_4_over_budget_then_allow_oversize(env: DemoEnv) -> None:
     )
     assert snapshot(env).exit_code == 4  # type: ignore[attr-defined]
     assert not env.output.exists() and not list(env.output.parent.glob("*.staging-*"))
-    assert snapshot(env, "--allow-oversize").exit_code == 0  # type: ignore[attr-defined]
+    # Rare (~1 in 20 full parallel runs, feature 138) exit 3 here — the gate refusing the second
+    # run — has not been reproduced in isolation; keep the CLI output on failure to diagnose it.
+    oversize = snapshot(env, "--allow-oversize")
+    assert oversize.exit_code == 0, oversize.output  # type: ignore[attr-defined]
 
 
 def test_exit_5_dem_unavailable(env: DemoEnv, monkeypatch: pytest.MonkeyPatch) -> None:

@@ -9,6 +9,9 @@ import pytest
 
 from tests.fixtures.demo.harness import build_dataset, offline_terrain, run_cli
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 def test_export_then_publish_pages_and_refuse_after_edit(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch

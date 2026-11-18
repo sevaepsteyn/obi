@@ -11,6 +11,9 @@ import pytest
 from obi.core.demo.mapping import PseudonymMap
 from tests.fixtures.demo.harness import DemoEnv, make_env, run_cli
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 @pytest.fixture
 def env(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> DemoEnv:

@@ -23,6 +23,9 @@ from obi.core.demo import chats as chats_mod
 from tests.fixtures.demo.chat_history import add_conversations
 from tests.fixtures.demo.harness import build_dataset, offline_terrain, run_cli
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 @dataclass
 class Env:
@@ -124,7 +127,8 @@ def _dump_dom(url: str, profile: Path) -> str:
                 break
     finally:
         timer.cancel()
-        with contextlib.suppress(ProcessLookupError):
+        # PermissionError: macOS killpg returns EPERM once the group holds only zombies.
+        with contextlib.suppress(ProcessLookupError, PermissionError):
             os.killpg(proc.pid, signal.SIGKILL)
         proc.wait()
     return "".join(out)

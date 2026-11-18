@@ -11,6 +11,9 @@ from obi.core.demo.export import DEMO_BOOT, LIVE_BOOT, copy_assets, load_dataset
 from obi.web.server import STATIC_DIR
 from tests.fixtures.demo.harness import build_dataset
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 @pytest.fixture(scope="module")
 def bundle(tmp_path_factory: pytest.TempPathFactory) -> Path:

@@ -24,7 +24,10 @@ from obi.web.server import STATIC_DIR
 from tests.fixtures.demo.harness import build_dataset
 
 HARNESS = Path(__file__).parent.parent / "web_harness" / "demo_api.mjs"
-pytestmark = pytest.mark.skipif(shutil.which("node") is None, reason="node not installed")
+pytestmark = [
+    pytest.mark.skipif(shutil.which("node") is None, reason="node not installed"),
+    pytest.mark.slow,  # builds a demo dataset (seconds)
+]
 
 LOG_QUERIES = [
     {}, {"window": "1h"}, {"window": "6h"}, {"window": "7d"}, {"device": "gw"},

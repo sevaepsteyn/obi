@@ -17,6 +17,9 @@ from obi.core.demo.export import (
 from obi.core.demo.routes import data_path
 from tests.fixtures.demo.harness import build_dataset
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 
 @pytest.fixture(scope="module")
 def built(tmp_path_factory: pytest.TempPathFactory) -> Iterator[tuple[Path, dict, Path]]:  # type: ignore[type-arg]

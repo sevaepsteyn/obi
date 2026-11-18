@@ -25,6 +25,9 @@ from obi.core.demo.profile import load_profile
 from obi.core.demo.snapshot import run_snapshot
 from tests.fixtures.demo.harness import DemoEnv, make_env, run_cli
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 Plant = Callable[[Path], None]
 
 

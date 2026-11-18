@@ -4,8 +4,12 @@ no code with the gate)."""
 
 from __future__ import annotations
 
+import atexit
+import copy
+import shutil
 import sqlite3
 import subprocess
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -17,11 +21,20 @@ from tests.fixtures.ar.terrarium_helpers import flat_tile_bytes
 from tests.fixtures.demo.build_state import SyntheticTruth, build_state, write_config
 
 GROUND_M = 1201.0
+#: Coarse 2D hillshade step for demo tests (production: terrain.SHADE_STEP_M = 30 m).
+DEMO_SHADE_STEP_M = 300.0
 
 
 def offline_terrain(monkeypatch: pytest.MonkeyPatch, *, dem_ok: bool = True) -> None:
-    """Replace the three network fetchers (tiles, EPQS, GNIS) with offline fakes."""
+    """Replace the three network fetchers (tiles, EPQS, GNIS) with offline fakes.
 
+    Also coarsens the 2D hillshade grid (feature 138): over the FLAT fake tile the raster is
+    uniform anyway, and at the production 30 m step it was ~75% of every demo snapshot
+    (~4M pure-Python elevation samples). The shade math keeps its own unit tests at the real
+    step (tests/unit/test_terrain_shade.py).
+    """
+
+    monkeypatch.setattr("obi.core.terrain.SHADE_STEP_M", DEMO_SHADE_STEP_M)
     tile = flat_tile_bytes(GROUND_M - 10)
     monkeypatch.setattr(
         "obi.core.terrain._default_tile_fetcher",
@@ -104,11 +117,8 @@ def tree_state(root: Path) -> dict[str, int]:
     }
 
 
-def build_dataset(root: Path) -> tuple[Path, Path, SyntheticTruth]:
-    """Run the 134 snapshot over the synthetic state → (dataset dir, config path, truth).
-
-    Isolated with its own MonkeyPatch so module-scoped fixtures can call it.
-    """
+def _snapshot_into(root: Path) -> tuple[Path, Path, SyntheticTruth]:
+    """Actually run the 134 snapshot over fresh synthetic state under ``root``."""
 
     import tomllib
 
@@ -125,3 +135,35 @@ def build_dataset(root: Path) -> tuple[Path, Path, SyntheticTruth]:
         raw = tomllib.loads(config.read_text())
         run_snapshot(raw, load_profile(raw, config_path=config))
     return dataset, config, truth
+
+
+#: Per-process (per xdist worker) template built by the first build_dataset() call.
+_TEMPLATE: tuple[Path, SyntheticTruth] | None = None
+
+
+def _template() -> tuple[Path, SyntheticTruth]:
+    global _TEMPLATE
+    if _TEMPLATE is None:
+        root = Path(tempfile.mkdtemp(prefix="obi-demo-template-"))
+        atexit.register(shutil.rmtree, root, ignore_errors=True)
+        _dataset, _config, truth = _snapshot_into(root)
+        _TEMPLATE = (root, truth)
+    return _TEMPLATE
+
+
+def build_dataset(root: Path) -> tuple[Path, Path, SyntheticTruth]:
+    """A fresh 134 snapshot of the synthetic state under ``root`` → (dataset, config, truth).
+
+    The snapshot is deterministic over the synthetic state, so it is run ONCE per process and
+    each caller gets a private copy (feature 138: it was ~6s per call, ~40 calls per run). The
+    copy is a full, independent tree — callers may mutate dataset, state, and config freely.
+    The only file that embeds the build root is ``cfg/config.toml`` (its ``output_dir``), which
+    is rewritten to ``root``. Isolated with its own MonkeyPatch so module-scoped fixtures can
+    call it.
+    """
+
+    template, truth = _template()
+    shutil.copytree(template, root, symlinks=True, dirs_exist_ok=True)
+    config = root / "cfg" / "config.toml"
+    config.write_text(config.read_text().replace(str(template), str(root)))
+    return root / "out" / "dataset", config, copy.deepcopy(truth)

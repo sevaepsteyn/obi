@@ -17,6 +17,9 @@ from obi.core.demo.mapping import PseudonymMap
 from tests.fixtures.demo.build_state import BUSY_START
 from tests.fixtures.demo.harness import DemoEnv, dump_text, make_env, run_cli
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 Plant = Callable[[Path], None]
 
 

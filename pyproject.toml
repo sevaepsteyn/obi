@@ -81,6 +81,7 @@ dev = [
     # feature 023: the voice test doubles serve synthetic PCM arrays; keeps the suite runnable
     # without the heavy `voice` extra (which brings numpy transitively anyway).
     "numpy>=1.26",
+    "pytest-xdist>=3.8.0",
 ]
 
 [tool.ruff]
@@ -121,4 +122,10 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra"
+# Parallel by default (pytest-xdist): one worker per core, work-stealing so the few slow demo
+# tests don't pile up on one worker. Debug a single test serially with `-n0` (or `-p no:xdist`).
+# Skip the slow tier in the inner loop with `-m "not slow"`.
+addopts = "-ra -n auto --dist worksteal"
+markers = [
+    "slow: multi-second tests (demo snapshot/export pipeline, headless browser); skip with -m 'not slow'",
+]

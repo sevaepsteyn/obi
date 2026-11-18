@@ -29,6 +29,9 @@ from obi.core.demo.chats import (
 from tests.fixtures.demo.chat_history import OTHER_USER, add_conversations
 from tests.fixtures.demo.harness import build_dataset, offline_terrain
 
+# Runs the demo snapshot/export pipeline (seconds per test) — skip with -m 'not slow'.
+pytestmark = pytest.mark.slow
+
 FOREVER = timedelta(days=36_500)
 
 
