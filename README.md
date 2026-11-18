@@ -2,8 +2,13 @@
 
 obi is a network management assistant for any network: a campus, a WISP, a branch fleet or a
 single site. It collects inventory, health, metrics, logs and config history from your routers,
-switches, radios and access points, and puts an LLM in front of it. You can ask it questions from
-the terminal, Slack, a browser workspace, by voice or over a two-way radio.
+switches, radios and access points, and puts an LLM in front of it.
+
+- **Ask it.** Questions from the terminal, Slack, a browser workspace, by voice or over a two-way
+  radio.
+- **It watches on its own.** An hourly LLM review of logs and metrics posts findings to Slack,
+  and a status dashboard pages on outages. Reacting to events as they happen (SNMP traps,
+  syslog) is next.
 
 It grew up running the backbone of a large temporary event network (dozens of routers and
 point-to-point radios over many kilometres, run by a small volunteer team), so it is built for

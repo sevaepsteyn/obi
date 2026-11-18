@@ -137,6 +137,10 @@ def test_every_board_renders_from_files_under_a_sub_path(
         # Concurrent shots (feature 138): ~23 boards × ~1s each was the suite's longest test.
         with ThreadPoolExecutor(max_workers=_SHOT_CONCURRENCY) as pool:
             failed = [w for w, ok in zip(ids, pool.map(shoot, ids), strict=True) if not ok]
+        # Under xdist several workers launch Chrome at once and a cold start occasionally misses
+        # the 30 s deadline with no screenshot (seen for `talk`, 2026-11-17). Retry each miss once,
+        # alone; a board that is really broken fails both times.
+        failed = [w for w in failed if not shoot(w)]
     finally:
         server.shutdown()
         server.server_close()
