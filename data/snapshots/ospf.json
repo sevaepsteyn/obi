@@ -1,0 +1,1369 @@
+{
+ "tool": "ospf",
+ "generated_at": "2025-08-26T23:59:58.426211+00:00",
+ "data": {
+  "meta": {
+   "source_router": "core-gw-1",
+   "source_fallback_used": false,
+   "area_ids": [
+    "0.0.0.0"
+   ],
+   "routers_polled": 12,
+   "routers_failed": [],
+   "non_ospf_devices": [
+    "172.18.84.21",
+    "172.18.84.41",
+    "172.18.84.42",
+    "172.18.89.11",
+    "172.18.89.12",
+    "172.18.89.23",
+    "172.18.89.24",
+    "172.18.87.21",
+    "172.18.87.41",
+    "172.18.80.65",
+    "172.18.80.66",
+    "172.18.81.20",
+    "172.18.81.21"
+   ],
+   "layout_blessed": 12,
+   "layout_ignored": 4,
+   "layout_error": null
+  },
+  "cloud_seed": {
+   "x": -1493.7,
+   "y": 466.0
+  },
+  "nodes": [
+   {
+    "router_id": "172.18.84.1",
+    "identity": "core-gw-1",
+    "address": "172.18.84.1",
+    "site": "core",
+    "seed": {
+     "x": -176.6,
+     "y": -465.5
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.84.1",
+     "redistribute": "static",
+     "originate_default": "if-installed",
+     "out_filter_chain": "ospf-out",
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": true,
+    "spof": true,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.89.1",
+    "identity": "tamarack-gw",
+    "address": "172.18.89.1",
+    "site": "tamarack",
+    "seed": {
+     "x": 614.9,
+     "y": -60.6
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "id-1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": true,
+    "lint_count": 3
+   },
+   {
+    "router_id": "172.18.86.1",
+    "identity": "walnut-gw",
+    "address": "172.18.86.1",
+    "site": "walnut",
+    "seed": {
+     "x": 1489.4,
+     "y": -1508.2
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.86.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": false,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.73.1",
+    "identity": "tamarack-gw-yellowwood",
+    "address": "172.18.73.1",
+    "site": "tamarack",
+    "seed": {
+     "x": -656.9,
+     "y": 457.9
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "id-1",
+     "redistribute": null,
+     "originate_default": "if-installed",
+     "out_filter_chain": "ospf-out-filter-chain",
+     "in_filter_chain": "ospf-in-filter-chain"
+    },
+    "enrichment": "ok",
+    "is_asbr": true,
+    "spof": false,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.87.1",
+    "identity": "ponderosa-gw",
+    "address": "172.18.87.1",
+    "site": "ponderosa",
+    "seed": {
+     "x": -113.4,
+     "y": -1533.4
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.87.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": false,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.74.1",
+    "identity": "chestnut-internet-gw",
+    "address": "172.18.74.1",
+    "site": "chestnut",
+    "seed": {
+     "x": -846.7,
+     "y": 946.2
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "id-1",
+     "redistribute": null,
+     "originate_default": "if-installed",
+     "out_filter_chain": "ospf-out-filter-chain",
+     "in_filter_chain": "ospf-in-filter-chain"
+    },
+    "enrichment": "ok",
+    "is_asbr": true,
+    "spof": false,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.75.1",
+    "identity": "tamarack-internet-gw",
+    "address": "172.18.75.1",
+    "site": "tamarack",
+    "seed": {
+     "x": -892.2,
+     "y": -145.1
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "id-ospf",
+     "redistribute": null,
+     "originate_default": "if-installed",
+     "out_filter_chain": "ospf-out-filter-chain",
+     "in_filter_chain": "ospf-in-filter-chain"
+    },
+    "enrichment": "ok",
+    "is_asbr": true,
+    "spof": false,
+    "lint_count": 1
+   },
+   {
+    "router_id": "172.18.80.1",
+    "identity": "yew-gw",
+    "address": "172.18.80.1",
+    "site": "yew",
+    "seed": {
+     "x": -800.0,
+     "y": -1515.3
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.80.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": "ospf-out",
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": false,
+    "lint_count": 1
+   },
+   {
+    "router_id": "172.18.81.1",
+    "identity": "chestnut-gw",
+    "address": "172.18.81.1",
+    "site": "chestnut",
+    "seed": {
+     "x": 562.4,
+     "y": 980.3
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "id-1",
+     "redistribute": null,
+     "originate_default": "never",
+     "out_filter_chain": "ospf-out",
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": true,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.82.1",
+    "identity": "rowan-gw",
+    "address": "172.18.82.1",
+    "site": "rowan",
+    "seed": {
+     "x": 651.0,
+     "y": -1540.1
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.82.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": false,
+    "lint_count": 0
+   },
+   {
+    "router_id": "172.18.83.1",
+    "identity": "basswood-gw",
+    "address": "172.18.83.1",
+    "site": "basswood",
+    "seed": {
+     "x": 2328.2,
+     "y": 620.2
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.83.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": true,
+    "lint_count": 3
+   },
+   {
+    "router_id": "172.18.92.1",
+    "identity": "zelkova-gw",
+    "address": "172.18.92.1",
+    "site": "zelkova",
+    "seed": {
+     "x": 2093.6,
+     "y": 1213.3
+    },
+    "areas": [
+     "0.0.0.0"
+    ],
+    "instance": {
+     "name": "ospf-instance-1",
+     "version": 2,
+     "router_id": "172.18.92.1",
+     "redistribute": null,
+     "originate_default": null,
+     "out_filter_chain": null,
+     "in_filter_chain": "ospf-in"
+    },
+    "enrichment": "ok",
+    "is_asbr": false,
+    "spof": true,
+    "lint_count": 0
+   }
+  ],
+  "edges": [
+   {
+    "id": "172.18.84.1|172.18.89.1",
+    "a": "172.18.84.1",
+    "b": "172.18.89.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan217-peer-tamarack",
+    "iface_b": "vlan217-peer-core",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "12w22h22m10s",
+    "state_changes": 5,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 100
+   },
+   {
+    "id": "172.18.84.1|172.18.87.1",
+    "a": "172.18.84.1",
+    "b": "172.18.87.1",
+    "cost_ab": 300,
+    "cost_ba": 300,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan211-peer-ponderosa-60",
+    "iface_b": "vlan211-peer-core-gw-60",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "12w22h22m15s",
+    "state_changes": 6,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 300
+   },
+   {
+    "id": "172.18.84.1|172.18.80.1",
+    "a": "172.18.84.1",
+    "b": "172.18.80.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan213-peer-yew-60",
+    "iface_b": "vlan213-peer-core-gw-1-60",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "5d3m51s",
+    "state_changes": 5,
+    "shared_fate_group": null,
+    "bridge": true,
+    "tier": 100
+   },
+   {
+    "id": "172.18.89.1|172.18.86.1",
+    "a": "172.18.89.1",
+    "b": "172.18.86.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus6-sycamore-man.205",
+    "iface_b": "vlan205-peer-tamarack-gw",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "12w22h22m12s",
+    "state_changes": 5,
+    "shared_fate_group": "172.18.89.1:sfp-sfpplus6-sycamore-man",
+    "bridge": true,
+    "tier": 100
+   },
+   {
+    "id": "172.18.89.1|172.18.73.1",
+    "a": "172.18.89.1",
+    "b": "172.18.73.1",
+    "cost_ab": 1,
+    "cost_ba": 1,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus5-tamarack-yellowwood-gw",
+    "iface_b": "sfp-sfpplus12-tamarack-gw",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "3w15h6m1s",
+    "state_changes": 4,
+    "shared_fate_group": null,
+    "bridge": true,
+    "tier": 1
+   },
+   {
+    "id": "172.18.89.1|172.18.87.1",
+    "a": "172.18.89.1",
+    "b": "172.18.87.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus6-sycamore-man.209",
+    "iface_b": "vlan209-peer-tamarack-gw-man",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "12w22h22m12s",
+    "state_changes": 5,
+    "shared_fate_group": "172.18.89.1:sfp-sfpplus6-sycamore-man",
+    "bridge": true,
+    "tier": 100
+   },
+   {
+    "id": "172.18.89.1|172.18.75.1",
+    "a": "172.18.89.1",
+    "b": "172.18.75.1",
+    "cost_ab": 1,
+    "cost_ba": 1,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus10-tamarack-internet-gw",
+    "iface_b": "sfp-sfpplus1-tamarack-gw",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "12w23h22m53s",
+    "state_changes": 6,
+    "shared_fate_group": null,
+    "bridge": true,
+    "tier": 1
+   },
+   {
+    "id": "172.18.89.1|172.18.82.1",
+    "a": "172.18.89.1",
+    "b": "172.18.82.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus6-sycamore-man.207",
+    "iface_b": "vlan207-peer-tamarack-gw",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "5w5d6h59m15s",
+    "state_changes": 5,
+    "shared_fate_group": "172.18.89.1:sfp-sfpplus6-sycamore-man",
+    "bridge": true,
+    "tier": 100
+   },
+   {
+    "id": "172.18.89.1|172.18.83.1|169.254.13.2",
+    "a": "172.18.89.1",
+    "b": "172.18.83.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus9-tamarack-ptp-basswood-70",
+    "iface_b": "vlan721-peer-tamarack-70",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "7h31m43s",
+    "state_changes": 4,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 100
+   },
+   {
+    "id": "172.18.89.1|172.18.83.1|169.254.3.32",
+    "a": "172.18.89.1",
+    "b": "172.18.83.1",
+    "cost_ab": 200,
+    "cost_ba": 200,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan1321-peer-basswood-60",
+    "iface_b": "vlan722-peer-tamarack-60",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "7h32m53s",
+    "state_changes": 5,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 200
+   },
+   {
+    "id": "172.18.74.1|172.18.81.1",
+    "a": "172.18.74.1",
+    "b": "172.18.81.1",
+    "cost_ab": 1,
+    "cost_ba": 1,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "sfp-sfpplus1-chestnut-gw",
+    "iface_b": "sfp-sfpplus10-chestnut-internet-gw",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "1d2h35m43s",
+    "state_changes": 6,
+    "shared_fate_group": null,
+    "bridge": true,
+    "tier": 1
+   },
+   {
+    "id": "172.18.81.1|172.18.92.1|169.254.1.5",
+    "a": "172.18.81.1",
+    "b": "172.18.92.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan521-peer-zelkova-60",
+    "iface_b": "ether15-zelkova-ptp-chestnut-60",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "1d2h37m50s",
+    "state_changes": 4,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 100
+   },
+   {
+    "id": "172.18.81.1|172.18.92.1|169.254.2.5",
+    "a": "172.18.81.1",
+    "b": "172.18.92.1",
+    "cost_ab": 200,
+    "cost_ba": 200,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan522-peer-zelkova-05",
+    "iface_b": "ether9-zelkova-ptp-chestnut-05",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "1d2h38m56s",
+    "state_changes": 5,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 200
+   },
+   {
+    "id": "172.18.83.1|172.18.92.1|169.254.1.2",
+    "a": "172.18.83.1",
+    "b": "172.18.92.1",
+    "cost_ab": 100,
+    "cost_ba": 100,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan724-peer-zelkova-60",
+    "iface_b": "ether13-zelkova-ptp-basswood-60",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "7h33m23s",
+    "state_changes": 5,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 100
+   },
+   {
+    "id": "172.18.83.1|172.18.92.1|169.254.2.2",
+    "a": "172.18.83.1",
+    "b": "172.18.92.1",
+    "cost_ab": 200,
+    "cost_ba": 200,
+    "symmetric": true,
+    "area": null,
+    "iface_a": "vlan725-peer-zelkova-05",
+    "iface_b": "ether11-zelkova-ptp-basswood-05",
+    "network_type": "ptp",
+    "neighbor_state": "Full",
+    "adjacency_age": "7h32m3s",
+    "state_changes": 4,
+    "shared_fate_group": null,
+    "bridge": false,
+    "tier": 200
+   }
+  ],
+  "ghosts": [
+   {
+    "id": "ghost:172.18.89.1:vlan1322-peer-manzanita-11",
+    "router_id": "172.18.89.1",
+    "interface": "vlan1322-peer-manzanita-11",
+    "cost": 1000,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan1322-peer-manzanita-11 is enabled (169.254.13.4) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.89.1:vlan1323-peer-noc-11",
+    "router_id": "172.18.89.1",
+    "interface": "vlan1323-peer-noc-11",
+    "cost": 1000,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan1323-peer-noc-11 is enabled (169.254.13.6) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.89.1:vlan1324-peer-magnolia-05",
+    "router_id": "172.18.89.1",
+    "interface": "vlan1324-peer-magnolia-05",
+    "cost": 10000,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan1324-peer-magnolia-05 is enabled (169.254.13.8) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.74.1:wireguard2-tamarack",
+    "router_id": "172.18.74.1",
+    "interface": "wireguard2-tamarack",
+    "cost": 1000,
+    "class": "unpaired",
+    "peer_router_id": null,
+    "detail": "OSPF-enabled interface wireguard2-tamarack has no active link and no resolvable peer"
+   },
+   {
+    "id": "ghost:172.18.75.1:wireguard2-chestnut",
+    "router_id": "172.18.75.1",
+    "interface": "wireguard2-chestnut",
+    "cost": 1000,
+    "class": "one-sided",
+    "peer_router_id": "172.18.74.1",
+    "detail": "wireguard2-chestnut is enabled (169.254.31.0) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.80.1:vlan203-peer-core-gw-1-05",
+    "router_id": "172.18.80.1",
+    "interface": "vlan203-peer-core-gw-1-05",
+    "cost": 200,
+    "class": "one-sided",
+    "peer_router_id": "172.18.84.1",
+    "detail": "vlan203-peer-core-gw-1-05 is enabled (169.254.3.9) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.81.1:sfp-sfpplus9-setup-peer-wingnut-60",
+    "router_id": "172.18.81.1",
+    "interface": "sfp-sfpplus9-setup-peer-wingnut-60",
+    "cost": 100,
+    "class": "unpaired",
+    "peer_router_id": null,
+    "detail": "OSPF-enabled interface sfp-sfpplus9-setup-peer-wingnut-60 has no active link and no resolvable peer"
+   },
+   {
+    "id": "ghost:172.18.83.1:vlan726-peer-wingnut-60",
+    "router_id": "172.18.83.1",
+    "interface": "vlan726-peer-wingnut-60",
+    "cost": 100,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan726-peer-wingnut-60 is enabled (169.254.7.6) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.83.1:vlan728-peer-noc-60",
+    "router_id": "172.18.83.1",
+    "interface": "vlan728-peer-noc-60",
+    "cost": 200,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan728-peer-noc-60 is enabled (169.254.7.4) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   },
+   {
+    "id": "ghost:172.18.83.1:vlan727-peer-manzanita-70",
+    "router_id": "172.18.83.1",
+    "interface": "vlan727-peer-manzanita-70",
+    "cost": 100,
+    "class": "one-sided",
+    "peer_router_id": null,
+    "detail": "vlan727-peer-manzanita-70 is enabled (169.254.7.8) but the far side is disabled or absent — a one-sided backup that can never form an adjacency"
+   }
+  ],
+  "pseudonodes": [],
+  "externals": [
+   {
+    "prefix": "0.0.0.0/0",
+    "router_id": "172.18.73.1",
+    "metric_type": 2,
+    "metric": 1,
+    "forwarding_address": "0.0.0.0"
+   },
+   {
+    "prefix": "0.0.0.0/0",
+    "router_id": "172.18.74.1",
+    "metric_type": 2,
+    "metric": 1,
+    "forwarding_address": "0.0.0.0"
+   },
+   {
+    "prefix": "0.0.0.0/0",
+    "router_id": "172.18.75.1",
+    "metric_type": 1,
+    "metric": 1000,
+    "forwarding_address": "0.0.0.0"
+   },
+   {
+    "prefix": "172.18.148.0/24",
+    "router_id": "172.18.84.1",
+    "metric_type": 1,
+    "metric": 1,
+    "forwarding_address": "172.18.84.101"
+   }
+  ],
+  "default_route": {
+   "active": {
+    "router_id": "172.18.75.1",
+    "identity": "tamarack-internet-gw",
+    "metric_type": 1,
+    "metric": 1000,
+    "note": "wins network-wide"
+   },
+   "standby": [
+    {
+     "router_id": "172.18.73.1",
+     "identity": "tamarack-gw-yellowwood",
+     "metric_type": 2,
+     "metric": 1,
+     "note": "standby",
+     "takeover_condition": "takes over only if the E1 default from tamarack-internet-gw disappears"
+    },
+    {
+     "router_id": "172.18.74.1",
+     "identity": "chestnut-internet-gw",
+     "metric_type": 2,
+     "metric": 1,
+     "note": "standby",
+     "takeover_condition": "takes over only if the E1 default from tamarack-internet-gw disappears"
+    }
+   ],
+   "conflict": true,
+   "narrative": "Default route: tamarack-internet-gw (E1, metric 1000). Next candidate: tamarack-gw-yellowwood (E2, metric 1). Then: chestnut-internet-gw (E2, metric 1). WARNING: two routers originate a same-type default simultaneously."
+  },
+  "default_by_root": {
+   "172.18.84.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 101,
+     "total_cost": 1101
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 401,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.89.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 1,
+     "total_cost": 1001
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 1,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 301,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.86.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 101,
+     "total_cost": 1101
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 401,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.73.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 2,
+     "total_cost": 1002
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 0,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 302,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.87.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 101,
+     "total_cost": 1101
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 401,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.74.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 302,
+     "total_cost": 1302
+    },
+    "standby": [
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 0,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 302,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.75.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 0,
+     "total_cost": 1000
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 2,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 302,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.80.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 201,
+     "total_cost": 1201
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 201,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 501,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.81.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 301,
+     "total_cost": 1301
+    },
+    "standby": [
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 1,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 301,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.82.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 101,
+     "total_cost": 1101
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 401,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.83.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 101,
+     "total_cost": 1101
+    },
+    "standby": [
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 201,
+      "total_cost": 1
+     }
+    ]
+   },
+   "172.18.92.1": {
+    "active": {
+     "router_id": "172.18.75.1",
+     "identity": "tamarack-internet-gw",
+     "metric_type": 1,
+     "metric": 1000,
+     "path_cost": 201,
+     "total_cost": 1201
+    },
+    "standby": [
+     {
+      "router_id": "172.18.74.1",
+      "identity": "chestnut-internet-gw",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 101,
+      "total_cost": 1
+     },
+     {
+      "router_id": "172.18.73.1",
+      "identity": "tamarack-gw-yellowwood",
+      "metric_type": 2,
+      "metric": 1,
+      "path_cost": 201,
+      "total_cost": 1
+     }
+    ]
+   }
+  },
+  "shared_fate_groups": [
+   {
+    "id": "172.18.89.1:sfp-sfpplus6-sycamore-man",
+    "router_id": "172.18.89.1",
+    "parent_port": "sfp-sfpplus6-sycamore-man",
+    "edge_ids": [
+     "172.18.89.1|172.18.86.1",
+     "172.18.89.1|172.18.87.1",
+     "172.18.89.1|172.18.82.1"
+    ]
+   }
+  ],
+  "spf": {
+   "172.18.84.1": {
+    "172.18.84.1": null,
+    "172.18.89.1": "172.18.84.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.89.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": null,
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.86.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.86.1",
+    "172.18.86.1": null,
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.73.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.73.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": null,
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.87.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.87.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": null,
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.74.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.83.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": null,
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.74.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.92.1",
+    "172.18.92.1": "172.18.81.1"
+   },
+   "172.18.75.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.75.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": null,
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.80.1": {
+    "172.18.84.1": "172.18.80.1",
+    "172.18.89.1": "172.18.84.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": null,
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.81.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.83.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": null,
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.92.1",
+    "172.18.92.1": "172.18.81.1"
+   },
+   "172.18.82.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.82.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": null,
+    "172.18.83.1": "172.18.89.1",
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.83.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.83.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": null,
+    "172.18.92.1": "172.18.83.1"
+   },
+   "172.18.92.1": {
+    "172.18.84.1": "172.18.89.1",
+    "172.18.89.1": "172.18.83.1",
+    "172.18.86.1": "172.18.89.1",
+    "172.18.73.1": "172.18.89.1",
+    "172.18.87.1": "172.18.89.1",
+    "172.18.74.1": "172.18.81.1",
+    "172.18.75.1": "172.18.89.1",
+    "172.18.80.1": "172.18.84.1",
+    "172.18.81.1": "172.18.92.1",
+    "172.18.82.1": "172.18.89.1",
+    "172.18.83.1": "172.18.92.1",
+    "172.18.92.1": null
+   }
+  },
+  "lint": [
+   {
+    "id": "one-sided-backup:ghost:172.18.89.1:vlan1322-peer-manzanita-11",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.89.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.89.1:vlan1322-peer-manzanita-11",
+    "message": "172.18.89.1 has an enabled backup on vlan1322-peer-manzanita-11 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.89.1:vlan1323-peer-noc-11",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.89.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.89.1:vlan1323-peer-noc-11",
+    "message": "172.18.89.1 has an enabled backup on vlan1323-peer-noc-11 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.89.1:vlan1324-peer-magnolia-05",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.89.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.89.1:vlan1324-peer-magnolia-05",
+    "message": "172.18.89.1 has an enabled backup on vlan1324-peer-magnolia-05 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.75.1:wireguard2-chestnut",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.75.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.75.1:wireguard2-chestnut",
+    "message": "172.18.75.1 has an enabled backup on wireguard2-chestnut whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.80.1:vlan203-peer-core-gw-1-05",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.80.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.80.1:vlan203-peer-core-gw-1-05",
+    "message": "172.18.80.1 has an enabled backup on vlan203-peer-core-gw-1-05 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.83.1:vlan726-peer-wingnut-60",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.83.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.83.1:vlan726-peer-wingnut-60",
+    "message": "172.18.83.1 has an enabled backup on vlan726-peer-wingnut-60 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.83.1:vlan727-peer-manzanita-70",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.83.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.83.1:vlan727-peer-manzanita-70",
+    "message": "172.18.83.1 has an enabled backup on vlan727-peer-manzanita-70 whose far side is disabled/absent — it can never form"
+   },
+   {
+    "id": "one-sided-backup:ghost:172.18.83.1:vlan728-peer-noc-60",
+    "category": "one-sided-backup",
+    "severity": "warn",
+    "router_id": "172.18.83.1",
+    "edge_id": null,
+    "ghost_id": "ghost:172.18.83.1:vlan728-peer-noc-60",
+    "message": "172.18.83.1 has an enabled backup on vlan728-peer-noc-60 whose far side is disabled/absent — it can never form"
+   }
+  ]
+ }
+}

@@ -1,0 +1,1 @@
+{"target": "core-vms-1", "metric": "ifInDiscards", "since": "2025-06-04T22:59:59.999999+00:00", "until": "2025-06-05T22:59:59.999999+00:00", "bucket_seconds": 1440, "series": [], "store": "ok", "mode": "series", "hint": null}

@@ -1,0 +1,1 @@
+{"target": "chestnut-vms-1", "metric": "ifOutErrors", "since": "2025-06-05T16:59:59.999999+00:00", "until": "2025-06-05T22:59:59.999999+00:00", "bucket_seconds": 360, "series": [], "store": "ok", "mode": "series", "hint": null}

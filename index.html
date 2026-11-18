@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- obi terminal — the workspace landing (feature 037; supersedes the 033 single-page landing).
+     One HTML route, three client-side boot modes (the server stays path-only and query-blind):
+       /            the multi-window workspace (layout restored from this browser)
+       /?w=<id>     one widget full-bleed — "the tool's own page"
+       /?version=…  legacy 022/033 entry points, redirected to their ?w= equivalents
+     Thin adapter: no geodesy, no business logic — widgets render what `obi web export`
+     precomputed and what the voice engine answers. Served ONLY by `obi web serve` over
+     HTTPS (WebXR and mic capture require a secure context). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>obi terminal</title>
+<link rel="stylesheet" href="./theme.css">
+</head>
+<body>
+<noscript>obi terminal needs JavaScript — every widget is a browser-side module.</noscript>
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
+<script type="module">
+import './demo/boot.js';
+</script>
+</body>
+</html>

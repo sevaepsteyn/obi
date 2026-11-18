@@ -1,0 +1,1 @@
+{"target": "noc-vms-1", "metric": "ifHCInOctets", "since": "2025-05-29T22:59:59.999999+00:00", "until": "2025-06-05T22:59:59.999999+00:00", "bucket_seconds": 10080, "series": [], "store": "ok", "mode": "series", "hint": null}

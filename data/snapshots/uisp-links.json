@@ -1,0 +1,836 @@
+{
+ "tool": "uisp-links",
+ "generated_at": "2025-08-26T23:59:06.938214+00:00",
+ "data": {
+  "controller": "https://paloverde.example.com",
+  "outcome": "reachable",
+  "detail": null,
+  "name_filter": "ptp",
+  "counts": {
+   "total": 19,
+   "active": 9,
+   "down": 10
+  },
+  "links": [
+   {
+    "id": "7a4d9be1-ac21-3e3b-a385-a0e0b11b472c",
+    "label": "magnolia-ptp-manzanita-60 ↔ evn-net-02",
+    "state": "disconnected",
+    "signal_dbm": -30.0,
+    "ssid": "evn-net-02",
+    "frequency_mhz": 66960.0,
+    "distance_m": 211.0,
+    "ends": [
+     {
+      "name": "evn-net-02",
+      "site": "MULBERRY - Tupelo Bigtooth",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "magnolia-ptp-manzanita-60",
+      "site": "MULBERRY - Cottonwood - HORNBEAM",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "6dbb10ae-e550-30e5-94e2-a651bbc182f7",
+    "label": "magnolia-ptp-noc-60 ↔ evn-net-03",
+    "state": "disconnected",
+    "signal_dbm": -34.0,
+    "ssid": "evn-net-03",
+    "frequency_mhz": 64800.0,
+    "distance_m": 691.0,
+    "ends": [
+     {
+      "name": "evn-net-03",
+      "site": "MULBERRY - NOC",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 64800.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "magnolia-ptp-noc-60",
+      "site": "MULBERRY - Cottonwood - HORNBEAM",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 64800.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "043cd979-f72b-3249-9737-fe3dfa6c1186",
+    "label": "magnolia-ptp-tamarack-05 ↔ evn-net-06-05",
+    "state": "disconnected",
+    "signal_dbm": -50.0,
+    "ssid": "evn-net-06",
+    "frequency_mhz": 5705.0,
+    "distance_m": 17964.0,
+    "ends": [
+     {
+      "name": "evn-net-06-05",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": null,
+       "frequency_mhz": 5705.0,
+       "score": null,
+       "link_score": 0.991,
+       "downlink_score": 0.986,
+       "uplink_score": 0.996,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "magnolia-ptp-tamarack-05",
+      "site": "MULBERRY - Cottonwood - HORNBEAM",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 5705.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "da72d659-c5aa-3f87-9b61-2044c74d564f",
+    "label": "evn-net-01 ↔ noc-ptp-manzanita-60",
+    "state": "disconnected",
+    "signal_dbm": -34.0,
+    "ssid": "evn-net-01",
+    "frequency_mhz": 69120.0,
+    "distance_m": 598.0,
+    "ends": [
+     {
+      "name": "evn-net-01",
+      "site": "MULBERRY - Tupelo Bigtooth",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "noc-ptp-manzanita-60",
+      "site": "MULBERRY - NOC",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "780f3378-7108-35ad-b47d-57de6064f171",
+    "label": "manzanita-ptp-tamarack-11 ↔ evn-net-07",
+    "state": "disconnected",
+    "signal_dbm": -49.0,
+    "ssid": "evn-net-07",
+    "frequency_mhz": 11245.0,
+    "distance_m": null,
+    "ends": [
+     {
+      "name": "evn-net-07",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": null,
+       "frequency_mhz": 11245.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "manzanita-ptp-tamarack-11",
+      "site": "MULBERRY - Tupelo Bigtooth",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 10755.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "60d8361b-54f8-3d2a-81fe-35f60af162aa",
+    "label": "rowan-ptp-oak7-ap-05 ↔ rowan-ptp-oak7-st-05",
+    "state": "active",
+    "signal_dbm": -42.0,
+    "ssid": "evn-net-10",
+    "frequency_mhz": 5810.0,
+    "distance_m": 38.0,
+    "ends": [
+     {
+      "name": "rowan-ptp-oak7-ap-05",
+      "site": "Rowan - Oak7",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -48.0,
+       "frequency_mhz": 5810.0,
+       "score": 0.972,
+       "link_score": 0.99,
+       "downlink_score": 1.0,
+       "uplink_score": 0.98,
+       "airtime": 0.001,
+       "capacity_down_bps": 295200000,
+       "capacity_up_bps": 298800000
+      }
+     },
+     {
+      "name": "rowan-ptp-oak7-st-05",
+      "site": "Rowan",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -42.0,
+       "frequency_mhz": 5810.0,
+       "score": 0.972,
+       "link_score": 0.985,
+       "downlink_score": 1.0,
+       "uplink_score": 0.97,
+       "airtime": 0.001,
+       "capacity_down_bps": 291600000,
+       "capacity_up_bps": 260000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "a31b6dd5-0b73-37fd-8665-e02958e4aaa4",
+    "label": "birch-ptp-noc-60 ↔ evn-net-04",
+    "state": "disconnected",
+    "signal_dbm": -58.0,
+    "ssid": "evn-net-04",
+    "frequency_mhz": 62640.0,
+    "distance_m": 91.0,
+    "ends": [
+     {
+      "name": "evn-net-04",
+      "site": "MULBERRY - NOC",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 62640.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "birch-ptp-noc-60",
+      "site": "MULBERRY - Birch",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 62640.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "e08bf968-d090-3a14-9158-d74ec0ff4ecc",
+    "label": "yew-ptp-basswood-05 ↔ basswood-ptp-yew-05",
+    "state": "disconnected",
+    "signal_dbm": -59.0,
+    "ssid": "evn-net-11",
+    "frequency_mhz": 5500.0,
+    "distance_m": 14288.0,
+    "ends": [
+     {
+      "name": "yew-ptp-basswood-05",
+      "site": "Yew",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 5500.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "basswood-ptp-yew-05",
+      "site": "Basswood Relay - West",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 5500.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "d5da40ad-0948-3847-8fe4-9a888eed0d95",
+    "label": "yew-ptp-tamarack-05 ↔ tamarack-ptmp-old-05",
+    "state": "active",
+    "signal_dbm": -65.0,
+    "ssid": "evn-net-12",
+    "frequency_mhz": 5500.0,
+    "distance_m": 749.0,
+    "ends": [
+     {
+      "name": "tamarack-ptmp-old-05",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -68.0,
+       "frequency_mhz": 5500.0,
+       "score": 0.61466664,
+       "link_score": 0.593,
+       "downlink_score": 0.708,
+       "uplink_score": 0.478,
+       "airtime": 0.429,
+       "capacity_down_bps": 311520000,
+       "capacity_up_bps": 283880000
+      }
+     },
+     {
+      "name": "yew-ptp-tamarack-05",
+      "site": "Yew",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -66.0,
+       "frequency_mhz": 5500.0,
+       "score": 0.659,
+       "link_score": 0.565,
+       "downlink_score": 0.78,
+       "uplink_score": 0.35,
+       "airtime": 0.008,
+       "capacity_down_bps": 260000000,
+       "capacity_up_bps": 260000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "bcb3d074-47d6-38ba-bd09-b61bb552b3f7",
+    "label": "yew-ptp-tamarack-60 ↔ tamarack-ptp-yew-60",
+    "state": "active",
+    "signal_dbm": -52.0,
+    "ssid": "evn-net-13",
+    "frequency_mhz": 62640.0,
+    "distance_m": 749.0,
+    "ends": [
+     {
+      "name": "tamarack-ptp-yew-60",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -57.0,
+       "frequency_mhz": 62640.0,
+       "score": 1.0,
+       "link_score": 0.98,
+       "downlink_score": 0.97,
+       "uplink_score": 0.99,
+       "airtime": null,
+       "capacity_down_bps": 1617000000,
+       "capacity_up_bps": 1617000000
+      }
+     },
+     {
+      "name": "yew-ptp-tamarack-60",
+      "site": "Yew",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -55.0,
+       "frequency_mhz": 62640.0,
+       "score": 1.0,
+       "link_score": 0.98,
+       "downlink_score": 0.97,
+       "uplink_score": 0.99,
+       "airtime": null,
+       "capacity_down_bps": 1617000000,
+       "capacity_up_bps": 1617000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "71b45524-14ec-3d8d-8608-58038a5f2ccb",
+    "label": "zelkova-ptp-basswood-05 ↔ basswood-ptp-zelkova-05",
+    "state": "active",
+    "signal_dbm": -56.0,
+    "ssid": "evn-net-14",
+    "frequency_mhz": 5630.0,
+    "distance_m": 12469.0,
+    "ends": [
+     {
+      "name": "basswood-ptp-zelkova-05",
+      "site": "Basswood Relay - East",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -58.0,
+       "frequency_mhz": 5630.0,
+       "score": 0.812,
+       "link_score": 0.685,
+       "downlink_score": 0.66,
+       "uplink_score": 0.71,
+       "airtime": 0.001,
+       "capacity_down_bps": 312000000,
+       "capacity_up_bps": 312000000
+      }
+     },
+     {
+      "name": "zelkova-ptp-basswood-05",
+      "site": "Ironbark's Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -57.0,
+       "frequency_mhz": 5630.0,
+       "score": 0.812,
+       "link_score": 0.685,
+       "downlink_score": 0.66,
+       "uplink_score": 0.71,
+       "airtime": 0.001,
+       "capacity_down_bps": 312000000,
+       "capacity_up_bps": 312000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "12162f25-a0e2-3a2f-a8af-1024efc19689",
+    "label": "zelkova-ptp-basswood-60 ↔ basswood-ptp-zelkova-60",
+    "state": "active",
+    "signal_dbm": -57.0,
+    "ssid": "evn-net-15",
+    "frequency_mhz": 69120.0,
+    "distance_m": 12469.0,
+    "ends": [
+     {
+      "name": "basswood-ptp-zelkova-60",
+      "site": "Basswood Relay - East",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -59.0,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": 0.805,
+       "downlink_score": 0.87,
+       "uplink_score": 0.74,
+       "airtime": 0.000514,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     },
+     {
+      "name": "zelkova-ptp-basswood-60",
+      "site": "Ironbark's Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -57.0,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": 0.805,
+       "downlink_score": 0.87,
+       "uplink_score": 0.74,
+       "airtime": 0.000594,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "2cef91d1-d568-3732-bf79-cb6dc95976e0",
+    "label": "zelkova-ptp-chestnut-05 ↔ chestnut-ptp-zelkova-05",
+    "state": "active",
+    "signal_dbm": -64.0,
+    "ssid": "evn-net-16",
+    "frequency_mhz": 5590.0,
+    "distance_m": null,
+    "ends": [
+     {
+      "name": "zelkova-ptp-chestnut-05",
+      "site": "Ironbark's Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -63.0,
+       "frequency_mhz": 5590.0,
+       "score": 0.978,
+       "link_score": 1.0,
+       "downlink_score": 1.0,
+       "uplink_score": 1.0,
+       "airtime": 0.001,
+       "capacity_down_bps": 288000000,
+       "capacity_up_bps": 302400000
+      }
+     },
+     {
+      "name": "chestnut-ptp-zelkova-05",
+      "site": "Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -62.0,
+       "frequency_mhz": 5590.0,
+       "score": 0.978,
+       "link_score": 0.935,
+       "downlink_score": 1.0,
+       "uplink_score": 0.87,
+       "airtime": 0.001,
+       "capacity_down_bps": 302400000,
+       "capacity_up_bps": 346000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "b4120e1a-c681-3763-a51c-b3cd3330c44c",
+    "label": "zelkova-ptp-chestnut-60 ↔ chestnut-ptp-zelkova-60",
+    "state": "active",
+    "signal_dbm": -33.0,
+    "ssid": "evn-net-17",
+    "frequency_mhz": 66960.0,
+    "distance_m": 1693.0,
+    "ends": [
+     {
+      "name": "zelkova-ptp-chestnut-60",
+      "site": "Ironbark's Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -32.0,
+       "frequency_mhz": 66960.0,
+       "score": 0.844,
+       "link_score": 0.95500004,
+       "downlink_score": 0.94,
+       "uplink_score": 0.97,
+       "airtime": 8.5e-05,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     },
+     {
+      "name": "chestnut-ptp-zelkova-60",
+      "site": "Chestnut",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -33.0,
+       "frequency_mhz": 66960.0,
+       "score": 0.844,
+       "link_score": 0.95500004,
+       "downlink_score": 0.94,
+       "uplink_score": 0.97,
+       "airtime": 5e-05,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "7f25a030-a063-3867-8d89-1f4893d7245f",
+    "label": "evn-net-05 ↔ noc-ptp-basswood-60",
+    "state": "disconnected",
+    "signal_dbm": -49.0,
+    "ssid": "evn-net-05",
+    "frequency_mhz": 66960.0,
+    "distance_m": 5346.0,
+    "ends": [
+     {
+      "name": "noc-ptp-basswood-60",
+      "site": "MULBERRY - NOC",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "evn-net-05",
+      "site": "Basswood Relay - East",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "ae2a5e10-7ebc-317f-b7e1-03aa5b6179ea",
+    "label": "basswood-ptp-wingnut-60 ↔ wingnut-ptp-basswood-60",
+    "state": "disconnected",
+    "signal_dbm": -57.0,
+    "ssid": "evn-net-18",
+    "frequency_mhz": 66960.0,
+    "distance_m": 2153.0,
+    "ends": [
+     {
+      "name": "basswood-ptp-wingnut-60",
+      "site": "Basswood Relay - East",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "wingnut-ptp-basswood-60",
+      "site": "Wingnut",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 66960.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "f54eb96a-6053-3ff4-9a4a-fabfa0b489a8",
+    "label": "basswood-ptp-tamarack-60 ↔ evn-net-08",
+    "state": "active",
+    "signal_dbm": -59.0,
+    "ssid": "evn-net-08",
+    "frequency_mhz": 69120.0,
+    "distance_m": null,
+    "ends": [
+     {
+      "name": "evn-net-08",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -56.0,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": 0.95,
+       "downlink_score": 1.0,
+       "uplink_score": 0.9,
+       "airtime": 1e-05,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     },
+     {
+      "name": "basswood-ptp-tamarack-60",
+      "site": "Basswood Relay - West",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -59.0,
+       "frequency_mhz": 69120.0,
+       "score": null,
+       "link_score": 0.95,
+       "downlink_score": 1.0,
+       "uplink_score": 0.9,
+       "airtime": 1.5e-05,
+       "capacity_down_bps": 2700000000,
+       "capacity_up_bps": 2700000000
+      }
+     }
+    ]
+   },
+   {
+    "id": "eab45849-1a85-37d9-a8a9-c52430121299",
+    "label": "noc-ptp-tamarack-11 ↔ evn-net-09",
+    "state": "disconnected",
+    "signal_dbm": -54.0,
+    "ssid": "evn-net-09",
+    "frequency_mhz": 11565.0,
+    "distance_m": null,
+    "ends": [
+     {
+      "name": "evn-net-09",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": null,
+       "frequency_mhz": 11565.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     },
+     {
+      "name": "noc-ptp-tamarack-11",
+      "site": "MULBERRY - NOC",
+      "radio": {
+       "status": "disconnected",
+       "signal_dbm": null,
+       "frequency_mhz": 11075.0,
+       "score": null,
+       "link_score": null,
+       "downlink_score": null,
+       "uplink_score": null,
+       "airtime": null,
+       "capacity_down_bps": null,
+       "capacity_up_bps": null
+      }
+     }
+    ]
+   },
+   {
+    "id": "126bbb26-0c0f-36b6-95df-a3922e26450e",
+    "label": "ponderosa-ptp-tamarack-60 ↔ tamarack-ptp-ponderosa-60",
+    "state": "active",
+    "signal_dbm": -60.0,
+    "ssid": "evn-net-19",
+    "frequency_mhz": 64800.0,
+    "distance_m": 600.0,
+    "ends": [
+     {
+      "name": "tamarack-ptp-ponderosa-60",
+      "site": "Tamarack",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -59.0,
+       "frequency_mhz": 64800.0,
+       "score": 0.542,
+       "link_score": 0.485,
+       "downlink_score": 0.41,
+       "uplink_score": 0.56,
+       "airtime": null,
+       "capacity_down_bps": 1617000000,
+       "capacity_up_bps": 1617000000
+      }
+     },
+     {
+      "name": "ponderosa-ptp-tamarack-60",
+      "site": "Ponderosa",
+      "radio": {
+       "status": "active",
+       "signal_dbm": -61.0,
+       "frequency_mhz": 64800.0,
+       "score": 0.542,
+       "link_score": 0.5,
+       "downlink_score": 0.41,
+       "uplink_score": 0.59,
+       "airtime": null,
+       "capacity_down_bps": 1617000000,
+       "capacity_up_bps": 1617000000
+      }
+     }
+    ]
+   }
+  ],
+  "started_at": "2025-08-26T23:59:06.439599+00:00",
+  "finished_at": "2025-08-26T23:59:06.938085+00:00"
+ }
+}

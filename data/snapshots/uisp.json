@@ -1,0 +1,631 @@
+{
+ "tool": "uisp",
+ "generated_at": "2025-08-26T23:59:06.434922+00:00",
+ "data": {
+  "controller": "https://paloverde.example.com",
+  "controller_outcome": "reachable",
+  "filter": "ptp",
+  "started_at": "2025-08-26T23:59:05.571063+00:00",
+  "finished_at": "2025-08-26T23:59:06.434708+00:00",
+  "counts": {
+   "total": 38,
+   "reachable": 20,
+   "unreachable": 18,
+   "auth_failed": 0,
+   "unidentified": 0,
+   "timed_out": 0
+  },
+  "devices": [
+   {
+    "vendor": "uisp",
+    "identity": "yew-ptp-tamarack-60",
+    "address": "172.18.84.129",
+    "model": "GBE-Plus",
+    "version": "1.5.0",
+    "reachability": "reachable",
+    "uptime_seconds": 2152632,
+    "cpu_load_percent": 0.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 24% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "ponderosa-ptp-tamarack-60",
+    "address": "172.18.84.130",
+    "model": "GBE-Plus",
+    "version": "1.5.1",
+    "reachability": "reachable",
+    "uptime_seconds": 14773459,
+    "cpu_load_percent": 0.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 23% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "tamarack-ptp-ponderosa-60",
+    "address": "172.18.84.132",
+    "model": "GBE-Plus",
+    "version": "1.5.1",
+    "reachability": "reachable",
+    "uptime_seconds": 7338622,
+    "cpu_load_percent": 0.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 24% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "tamarack-ptp-yew-60",
+    "address": "172.18.84.133",
+    "model": "GBE-Plus",
+    "version": "1.5.1",
+    "reachability": "reachable",
+    "uptime_seconds": 7338371,
+    "cpu_load_percent": 0.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 25% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-06-05",
+    "address": "172.18.89.132",
+    "model": "AF-5XHD",
+    "version": "1.5.6",
+    "reachability": "reachable",
+    "uptime_seconds": 7338175,
+    "cpu_load_percent": 31.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 72% (bytes not provided)"
+    ],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-06-05 MIDDLE",
+    "address": "172.18.89.137",
+    "model": "AF-5XHD",
+    "version": "1.5.6",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-07",
+    "address": "172.18.89.139",
+    "model": "AF11FX",
+    "version": "4.1.0",
+    "reachability": "reachable",
+    "uptime_seconds": 7338067,
+    "cpu_load_percent": 40.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 36% (bytes not provided)"
+    ],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-09",
+    "address": "172.18.89.141",
+    "model": "AF11FX",
+    "version": "4.1.0",
+    "reachability": "reachable",
+    "uptime_seconds": 7338129,
+    "cpu_load_percent": 23.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 36% (bytes not provided)"
+    ],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-08",
+    "address": "172.18.89.142",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 7338134,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 30% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "wingnut-ptp-basswood-60",
+    "address": "172.18.90.128",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "manzanita-ptp-tamarack-11",
+    "address": "172.18.118.32",
+    "model": "AF11FX",
+    "version": "4.1.0",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-01",
+    "address": "172.18.118.33",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-02",
+    "address": "172.18.118.34",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "noc-ptp-basswood-60",
+    "address": "172.18.119.31",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "noc-ptp-tamarack-11",
+    "address": "172.18.119.32",
+    "model": "AF11FX",
+    "version": "4.1.0",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "noc-ptp-manzanita-60",
+    "address": "172.18.119.33",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-03",
+    "address": "172.18.119.34",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "birch-ptp-noc-60",
+    "address": "172.18.119.38",
+    "model": "GBE-Plus",
+    "version": "1.5.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-04",
+    "address": "172.18.119.39",
+    "model": "GBE-Plus",
+    "version": "1.5.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "magnolia-ptp-noc-60",
+    "address": "172.18.112.246",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "magnolia-ptp-manzanita-60",
+    "address": "172.18.112.247",
+    "model": "AF60-LR",
+    "version": "2.6.8",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "magnolia-ptp-tamarack-05",
+    "address": "172.18.112.250",
+    "model": "AF-5XHD",
+    "version": "1.5.6",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "yew-ptp-basswood-05",
+    "address": "172.18.80.64",
+    "model": "PBE-5AC-ISO-Gen2",
+    "version": "8.7.15",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "yew-ptp-tamarack-05",
+    "address": "172.18.80.68",
+    "model": "NBE-5AC-Gen2",
+    "version": "8.7.12",
+    "reachability": "reachable",
+    "uptime_seconds": 2152604,
+    "cpu_load_percent": 18.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 58% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "chestnut-ptp-zelkova-60",
+    "address": "172.18.81.110",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 8355217,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 31% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "chestnut-ptp-zelkova-05",
+    "address": "172.18.81.111",
+    "model": "PBE-5AC-Gen2",
+    "version": "8.7.25",
+    "reachability": "reachable",
+    "uptime_seconds": 8208817,
+    "cpu_load_percent": 2.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 66% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "evn-net-05",
+    "address": "172.18.83.233",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "basswood-ptp-wingnut-60",
+    "address": "172.18.83.239",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "basswood-ptp-yew-05",
+    "address": "172.18.83.240",
+    "model": "PBE-5AC-Gen2",
+    "version": "8.7.15",
+    "reachability": "unreachable",
+    "uptime_seconds": null,
+    "cpu_load_percent": null,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [],
+    "maintenance": true
+   },
+   {
+    "vendor": "uisp",
+    "identity": "basswood-ptp-zelkova-05",
+    "address": "172.18.83.241",
+    "model": "PBE-5AC-Gen2",
+    "version": "8.7.25",
+    "reachability": "reachable",
+    "uptime_seconds": 27193,
+    "cpu_load_percent": 14.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 65% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "basswood-ptp-zelkova-60",
+    "address": "172.18.83.249",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 27163,
+    "cpu_load_percent": 2.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 29% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "basswood-ptp-tamarack-60",
+    "address": "172.18.83.250",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 27164,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 29% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "zelkova-ptp-basswood-60",
+    "address": "172.18.92.247",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 95862,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 46% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "zelkova-ptp-chestnut-60",
+    "address": "172.18.92.248",
+    "model": "Wave-Pro",
+    "version": "4.1.1",
+    "reachability": "reachable",
+    "uptime_seconds": 95855,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 29% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "zelkova-ptp-chestnut-05",
+    "address": "172.18.92.249",
+    "model": "PBE-5AC-Gen2",
+    "version": "8.7.25",
+    "reachability": "reachable",
+    "uptime_seconds": 7944791,
+    "cpu_load_percent": 1.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 61% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "zelkova-ptp-basswood-05",
+    "address": "172.18.92.250",
+    "model": "PBE-5AC-Gen2",
+    "version": "8.7.25",
+    "reachability": "reachable",
+    "uptime_seconds": 7945071,
+    "cpu_load_percent": 5.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 59% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "rowan-ptp-oak7-ap-05",
+    "address": "172.31.106.117",
+    "model": "NBE-5AC-Gen2",
+    "version": "8.7.22",
+    "reachability": "reachable",
+    "uptime_seconds": 2244642,
+    "cpu_load_percent": 7.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 61% (bytes not provided)"
+    ],
+    "maintenance": false
+   },
+   {
+    "vendor": "uisp",
+    "identity": "rowan-ptp-oak7-st-05",
+    "address": "172.31.214.148",
+    "model": "NBE-5AC-19",
+    "version": "8.7.22",
+    "reachability": "reachable",
+    "uptime_seconds": 2168157,
+    "cpu_load_percent": 8.0,
+    "free_memory_bytes": null,
+    "total_memory_bytes": null,
+    "gathered_at": "2025-08-26T23:59:06.432428+00:00",
+    "notes": [
+     "memory reported as 29% (bytes not provided)"
+    ],
+    "maintenance": false
+   }
+  ]
+ }
+}
