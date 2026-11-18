@@ -33,6 +33,7 @@ network, with recorded chats replayed. It runs entirely in your browser.
 | Ask obi | Chat in the terminal, Slack, Claude Desktop / Claude Code (MCP) | [chat](docs/guide/chat.md) |
 | Voice and radio | Push-to-talk in the terminal and browser; a walkie-talkie station | [voice](docs/guide/voice.md), [radio](docs/setup/radio.md) |
 | Web workspace | Multi-window browser terminal, 2D map, 3D/AR/VR link viewer | [web](docs/guide/web.md) |
+| OSPF routing | Topology map with per-direction costs, the SPF tree from any router, single points of failure, each router's internet egress, and a config lint | [web § OSPF](docs/guide/web.md#ospf-routing-map) |
 | Watcher | Hourly LLM review of logs and metrics, findings to Slack | [watcher](docs/guide/watcher.md) |
 | Dashboard and paging | One status board, maintenance mode, pager alerts | [dashboard](docs/guide/dashboard.md), [paging](docs/setup/paging.md) |
 | Audit trail | Every query, tool call and write, full-text searchable | [audit](docs/guide/audit.md) |

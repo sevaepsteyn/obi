@@ -94,6 +94,7 @@ def is_reserved_asn(number: int) -> bool:
 
     return 64496 <= number <= 65534 or 4_200_000_000 <= number <= 4_294_967_294
 
+
 #: A UUID used as a hostname label (an account-scoped cloud console, e.g. UniFi's hosted one).
 _UUID_HOST_SHAPE = re.compile(
     r"(?i)(?<![0-9a-f-])[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\.[a-z]"
@@ -172,6 +173,19 @@ def format_report(result: GateResult, *, limit: int = 200) -> str:
     if len(ordered) > limit:
         lines.append(f"… {len(ordered) - limit} more")
     return "\n".join(lines)
+
+
+def tree_names(body: bytes) -> list[str]:
+    """The entry names of a raw git tree object (``<mode> <name>\\0<20-byte hash>`` repeated)."""
+
+    names: list[str] = []
+    pos = 0
+    while pos < len(body):
+        space = body.index(b" ", pos)
+        nul = body.index(b"\0", space)
+        names.append(body[space + 1 : nul].decode("utf-8", errors="replace"))
+        pos = nul + 1 + 20
+    return names
 
 
 class LeakGate:
@@ -529,7 +543,14 @@ class LeakGate:
             size = int(size_text)
             body = data[header_end + 1 : header_end + 1 + size]
             pos = header_end + 1 + size + 1
-            text = body.decode("utf-8", errors="ignore")
+            # A tree is binary — "<mode> <name>\0" then the child's 20 RAW hash bytes. Only the
+            # names are data; decoding the hashes as text let random bytes spell an email shape
+            # (the ~1-in-20 feature 138 flake: "email/shape … git:tree").
+            text = (
+                "\n".join(tree_names(body))
+                if kind == "tree"
+                else body.decode("utf-8", errors="ignore")
+            )
             for n, line in enumerate(text.splitlines(), 1):
                 self._check_text(
                     line, rel, f"git:{kind}:{sha[:12]}:{n}", identifier=kind == "tree", out=out

@@ -46,7 +46,7 @@ uv run obi web serve     # HTTPS on the LAN (default 8443); prints the URL(s) to
 # include_siklu = true       # merge the Siklu e-band hop into the viewers
 # gnis_states = ["NV"]       # opt in to named-peak labels from the USGS GNIS gazetteer
 # voice = true               # false → TALK shows "voice is off"
-# ospf_layout_path = "~/.config/obi/ospf-layout.json"   # blessed OSP layout (see OSP below)
+# ospf_layout_path = "~/.config/obi/ospf-layout.json"   # blessed OSPF layout (see OSPF below)
 
 # Hand-fix a site's ground height in metres (UISP altitudes are mixed-datum):
 # [web.ground_overrides]
@@ -67,28 +67,29 @@ Windows drag, resize, snap to half/quarter, minimize and maximize; the arrangeme
 | Widget | Shows |
 |---|---|
 | MAP | 2D link map |
-| TALK | Ask-obi chat, voice + text |
+| CHAT | Ask-obi chat, voice + text |
 | XR | Setup for the 3D/AR/VR session |
 | LOGS | Device-log tail |
-| UISP / SIK / UNIFI | UISP devices / Siklu radios / UniFi devices |
+| UISP / SIKLU / UNIFI | UISP devices / Siklu radios / UniFi devices |
 | LINKS | Every wireless backhaul link (UISP PtP + Siklu pairs): up/down, signal, band |
 | ROS | RouterOS fleet: address, state, model, version, uptime, CPU, memory |
 | NBX / WATCH | NetBox drift / watcher findings |
-| MET | Metrics charts: reset-safe rates, gaps drawn as gaps, one line per interface |
-| CFG | Config-backup coverage, history, diffs, full configs |
+| METRICS | Metrics charts: reset-safe rates, gaps drawn as gaps, one line per interface |
+| CONF | Config-backup coverage, history, diffs, full configs |
 | HEALTH | Fleet hardware health |
-| OSP | OSPF routing map |
+| OSPF | OSPF routing map; `OSPF <router>` opens one router's OSPF detail |
 | PING / TRACE | Live diagnostics from a chosen router |
+| DASH | Status dashboard |
 
 **Tables**: click a header to cycle ascending / descending / original (numeric-aware, blanks last; sorting a log tail pauses auto-follow). Drag a boundary to resize (saved per widget; double-click resets).
 
-**Copy and CSV**: every table copies its visible rows as tab-separated text and exports a `.csv` of the shown rows, generated in the browser. Every text pane (CFG, PING/TRACE, AUDIT, WATCH) has a copy button.
+**Copy and CSV**: every table copies its visible rows as tab-separated text and exports a `.csv` of the shown rows, generated in the browser. Every text pane (CONF, PING/TRACE, AUDIT, WATCH) has a copy button.
 
 ### Tool boards
 
 Monospace boards with a text filter, counts, and data age on the window badge.
 
-- UISP, LINKS, ROS, SIK, UNIFI and NBX read `obi web snapshot` files. If a controller is down, its board keeps the last good snapshot with a growing age.
+- UISP, LINKS, ROS, SIKLU, UNIFI and NBX read `obi web snapshot` files. If a controller is down, its board keeps the last good snapshot with a growing age.
 - LINKS merges the `uisp-links` and `siklu` snapshots in the browser. If one is missing, the other still renders, the gap is named in the counts line, and the badge shows the OLDER age.
 - WATCH reads the local watch-reports store live.
 
@@ -101,10 +102,10 @@ Click a ROS row, or type `/ROS <name>` or `/ROS <ip>`, to open that router's win
 - A down router shows "unreachable" or "timeout" and keeps the last good data.
 - A **HEALTH** tab shows the newest hardware readings with 24 h sparklines, from the local metrics store (no device contact).
 
-### HEALTH, CFG, LOGS
+### HEALTH, CONF, LOGS
 
 - **HEALTH**: temperatures, PSU/fan, CPU/memory, SFP optics, collector-VM disks, worst-first with breaches colored. Thresholds are shared with `[watch.health]`, so board and Slack alerts agree. Click a RouterOS row to open its router. See [metrics.md](./metrics.md).
-- **CFG**: reads the local config repo only. Toggle a diff to the full stored config, filter it to matching lines, copy it. See [config-backup.md](./config-backup.md).
+- **CONF**: reads the local config repo only. Toggle a diff to the full stored config, filter it to matching lines, copy it. See [config-backup.md](./config-backup.md).
 - **LOGS**: RouterOS syslog plus UniFi and UISP events, severity-colored, live within ~20 s of ingest (scroll up to pause). Filters: source (`all / syslog / unifi / uisp`; `syslog` = device syslog only), device, minimum severity, text, time window. Served from `/api/logs.json`, which only reads `logs.db`; the badge shows the newest entry's age, so a stalled ingest is visible. See [logs.md](./logs.md).
 
 ### TALK and PING / TRACE
@@ -112,7 +113,7 @@ Click a ROS row, or type `/ROS <name>` or `/ROS <ip>`, to open that router's win
 - **TALK**: hold the mic or type and press Enter. The transcript (questions, answers, tool-progress notes) is per session and never saved. Voice is on by default; with a missing STT/TTS dependency or `[web] voice = false` it shows "voice is off", and typing still works. See [voice.md](./voice.md).
 - **PING / TRACE**: pick a source router, type a destination, and obi runs ping or traceroute **from that router** using the read-only `routeros_ping` / `routeros_traceroute` tools, audited with source `web`. On by default. See [routeros.md](./routeros.md).
 
-### OSP (routing map)
+### OSPF (routing map)
 
 The OSPF topology as a pannable graph: per-direction costs, SPF tree from any root, ghost/backup links, SPOF rings, the internet cloud with each router's default egress, and a lint window.
 
@@ -120,7 +121,7 @@ Dragged positions persist per browser and always win. Without a blessed layout, 
 
 To set the default layout for every browser:
 
-1. Press **export layout** on the OSP toolbar (copies positions as JSON).
+1. Press **export layout** on the OSPF toolbar (copies positions as JSON).
 2. Save that JSON, unedited, to a file on the obi host.
 3. Point `[web] ospf_layout_path` at it.
 
