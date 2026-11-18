@@ -64,6 +64,8 @@ Chat and voice get the same view through the `uisp_links` tool (*"any weak links
 
 obi reports health for **Siklu EtherHaul** mmWave point-to-point radios (E-band backhaul hops). Siklu has no controller, so obi reads each radio **live over SSH**, using read-only `show` commands, from an operator-maintained roster.
 
+![Siklu radios: reachability, RSSI, CINR, transmit power and uptime](../images/vendors-siklu.png)
+
 - No auto-discovery: these L2 radios don't appear in the Mikrotik crawl.
 - Separate from the Mikrotik roster and the UISP fleet.
 

@@ -35,8 +35,15 @@ network, with recorded chats replayed. It runs entirely in your browser.
 <td width="50%"><a href="docs/guide/routeros.md"><img src="docs/images/routeros-fleet.png" alt="Discovery and status"></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><b>Other vendors</b><br>Ubiquiti UISP (incl. wireless link health), Siklu EtherHaul, NetBox drift<br><sub>Guide: <a href="docs/guide/vendors.md">vendors</a></sub></td>
-<td width="50%"><a href="docs/guide/vendors.md"><img src="docs/images/vendors-link-profile.png" alt="Other vendors"></a></td>
+<td width="50%" valign="top"><b>Ubiquiti UISP</b><br>The controller's device fleet, plus wireless link health for every point-to-point radio<br><sub>Guide: <a href="docs/guide/vendors.md#uisp">vendors § UISP</a></sub></td>
+<td width="50%"><a href="docs/guide/vendors.md#uisp"><img src="docs/images/vendors-uisp.png" alt="Ubiquiti UISP"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>Siklu EtherHaul</b><br>E-band radios read live over SSH; the two ends of each hop paired into one link<br><sub>Guide: <a href="docs/guide/vendors.md#siklu">vendors § Siklu</a></sub></td>
+<td width="50%"><a href="docs/guide/vendors.md#siklu"><img src="docs/images/vendors-siklu.png" alt="Siklu EtherHaul"></a></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><b>NetBox</b><br>Your documented inventory, and its drift from what is actually on the network<br><sub>Guide: <a href="docs/guide/vendors.md#netbox">vendors § NetBox</a></sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><b>Metrics</b><br>Live SNMP from any vendor, plus history in a local store<br><sub>Guide: <a href="docs/guide/metrics.md">metrics</a></sub></td>
@@ -62,7 +69,7 @@ network, with recorded chats replayed. It runs entirely in your browser.
 <td width="50%"><a href="docs/guide/web.md"><img src="docs/images/web-map.png" alt="Web workspace"></a></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><b>3D / AR / VR link viewer</b><br>Stand at a site in a Quest 3 and see every link over the terrain: health, signal, utilization, Fresnel clearance<br><sub>Guide: <a href="docs/guide/web.md#the-3darvr-viewer-xr-quest-3">web § XR</a></sub></td>
+<td width="50%" valign="top"><b>3D / AR / VR link viewer</b><br>Every link in 3D over the terrain, in a WebXR headset: fly, turn and zoom anywhere, and switch between health, signal, utilization and Fresnel clearance<br><sub>Guide: <a href="docs/guide/web.md#the-3darvr-viewer-xr-quest-3">web § XR</a></sub></td>
 <td width="50%"><a href="docs/guide/web.md#the-3darvr-viewer-xr-quest-3"><img src="docs/images/xr-tour.webp" alt="3D / AR / VR link viewer"></a></td>
 </tr>
 <tr>
