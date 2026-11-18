@@ -80,3 +80,41 @@ stub ctx (`mode:'window'`, params, `setTitle/setName/setBadge` → the corner st
 **no `openSnapshot`** — panels branch on `ctx.mode`, the D6 lesson). The host sizes via in-flow flex,
 NOT `position:absolute`+`inset`, so it keeps its box even when a widget sets `host.style.position`
 (the OSPF map does — an absolute+inset host collapsed to zero height and blanked its canvas).
+
+## XR media (`xr/`, with `readme_media.mjs`)
+
+The immersive viewer only renders inside a WebXR session, so its README media is captured
+through an emulated headset: Meta's [IWER](https://github.com/meta-quest/immersive-web-emulation-runtime)
+(MIT) injected before the page's own scripts. IWER is fetched at capture time, never vendored.
+Like all published media it is taken from the sanitized demo bundle, and only on the opaque
+backdrop — an emulator has no passthrough to show.
+
+```sh
+uv run obi web serve --demo                     # http://127.0.0.1:8765/obi/
+curl -sL -o /tmp/iwer.min.js https://cdn.jsdelivr.net/npm/iwer@2.8.0/build/iwer.min.js
+cat /tmp/iwer.min.js tests/web_harness/shots/xr/iwer-setup.js > /tmp/xr-init.js
+export OBI_INIT=/tmp/xr-init.js OBI_CLICK='.xr .enter' OBI_ANGLE=metal
+
+# a still (2x pixels; scale to 1400 px and palettize like the other images)
+node tests/web_harness/shots/readme_media.mjs shot \
+  '?w=xr#qx=-5000&qy=460&qz=-1850&tz=-3&ty=-1.2&pitch=-24&fov=75&hands=0&terrain=2&s=0.0009&yaw=-75' \
+  /tmp/xr-links.png 2500 1400x875 tests/web_harness/shots/xr/view.js
+
+# the fly-around: frames + frames.txt, assembled as animated WebP
+node tests/web_harness/shots/readme_media.mjs video '?w=xr' /tmp/xr-tour 16.5 1200x750 \
+  tests/web_harness/shots/xr/tour.js
+```
+
+- `xr-links.png` is the command above; `xr-fresnel.png` is `s=0.0018&yaw=150&mode=3`;
+  `xr-signal.png` is `s=0.0009&yaw=20&mode=1`. All media uses the terrain wireframe
+  (`terrain=2` in the stills; `tour.js` presses B twice before it starts moving).
+- `OBI_ANGLE=metal` matters for `video`: the software renderer manages about 3 frames a second on
+  this scene, the GPU about 60.
+- The animation ships as animated WebP, not GIF. Every pixel moves in a fly-around, and a GIF of
+  it is several times the size at a lower resolution (the shaded-terrain take was 1.2 MB at 1000 px against 3.7 MB at 640 px).
+  Build an ffconcat list from `frames.txt` (real per-frame durations, skipping the first 1.5
+  seconds while the script frames the scene and switches the terrain), then
+  `ffmpeg -f concat -i list.txt -vf fps=10,scale=800:-1 -loop 0 -c:v libwebp_anim -q:v 55 -compression_level 6 xr-tour.webp`.
+  The wireframe's thin moving lines compress poorly: 1.9 MB at these settings.
+- `view.js` places the world with the same scale/yaw/position transform navigation uses; `tour.js`
+  moves it with the emulated thumbstick and A button, through the viewer's own navigation code.

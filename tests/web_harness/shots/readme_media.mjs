@@ -4,12 +4,13 @@
 // Node's built-in WebSocket drives a locally installed Chrome over the DevTools protocol.
 //
 //   uv run obi web serve --demo        # http://127.0.0.1:8765/obi/
-//   node tests/web_harness/shots/readme_media.mjs shot  <path?query> <out.png>  [waitMs] [WxH]
+//   node tests/web_harness/shots/readme_media.mjs shot  <path?query> <out.png>  [waitMs] [WxH] [jsFile]
 //   node tests/web_harness/shots/readme_media.mjs video <path?query> <outdir>   [seconds] [WxH] [jsFile]
 //
 // `video` writes numbered JPEG frames (Page.startScreencast) plus frames.txt with timings, for
-// ffmpeg to assemble. An optional jsFile is evaluated in the page after load (to open windows,
-// start a chat replay, etc.).
+// ffmpeg to assemble. An optional jsFile is evaluated in the page last — after OBI_JS and
+// OBI_CLICK; in `video`, once the recording has started (to open windows, start a chat replay,
+// fly the XR camera, etc.). A string it returns is printed.
 //
 // Environment (both modes):
 //   OBI_LAYOUT=<file.json>  a workspace layout ({"windows": [...]}, the shell's saved-layout
@@ -17,6 +18,12 @@
 //                           (AUDIT, RADIO) are enabled too
 //   OBI_JS=<file.js>        evaluated in the page after load, before the wait (shot) or the
 //                           recording (video)
+//   OBI_INIT=<file.js>      injected into every document BEFORE its own scripts run (e.g. a
+//                           WebXR emulator such as Meta's IWER, for the XR viewer)
+//   OBI_ANGLE=<backend>     WebGL backend instead of the software default, e.g. `metal` on macOS —
+//                           the 3D scene records at a usable frame rate only on a real GPU
+//   OBI_CLICK=<selector>    a real (trusted) mouse click on that element after OBI_JS — for
+//                           buttons that need user activation, like entering an XR session
 import { spawn } from 'node:child_process';
 import { mkdirSync, readFileSync, writeFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -33,7 +40,10 @@ const profile = mkdtempSync(join(tmpdir(), 'obi-shots-'));
 const port = 9300 + Math.floor(Math.random() * 500);
 const chrome = spawn(CHROME, [
   '--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`,
-  '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist',
+  ...(process.env.OBI_ANGLE
+    ? [`--use-angle=${process.env.OBI_ANGLE}`]
+    : ['--use-angle=swiftshader', '--enable-unsafe-swiftshader']),
+  '--ignore-gpu-blocklist',
   '--hide-scrollbars', '--force-device-scale-factor=2', `--window-size=${W},${H}`,
   '--no-first-run', '--no-default-browser-check', 'about:blank',
 ], { stdio: 'ignore', detached: true });
@@ -77,6 +87,9 @@ try {
     await send('Page.navigate', { url });
     await loaded;
   };
+  if (process.env.OBI_INIT) {
+    await send('Page.addScriptToEvaluateOnNewDocument', { source: readFileSync(process.env.OBI_INIT, 'utf8') });
+  }
   if (process.env.OBI_LAYOUT) {
     await navigate(new URL('about-blank-for-storage', BASE).href); // same origin as the page
     const layout = JSON.parse(readFileSync(process.env.OBI_LAYOUT, 'utf8'));
@@ -90,7 +103,29 @@ try {
     await sleep(1500);
     await send('Runtime.evaluate', { expression: readFileSync(process.env.OBI_JS, 'utf8'), awaitPromise: true });
   }
+  if (process.env.OBI_CLICK) {
+    await sleep(1500);
+    const { result } = await send('Runtime.evaluate', {
+      expression: `JSON.stringify((() => { const r = document.querySelector(${JSON.stringify(process.env.OBI_CLICK)})?.getBoundingClientRect(); return r && { x: r.x + r.width / 2, y: r.y + r.height / 2 }; })())`,
+    });
+    const at = JSON.parse(result.value ?? 'null');
+    if (!at) throw new Error(`OBI_CLICK: no element matches ${process.env.OBI_CLICK}`);
+    for (const type of ['mousePressed', 'mouseReleased']) {
+      await send('Input.dispatchMouseEvent', { type, x: at.x, y: at.y, button: 'left', clickCount: 1 });
+    }
+  }
+  const runScript = async (file) => {
+    const { result, exceptionDetails } = await send('Runtime.evaluate', {
+      expression: readFileSync(file, 'utf8'), awaitPromise: true, returnByValue: true,
+    });
+    if (exceptionDetails) throw new Error(`${file}: ${exceptionDetails.exception?.description ?? exceptionDetails.text}`);
+    if (typeof result?.value === 'string') console.log(result.value);
+  };
   if (mode === 'shot') {
+    if (a6) {
+      await sleep(2500);
+      await runScript(a6);
+    }
     await sleep(Number(a4 ?? 4000));
     const { data } = await send('Page.captureScreenshot', { format: 'png' });
     writeFileSync(out, Buffer.from(data, 'base64'));
@@ -107,7 +142,7 @@ try {
     });
     await sleep(2500);
     await send('Page.startScreencast', { format: 'jpeg', quality: 85, maxWidth: W * 2, maxHeight: H * 2, everyNthFrame: 1 });
-    if (a6) await send('Runtime.evaluate', { expression: readFileSync(a6, 'utf8'), awaitPromise: true });
+    if (a6) await runScript(a6);
     await sleep(Number(a4 ?? 8) * 1000);
     await send('Page.stopScreencast');
     writeFileSync(join(out, 'frames.txt'), frames.join('\n'));

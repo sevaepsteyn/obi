@@ -160,13 +160,23 @@ Export samples AWS Terrain Tiles (keyless; US data from USGS 3DEP) along every p
 
 ## The 3D/AR/VR viewer (XR, Quest 3)
 
+![Orbiting a relay hub in the headset, cycling the health, signal, utilization and Fresnel views, then zooming in](../images/xr-tour.webp)
+
 Pick the site you're standing at, set eye height, and nudge the thumbstick until one link sits on a dish you can see; the rest falls into place. Leaving the session returns you to the workspace as you left it.
+
+![Health view: links over the terrain wireframe, labeled with length, Fresnel radius and capacity](../images/xr-links.png)
+
+The pictures here are the demo network in an emulated headset, on the opaque backdrop with the terrain wireframe.
 
 - **Fresnel zones** (A/X): translucent ellipsoids with a stronger 60% core that must stay clear. Look up from a mast and judge whether real trees or ridges intrude.
 - Zone size uses each link's actual channel frequency from the controller. A link without a known frequency has no zone and is named in the summary.
 - **Labels**: `name · 9.8 km · F1 11.6 m`, plus capacity/usage and maintenance when known, and `⚠ margin @ location` when flagged.
 - Link tubes scale with capacity, like the 2D map. An earth-toned line under each path shows the ground profile.
 - **Terrain wireframe** (B/Y, on by default). With `gnis_states` set, named summits are labeled; rotate a labeled peak onto the real one to align yaw.
+
+![Fresnel view: each link's zone as a translucent ellipsoid along its path](../images/xr-fresnel.png)
+
+![Signal view: links colored by received signal](../images/xr-signal.png)
 
 Hands or controllers both work. Pan and zoom are clamped, so you can shrink the network to a tabletop or zoom to one link without losing it.
 

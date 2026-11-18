@@ -58,8 +58,12 @@ network, with recorded chats replayed. It runs entirely in your browser.
 <td colspan="2" valign="top"><b>Voice and radio</b><br>Push-to-talk in the terminal and browser; a walkie-talkie station<br><sub>Guide: <a href="docs/guide/voice.md">voice</a>, <a href="docs/setup/radio.md">radio</a></sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><b>Web workspace</b><br>Multi-window browser terminal, 2D map, 3D/AR/VR link viewer<br><sub>Guide: <a href="docs/guide/web.md">web</a></sub></td>
+<td width="50%" valign="top"><b>Web workspace</b><br>Multi-window browser terminal and a 2D link map<br><sub>Guide: <a href="docs/guide/web.md">web</a></sub></td>
 <td width="50%"><a href="docs/guide/web.md"><img src="docs/images/web-map.png" alt="Web workspace"></a></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><b>3D / AR / VR link viewer</b><br>Stand at a site in a Quest 3 and see every link over the terrain: health, signal, utilization, Fresnel clearance<br><sub>Guide: <a href="docs/guide/web.md#the-3darvr-viewer-xr-quest-3">web § XR</a></sub></td>
+<td width="50%"><a href="docs/guide/web.md#the-3darvr-viewer-xr-quest-3"><img src="docs/images/xr-tour.webp" alt="3D / AR / VR link viewer"></a></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><b>OSPF routing</b><br>Topology map with per-direction costs, the SPF tree from any router, single points of failure, each router's internet egress, and a config lint<br><sub>Guide: <a href="docs/guide/web.md#ospf-routing-map">web § OSPF</a></sub></td>
