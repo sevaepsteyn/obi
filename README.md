@@ -1,12 +1,13 @@
 # obi
 
-obi is a network operations assistant. It was built to run the backbone of a large temporary
-event network: dozens of routers, point-to-point radios and access points, spread over many
-kilometres and looked after by a small volunteer team.
+obi is a network management assistant for any network: a campus, a WISP, a branch fleet or a
+single site. It collects inventory, health, metrics, logs and config history from your routers,
+switches, radios and access points, and puts an LLM in front of it. You can ask it questions from
+the terminal, Slack, a browser workspace, by voice or over a two-way radio.
 
-It collects inventory, health, metrics, logs and config history from the gear, and puts an LLM
-in front of it. You can ask it questions from the terminal, Slack, a browser workspace, by voice
-or over a two-way radio.
+It grew up running the backbone of a large temporary event network (dozens of routers and
+point-to-point radios over many kilometres, run by a small volunteer team), so it is built for
+small teams with a lot of gear and little time.
 
 - **Read-only by design.** The only device writes are allowlisted, audited decorative lighting.
 - **No deployment identity in the code.** Addresses, names, coordinates and IDs live in your

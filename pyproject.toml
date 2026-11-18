@@ -1,7 +1,7 @@
 [project]
 name = "obi"
 version = "0.1.0"
-description = "A network operations assistant: multi-vendor inventory, health, metrics, logs and config history, with an LLM you can ask from the terminal, Slack, a web workspace, voice or two-way radio."
+description = "A network management assistant: multi-vendor inventory, health, metrics, logs and config history, with an LLM you can ask from the terminal, Slack, a web workspace, voice or two-way radio."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
